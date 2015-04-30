@@ -2,7 +2,7 @@
 
 MediaTek Cloud Sandbox(MCS) 提拱您在開發階段時資料與設備的管理服務，以及物聯網穿戴裝置商業化的管道，MCS  是一個基於雲端的基礎建設，做為您雛形的好幫手。
 
-Using a RESTful API you collect data from your devices, which you can view in a powerful web-based dashboard that offers a range of display and graphing options. Then you can control your Wearables and IoT devices by issuing commands from the dashboard. In addition, a complementary smartphone app lets you review collected data and control your devices from anywhere.
+使用 RESTful 規範的 API you collect data from your devices, which you can view in a powerful web-based dashboard that offers a range of display and graphing options. Then you can control your Wearables and IoT devices by issuing commands from the dashboard. In addition, a complementary smartphone app lets you review collected data and control your devices from anywhere.
 
 ![](images/content01.jpg)
 
