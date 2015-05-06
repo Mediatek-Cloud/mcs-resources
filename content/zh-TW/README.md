@@ -25,10 +25,6 @@ MediaTek Cloud Sandbox(MCS)提供您打造準備商業化的穿戴式和物聯�
 ![](https://github.com/Mediatek-Cloud/mcs-resources/blob/master/content/zh-TW/images/content_img/content_img-02.jpg)
 
 
-MediaTek Cloud Sandbox is currently in closed-beta.
-
-
-
 ## **事前準備**
 要使用MediaTek Cloud Sandbox，您必須先：
 1. [註冊成為MediaTek Labs使用者] (http://labs.mediatek.com/dpRegister/create)
