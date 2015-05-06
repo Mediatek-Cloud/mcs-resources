@@ -40,78 +40,72 @@
 
 ![](../images/content_img/content_img-04.jpg)
 
-此資料通道類型是專門儲存和顯示由裝置的感應元件蒐集而來的資料。
+此類型的資料通道是專門儲存和顯示由裝置的感應元件蒐集而來的資料。例如從裝置感應元件上船而來的溫度，MCS會將此資料以時間序列方式儲存。
 
 
-This data channel type is for data generated from a component of a device that has no related commands. For example data from a temperature sensor that is pushed to the sandbox and stored as a sequence over time.
-
-
-###**Controller**
+###**控制器**
 
 ![](../images/content_img/content_img-05.jpg)
 
-This data channel type is for data generated in the sandbox and sent to the device to control the setting of a logical or physical component in the device. For example, a switch to turn a light on or off.
+此類型的資料通道是專門用來傳遞指令至裝置，已控制裝置內元件的狀態。例如控制燈的開或關。
 
 
-###**Hybrid**
+###**綜合型顯示控制器**
 
 ![](../images/content_img/content_img-06.jpg)
 
-This data channel enables a Display and Controller data channel to be combined, where there is a logical relationship between the two. For example, as between the data from a temperature sensor and the control settings for an air conditioning unit.
+此類型的資料型態能同時為顯示器和控制器。例如冷氣機的溫度顯示器，並且同時能控制冷氣的開關或是調整溫度。
 
 
-## **Data Types**
+## **資料型態**
+
+每個資料通道都能用來傳輸以下的九種種資料型態的一種：
 
 
+- **開/關** — 此類型的資料型態用來表示裝置的兩種狀態，使用者能選擇開啟或是關閉裝置的狀態。例如　一盞燈的開或關。
+
+- **類別** — 此類型的資料型態能用來表示一個任Using this feature you can upload and manage the firmware for a specific prototype. Once devices have been created from the prototype the sandbox will detect compatible devices and offer their users the option to update the devices’ firmware over the air.意的類別。您能定義任何您想要的類別和此類別相對的內容。例如您能用來儲存星期，月份，或是風扇的狀態（關，慢速，中速，高速）。
+
+- **整數** — 此類型的資料型態能用來表示任意的整數，例如某一個使用者一天走了多少步的數值。
+
+- **浮點數** — 此類型的資料型態能用來表示任意的浮點數，例如氣溫。
+
+- **字串** — 此類型的資料型態用來表示字串，例如裝置回傳的訊息。
+
+- **十六進位數** — 此類型的資料型態用來表示十六進位數值，例如LED燈的顯示顏色。
+
+- **GPS** — 此類型的資料型態用來表示地理位置，包含經度，緯度，和高度。
+
+- **GPIO** — 此類型的資料型態用來表示GPIO的數位訊號。例如在Pin 4位置為High的訊號狀態。
+
+- **PWM** — 此類型的資料型態用來表示傳遞到GPIO的PWM數位訊號, 例如在Pin 3位置的level 15訊號。
 
 
-Each Data Channel can hold one of seven types of data:
+## **通知**
 
-- **ON/OFF** — this data type represents a switch and enables the user to activate or deactivate a component of the device, such as turning a light on or off.
+此功能可讓您定義觸發電子郵件或基於雲的通報標準，您身為裝置的擁有者，除了會無條件的收到通知外，還能透過設定使用者權限來使其他使用者也收到相同的通知。
 
-- **Category** — this data type represents an arbitrary category. You’re free to define the category and its content as you wish. For example, you could store weekday, month, fan settings (off, slow, medium and fast) and alike.
+觸發器可用於以下情況:
 
-- **int** — this data type represents an arbitrary integer, such as the number of steps a user has taken.
+- 當某一個資料通道回傳的資料超過或是低於預設值，將會觸發通知條件，並且通知有權限的使用者。同時，資料質能然會被保存。
 
-- **float** — this data type represents an arbitrary floating point number, such as temperature.
-
-- **string** — this data type represents a string, such as a message issued by the device.
-
-- **HEX** — this data type represents a hexadecimal value, such as the color used in an LED display.
-
-- **GPS** — this data type represents a geo-location identified by longitude, latitude, elevation and related attributes.
-
-- **GPIO** — this data type represents a digital signal for a specific GPIO pin, such as HIGH on Pin 4.
-
-- **PWM** — this data type represents a PWM signal delivered to a specific GPIO pin, such as level 15 on Pin 3.
+- 當控制器型態的資料通道的值被改片時，觸發通知。
 
 
-## **Notifications**
+## **使用者權限管理**
+
+此功能讓您能夠給予其他MCS用戶各種訪問產品原型或是測試裝置的權限，如查看或是更改產品原型設置或是創建一個新的測試裝置。
 
 
+## **韌體服務**
+
+使用此功能，您可以上傳並管理特定產品原型的韌體。每當一個測試被新增時，MCS都會從原產品型中檢測能夠兼容的韌體，並提供用戶通過空中更新設備韌體的服務。
 
 
-This function enables you to define criteria that trigger an email or cloud-based notification as well as define additional user’s the notification will be sent to — you as the prototype owner receive notifications by default.
+## **測試裝置**
 
-Triggers are available for:
+此功能使您能夠從產品原型的詳細信息頁面中建立測試裝置。您創建的每個裝置都會有一個**DeviceId ** 和 **DeviceKey** ，此訊息當您在呼叫MCS所提供的API時將會需要用到。您亦可於**My Device** 頁面中查看裝置的DeviceId以及DeviceKey等詳細信息。
 
-- Data received on a channel being above or below a specific value, which will issue a defined number of notifications while the data remains above or below the trigger value.
-
-- Each time the data value is changed on a Controller data channel.
-
-
-## **User privileges**
-
-This feature enables you to give other MCS users various privileges to access the Prototype, such as the ability to view the Prototype settings, create a device and alike.
-
-
-## **Firmware**
-
-Using this feature you can upload and manage the firmware for a specific prototype. Once devices have been created from the prototype the sandbox will detect compatible devices and offer their users the option to update the devices’ firmware over the air.
-
-## **Test Devices**
-
-This feature enables you to create test devices from the Prototype details. Each device you create is given a **Device ID** and **Device Key**, which you use in the MediaTek Cloud Sandbox APIs to identify data pushed to and pulled from the device. Device details, along with their ID and key, are displayed in your **My Devices** page.
 
 
 # **My Devices**
