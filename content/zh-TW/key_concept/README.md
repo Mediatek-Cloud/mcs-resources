@@ -108,11 +108,10 @@
 
 
 
-# **My Devices**
+# **我的裝置**
 
-You use **My Devices** to manage the devices you have created or have been given access to.
+用您可以在**我的裝置**頁面來管理已創建或獲得訪問權限的設備。
 
-In this page, you can see the data channel, user privilege, and notification configurations as defined in the device’s prototype. You can modify the notification and user privilege settings for specific devices on this page. You can also see the device Id and device key, in addition to being able to see those details in the Test device tab in a prototype’s details page.
+在這個頁面中，您可以查看資料通道，使用者權限，以及從產品原型繼承過來的通知條件。您亦可以在此修改特定裝置的通知條件和使用者權限設置。除了在產品原型頁面的測試裝置標籤頁中查看DeviceId和DeviceKey之外，您也可以在此頁面中查看這些關於裝置的細節。
 
-In addition to listing all the devices created for your prototypes, this page also shows devices from other prototypes that you have been given the access to. The actions you can do to the devices vary depending on the privileges granted to you. For example, if you are a viewer of the device, you can only see the data and cannot make any change to the device.
-
+此頁面除了列出所有您所創建的和您有被授權訪問的裝置。不同的授權等級能決定您所能對此裝置的操作。例如，如果你是該裝置的瀏覽者，你只能讀取數據，不能對裝置設定進行任何的修改和更新。
