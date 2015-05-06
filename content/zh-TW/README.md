@@ -1,28 +1,28 @@
 # **MediaTek Cloud Sandbox introduction**
 
-MediaTek Cloud Sandbox(MCS) 提拱您在開發階段時資料與設備的管理服務，以及物聯網穿戴裝置商業化的管道，MCS  是一個基於雲端的基礎建設，做為您雛形的好幫手。
+MediaTek Cloud Sandbox(MCS)提供您打造準備商業化的穿戴式和物聯網裝置，所需要的數據和裝置管理服務。它支持您專心的開發產品原型，不必煩惱建立一套自己的雲端基礎設施。
 
-使用 RESTful 規範的 API you collect data from your devices, which you can view in a powerful web-based dashboard that offers a range of display and graphing options. Then you can control your Wearables and IoT devices by issuing commands from the dashboard. In addition, a complementary smartphone app lets you review collected data and control your devices from anywhere.
+您可以在我們提供的強大的網頁儀表板介面上，看到使用我們提供的RESTful API從裝置蒐集回來的圖形化的資料。之後，您可以通過從儀表板發出命令控制您的穿帶式和物聯網裝置。此外，我們提供附屬的手機應用程式讓您能查看收集到的數據，並從任何地方控制您的裝置。
 
-![](images/content01.jpg)
+![](https://github.com/Mediatek-Cloud/mcs-resources/blob/master/content/zh-TW/images/content01.jpg)
 
-MediaTek Cloud Sandbox lets you:
-
-- Define Wearables and IoT prototype profiles and individual devices within a profile
-- Push and Pull DataPoints between a device and the sandbox, using data types such as geo-location, temperature, humidity and more
-- Remotely control your devices using state DataPoints, such as switch-state and more
-- Visualize DataPoints graphically
-- Receive notifications when DataPoints are collected or change
-- Manage the life cycle of devices, as you would in your live implementation
-- Manage and control remotely, using the complementary mobile app
-- Create reports about prototypes, devices and collected data
-- Perform FOTA firmware updates
-- Control access to data and devices with granular security control
-
-To support the use of these features, MediaTek Cloud Sandbox provides an API sandbox, API reference, FAQ and set of tutorials to ensure you can quickly get up to speed with the use of its features and facilities.
+以下是您可以透過MediaTek Cloud Sandbox做的事情:
+•	定義專屬於您的穿帶式和物聯網產品原型以及個人化裝置
+•	隨時在裝置和MCS平台間推播各式數據點，例如GPS資料點，溫度，或是濕度。
+•	遠端控制您的裝置
+•	圖形化的資料點介面
+•	當資料點超過特定預設範圍時，發送通知。
+•	管理所有的裝置
+•	使用附屬的手機應用程式遠端控制裝置。
+•	建立產品原型，裝置，和蒐集來的資料報表
+•	空中（Over the air）硬件更新
+•	使用者權限管理
 
 
-![](images/content_img/content_img-02.jpg)
+為了讓您更通行無阻的使用MCS，我們提供了API，API使用說明文件，問與答，和一系列的教成讓您能夠快速上手我們所提供的功能和服務。
+
+
+![](https://github.com/Mediatek-Cloud/mcs-resources/blob/master/content/zh-TW/images/content02.jpg)
 
 
 
@@ -31,8 +31,8 @@ MediaTek Cloud Sandbox is currently in closed-beta.
 
 
 
-## **Prerequisites for Use**
-To make use of MediaTek Cloud Sandbox you must:
-1. [Register as a member of MediaTek Labs] (http://labs.mediatek.com/dpRegister/create)
-2. [Sign-in to the MediaTek Cloud Sandbox] (http://mcs.mediatek.io/v2console)
-3. Obtain a Device ID (API key) for each device added, for use in RESTful API calls
+## **事前準備**
+要使用MediaTek Cloud Sandbox，您必須先：
+1. [註冊成為MediaTek Labs使用者] (http://labs.mediatek.com/dpRegister/create)
+2. [登入MediaTek Cloud Sandbox] (http://mcs.mediatek.io/v2console)
+3. 取得裝置的DeviceId (API Key)來做API呼叫使用
