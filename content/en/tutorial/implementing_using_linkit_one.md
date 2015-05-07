@@ -18,21 +18,21 @@ To complete this test setup, you will need:
 There is no additional electrical component required to connect to the development board.
 
 
-### Step 1. Create a new Product with Switch-Type data channel
+### Step 1. Create a new Prototype with Switch-Type data channel
 
-a. After login, select "Development" at the navigation bar, click "Create" to create a new product
+a. After login, select "Development" at the navigation bar, click "Create" to create a new prototype
 
 ![](../images/screenshot/screen_shot-01.jpg)
 
-b. Fill in the detail information as per screen to give a basic profile of this product:
+b. Fill in the detail information as per screen to give a basic profile of this prototype:
 
 ![](../images/screenshot/screen_shot-08.jpg)
 
-c. Click "Detail" for the Product created
+c. Click "Detail" for the prototype created
 
 ![](../images/screenshot/screen_shot-09.jpg)
 
-d. In the Product Detail Page, select "Data Channel" TAB and click "Add" to create new Data Channel:
+d. In the prototype Detail Page, select "Data Channel" TAB and click "Add" to create new Data Channel:
 
 ![](../images/screenshot/screen_shot-10.jpg)
 
@@ -84,7 +84,7 @@ Here is the summary of the neccessary information we have obtained in interactin
 
 | Name | Value | Remark |
 | -- | -- | -- |
-| deviceId | Dsre1qRQ | Unique Identifier for this Test Device |
+| deviceId | Dsre1qRQ | Unique Identifier for this Test Device |roduct
 | deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device |
 | dataChannelId | LED | Data Channel Id for LED status |
 | dataChannelId | LED_CONTROL | Data Channel Id for LED control |

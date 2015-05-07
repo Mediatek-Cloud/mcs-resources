@@ -1,43 +1,34 @@
-# Mobile application
-
-Mobile Application
+# 手机应用程序
 
 
-Please click [here](http://mcs.mediatek.com/iot/mobile/android) or scan the QR code below to download the APK:
+您可以使用以下连结 [here](http://mcs.mediatek.com/iot/mobile/android) 或是QR码来下载我们提供的手机应用程序：
 
-(If you already installed previous version, you need to un-install the previous version and install the new version again.)
+(请注意，若您已经安装过旧的版本，且欲安装新版，请先移除旧版再行安装新版本)
 
 ![](../images/mobileapp_android.png)
 
-The mobile app currently offers for Android only.
+目前此手机应用成是只提供安卓（Android）版本。
 
 
+您必须确保您的安卓（Android）手机版本为v4.0以上，并且使用您的手机浏览器打开此下载页面。
 
-To install the app, you must have android v4.0 or above version, and open the above download link in your mobile browser
-
-**Please note: Android 5.x is currently not supported, we will have a refresh shortly. **
-
-Once installed at first launch you will see the screen below:
 
 ![](../images/Mobile/01.png)
 
 
-**Please note:**
-
-Do not use login using labs@mediatek.com option. This feature is still under developement. When you first sign-on with MCS using Labs@mediatek when accessing MCS website, in the background we have created your new account in MCS using the email address as your account ID. Therefore, the current fix is, you can go back to web site and  click "forgot password" and enter your email address, a forgot password reset email will send to your mailbox. You can then set a new password and come back and login by using your email and the new password. You can then be able to login to the Moble App in the same fashion.
-
-
-Once logged in, you will be able to see devices that are created and belongs to you
+一旦登入后，您将可以看到所有您建立的，或是有访问权限的装置。
 
 ![](../images/3.png)
 
-You can also click on any of your devices to see the device detail:
+您可以点击装置的详细资料按钮，来检视您的装置状态：
 
 ![](../images/4.png)
 
-For controller data channel you can fire commands, for data channel it shows the last datapoint. Mobile does not support for viewing history record in charts. For this current version, you will need to manually refresh the display by click on the upper right corner drop down menu and select "refresh"
+您可以对控制器类型的资料通道下达指令，以改变他的最新状态。目前手机无法和网页板一样显示图形化的资料。
 
-There is a Plus-in-circle icon allows you to add new devices. Please note, the new devices funcion is currently not available. For Smart Connection you can use this feature to add LinkIt Connect 7681. For full instruction please refer to [2.Tutorial 2.7 Implementing using Linkit Connect 7681 development board](https://mcs.mediatek.com/v2console/supports/implementing_using_mt7681_development_board)
+您可以对控制器类型的资料通道下达指令，以改变他的最新状态。目前手机无法和网页板一样显示图形化的资料。
+
+此外，在画面的左下方，您会看见一个加号，您可以点击此加号来新建测试装置。您亦可以使用Smart Connection功能来来接您的LinkIt Connect开发板。如欲查看更详细的LinkIt Connect使用方式，您可以参考以下教程[2.Tutorial 2.7 Implementing using Linkit Connect 7681 development board](https://mcs.mediatek.com/v2console/supports/implementing_using_mt7681_development_board)
 
 ![](../images/Mobile/04.png)
 
