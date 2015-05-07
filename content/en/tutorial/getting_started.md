@@ -27,7 +27,7 @@ In the future, when the prototype is release to the end user, the end user can m
 
 [Manage your profile]
 
-You can always change the setting of your user profile by clicking on your name on the upper right panel, and click Profile. You can change the password for your account and change the timezone by selecting your current country. All your prototypes and test devices will use the tomezone you have set here.
+You can always change the setting of your user profile by clicking on your name on the upper right panel, and click Profile. You can change the password for your account and change the timezone by selecting your current country. All your prototypes and test devices will use the timezone you have set here.
 
 
 

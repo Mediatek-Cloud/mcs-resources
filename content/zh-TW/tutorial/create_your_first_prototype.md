@@ -1,52 +1,46 @@
-# Create your first protptype
+# 建立您的第一個產品原型
 
 ![](../images/content_img/content_img-08.jpg)
 
-## How to create a prototype step by step
+## 建立產品原型逐步導引
 
 
-Step 1. Click Development on the top menu bar.
+步驟一，點擊畫面上方的開發連結.
 
-Step 2. Click Create button to create a new prototype.
+步驟二，點擊創建按鈕
 
 
 ![](../images/screenshot/screen_shot-01.jpg)
 
 
 
-Step 3. Enter the Prototype name, version, and select chip type, industry and Click Save button. Your Prototype is created.
+步驟三，輸入產品原型名稱，版本，並選擇硬體平台，產業，之後點擊儲存按鈕。
+您的產品原型已建立。
 
-Step 4. Click Detail button of the prototype just created.
-
+步驟四，點擊您剛建立的產品原型內的詳情按鈕。
 
 ![](../images/screenshot/screen_shot-02.jpg)
 
-
-After your prototype is created, you can start to set the data channel, notification, user privilege, create and view test devices in the prototype detail page.
-
+當您建立好產品原型後，您可以開始建立資料通到，通知，設定使用者權限，並且新增測試裝置了。
 
 
-Step 5. Click Add in the data channel tab.
+步驟五，點擊新增資料通道分頁中的新增按鈕。
 
 ![](../images/screenshot/screen_shot-03.jpg)
 
-
-
-Step 6. Select the Data Channel type. eg, Controller, Display, or Hybrid. And Click Add button.
+步驟六，選擇資料通道型態。例如控制器，顯示器，或是綜合型控制顯示器。之後點選新增按鈕。
 
 ![](../images/screenshot/screen_shot-04.jpg)
 
-
-Step 7. Enter the Data Channel name, Id, description and select Data type.
-
-
-Step 8. Click Save button. And now you can start create test devices for the prototype!
+步驟七，輸入資料通道名稱，資料通到ID，描述，並選擇資料型態。
+Step 8. 點集儲存按鈕。您現在可以為您的產品原型建立測試裝置了！
 
 
 ![](../images/screenshot/screen_shot-05.jpg)
 
 
-For more Data Channel and Data Type information and concept, please refer to the Key concept section for more detail.
+如果您需要了解更多關於資料通道或是資料型態的詳細信息，您可以參考資源中的核心概念章節。
+
 
 
 

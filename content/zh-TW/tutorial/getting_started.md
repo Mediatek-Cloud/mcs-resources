@@ -14,21 +14,23 @@
 
 [開發產品原型]
 
-The developer develop a prototype by first create a prototype in the Development console. A prototype may have several data channels which take different datapoint types.
+開發者能在開發頁面建立產品原型。產品原型內，會包括多個能傳替各種形態資料的資料通道。
 
-[Create Test Device]
+[建立測試裝置]
 
-AFter creating a prototype, the developer can create a test device to test and control his device. The developer can also use the my device console to visually view the simulated result for his prototype or to control the devices.
+當建立好產品原型後，開發者能建立測試裝置來和實際裝置作連結。開發者亦可以在我的裝置頁面瀏覽所有的測試裝置狀態，並且對裝置下達指令。
 
-[Managing deployed test devices]
+[管理已部屬的裝置]
 
-The developer can monitor all the test devices under each prototype in the Development console, the developer can also view all the test device in the My device console which he has the access for.
+開發者能夠在開發頁面中的測試裝置分頁看到所有在特定產品原型下的測試裝置。開發者亦可在我的裝置頁面中看到所有由他所建立的或是有訪問權限的裝置。
 
-In the future, when the prototype is release to the end user, the end user can manage and configure the device in the My device console as well to view the data, set notification, and share the device to other users.
+將來，當您的產品原型商轉後，消費者亦能登入平台，在我的裝置頁面中查看所以關於他的裝置的設定和狀態，，例如查看裝置蒐集的資料，設定通知，或是分享給其他使用者。
 
-[Manage your profile]
 
-You can always change the setting of your user profile by clicking on your name on the upper right panel, and click Profile. You can change the password for your account and change the timezone by selecting your current country. All your prototypes and test devices will use the tomezone you have set here.
+[配置您的用戶設定]
+
+您可以點擊畫面右上角您的名字的用戶設定來更改您的帳戶設置。您可以為您的帳戶更改密碼，並選擇您當前的國家改變時區。所有的原型和測試設備將會套用您在此處的時區設置。
+
 
 
 
