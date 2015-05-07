@@ -14,7 +14,7 @@ We provides tutorials with detail steps by steps and screen capture assists you 
 
 **4. Can I transfer or share my prototype and device to other users?**
 
-Controlling access rights for your prototypes and devices is made simple in the Development or My device User privilege section provided with MCS. You can choose what kind of access level each user may have, eg, Read, Update, or Delete.
+Controlling access rights for your prototypes and devices is made simple in the Development or My device User privilege section provided with MCS. You can choose what kind of access level each user may have, eg, viewer access to only read the data, or administrator access to co-develop.
 
 **5.Can I change my prototype and device's time zone?**
 
