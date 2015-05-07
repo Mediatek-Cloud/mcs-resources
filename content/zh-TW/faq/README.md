@@ -40,4 +40,4 @@
 我們建議您可以使用Chrome, Firefox, 或是Safari來瀏覽MCS網站。
 
 
-**問與達的內容沒有您想要問的問題嗎? 您可以直接寫信和我們聯絡[mail](mtkcloudsandbox@mediatek.com) **
+**問與答的內容沒有您想要問的問題嗎? 您可以直接寫信和我們聯絡[mail](mtkcloudsandbox@mediatek.com) **
