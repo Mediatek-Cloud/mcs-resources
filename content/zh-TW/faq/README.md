@@ -1,50 +1,43 @@
-# FAQ
+# 問與答
 
-**1. What kind of device can be connected to MSC platform?**
+**1. 哪些裝置可以和MCS平台相連?**
 
-Almost any device that has an internet connection can be connected to MCS, as long as it can work with RESTful or TCP Sockets.
+幾乎任何具有互聯網連接功能的設備都可以連接到MCS ，裝置須能夠支持RESTful或TCP Socket。
 
-**2. What can I develop with MCS?**
 
-The MCS developer platform and RESTful API allow you to quickly develop a prototype and connect the device to it to be utilized.
+**2.我能在MCS平台上做什麼呢?**
 
-**3. How do I get started with MCS?**
+您可以使用MCS開發者平台和RESTful API來快速開發您的產品原型，並連接裝置來實現您的應用。
 
-We provides tutorials with detail steps by steps and screen capture assists you to quickly develop your first prototype. Click on the Support on the left navigator and select the Tutorial you would like to start with.
+**3. 我該如何上手?**
 
-**4. Can I transfer or share my prototype and device to other users?**
+我們提供的詳細步驟和圖示的教程獲協助您快速開發您的第一個產品原型。您亦可點擊畫面右上方資源內的教程。
 
-Controlling access rights for your prototypes and devices is made simple in the Development or My device User privilege section provided with MCS. You can choose what kind of access level each user may have, eg, Read, Update, or Delete.
+**4. 我能分享我的產品原型或是裝置給其他使用者嗎?**
 
-**5.Can I change my prototype and device's time zone?**
+您可以在開發或是我的裝置頁面中的使用者權限分頁來設定您要賦予權限的使用者。若使用者只需讀取資料，您可以賦予瀏覽者權限；若使用者需要控制裝置狀態或是變更設定，您則可賦予系統管理者權限。
 
-Currently, the time-zone is bind to your user profile timezone. Youcan change your timezone by clicking your name on the right upper pannel, and select profile where you can change your timezone there.
 
-**6. Where can I download the mobile app? **
+**5.我能變更資料顯示時區嗎?**
 
-Please click [here](http://mcs.mediatek.com/iot/mobile/android) or scan the QR code below to download the APK:
+系統目前會偵測您的所在地時區。您亦可點擊畫面又上方的使用者配置頁面來更改您想要顯示的時區。
+
+**6. 我要去哪裡下載手機應用程式呢? **
+
+請點擊此連結[here](http://mcs.mediatek.com/iot/mobile/android) 或用此QR code來下載手機應用程式:
 
 ![](../images/mobileapp_android.png)
 
-The mobile app currently offers for Android only.
+目前只支援安卓（Android）手機。
 
-**7. I have an account with Labs@mediatek.com, can I single-sign-on to the MCS? **
+**7. 我已經有了MediaTek Labs帳號了，是否能用此帳號登入MCS平台呢? **
 
-Yes, you can. Simply click "Login with Labs@mediatek.com" you shall have access to our MCS without furhter signup forms.
-
-However, for our Mobile App the single-sign-on is still work-in-progress.
-Please see 8. for detail.
-
-**8. I am not able to Single-Sign-On using Labs@mediatek on the Mobile Application. **
-
-Unfortunately this feature is still under developement. When you first sign-on with MCS using Labs@mediatek, in the background we have created a new account in MCS using the email address as your account ID. Therefore, you can simply click "forgot password" and enter your email address, a forgot password reset email will send to your mailbox. You can then set a new password and come back and login by using your email and the new password. You can then be able to login to the Moble App in the same fashion.
+是的，您可以不須註冊，直接在登入頁面點擊"使用MediaTek Labs帳號登入"來登入MCS平台。
 
 
-**9. What browser does the MCS support?**
+**8. MCS支援哪些瀏覽器?**
 
-We strongly recommand you to use the Chrome, Safari, and Firefox to browse the MCS site.
-
-
+我們建議您可以使用Chrome, Firefox, 或是Safari來瀏覽MCS網站。
 
 
-**Don't have the answer you are looking for? send us a [mail](mtkcloudsandbox@mediatek.com) **
+**問與達的內容沒有您想要問的問題嗎? 您可以直接寫信和我們聯絡[mail](mtkcloudsandbox@mediatek.com) **
