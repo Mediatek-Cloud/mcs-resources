@@ -1,17 +1,18 @@
-# Getting started
+# 上手指南
 
-Here are the four steps to connect MediaTek Cloud Sandbox to your development and product lifecycle:
+透過以下的四個步驟，您能快速使用MediaTek Cloud Sandbox開發您的物聯網專案:
 
-1. Develop Prototype
-2. Create Test Device
-3. Managing deployed test devices
-4. Manage your Profile
+
+1. 開發產品原型
+2. 創建測試裝置
+3. 管理已部署的測試裝置
+4. 配置您的用戶設定
 
 
 
 ![](../images/content_img/content_img-07.jpg)
 
-[Develop Prototype]
+[開發產品原型]
 
 The developer develop a prototype by first create a prototype in the Development console. A prototype may have several data channels which take different datapoint types.
 

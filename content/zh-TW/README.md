@@ -1,4 +1,4 @@
-# **MediaTek Cloud Sandbox introduction**
+# **MediaTek Cloud Sandbox 介紹**
 
 MediaTek Cloud Sandbox(MCS)提供您打造準備商業化的穿戴式和物聯網裝置，所需要的數據和裝置管理服務。它支持您專心的開發產品原型，不必煩惱建立一套自己的雲端基礎設施。
 
