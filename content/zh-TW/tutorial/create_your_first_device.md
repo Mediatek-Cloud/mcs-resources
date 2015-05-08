@@ -1,44 +1,39 @@
-# Create your first device
+# 創建您的第一個測試裝置
 
 ![](../images/content_img/content_img-09.jpg)
 
-## How to create a test device step by step
+## 創建測試裝置逐步導引
 
-[Prerequisites] Create your first prototype
+[事前準備] 您必須先完成開發產品原型
 
-Step 1. Go to the Prototype Detail Page you just created.
+步驟一,點選產品原型的詳情按鈕。
 
-Step 2. Click Create Test Device button on the upper right.
+步驟二，點選畫面上方的創建測試裝置按鈕。
 
-Step 3. There will be a create test device dialog asking for Device name and description. Enter the device name and description and click OK button.
+步驟三，再跳出來的創建測試裝置對話窗中，輸入測試裝置名稱和描述，然後點擊確定按鈕。
 
-Step 4. You will get a message of creating test device successfully. You can go to the test device detail directly.
+步驟四，您將會看到創建成功的訊息。您可以直接點擊詳細資料按鈕連
+接至測試裝置詳情頁面。
 
-Step 5. Or you can also check the test device in **Test Device** tab too.
+步驟五，您亦可於產品原型頁面中的**測試裝置分頁**內查看屬於此產品原型的測試裝置。
 
 ![](../images/screenshot/screen_shot-06.jpg)
 
-
-Please be noted that the data channels in the test device are inherited and synchronized with the prototype. If you update the data channel in the prototype, the data channels in the test device will change accordingly.
-
-
-## How to get Device ID and Key
+請注意，您測試裝置中所有的資料通道都是由產品原型繼承而來的。如果您在產品原型中更新了資料通道，此更新亦會同時反映至所有屬於此產品原型的測試裝置。
 
 
+## 如何取得裝置的DeviceId和DeviceKey
 
-After creating the test device, the developer can view and control the device to make sure its functionality before release the prototype in the future.
+當您創建好測試裝置後，您可以查看或是控制您的裝置來確保在正式商轉前產品的功能穩定性。
 
-You will find the Device Id in two places:
+您能夠在兩個地方找到測試裝置的DeviceId和DeviceKey：
 
-1. **Test Device** tab in prototype detail page.
+1. 產品原型頁面中的**測試裝置分頁**。
+2. 測試裝置詳細資料頁面中。
 
-2. Test device detail page under My device.
-
-
-![](../images/screenshot/screen_shot-07.jpg)
-
+![](../images/screenshot/screen_ot-07.jpg)
 
 
-The device ID and device key will be needed when calling our API to access this device. In the test device detail page, click on the blue font Id and key to copy the entire string to your copy board.
+測試裝置的DeviceId和DeviceKey是用來呼叫API時必須使用到的參數。在測試裝置詳細資料頁面中，您會看到藍色字體的DeviceId和DeviceKey編號，單擊藍色編號，將會立即複製至您的剪貼布。
 
 

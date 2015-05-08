@@ -1,13 +1,13 @@
-# Manage your profile
+# 配置您的用戶設定
 
-The user can always change the setting of the user profile by clicking on his own name on the upper right panel to edit.
+用戶可以通過點擊畫面右上方自己的名字來編輯修改您的用戶配置文件。
 
-The user can also change your password and the time zone here.
+用戶也可以在這裡更改您的密碼和時區。
 
 
 ![](../images/Profile.JPG)
 
-Your device data channel time-series chart will be based on your time-zone setting.
+您裝置內的資料通道的時間序列圖將根據你的時區設置。
 
 
 
