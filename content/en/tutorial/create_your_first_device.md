@@ -22,7 +22,7 @@ Step 5. Or you can also check the test device in **Test Device** tab too.
 Please be noted that the data channels in the test device are inherited and synchronized with the prototype. If you update the data channel in the prototype, the data channels in the test device will change accordingly.
 
 
-## How to get Device ID and Key
+## How to get deviceId and deviceKey
 
 
 
@@ -39,6 +39,6 @@ You will find the Device Id in two places:
 
 
 
-The device ID and device key will be needed when calling our API to access this device. In the test device detail page, click on the blue font Id and key to copy the entire string to your copy board.
+The deviceId and devicekey will be needed when calling our API to access this device. In the test device detail page, click on the blue font Id and key to copy the entire string to your copy board.
 
 
