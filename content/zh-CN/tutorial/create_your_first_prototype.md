@@ -1,7 +1,7 @@
 # 建立您的第一个产品原型
 
 
-![](../images/content_img/content_img-08.jpg)
+![](../images/getting started/img_getting_started_02.png)
 
 ## 建立产品原型逐步导引
 
