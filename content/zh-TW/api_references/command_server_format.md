@@ -7,7 +7,8 @@
 裝置會從command server接收到以下格式的指令，並且使用者可以自行寫一段解析程式來處理收到的指令。
 
 以下為一段範例解析程式用來擷取一個PWM資料型態指令中的資料通道ID，資料值，以及頻率。
-https://gist.github.com/iamblue/29705021bd77c9be6004
+
+https://gist.github.com/MTK-mcs/e8ee0ad19d5f5755b232
 
 
 ## 事前準備

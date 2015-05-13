@@ -1,25 +1,25 @@
-# Implementing using LinkIt Connect 7681 development board
+# LinkIt Connect 7681 实际操作
 
-This is a guide to setting up your LinkIt Connect 7681 development board to connect to MediaTek Cloud Sandbox (MCS).
+下面是一个简单的指南来快速设置您的LinkIt Connect 7681 开发板（MT 7681 ）连接到MediaTek Cloud Sandbox。
 
-## Scenario
-The scenario for this setup is to enable your LinkIt Connect 7681 development board to connect to MCS and receive remote control commands from the MCS console or mobile app.
+## 情境
+此教程的情境为，将您的LinkIt Connect 7681开发板与MCS平台相连，并可从MCS网页端或手机端接收或传送指令。
 
 
-## Setup requirements
+## 设置准备
 
-To complete this setup tutorial, you’ll need:
+为了要完成此设置，您必须先：
 
-1. USB power source connected to the development board
-2. A Wi-Fi connection available to the development board
-3. MCS mobile app. It’s currently available for Android. Please scan the QR code below to download the APK:
+1. 您的开发板必须有micro-USB电源连接。
+2. 您的开发板必须有Wifi连结。
+3. MCS 手机应用程式。此程是目前只支援安卓(Android)系统。请使用此QR code下载最新的手机安装档：
 
 ![](../images/mobileapp_android.png)
 
-No additional components need to be connected to the development board.
+此外，您不需要额外的电子组件，就可以连接到开发板了。
 
-## MT7681 controllers list and their corresponding MCS data channel IDs
-The MT7681 chipset provides 5 GPIO pins that can implement PWM and 1 UART port. Below is a list of the pins and their corresponding data channel IDs to use on MCS.
+## MT7681　控制器清单以及相对的MCS资料通道ID
+MT7681晶片组提供了五组GPIO针脚，您亦可使用PWM资料型态和一组UART阜。以下是MT7681的针脚和对应的资料通道ID。
 
 |  | GPIO | PWM | UART |
 | -- | -- | -- | -- |
@@ -30,162 +30,163 @@ The MT7681 chipset provides 5 GPIO pins that can implement PWM and 1 UART port. 
 | 04 | GPIO_04 | PWM_04 |
 
 
-## Step-by-step
+## 逐步指引
 
-### Step 1. Create a LinkIt Connect 7681 Product with GPIO, PWM and UART data channels
+### 步骤一　建立有GPIO，PWM，以及UART资料通道的产品原型。
 
-Step 1.1 On the left hand navigator, click **Development**.
+a. 点击画面上方的**开发**
 
-Step 1.2 In the **Prototype List**, click **Create**, to create a new prototype.
+b. 在产品原型清单页面中，点击**创建**按钮来新增一个新的产品原型。
 
 ![](../images/screenshot/screen_shot-01.jpg)
 
 
-Step 1.3 Enter the prototype name, prototype version, and select your industry. In the **Chip** dropdown box select **MT7681** and click **Save**. Your Prototype is created.
+c. 输入产品原型名称，版本，并选择产业别。硬体平台请选择**MT7681**，之后点击储存案。您的产品原型已建立。
 
 ![](../images/screenshot/screen_shot-22.jpg)
 
 
-Step 1.4 Now you're going to add GPIO controllers to your prototype. Below the listing of the prototype you created, click **Detail** .
+d. 现在您已准备好替您的产品原型新增一组控制器类型的GPIO资料通道了。点击您刚新建好的产品原型下方的**详情**按钮。
 
 ![](../images/screenshot/screen_shot-23.jpg)
 
 
-Step 1.5 In **Data channel**, click **Add**.
+e. 点击**资料通道分页**，并点击**新增**按钮。
 
 ![](../images/screenshot/screen_shot-03.jpg)
 
 
 
 
-Step 1.6 To add a controller, in the **Add Data Channel** popup under the **Controller** data channel, click **Add**.
+f. 请点击**控制器**下方的**新增**按钮来新增一个控制器类型的资料通道。
 
 ![](../images/screenshot/screen_shot-13.jpg)
 
 
-Step 1.7 For MT7681 products, the Data Channel Ids follow a defined format — GPIO_nn, where nn is the pin number starting from 00. Create the channel for the first pin, using "GPIO_00". Enter the data channel name ("GPIO_00"), Id ("GPIO_00") and add a description, then select **GPIO** as the data type. Click **Save** to create the Data Channel.
+g. MT7681类型的产品原型，资料通道ID的格是如以下定义- GPIO_nn, nn代表从00开始的脚号。替第一个脚号建立资料通道，您可使用"GPIO_00"。输入资料通道名称(GPIO_00)(GPIO_00)，输入描述，并且选择**GPIO**资料型态。点击**储存**来新增您的资料通道。
 
 ![](../images/Mobile/connect_9.jpg)
 
 
 
-Step 1.8 To add more GPIO pin controllers, repeat Step 1.5 to 1.7 using the appropriate data channel Id for each pin (GPIO_01 to GPIO_04).
+h. 增加更多的GPIO脚号控制器，重复步骤e，f，和g。并注意需使用正确的资料通道ID(GPIO_01 to GPIO_04)。
 
-Step 1.9 Now add the PWM controllers. Repeat Step 1.5 and 1.6 to open the **Add Data Channel** popup. Enter "PWM_00" as the data channel Id and in **Data Channel Type** select **PWM**. Click **Save** to create the Data Channel.
+i. 现在您已经准备好控制器类型的PWM资料通道。重复步骤e和g来打开新增资料通道视窗。输入"PWM_00"为您的资料通道ID，并选择PWM为您的资料通道类型。点击**储存**来新增您的资料通道。
 
 ![](../images/Mobile/connect_10.jpg)
 
 
-Step 1.10 To add more PWM controllers, repeat Step 1.9 using the appropriate data channel Id for each pin (PMW_01 to PMW_04).
+j. 增加更多的PWM脚号控制器，重复步骤i。并注意需使用正确的资料通道ID(PMW_01 to PMW_04)。
 
-Step 1.11 Another data channel type that MT7681 Products support is UART. To add a UART data channel, open the **Add Data Channel** popup as described in Step 1.5 and create a new Controller as described in step 1.6. Enter the Data Channel Id as "UART" and in the **Data Channel type** select **String** or **Hex** depending on your needs. Click **Save** to create the Data Channel.
+k. 另一个您需要替MT7681产品原型所新增的资料通道为UART。要新增UART资料通道，重复步骤e和f，新增一个控制器类型的资料通道。输入资料通道名称为"UART"并根据您的需求选择**字串**或是**十六进位数**资料型态。点击**储存**来新增您的资料通道。
 
 ![](../images/screenshot/screen_shot-26.jpg)
 
 
-You’ve created all the controller Data Channel types that LinkIt Connect 7681 products support. Please continue to Step 2 to obtain your prototype Id and Key from MCS.
+您现在已建立好所有LinkIt Connect 7681产品原型教程所支持的资料通道。请继续至步骤二。
 
 
-### Step 2. Connect your development board to Wi-Fi
-Step 2.1 Open the MCS mobile app, sign in with your account and select the prototype you created in step 1.
+### 步骤二　将您的开发板连上无线网路
 
-Step 2.2 After signing in, on the bottom right of the screen tap the add icon.
+a. 使用手机打开MCS手机应用程式，使用您的帐号密码登入。
+
+b. 登入后，点击画面又下方的新增按钮。
 
 ![](../images/Mobile/connect_1.jpg)
 
-Step 2.3 At the bottom of the screen, click **Smart Connection**. This provides an implementation of MediaTek Smart Connection, for more details see the MediaTek LinkIt Connect 7681 Developer’s Guide.
+c. 点击画面下方的**Smart Connection**按钮。此功能是使用MediaTek Smart Connection，如欲知更多细节，请参考ediaTek LinkIt Connect 7681开发者手册。
 
 ![](../images/Mobile/connect_2.png)
 
-Step 2.4 Enter the SSID and password of the Wi-Fi AP and click **Start**. The SSID should be automatically populated with the Wi-Fi access points the smartphone is connected to.
+d. 输入无线网路的SSID和密码，之后点击**开始**。正常情况下，SSID会自动带入您手机所连线至的无线网路。
 
 ![](../images/Mobile/connect_3.png)
 
-Step 2.5 Wait for a few seconds, if Smart Connection was successfully, you should see your device on the list.
+e. 等待几秒后，如果Smart Connection成功，您将会看到您的装置在列表上。
 
-Tap **Cancel** to exit the add Smart Connection pop-up.
+点击**取消**来退出Smart Connection 视窗。
 
-Now you can choose to register the device using the MCS mobile app (Step 3A) or to create a test device using the web console to complete registration. (Step 3B).
+现在，您可以透过MCS手机应用程式(步骤3A)，或是MCS网页版(步骤3B)来注册您的测试装置。
 
 
-### Step 3A. Activate a LinkIt Connect 7681 device from the MCS mobile app
+### 步骤3A　使用MCS手机应用程式来住测LinkIt Connect 7681 测试装置
 
-Step 3A.1 Open the MCS mobile app and sign in. After signing in, on the bottom right of the screen, tap the add icon.
+a. 打开MCS手机应用程式并登入。登入后，点击画面又下方的新增按钮。
 
 ![](../images/Mobile/connect_1.jpg)
 
 
-Step 3A.2 If your device’s Wi-Fi settings were provisioned by Smart Connection successfully, it should be shown on the list. You can see the device you'd like to rgister, tap the plus icon to add.
+b. 如果您的装置已透过无线网路Smart Connection成功，您可以在清单中看见您的实体装置。点击装置右方的加号，来新增测试装置。
 
 ![](../images/Mobile/connect_4.png)
 
-Step 3A.3 A list of prototypes will be shown on the screen after you add the device. Select the prototype you'd like to link with the device you just connected and tap **Next** button.
+c. 之后您将会看到产品原型列表。选择您要新增测试装置的产品原型，然后点击**下一步**按钮。
 
 ![](../images/Mobile/connect_5.png)
 
-Step 3A.4 Enter the device name and description and tap **Save**.
+d. 输入测试装置名称和描述，然后点击**储存**按钮。
 
 ![](../images/Mobile/connect_6.png)
 
 
-After the device has registered, the device list will refresh and your device should now be on the list and the data channel you've created.
+当测试装置注册后，您即可在测试装置清单中看见您刚才所建立的测试装置以及测试装置内的资料通道。
 
 ![](../images/Mobile/connect_7.png)
 
-### Step 3B. Create a test device using the web console
-Step 3B.1 In the MCS web console, in the navigation bar on the top, click **Development** and then click on the **Detail** button of the prototype (the one you created in Step 1) that you'd like to register a device for.
+### 步骤 3B　使用MCS网页版建立测试装置
+a. 在MCS网页版中，点击画面上方的**开发**，之后点击您在步骤一所建立的产品原型的详情按钮来新增一个测试装置。
 
 ![](../images/screenshot/screen_shot-02.jpg)
 
 
-Step 3B.2 To the top right of the page, click **Create Test Device**.
+b. 点击画面右上方的**创建测试装置**按钮。
 
 ![](../images/screenshot/screen_shot-27.jpg)
 
-Step 3B.3 Enter the **device name** and **description** you like and click **OK** button. A pop-up will display after your test device has been successfully created. Click **Go to detail** button.
+c. 输入**测试装置名称**和**描述**，之后点击**确定**按钮。您将会看到一个跳出视窗显示您已成功建立测试装置。点击**详细资讯**来查看测试装置详情。
 
 ![](../images/screenshot/screen_shot-18.jpg)
 
 
-Step 3B.4 You should be able to find the deviceId and deviceKey of the test device you just created.
+d. 在测试装置页面中，您可以查看此测试装置的deviceId和deviceKey。
 
 ![](../images/screenshot/screen_shot-28.jpg)
 
 
-Step 3B.5 Now you have to manually flash the id and key into MT7681. Open a terminal that is connected to the development board and enter the following command:
+e. 现在您可以手动将此测试装置的deviceId写入您的实体装置。打开任意终端机，并输入已下指令：
 
 ```
 AT#FLASH -s0x180e9 -c[deviceId]
 ```
-Then enter the following command to flash the deviceKey:
+接下来，将deviceKey写入您的实体装置
 ```
 AT#FLASH -s0x180f1 -c[deviceKey]
 ```
-Then enter the following commands to set the status to activated:
+之后，输入以下指令来注册此装置：
 ```
 AT#FLASH -s0x18101 –v1
 AT#FLASH -s0x18102 –v0
 ```
-Your device should now be automatically connected to MCS.
+您的实体装置已和MCS平台相连了。
 
-### Step 4A Control your device from the mobile app
+### 步骤4A　透过手机应用程式来控制您的装置
 
-Step 4A.1 Open the MCS mobile app and sign in. Tap on the device you'd like to control.
+a. 打开MCS手机应用程式并登入。点击您欲操作的测试装置。
 
 ![](../images/Mobile/connect_7.png)
 
 
-Step4A.2 You’ll see a list of controllers that were added in step 1. Switch a GPIO controller from high to low: the LED on development board should turn on. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
+b. 您将会看到您在步骤一所建立的资料通道。将GPIO控制器状态从低更改至高：您将会看到开发板上的LED灯打开。
 
 ![](../images/Mobile/connect_8.png)
 
-### Step 4B Control your device from the MCS web console
+### 步骤4B　透过MCS网页版来控制装置
 
-Step 4B.1 On the navigation bar click **My Devices**, then below the device that has just been created and registered click **Details**.
+a. 点击网页版上方的**我的装置**，在您新增病注册的装置下方的，点击**详情**。
 
 ![](../images/screenshot/screen_shot-29.jpg)
 
-Step 4B.2 Now you can see the device’s data channels and control their states using the MCS platform. To change the state for a particular data channel, drag that channel’s control bar. Switch a GPIO controller from high to low: the LED on development board should turn on. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
+b. 您可以看到装置内的资料通道，并可透过MCS传送指令。您可以透过托拉控制器来更改装置状态。将GPIO控制器状态从低更改至高：您将会看到开发板上的LED灯打开。
 
 
 ![](../images/screenshot/screen_shot-30.jpg)

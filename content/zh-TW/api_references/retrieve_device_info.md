@@ -11,7 +11,7 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId
 
 ```
 
-## 動做
+## 動作
 HTTPs GET
 
 ## 參數
@@ -124,7 +124,7 @@ https://api.mediatek.com/mcs/v2/devices/d1234567890,d1234567891
 ```
 
 
-請求內容
+回覆內容
 
 ```
 {

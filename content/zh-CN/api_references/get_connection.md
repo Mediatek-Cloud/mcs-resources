@@ -1,23 +1,23 @@
-# Get connection
+# 取得连结
 
 
-## Description
+## 描述
 
-Use **HTTPs GET** to  set up connections between device and command server.
+使用**HTTPs GET** 来设置装置和MCS Command server之间的连线
 
 
-## Request URL
+## 请求 URL
 
-To set up connections between device and command server:
+设置装置和MCS Command server之间的连线:
 
 ```
 https://api.mediatek.com/mcs/v2/devices/:deviceId/connections
 
 ```
 
-To set up TCP long connection between the device and the command server, the device will need to first send a REST API `getConnection` to request a set of ip and port to build a TCP connection. The MCS will respond with its IP address and a port to the device.
+设定装置和Command server之间的TCP长连结，装置首先需要呼叫RESTful API `getConnection`来取得一组ip位置以及连接阜来建立TCP长连结。 MCS将会回覆ip地址和连接阜资讯给装置。
 
-Command server respond format:
+Command server 回覆格式:
 
 ```
 {
@@ -27,18 +27,19 @@ Command server respond format:
 
 ```
 
-Once get the server ip and port to connect, the device need to send a heartbeat to the command server to be identified. The device also need to sent heartbeats to the server every 120 seconds to stay connected, or the server will disconnect the device.
+当装置收到覆ip地址和连接阜后，装置会发出一个heartbeat给command server来验证。装置也会每120秒发送一次heartbeat给command server来确保连线。
 
-Heartbeat format:
+
+Heartbeat 格式:
 
 ```
     deviceId, deviceKey, timestamp
 
 ```
 
-After the TCP long connecion is built, the user can give command to the device via the MSC platform.
+当TCP长连结建立后，您将可以透过MCS平台对装置下指令。
 
-The command Format:
+指令格式:
 ```
 {
     deviceId, deviceKey, timestamp, dataChnId, commandValue
@@ -46,11 +47,11 @@ The command Format:
 
 ```
 
-## Action
+## 动做
 HTTPs GET
 
 
-## Parameters
+## 参数
 ### Header
 
 
@@ -60,54 +61,54 @@ Content-Type:`application/json` or `text/csvt`
 deviceKey: `device_key_here`
 
 
-### Return format
-The return format can be in either JSON or CSV format
+### 回覆格式
+回覆格式可以有JSON或是CSV两种
 
 JSON:
 
-when the request for resource ends with *connections*
+请求url结尾为 *connections*
 
 
 CSV:
 
-when the reqeust for resouce ends with *connections.csv*
+请求url结尾为 *connections.csv*
 
 
-## Response
+## 回覆
 
-### Response Code
+### 回覆代码
 200
 
-### Response Header
-For JSON response:
+### 回覆 Header
+JSON格式:
 ```
 Content-Type:`application/json`
 ```
-For CSV response:
+CSV格式:
 ```
 Content-Type: `text/csvt`
 ```
 
-### Response Body
+### 回覆内容
 
-***Data Format: JSON***
+***回覆格式: JSON***
 
-The response body will construct in JSON format with the following fields:
+JSON格式的回覆内容会包含以下几个栏位：
 
-| Field Name | Type | Description|
+| 栏位名称 | 格式 |描述|
 | --- | --- | --- | --- |
-| ip | array | the command server ip |
-|port|Integer|the command server port for the device to connect|
+| ip | array | command server ip位置|
+|port|Integer|command server 提供给装置连接的连接阜|
 
 
-**Example:**
+**范例：**
 
-Request URL
+请求  URL
 ```
 https://api.mediatek.com/mcs/v2/devices/a1234567890/connections
 ```
 
-Response Body
+请求内容
 
 ```
 {
@@ -118,16 +119,17 @@ Response Body
 ```
 
 
-## Error Response
+## 错误回覆
 
-When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
+当错误发生时，回覆代码为非200之其他代码。回覆内容为JSON格式并会包括以下资讯：
 
-| Field Name | Type |Description|
+| 栏位名称 | 格式 |描述|
 | --- | --- | --- |
-| code | Integer | Error Code |
-| description | String | Error Description |
+| code | Integer | 错误代码 |
+| url | String | API错误页面url|
+| description | String | 错误描述 |
 
-**Example:**
+**范例:**
 
 ```
 {

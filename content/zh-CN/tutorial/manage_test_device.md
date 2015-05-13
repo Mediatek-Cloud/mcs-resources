@@ -1,28 +1,28 @@
-# Manage test device
+# 管理已部署的测试装置
 
 ![](../images/content_img/content_img-10.jpg)
 
-## How to manage deplyed test devices
+## 如何管理已部署的测试装置
 
-The developer can manage the test devices in the Prototype detail page, or in the device detail page under My device. In the future, when the device is released, the end user can view and configure his devices in the My Device console.
+您可以在产品原型页面的测试装置分页，或是我的装置页面中查看和管理您所有的测试装置。将来，当您的产品原型商转后，消费者亦能登入平台，在我的装置页面中查看所以关于他的装置的设定和状态。
 
-### From Developer's view point
+### 从开发者的观点
 
-In the Development or My device page, the developer can do several configurations:
+如果您是开发者，您可在开发或是我的装置页面做以下操作：
 
-1.	View Data Channel stautus
-2.	Set Notification
-3.	Set User privileges
-4.	Check Firmware information and update information
-5.	Manage test device
+1.	开发或是查看资料通道
+2.	设定通知
+3.	设定使用者权限
+4.	管理韧体和对任体做更新
+5.	管理测试装置
 
 
-### From End User's view point
-In the future, when the prtotyp is released to the market, the end user can view and configure his device under My device by register the end user account on the MCS platform to access his devices.
+### 从使用者观点
+将来，当您的产品原型商转后，消费者亦能登入平台，在我的装置页面中查看所以关于他的装置的设定和状态。 。
 
-The user can manage his devices by:
+如果您是使用者，您可在我的装置页面做以下操作：
 
-1.	View Data Channel stautus
-2.	Set Notification
-3.	Set User privileges
-4.	Check Firmware information and upgrade
+1.	查看资料通道
+2.	设定通知
+3.	设定使用者权限
+4.	更新韧体

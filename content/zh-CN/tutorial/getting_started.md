@@ -1,33 +1,31 @@
-# Getting started
+# 入门指南
 
-Here are the four steps to connect MediaTek Cloud Sandbox to your development and product lifecycle:
+透过以下的四个步骤，您能快速使用MediaTek Cloud Sandbox开发您的物联网专案:
 
-1. Develop Prototype
-2. Create Test Device
-3. Managing deployed test devices
-4. Manage your Profile
+1. 开发产品原型
+2. 创建测试装置
+3. 管理已部署的测试装置
+4. 配置您的用户设定
 
 
 
 ![](../images/content_img/content_img-07.jpg)
 
-[Develop Prototype]
+[开发产品原型]
 
-The developer develop a prototype by first create a prototype in the Development console. A prototype may have several data channels which take different datapoint types.
+开发者能在开发页面建立产品原型。产品原型内，会包括多个能传替各种形态资料的资料通道。
 
-[Create Test Device]
+[建立测试装置]
 
-AFter creating a prototype, the developer can create a test device to test and control his device. The developer can also use the my device console to visually view the simulated result for his prototype or to control the devices.
+当建立好产品原型后，开发者能建立测试装置来和实际装置作连结。开发者亦可以在我的装置页面浏览所有的测试装置状态，并且对装置下达指令。
 
-[Managing deployed test devices]
+[管理已部属的装置]
 
-The developer can monitor all the test devices under each prototype in the Development console, the developer can also view all the test device in the My device console which he has the access for.
+开发者能够在开发页面中的测试装置分页看到所有在特定产品原型下的测试装置。开发者亦可在我的装置页面中看到所有由他所建立的或是有访问权限的装置。
 
-In the future, when the prototype is release to the end user, the end user can manage and configure the device in the My device console as well to view the data, set notification, and share the device to other users.
+将来，当您的产品原型商转后，消费者亦能登入平台，在我的装置页面中查看所以关于他的装置的设定和状态，，例如查看装置搜集的资料，设定通知，或是分享给其他使用者。
 
-[Manage your profile]
+[配置您的用户设定]
 
-You can always change the setting of your user profile by clicking on your name on the upper right panel, and click Profile. You can change the password for your account and change the timezone by selecting your current country. All your prototypes and test devices will use the tomezone you have set here.
-
-
+您可以点击画面右上角您的名字的用户设定来更改您的帐户设置。您可以为您的帐户更改密码，并选择您当前的国家改变时区。所有的原型和测试设备将会套用您在此处的时区设置。
 

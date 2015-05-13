@@ -13,7 +13,7 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints
 
 API請求默認值為json格式，如欲使用csv格式，請在API請求URL最後端加上`.csv`。
 
-## 動做
+## 動作
 HTTPs POST
 
 ## 參數
@@ -45,7 +45,7 @@ Content-Type:`text/csv`
 ```
 
 
-### 內文
+### 內容
 
 #### CSV 格式:
 

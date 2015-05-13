@@ -1,125 +1,121 @@
-# Implementing using Linkit ONE
+# LinkIt ONE 实际操作
 
-Here is a simple guide to quickly setup your Linkit One development board (Aster 2502) to quickly connect to MediaTek Cloud Sandbox
+下面是一个简单的指南来快速设置您的LinkIt One 开发板（Aster 2502 ）连接到MediaTek Cloud Sandbox。
 
-## Scenario
-The scenario for this setup is to create a test device on MCS representiong your Linkit one board, and to upload Arduino code allowing this board to push datapoint representing the state of LED light at D13 to MCS using RESTful API, while MCS is able to remote control the state of this LED light using TCP Socket.
+## 情境
+此教程的情境为，替您的LinkIt One开发板建立一个测试装置，替您的板子上传一段Arduino code，且使用RESTful API来使您的开发板能上传位于D13的LED灯光状态至MCS，同时也可以使用MCS透过TCP Socket来远程控制LED状态。
 
 ![](../images/content_img/content_img-11.jpg)
 
 
-## Setup requirement:
+## 设置准备
 
-To complete this test setup, you will need:
+为了要完成此设置，您必须先：
 
-1. Battery Pack to power up the micro-USB of the development board
-2. A Wifi access point made available to the development board
+1. 您的开发板必须有电源连接，电源可来自电池或是micro-USB。
+2. 您的开发板必须有Wifi连结。
 
-There is no additional electrical component required to connect to the development board.
+此外，您不需要额外的电子组件，就可以连接到开发板了。
 
 
-### Step 1. Create a new Product with Switch-Type data channel
+### 步骤一　替您的产品原型新增一个开关类型的资料通道
 
-a. After login, select "Development" at the navigation bar, click "Create" to create a new product
+a. 登入平台后，点选上方的"开发"，并且点击新增按钮，来新增一个新的产品原型。
 
 ![](../images/screenshot/screen_shot-01.jpg)
 
-b. Fill in the detail information as per screen to give a basic profile of this product:
+b. 请跟着画面只是填入产品原型的基本资讯：
 
 ![](../images/screenshot/screen_shot-08.jpg)
 
-c. Click "Detail" for the Product created
+c. 点击您刚建立的产品原型下方的"详情"按钮
 
 ![](../images/screenshot/screen_shot-09.jpg)
 
-d. In the Product Detail Page, select "Data Channel" TAB and click "Add" to create new Data Channel:
+d. 在产品原型详情页面中，点击"资料通道"分页，并且点击新增按钮来新增一个资料通道：
 
 ![](../images/screenshot/screen_shot-10.jpg)
 
 
 
-We are going to create two Data Channel for this tutorial, one is a Display Data Channel to reflect the status of the LED light on the board; one is a Controller Data Channel that issues command to the board to switch the LED light:
+在此教程中，我们需要建立两格资料通道，一个是显示器类型的，用来表示开发板上LED灯光的状态；另一个则为控制类型的，用来对您的开发板LED灯光状态下指令:
 
-e. Select "Display" Data Channel and key in the following information
+e. 点击在"显示器"下方的新增按钮，并输入已下资讯：
 
 ![](../images/screenshot/screen_shot-11.jpg)
 
 ![](../images/screenshot/screen_shot-12.jpg)
 
-Please take note of the Data Channel Id, this is the unique identifier when calling API later in the tutorial.
+请注意，您在此输入的资料通道Id是独特不可重复的，之后将会在呼叫API时使用到。
 
-f. Repeat the same step in e, except select "Controller" Data Channel and key in the following information
+f. 重复步骤e，但是把显示器改成"控制器"，并且输入以下资讯：
 
 ![](../images/screenshot/screen_shot-13.jpg)
 
 ![](../images/screenshot/screen_shot-14.jpg)
 
-Please take note of the Data Channel Id, this is the unique identifier when calling API later in the tutorial.
+请注意，您在此输入的资料通道Id是独特不可重复的，之后将会在呼叫API时使用到。
 
-g. Once completed, you should be able to see two data channel created as below:
+g. 完成后，您将会有以下的资料通道：
 
 ![](../images/screenshot/screen_shot-15.jpg)
 
-### Step 2. Create Test Device
+### 步骤二　建立测试装置
 
-a. Click "Create Test Device" on the right upper corner of the page
+a. 点击画面右上方的"创建测试装置"。
 
 ![](../images/screenshot/screen_shot-16.jpg)
 
-b. Fill in the name and description of the test device:
+b. 输入测试装置名称和描述：
 
 ![](../images/screenshot/screen_shot-17.jpg)
 
-c. After Test device is created, click "Go to detail" to open the created device detail page:
+c. 测试装置建立后，点击"详细资讯"连结至测试装置详情页面:
 
 ![](../images/screenshot/screen_shot-18.jpg)
 
 
 ![](../images/screenshot/screen_shot-19.jpg)
 
-Please take note of the deviceId and deviceKey for calling API later in the tutorial.
+请注意，deviceId和deviceKey是独特不可重复的，之后将会在呼叫API时使用到。
 
-### Step 3. Obtain Device ID, Device Key, Data Channel ID
-Here is the summary of the neccessary information we have obtained in interacting with this test device:
+### 步骤三　取得DeviceId，DeviceKey，以及资料通道ID
+下方的摘要讯息为我们与测试装置沟通时所需要的必要栏位：
 
-| Name | Value | Remark |
+| 名称 | 值 | 备注 |
 | -- | -- | -- |
-| deviceId | Dsre1qRQ | Unique Identifier for this Test Device |
-| deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device |
-| dataChannelId | LED | Data Channel Id for LED status |
-| dataChannelId | LED_CONTROL | Data Channel Id for LED control |
+| deviceId | Dsre1qRQ | 测试装置的独特识别码 |
+| deviceKey | DFbtsNWg4AuLZ30v  | 测试装置的API Key |
+| dataChannelId | LED | 此教程中所需显示器类型LED灯号的资料通道识别码 |
+| dataChannelId | LED_CONTROL | 此教程中所需控制器类型LED灯号的资料通道识别码 |
 
-Please note, the deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
+请注意，此教程中图片所显示的deviceId 和deviceKey会和您实际操作时取得的不一样，请使用您所取得的值。
 
-### Step 4. Code the development board
-The program flow logics are as follows:
+### 步骤四　替您的开发板编程
+操作流程如下：
 
-a. Calls RESTful API:
-GET api.mediatek.com/mcs/v2/devices/{deviceId}/connections.csv
-To obtain the response value for Socket Server IP and Port
+a. 呼叫RESTful API： GET api.mediatek.com/mcs/v2/devices/{deviceId}/connections.csv 来取得Socket Server IP 和连接阜的值。
 
-b. Initiate TCP connection to the socket server
+b. 和Socket server建立TCP connection
 
-c. Uploads D13 (LED) status to MCS by RESTful API once every 5 seconds:
-POST api.mediatek.com/mcs/v2/devices/{deviceId}/datapoints.csv
+c. 呼叫RESTful API: POST api.mediatek.com/mcs/v2/devices/{deviceId}/datapoints.csv 每五秒上传一次位于开发板D13位置的LED灯状态
 
-d. listens for switching commands issued by MCS via TCP connection
+d. 并且保持TCP connection连线随时可以接收来自MCS的指令
 
-e. refreshes heartbeat for TCP connection every 90 seconds
+e. 每90秒更新一次TCP connection的heartbeat连线
 
-Sample Arduino C source code please click [here](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/source_code/linkit_sample_ino.ino)
+请点击此连结来下载Arduino范例程式 [here](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/source_code/linkit_sample_ino.ino)
 
-Please note:
-This source code requires HttpClient that can be download
+请注意: 使用此范例程式需要HttpClient，您可使用此连结下载
 [here](https://github.com/amcewen/HttpClient/releases)
 
-### Step 5. Turn on the board and see it in action!
+### 步骤五　让您的开发板开始动作吧！
 
-After the code is loaded to the board and make sure Wireless Access Point is made available to the device, with the Serial output confirming it is live and connected:
+当您将范例程式上传至开发板后，请确保开发板有Wifi网路连线，并且有定时传送讯号显示装置已连接并正在待命中：
 
 ![](../images/LinkIt-one-tutorial/13-Test-Device.JPG)
 
-You can now goto the device page and be able to click the LED controller, as you click the LED to ON state, the LED on the development board will lid, and moments later the state of the LED data channel will indicate an ON state. As you click the LED to OFF state, the LED on the board will not lid, and moments later the state of the LED data channel will indicate an OFF state.
+您现在可以去装置详情页面，并看到您刚建立的LED控制器，当您将控制器状态设成开，开发板上的LED灯即会打开，同时，您将可以看到您所建立的LED显示器的状态也改变为开了。反之亦然，若控制技设为关，灯即会关闭，并显示器状态改为关。
 
 ![](../images/screenshot/screen_shot-20.jpg)
 
@@ -127,7 +123,7 @@ You can now goto the device page and be able to click the LED controller, as you
 
 ![](../images/LinkIt-one-tutorial/16-Test-Device.JPG)
 
-Congratulations! You have completed this tutorial!
+恭喜！您已完成此教程！
 
 
 

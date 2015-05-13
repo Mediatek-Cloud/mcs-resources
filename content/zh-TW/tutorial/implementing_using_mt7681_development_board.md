@@ -1,6 +1,6 @@
 # LinkIt Connect 7681 實際操作
 
-下面是一個簡單的指南來快速設置您的LinkIt Connect 7681 開發板（MT 7681 ）連接到MediaTek Cloud Sandbox。
+下面是一個簡單的指南來快速設置您的LinkIt Connect 7681 開發板（MT 7681）連接到MediaTek Cloud Sandbox。
 
 ## 情境
 
@@ -87,7 +87,6 @@ k. 另一個您需要替MT7681產品原型所新增的資料通道為UART。要�
 ### 步驟二　將您的開發板連上無線網路
 
 a. 使用手機打開MCS手機應用程式，使用您的帳號密碼登入。
-Step 2.1 Open the MCS mobile app, sign in with your account and select the prototype you created in step 1.
 
 b. 登入後，點擊畫面又下方的新增按鈕。
 
@@ -166,7 +165,7 @@ AT#FLASH -s0x180f1 -c[deviceKey]
 AT#FLASH -s0x18101 –v1
 AT#FLASH -s0x18102 –v0
 ```
-您的時體裝置已和MCS平台相連了。
+您的實體裝置已和MCS平台相連了。
 
 
 ### 步驟4A　透過手機應用程式來控制您的裝置

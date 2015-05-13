@@ -1,44 +1,44 @@
-# Create your first device
+# 创建您的第一个测试装置
 
 ![](../images/content_img/content_img-09.jpg)
 
-## How to create a test device step by step
+## 创建测试装置逐步导引
 
-[Prerequisites] Create your first prototype
+[事前准备] 您必须先完成开发产品原型
 
-Step 1. Go to the Prototype Detail Page you just created.
+步骤一，点选产品原型的详情按钮。
 
-Step 2. Click Create Test Device button on the upper right.
+步骤二，点选画面上方的创建测试装置按钮。
 
-Step 3. There will be a create test device dialog asking for Device name and description. Enter the device name and description and click OK button.
+步骤三，再跳出来的创建测试装置对话窗中，输入测试装置名称和描述，然后点击确定按钮。
 
-Step 4. You will get a message of creating test device successfully. You can go to the test device detail directly.
+步骤四，您将会看到创建成功的讯息。您可以直接点击详细资料按钮连接至测试装置详情页面。
 
-Step 5. Or you can also check the test device in **Test Device** tab too.
+步骤五，您亦可于产品原型页面中的测试装置分页内查看属于此产品原型的测试装置。
 
 ![](../images/screenshot/screen_shot-06.jpg)
 
 
-Please be noted that the data channels in the test device are inherited and synchronized with the prototype. If you update the data channel in the prototype, the data channels in the test device will change accordingly.
+请注意，您测试装置中所有的资料通道都是由产品原型继承而来的。如果您在产品原型中更新了资料通道，此更新亦会同时反映至所有属于此产品原型的测试装置。
 
 
-## How to get Device ID and Key
+## 如何取得装置的DeviceId和DeviceKey
 
 
 
-After creating the test device, the developer can view and control the device to make sure its functionality before release the prototype in the future.
+当您创建好测试装置后，您可以查看或是控制您的装置来确保在正式商转前产品的功能稳定性。
 
-You will find the Device Id in two places:
+您能够在两个地方找到测试装置的DeviceId和DeviceKey：
 
-1. **Test Device** tab in prototype detail page.
+1. 产品原型页面中的**测试装置分页**。
 
-2. Test device detail page under My device.
+2. 测试装置详细资料页面中。
 
 
 ![](../images/screenshot/screen_shot-07.jpg)
 
 
 
-The device ID and device key will be needed when calling our API to access this device. In the test device detail page, click on the blue font Id and key to copy the entire string to your copy board.
+测试装置的DeviceId和DeviceKey是用来呼叫API时必须使用到的参数。在测试装置详细资料页面中，您会看到蓝色字体的DeviceId和DeviceKey编号，单击蓝色编号，将会立即复制至您的剪贴布。
 
 

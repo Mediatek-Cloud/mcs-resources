@@ -1,13 +1,13 @@
-# Retrieve datapoint
+# 读取资料点
 
-## Description
+## 描述
 
-Use **HTTPs GET** to retrieve data point values of a device
+使用**HTTPs GET** 来取得装置回传的资料点
 
 
-## Request URL
+## 请求 URL
 
-To retrieve the data points for specific data channel:
+读取特定资料通道中的资料点：
 
 ```
 https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints?start=:startTime&end=:endTime&limit=:limit&offset=:offset
@@ -15,50 +15,92 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/da
 ```
 
 
-The API will by default assume the json format, if you want to use the csv, please add`.csv` after the datapoints.
+API请求默认值为json格式，如欲使用csv格式，请在API请求URL最后端加上`.csv`。
 
-The API enables you to retrieve four kinds of data:
+使用此API，您可以选择您要的资料范围：
 
-* To get the last data point:
-
-
-
-    `https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints`
+* 只读取最后一个资料点：
 
 
-* To get the data points within a time frame:
+* 读取一段时间范围内的资料点：
 
 
-    Use the `?start=:startTime&end=:endTime` at the end.
+    在请求url尾端加上`?start=:startTime&end=:endTime`
 
 
-* To limit the number of data points that you will get (eg, if you enter the limit=5, you will get the first 5 data points.):
+* 限制您要读取的资料点数目(举例来说, 如果您输入:limit=5, 则您会读取前五笔资料点):
 
 
-    Use the `?limit=:limit&offset=:offset`at the end.
+    在请求url尾端加上 `?offset=:offset`
 
 
-* To retrieve the data points from a specific point(eg, if you enter offset=5, you will not get the first 5 datapoints and start with 6th one):
+* 读取从某一个资料点受开始的资料(举例来说, 如果您输入offset=5, 则您会读取第五笔资料点之后的所有资料点):
 
 
     Use the `?offset=:offset` at the end.
 
 
 
-You can choose to combine those conditions.
+您亦可以将以上四种方式混合使用。
+
+使用**HTTPs GET** 来取得装置回传的资料点
 
 
+## 请求 URL
+
+读取特定资料通道中的资料点：
+API请求默认值为json格式，如欲使用csv格式，请在API请求URL最后端加上`.csv`。
+使用此API，您可以选择您要的资料范围：
+
+* 只读取最后一个资料点：
+* 读取一段时间范围内的资料点：
+    在请求url尾端加上`?start=:startTime&end=:endTime`
 
 
+* 限制您要读取的资料点数目(举例来说, 如果您输入:limit=5, 则您会读取前五笔资料点):
 
 
-**Maximum number of returned data points for each data channel: 1000**
+    在请求url尾端加上 `?limit=:limit`
 
 
-## Action
+* 读取从某一个资料点受开始的资料(举例来说, 如果您输入offset=5, 则您会读取第五笔资料点之后的所有资料点):
+
+
+    在请求url尾端加上 `?offset=:offset`
+
+
+您亦可以将以上四种方式混合使用。
+
+### 查询字串
+下面几种查询方式亦可以使用
+
+| 栏位名称 | 格式 | 是否必填 |描述|
+| --- | --- | --- | --- |
+| start_time | Number | Optional | 查询起始时间 |
+| end_time | Number | Optional | 查询中止时间 |
+| limit | Number | Optional | 要回传的资料点数目( 默认值= 1 ) |
+| offset | Number | Optional | 第几笔开始的资料点 |
+
+
+| end_time | Number | Optional | 查询中止时间 |
+| limit | Number | Optional | 要回传的资料点数目( 默认值= 1 ) |
+| offset | Number | Optional | 第几笔开始的资料点 |
+
+**请注意：**
+
+1.
+使用回传最后*n (n=数目)* 的资料点时，将不能指定*开始时间* 与*结束时间*时。
+
+2.　当您指定*start_time* 和*end_time*时，若还是有使用设定回传资料点数目，此时，此回传资料点数目的查询将会被忽略。
+
+
+**每次请求最多只能读取1000笔资料点**
+
+
+## 动作
 HTTPs GET
 
-## Parameters
+## 参数
 
 ### Header
 
@@ -67,94 +109,75 @@ Device Key
 deviceKey: `device_key_here`
 ```
 
-### Return format
-The return format can be in either JSON or CSV format
+### 回覆格式
+您能选择回覆JSON或是CSV格式
 
 JSON:
 
-when the request for resource ends with *datapoints*
+请求url结尾为 *datapoints*
 
 
 CSV:
 
-when the reqeust for resouce ends with *datapoints.csv*
-
-
-### Querystring
-Following fields should be constructed and appended to the end of the URL:
-
-
-| Field Name | Type | Required |Description|
-| --- | --- | --- | --- |
-| start_time | Number | Optional | Start Timestamp of the query period |
-| end_time | Number | Optional | End Timestamp of the query period |
-| limit | Number | Optional | number of the data points to be returned ( Default = 1 ) |
-| offset | Number | Optional | offset of the data points being retrieved |
-
-**Note:**
-
-1.
-Returns last *n (n=size)* data points when both *start_time* and *end_time* are not provided
-
-2.
-The parameters *start_time* and *end_time* have higher priority than *size*, i.e., when all three parameters are input, the parameter *size* will be ignored.
+请求url结尾为 *datapoints.csv*
 
 
 
-## Response
+## 回覆
 
-### Response Code
+### 回覆代码
 200
 
-### Response Header
-For JSON response:
+### 回覆 Header
+JSON 格式:
 ```
 Content-Type:`application/json`
 ```
-For CSV response:
+CSV 格式:
 ```
 Content-Type: `text/csv`
 ```
 
-### Response Body
+### 回覆内容
 
-***Data Format: JSON***
+***资料格式: JSON***
 
-The response body will construct in JSON format with the following fields:
+若使用JSON回覆格式，则会包含以下栏位：
 
-| Field Name | Type | Description|
+| 栏位名称 | 格式 | 描述|
 | --- | --- | --- | --- |
-| dataChannels | Object Array | Device Channels that contain the result data points |
+| dataChannels | Object Array | 含有资料点的资料通道 |
 
-**Detailed Object Fields**
+**资料详情**
 
-**dataChannel**
+**资料通道**
 
-| Field Name | Type | Description|
+| 栏位名称 | 格式 | 描述|
 | --- | --- | --- | --- |
-| dataChnId | Number | Data Channel ID |
-| isOverflow | Bool | Is the number of queried data points more than maximum number|
-| dataPoints | Object Array | Data Points |
+| dataChnId | Number | 资料通道 ID |
+| isOverflow | Bool | 要求的资料点是否超过数目限制|
+| dataPoints | Object Array | 资料点 |
 
 
-**dataPoint**
+**资料点**
 
-| Field Name | Type | Description|
+| 栏位名称 | 格式 | 描述|
 | --- | --- | --- | --- |
-| createdAt | Number | Unix timestamp of the data point|
-| values | Object | Data Point Value |
+| createdAt | Number | 以Unix timestamp 格式纪录的资料点建立时间|
+| values | Object | 资料点的值 |
 
-Please note, the unix time is in milliseconds, for human readable time conversion, please refer to http://www.epochconverter.com/
+请注意，我们在此使用的unix timestamp miniseconds时间值，若须转换成可读格式，您可以使用以下连结：
+http://www.epochconverter.com/
 
-**Example:**
+**范例：**
 
-Request URL
+请求 URL
 ```
 https://api.mediatek.com/mcs/v2/devices/a1234567890/datachannels/10001/datapoints?start=946684800&end=946784800
 
 ```
 
-Response Body in json
+JSON格式的回覆内容：
 
 ```
 {
@@ -176,7 +199,7 @@ Response Body in json
 }
 ```
 
-Response Body in csv
+CSV格式的回覆内容：
 
 ```
 test_data_channel,94668480,100
@@ -184,17 +207,29 @@ test_data_channel,94668480,100
 
 
 
-## Error Response
+CSV格式的回覆内容：
 
-When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
+## 错误回覆
 
-| Field Name | Type |Description|
+当错误发生时，回覆代码为非200之其他代码。回覆内容为JSON格式并会包括以下资讯：
+
+CSV格式的回覆内容：
+
+## 错误回覆
+
+当错误发生时，回覆代码为非200之其他代码。回覆内容为JSON格式并会包括以下资讯：
+
+
+| 栏位名称 | 格式 |描述|
 | --- | --- | --- |
-| code | Integer | Error Code |
-| url | String | url to API Error detail page |
-| description | String | Error Description |
+| code | Integer | 错误代码 |
+| url | String | API错误页面url|
+| description | String | 错误描述 |
 
-**Example:**
+
+
+**范例：**
+
 
 ```
 {

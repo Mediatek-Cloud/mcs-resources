@@ -1,27 +1,27 @@
-# Setting user privilege
+# 设定使用者权限
 
 
-MediaTek Cloud Sandbox(MCS) allows the user to configure the access level for different prototypes and test devices. The user can find this setting in the **User Privivlege** tab in the Prototype detail or the Device detail pages.
+在MediaTek Cloud Sandbox(MCS)平台上，您可以为您的产品原型或是装置设定不同的使用者权限。您可以在产品原型或是装置详细叶面中的使用者权限分页中做权限设定。
 
 
-MCS provides three roles:
+MCS　提供了三种使用者权限：
 
-1. The **owner**, with the access to add, update, read, and delete a prototype or a test device.
-2. The **administrator**, with the accesss right to add, update, and read a prototype or a test device.
-2. The **viewer**, with only the access right to view a prototype or a test device.
+1. **拥有者权限**, 拥有新增，更新，检视，删除特定产品原型或是测试装置的权限。
+2. **管理员权限**, 拥有新增，更新，检视特定产品原型或是测试装置的权限。
+2. **浏览者权限**, 只拥有检视特定产品原型或是测试装置的权限。
 
 
-As a prototype or device owner, or an administrator, you can add other registed MCS user to access the prototype or the test device by click on the privilege tab in the Prototype or Device detail pages.
+如果您的身分权限是拥有者或是管理员，您可以为特定产品原型或是测试装置增加或是删除使用者权限。
 
 ![](../images/UP/up01.JPG)
 
 
-Click Add user to add other MCS registered user to access the prototype.
+在产品原型详细资料或装置详细资料页面中，点选使用者权限分页，点击新增使用者。
 
 ![](../images/UP/up02.JPG)
 
-Enter the user email and select the rols as administrator or viewer, and click Save button.
+输入使用者电子邮件地址来搜寻MCS使用者，并选择管理员或是浏览者权限。之后点击储存按钮。
 
 
 
-Please be noted that the test device will not inherit the user privilege setting from its parent prototype. The test device will take the users with the owner and administrator access to have the owner access to the test device. The owner can then modified the user privilege of the test device separately from the parent prototype.
+请注意，测试装置并不会从他所属的产品原型中继承使用者权限。只有在产品原型的拥有者或是管理员有权限建立测试装置，并且建立此测试装置的使用者，将成为此测试装置的拥有者。此测试装置的拥有者，能替此测试装置新增其他使用者权限。

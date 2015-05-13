@@ -1,20 +1,24 @@
-# Command server format
-The command server format of each data type is defined here. It is the format that the command server sent to the device to process.
+# Command server 格式
 
-**The timestamp is using the UNIX timestamp format.
+此章节将会说明所有command server的格式，此格式为command server发送指令置装置的格式。
 
-The device will get the data as the following format from the command server, and the user can write a parser in the device to parse the data needed.
+**此处使用UNIX timestamp时间格式。
 
-Here is an example of how to parse and extract the datachannelId, value, and period of a PWM.
+装置会从command server接收到以下格式的指令，并且使用者可以自行写一段解析程式来处理收到的指令。
 
-https://gist.github.com/iamblue/29705021bd77c9be6004
+以下为一段范例解析程式用来撷取一个PWM资料型态指令中的资料通道ID，资料值，以及频率。
+
+https://gist.github.com/MTK-mcs/e8ee0ad19d5f5755b232
 
 
-## Prerequsite
-Before the device can get the command from command server, you need to first connect the device to MCS.
+## 事前准备
 
-Call the RESTful API: GET https://api.mediatek.com/mcs/v2/devices/{deviceId}/connections to obtain the response value for Socket Server IP and Port.
-Command server respond format:
+在装置能接收MCS指令前，装置须先和MCS平台做相连。
+
+
+呼叫RESTful API: GET https://api.mediatek.com/mcs/v2/devices/{deviceId}/connections to 来取得一组ip位置以及连接阜来建立连结。
+
+Command server 回覆格式:
 
 ```
 {
@@ -23,63 +27,83 @@ Command server respond format:
 }
 
 ```
-Open a tcp connection to the given ip and port and send a heartbeat message.
+来打开任意一个tcp connection，并且传送一个heartbeat讯息。
 
-Heartbeat format:
+Heartbeat 格式:
 
 ```
     deviceId, deviceKey, timestamp
 
 ```
-After the TCP long connecion is built, the user can give command to the device via the MSC platform.
+A当TCP长连结建立后，您将可以开始使用MCS平台来对您的装置下指令。
 
-The command Format:
+指令的形式如下：
 ```
     deviceId, deviceKey, timestamp, dataChnId, commandValue
 
 ```
 
 
-## Command formats for each data channel type
+##  各种资料通道的command格式
 
 
-### Switch
+### 开关
 
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{0 or 1}
 
 ```
-0 stands for OFF, and 1 stands for ON.
+0代表关，1代表开。
 
-For example:
+范例：
 
 switch01,, 1
 
-To turn the switch01 to on state, and do not give the timestamp.
+代表将switch01资料通道的状态改为开，并且由系统自动带入时间。
 
-### Category
+### 分类
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{Key Value}
 ```
-The Key value will correspond to the Key name that you’ve set.
+翻譯自中文
 
-### Integer
+### 开关
+
+```
+deviceId,deviceKey,timestamp,dataChannelId,{0 or 1}
+
+```
+0代表关，1代表开。
+
+范例：
+
+switch01,, 1
+
+代表将switch01资料通道的状态改为开，并且由系统自动带入时间。
+
+### 分类
+```
+deviceId,deviceKey,timestamp,dataChannelId,{Key Value}
+```
+Key value 的值将会对应至您所设定的Key name。
+
+### 整数
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{Integer}
 ```
 
-### Float
+### 浮点数
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{Float}
 ```
 
-### Hex
+### 十六进位数
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{Hex value}
 ```
-Hex is referred to hexadecimal value which only takes value from A-D and 0-9.
+十六进位数的值为A-F以及0-9。
 
-### String
+### 字串
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{string}
 ```
@@ -89,17 +113,17 @@ deviceId,deviceKey,timestamp,dataChannelId,{string}
 deviceId,deviceKey,timestamp,dataChannelId,{latitude},{longitude},{altitude}
 ```
 
-The range of latitude is from -90 to 90. 0 to 90 stands for North and 0 to -90 stands for South.
+纬度范围从 -90 至 90。 0 至 90 代表北纬，0 至 -90 代表南纬。
 
-The range of longitude is from -180 to 180. 0 to 180 stands for East and 0 to -180 stands for West.
+經度範圍從 -180 至 180。 0 至 180 代表東經，0 至 -180 代表西經。
 
-The range of altitude is from 0 to 20000 in meter.
+高度範圍從 0 至 20000公尺。
 
 ### GPIO
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{0 ot 1}
 ```
-0 stands for Low, and 1 stands for High.
+0代表低，1代表高。
 
 ### PWM
 ```

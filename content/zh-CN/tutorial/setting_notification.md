@@ -1,21 +1,21 @@
-# Using notification
+# 使用通知
 
-The user can set the notification for a data channel when its value pass the limit of the defined range. The user will get email notification and the GCM notification using the mobile application.Please be noted that MCS currently only support notification for integer and float data channel type.
+您可以设定通知，当特定资料通道回传的值超过您所设定的范围时，系统将会发出电子邮件或是GCM通知。请注意，目前MCS的通知只限定使用整数或是浮点数类型的资料型态。
 
 
-On the Prototype detail page, click on the **Notification** tab.
+当您点入产品原型页面后，点选**通知分页**。
 
 ![](../images/notification/not1.jpg)
 
-CLick on the **Add notification** to enter the notification name and select the data channel you would like to set alert for. The rules include greater than, lower then, and equal to.
+点击**新增通知**来新增您的通知,您能设定通知的名称以及通知的条件,力如大于，小于，或是等于您所设定的值。
 
 ![](../images/notification/not2.jpg)
 
-Click Add button to save.
+点击新增按钮来储存。
 
-To have more than one data channel rules in a notification rule, all data channel rules need to be satisfied to trigger the notification(AND logic). The user can create separate notification rules to have the OR loigic.
+您可以在同一个通知条件中，设定多个资料通道。此时，多个资料通道条件都要符合(且逻辑)，系统才会发出通知。若您想要单一条件符合(或逻辑)就收到通知，您就须设定多个通知条件。
 
 ![](../images/notification/not3.jpg)
 
-The test device will inherit all the notification rules from its parent prototype. The notification in the device cannot be editted and it will by default in on state.
+您在产品原型中设定的通知条件，会被产品原型下所有的测试装置所继承。在测试装置中，您无法更改通知的条件，所有条件变更，都必须回到产品原型设定中更改。
 

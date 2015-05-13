@@ -1,4 +1,4 @@
-# Linkit ONE 實際操作
+# LinkIt ONE 實際操作
 
 下面是一個簡單的指南來快速設置您的LinkIt One 開發板（Aster 2502 ）連接到MediaTek Cloud Sandbox。
 
@@ -62,7 +62,7 @@ g. 完成後，您將會有以下的資料通道：
 
 ![](../images/screenshot/screen_shot-15.jpg)
 
-### 步驟二　建力測試裝置
+### 步驟二　建立測試裝置
 
 a. 點擊畫面右上方的"創建測試裝置"
 
@@ -120,7 +120,7 @@ e. 每90秒更新一次TCP connection的heartbeat連線
 使用此範例程式需要HttpClient，您可使用此連結下載
 [here](https://github.com/amcewen/HttpClient/releases)
 
-### 步驟五　讓您的開發板開始動做吧！
+### 步驟五　讓您的開發板開始動作吧！
 
 當您將範例程式上傳至開發板後，請確保開發板有Wifi網路連線，並且有定時傳送訊號顯示裝置已連接並正在待命中：
 

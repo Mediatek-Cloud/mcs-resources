@@ -1,35 +1,33 @@
-# Managing firmware
+# 管理固件
 
-MediaTek Clous Sandbox(MCS) enables the user to manage the firmware and provides firmware Over-The-Air (FOTA) update to the device.
+您可以使用MediaTek Clous Sandbox(MCS)来管理您的固件，并且透过空中更新将固件更新至您的装置。
 
-To use the Firmware service, go to the **Firmware tab** in the Prototype detail page. You can see there is a Default Firmware indicating your current firmware and you can set it as other uploaded firmwares' prerequisite to be upraded.
+您可以在产品原型页面中的**固件分页**来使用我们的固件服务。
 
-Click **Add firmware** to first upload a new firmware,
+点击**新增固件**来上传一个新的固件吧。
 
 ![](../images/firmware/fw01.JPG)
 
-Enter the Firmware name, version, and select a firmware file to upload and click the Upload button.
+请输入固件名称，版本，并且选择您要上传的固件档案，然后点击上传按钮。
 
-Next, select the compatible firmware of the fimrware you just uploaded.
+之后，选择能相容此固件更新的前置韧体。
 
 ![](../images/firmware/fw02.jpg)
 
-Choose the prerequisite firmware that are compatible for this firmware you've uploaded.
+当您在选择能和此固件更新相容的前置固件时，您会发现，系统的预设值是所有的固件都会被选取。您可以更改此设定，只要勾选您想要能相容的固件即可。只有您在此勾选的前置固件，能够和您所上传的新固件相容。
 
-The default option is all firmware selected or you can specify your own selection by click on the limited firmware. Only the firmware listed in the prerequisite list can be upgraded using the firmware you've uploaded.
-
-If you do not want to further proceed to directly pushing the firmware upgrade to test devices, you can stop here by clikc on the Done button, or to click on the Next button to push the firmware to devices.
+如果您暂时不想将您所上传的固件更新直接更新置装置，您可以点击完成按钮退出，或是您可以点击下一步按钮来选择您要更新此固件的装置。
 
 ![](../images/firmware/fw03.JPG)
 
-After selecting the devices you would like to upgrade, click the Push botton. You can also do this step by click on the first icon next to the firmware.
+当您选取好要更新此固件的装置后，点击推拨按钮。您亦可以在固件分页中，点击某一固件的清单中右边第一个图标来做固件推播。
 
 ![](../images/firmware/fw04.JPG)
 
-The user can also upgrade the firmware of a device in the Device detail page. In the Device detail page, click on the frimware tab, and you will see the current using firmware and the firmware that the device can be upgraded to.
+您亦可以于装置详情页面中来做固件更新服务。您只需要再装置详情页面中，点击固件分页，您将会看到此装置当时所使用的固件，和您和此装置目前固件相容的其他固件更新。
 
 ![](../images/firmware/fw05.JPG)
 
-Click on the **Upgrade** button next to the firmware that you want the device to be upgraded.
+点击您欲更新的固件后方的**升级**按钮来更新。
 
 

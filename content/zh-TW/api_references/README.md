@@ -20,7 +20,7 @@ https://api.mediatek.com/v2/devices/{deviceId}/retrieveDataPoints
 
 ```
 
-在上方的飯立中，您可以看到deviceId在URL中被定義了。在任何的API 請求中，不是以URL形式傳送的參數，都必須定義以JSON或是CSV格式包裝。您必須定義一個`content -Type` header 為`application/json` 或是 `text/csv`。
+在上方的範例中，您可以看到deviceId在URL中被定義了。在任何的API 請求中，不是以URL形式傳送的參數，都必須定義以JSON或是CSV格式包裝。您必須定義一個`content -Type` header 為`application/json` 或是 `text/csv`。
 
 
 ## 客戶端錯誤

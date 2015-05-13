@@ -11,7 +11,7 @@ https://api.mediatek.com/mcs/v2/devices
 
 ```
 
-## 動做
+## 動作
 HTTPs POST
 
 ## 參數
