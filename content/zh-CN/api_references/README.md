@@ -27,7 +27,7 @@ Mediatek Cloud Sandbox (MCS) 使用标准HTTP状态来表达API请求的成功�
 
 **200 OK** - 请求成功。
 
-**201 Created **- 请求成功，并且新资源已建立。
+**201 Created ** - 请求成功，并且新资源已建立。
 
 **202 Accepted** - 请求成功，但尚未完成。
 

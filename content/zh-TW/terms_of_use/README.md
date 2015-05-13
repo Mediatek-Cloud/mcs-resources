@@ -1,20 +1,21 @@
-# Terms of use
+# 使用者條款
 
 
-MediaTek Cloud Sandbox provides your essential cloud services to help building your applications in the world of Internet of Things. Your registration and use of our service and website is subject to the agreement of terms of use.
+MediaTek Cloud Sandbox提供您不可或缺的雲端服務，幫助您開發物聯網應用。當您接受使用者條款後，方能註冊和使用我們的網站服務。
 
-MediaTek Cloud Sandbox is provided with some limitations and terms of use that complies with legal notice (http://www.mediatek.com/en/legal-notice/) and privacy policy (http://www.mediatek.com/en/privacy-policy/) . MediaTek Cloud Sandbox reserves the right for change the terms of use over time.
+使用MediaTek Cloud Sandbox將會有一些符合法律的使用通知的條款（http://www.mediatek.com/en/legal-notice/）和隱私政策（http://www.mediatek.com/en/privacy-policy/）。MediaTek Cloud Sandbox保留隨時變更使用者條款的權利。
 
-**Basic Terms**
 
-MediaTek Cloud Sandbox provides website, API services and other services made available by MediaTek Cloud Sandbox to enable user to build applications for the internet of Things. MediaTek Cloud Sandbox enables users to collect, store, share data from devices and its managements. By using the service, you are also accepting the terms of use and agree to be bound by the following terms and conditions of use:
+**基本條款**
 
-1. You agree to accept legal notice (http://www.mediatek.com/en/legal-notice/) and privacy policy (http://www.mediatek.com/en/privacy-policy/).
+MediaTek Cloud Sandbox提供網站服務，API服務，和其他由MediaTek Cloud Sandbox提供幫助用戶建立物聯網應用等服務。MediaTek Cloud Sandbox用戶能夠從設備及其管理層來收集，存儲，共享數據。通過使用該服務，您也接受使用者條款並同意以下條款和使用條件的約束：
 
-2. MediaTek reserves the right to update or change the Terms of Use at any time without notice by (i) revising Terms of Use document on or accessible through web site (ii) Sending information regarding the Terms of Use amendments as form of email.
+1. 您同意接受法律聲明（http://www.mediatek.com/en/legal-notice/）和隱私政策（http://www.mediatek.com/en/privacy-policy/）。
+2. 聯發科技保留以下權利（i）隨時變更或修改使用者條款，並不另行通知（二）發送電子郵件通知使用者條款的更新。
 
-3. New features that extend or enhance the Service, including the release of new tools and resources, shall be subject to the Terms of Use. Continued use of the Service after any of these changes shall indicate your consent to these changes.
 
-4. You as the user is responsible for regularly reviewing the Terms of Use for any update or changes. MediaTek reserves the right to modify or discontinue the Service for any reason or no reason with or without notice to you. MediaTek shall not be liable to you or any third party should MediaTek exercise its right to revise these Terms of Use or modify or discontinue the Service.
+3. 使用任何新的功能，擴展或增強的服務，其中包括新的工具和資源的釋放，都應遵守我們的使用者條款。這些更改後若您繼續使用本服務表示您同意這些因新功能而產生的變化。
 
-5. Violation of any of the Terms of Use will result in the termination of you account or the Service. Upon termination of your account you will no longer be able to use the Service and any of your data on the Service may be deleted by MediaTek.
+4. 您作為用戶將有責任定期審查任何的使用者條款更新或修改。聯發科技保留隨時以任何理由或沒有理由修改或中斷服務，並有可能不提供任何通知。對您或任何第三方，聯發科技概不負責修改使用者條款或中斷服務。
+
+5. 違反任何使用者條款將導致您的帳戶或終止服務。在您的帳戶終止後，您將不再能夠使用服務，聯發科技將保留將您所有的數據刪除的權力。
