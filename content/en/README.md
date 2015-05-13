@@ -4,7 +4,7 @@ MediaTek Cloud Sandbox(MCS) offers you the data and device management services c
 
 Using a RESTful API you collect data from your devices, which you can view in a powerful web-based dashboard that offers a range of display and graphing options. Then you can control your Wearables and IoT devices by issuing commands from the dashboard. In addition, a complementary smartphone app lets you review collected data and control your devices from anywhere.
 
-![](images/introduction/img_introduction_01.jpg)
+![](images/introduction/img_introduction_01.png)
 
 MediaTek Cloud Sandbox lets you:
 
@@ -22,7 +22,7 @@ MediaTek Cloud Sandbox lets you:
 To support the use of these features, MediaTek Cloud Sandbox provides an API sandbox, API reference, FAQ and set of tutorials to ensure you can quickly get up to speed with the use of its features and facilities.
 
 
-![](images/content_img/img_introduction_02.jpg)
+![](images/content_img/img_introduction_02.png)
 
 
 
