@@ -22,7 +22,7 @@ MediaTek Cloud Sandbox lets you:
 To support the use of these features, MediaTek Cloud Sandbox provides an API sandbox, API reference, FAQ and set of tutorials to ensure you can quickly get up to speed with the use of its features and facilities.
 
 
-![](images/content_img/img_introduction_02.png)
+![](images/introduction/img_introduction_02.png)
 
 
 
