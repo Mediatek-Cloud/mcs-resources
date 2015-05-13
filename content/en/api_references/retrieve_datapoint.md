@@ -35,7 +35,7 @@ The API enables you to retrieve four kinds of data:
 * To limit the number of data points that you will get (eg, if you enter the limit=5, you will get the first 5 data points.):
 
 
-    Use the `?limit=:limit&offset=:offset`at the end.
+    Use the `?limit=:limit`at the end.
 
 
 * To retrieve the data points from a specific point(eg, if you enter offset=5, you will not get the first 5 datapoints and start with 6th one):
@@ -46,6 +46,25 @@ The API enables you to retrieve four kinds of data:
 
 
 You can choose to combine those conditions.
+
+### Query string
+Following fields should be constructed and appended to the end of the URL:
+
+
+| Field Name | Type | Required |Description|
+| --- | --- | --- | --- |
+| start_time | Number | Optional | Start Timestamp of the query period |
+| end_time | Number | Optional | End Timestamp of the query period |
+| limit | Number | Optional | number of the data points to be returned ( Default = 1 ) |
+| offset | Number | Optional | offset of the data points being retrieved |
+
+**Note:**
+
+1.
+Returns last *n (n=size)* data points when both *start_time* and *end_time* are not provided
+
+2.
+The parameters *start_time* and *end_time* have higher priority than *size*, i.e., when all three parameters are input, the parameter *size* will be ignored.
 
 
 
@@ -78,27 +97,6 @@ when the request for resource ends with *datapoints*
 CSV:
 
 when the reqeust for resouce ends with *datapoints.csv*
-
-
-### Querystring
-Following fields should be constructed and appended to the end of the URL:
-
-
-| Field Name | Type | Required |Description|
-| --- | --- | --- | --- |
-| start_time | Number | Optional | Start Timestamp of the query period |
-| end_time | Number | Optional | End Timestamp of the query period |
-| limit | Number | Optional | number of the data points to be returned ( Default = 1 ) |
-| offset | Number | Optional | offset of the data points being retrieved |
-
-**Note:**
-
-1.
-Returns last *n (n=size)* data points when both *start_time* and *end_time* are not provided
-
-2.
-The parameters *start_time* and *end_time* have higher priority than *size*, i.e., when all three parameters are input, the parameter *size* will be ignored.
-
 
 
 ## Response

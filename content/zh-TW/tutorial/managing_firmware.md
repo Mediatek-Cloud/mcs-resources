@@ -1,35 +1,33 @@
-# Managing firmware
+# 管理韌體
 
-MediaTek Clous Sandbox(MCS) enables the user to manage the firmware and provides firmware Over-The-Air (FOTA) update to the device.
+您可以使用MediaTek Clous Sandbox(MCS)來管理您的韌體，並且透過空中更新將韌體更新至您的裝置。
 
-To use the Firmware service, go to the **Firmware tab** in the Prototype detail page. You can see there is a Default Firmware indicating your current firmware and you can set it as other uploaded firmwares' prerequisite to be upraded.
-
-Click **Add firmware** to first upload a new firmware,
+您可以在產品原型頁面中的**韌體分頁**來使用我們的韌體服務。點擊**新增韌體**來上傳一個新的韌體吧。
 
 ![](../images/firmware/fw01.JPG)
 
-Enter the Firmware name, version, and select a firmware file to upload and click the Upload button.
+請輸入韌體名稱，版本，並且選擇您要上傳的韌體檔案，然後點擊上傳按鈕。
 
-Next, select the compatible firmware of the fimrware you just uploaded.
+之後，選擇能相容此韌體更新的前置韌體。
 
 ![](../images/firmware/fw02.jpg)
 
-Choose the prerequisite firmware that are compatible for this firmware you've uploaded.
+當您在選擇能和此韌體更新相容的前置韌體時，您會發現，系統的預設值是所有的韌體都會被選取。您可以更改此設定，只要勾選您想要能相容的韌體即可。只有您在此勾選的前置韌體，能夠和您所上傳的新韌體相容。
 
-The default option is all firmware selected or you can specify your own selection by click on the limited firmware. Only the firmware listed in the prerequisite list can be upgraded using the firmware you've uploaded.
-
-If you do not want to further proceed to directly pushing the firmware upgrade to test devices, you can stop here by clikc on the Done button, or to click on the Next button to push the firmware to devices.
+如果您暫時不想將您所上傳的韌體更心直接更新置裝置，您可以點擊完成按鈕退出，或是您可以點擊下一步按鈕來選擇您要更新此韌體的裝置。
 
 ![](../images/firmware/fw03.JPG)
 
-After selecting the devices you would like to upgrade, click the Push botton. You can also do this step by click on the first icon next to the firmware.
+當您選取好要更心此韌體的裝置後，點擊推撥按鈕。您亦可以在韌體分頁中，點擊某一韌體的清單中右邊第一個圖標來做韌體推播。
 
 ![](../images/firmware/fw04.JPG)
 
-The user can also upgrade the firmware of a device in the Device detail page. In the Device detail page, click on the frimware tab, and you will see the current using firmware and the firmware that the device can be upgraded to.
+您亦可以於裝置詳情頁面中來做韌體更新服務。您只需要再裝置詳情頁面中，點擊韌體分頁，您將會看到此裝置當時所使用的韌體，和您和此裝置目前韌體相容的其他韌體更新。
+
 
 ![](../images/firmware/fw05.JPG)
 
-Click on the **Upgrade** button next to the firmware that you want the device to be upgraded.
+點擊您欲更新的韌體後方的**升級** 按鈕來更新。
+
 
 

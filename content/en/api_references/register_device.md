@@ -2,7 +2,7 @@
 
 ## Description
 
-Use **HTTPs POST** to register devices with or without serial keys
+Use **HTTPs POST** to register devices
 
 ## Request URL
 

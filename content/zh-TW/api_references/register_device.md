@@ -1,68 +1,70 @@
-# Register device
+# 註冊裝置
 
-## Description
+## 描述
 
-Use **HTTPs POST** to register devices with or without serial keys
+使用 **HTTPs POST**來註冊裝置
 
-## Request URL
+## 請求 URL
 
 ```
 https://api.mediatek.com/mcs/v2/devices
 
 ```
 
-## Action
+## 動做
 HTTPs POST
 
-## Parameters
+## 參數
 
 ### Header
 
 Authorization: Bearer '{token}'
 
-### Body
-The request body should be constructed in JSON format with the following fields:
+### 請求內容
 
-| Field Name | Type | Required |Description|
+JSON格式的請求內容會包含以下幾個欄位：
+
+| 欄位名稱 | 格式 | 是否必填 |描述|
 | --- | --- | --- | --- |
-| prodId | String | Yes | Product ID |
-| name | String | Yes | Device Name |
-| isTest | Bool | Yes | Is the device a test device |
-| description | String | No | Device Description |
-| serial | String | No | Denpends on the product registration criteria defined by developers. Not needed if isTest is true |
-| deviceImageURL | String | No | URL of the device image |
+| prodId | String | Yes | 產品原型 ID |
+| name | String | Yes | 裝置名稱 |
+| isTest | Bool | Yes | 是否為測試裝置 |
+| description | String | No | 裝置描述 |
+| serial | String | No | 開發者可定義是否使用序號。若isTest為真，則不需要。 |
+| deviceImageURL | String | No | 裝置圖片url |
 
 
 
 
-## Response
+## 回覆
 
-### Response Code
+### 回覆代碼
 200
 
-### Response Header
+### 回覆 Header
 
 Content-Type:`application/json`
-### Response Body
 
-***Data Format: JSON***
+### 回覆內容
 
-The response body will construct in JSON format with the following fields:
+***回覆格式: JSON***
 
-| Field Name | Type |Description|
+JSON格式的回覆內容會包含以下幾個欄位：
+
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
 | deviceId | String | Device ID |
 | deviceKey | String | Device Key |
-| chipName | String | Chip Name |
+| chipName | String | 晶片名稱 |
 
-**Example: **
+**範例：**
 
-Request URL
+請求 URL
 ```
 https://api.mediatek.com/mcs/v2/devices
 ```
 
-Request Body
+請求內容
 
 ```
 {
@@ -76,7 +78,7 @@ Request Body
 }
 ```
 
-Response Body
+回覆內容
 
 ```
 {
@@ -88,17 +90,16 @@ Response Body
 }
 ```
 
-## Error Response
+## 錯誤回覆
+當錯誤發生時，回覆代碼為非200之其他代碼。回覆內容為JSON格式並會包括以下資訊：
 
-When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
-
-| Field Name | Type |Description|
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
-| code | Integer | Error Code |
-| url | String | url to API Error detail page |
-| description | String | Error Description |
+| code | Integer | 錯誤代碼 |
+| url | String | API錯誤頁面url|
+| description | String | 錯誤描述 |
 
-**Example:**
+**範例:**
 
 ```
 {

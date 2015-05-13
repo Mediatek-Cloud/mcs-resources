@@ -1,15 +1,15 @@
-# Data channel format
+# 資料通道格式
 
-The API format of each data type is defined here. It is the format that the device report data to the command server.
+此章節將會說明所有資料通道的API格式，此格式為裝置和command server溝通的格式。
+
+**此處使用UNIX timestamp時間格式，且非必要欄位。您可保持:Timestamp為空，此時時間點則會由MCS所收到資料點的時間。
+
+MCS支持JSON以及CSV兩種格式的資料。
 
 
-**The timestamp is using the UNIX timestamp format, and it is not a required field. You can leave it blank, and the system will give the timestamp automatically as the server recorded time.
+## 開關
 
-MCS supports both json and csv formats.
-
-## Switch
-
-For json:
+JSON格式：
 ```
  "datapoints":[
       {
@@ -23,23 +23,22 @@ For json:
 
 ```
 
-
-For csv:
+CSV格式：
 ```
 dataChannelId,timestamp,{0 or 1}
 
 ```
-0 stands for OFF, and 1 stands for ON.
+0代表關，1代表開。
 
-For example:
+範例：
 
 switch01,, 1
 
-To turn the switch01 to on state, and do not give the timestamp.
+代表將switch01資料通道的狀態改為開，並且由系統自動帶入時間。
 
-## Category
+## 分類
 
-For json:
+JSON格式：
 ```
  "datapoints":[
       {
@@ -54,15 +53,16 @@ For json:
 ```
 
 
-For csv:
+CSV格式：
 ```
 dataChannelId,timestamp,{Key Value}
 ```
-The Key value will correspond to the Key name that you’ve set.
 
-## Integer
+Key value 的值將會對應至您所設定的Key name。
 
-For json:
+## 整數
+
+JSON格式：
 ```
  "datapoints":[
       {
@@ -77,14 +77,14 @@ For json:
 ```
 
 
-For csv:
+CSV格式：
 ```
 dataChannelId,timestamp,{Integer}
 ```
 
-## Float
+## 浮點數
 
-For json:
+JSON格式：
 ```
  "datapoints":[
       {
@@ -97,16 +97,14 @@ For json:
 }
 
 ```
-
-
-For csv:
+CSV格式：
 ```
 dataChannelId,timestamp,{Float}
 ```
 
-## Hex
+## 十六進位數
 
-For json:
+JSON格式：
 ```
  "datapoints":[
       {
@@ -121,15 +119,15 @@ For json:
 ```
 
 
-For csv:
+CSV格式：
 ```
 dataChannelId,timestamp,{Hex value}
 ```
-Hex is referred to hexadecimal value which only takes value from A-D and 0-9.
+十六進位數的值為A-F以及0-9。
 
-## String
+## 字串
 
-For json:
+JSON格式：
 ```
  "datapoints":[
       {
@@ -143,14 +141,14 @@ For json:
 
 ```
 
-
-For csv:
+CSV格式：
 ```
 dataChannelId,timestamp,{string}
 ```
 
 ## GPS
-For json:
+
+JSON格式：
 ```
  "datapoints":[
        {
@@ -166,22 +164,22 @@ For json:
 
 ```
 
-
-For csv:
+CSV格式：
 
 ```
 dataChannelId,timestamp,{latitude},{longitude},{altitude}
 ```
 
-The range of latitude is from -90 to 90. 0 to 90 stands for North and 0 to -90 stands for South.
+緯度範圍從 -90 至 90。 0 至 90 代表北緯，0 至 -90 代表南緯。
 
-The range of longitude is from -180 to 180. 0 to 180 stands for East and 0 to -180 stands for West.
+經度範圍從 -180 至 180。 0 至 180 代表東經，0 至 -180 代表西經。
 
-The range of altitude is from 0 to 20000 in meter.
+高度範圍從 0 至 20000公尺。
+
 
 ## GPIO
 
-For json:
+JSON格式：
 ```
  "datapoints":[
       {
@@ -195,15 +193,14 @@ For json:
 
 ```
 
-
-For csv:
+CSV格式：
 ```
 dataChannelId,timestamp,{0 ot 1}
 ```
-0 stands for Low, and 1 stands for High.
+0代表低，1代表高。
 
 ## PWM
-For json:
+JSON格式：
 ```
  "datapoints":[
       {
@@ -219,7 +216,7 @@ For json:
 ```
 
 
-For csv:
+CSV格式：
 ```
 dataChannelId,timestamp,{Value},{Period}
 ```

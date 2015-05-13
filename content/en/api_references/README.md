@@ -22,7 +22,7 @@ In the example above, the deviceId was specified in the URL. For any requests, a
 
 ## Client Errors
 
-Mediatek Cloud Sandbox (MCS) uses the standard HTTP status code to indicate if an API request is succussful or fail. Here states the standard HPPT status code the user may encounter:
+Mediatek Cloud Sandbox (MCS) uses the standard HTTP status code to indicate if an API request is succussful or fail. Here states the standard HTTP status code the user may encounter:
 
 **200 OK** - Request Successfully.
 
@@ -68,7 +68,7 @@ All request sent to the API need to be authenticated. A Bearer token for `Authen
 
 Each time a prototype is created, a data channel is created or a device is added, there will be an unique key assigned to each prototype, data channel or device. This unique key is not editable, but they can be used to access data which they are associated. They cannot access data from any other resource.
 
-The developer can define which HTTP methods(GET, POST, PUT, DELETE) can be used with each API key. For example, in the Sandnox API, if you need to GET data from a specific data channel or prototype, you will need to use the Key for the data channel and the prototype.
+The developer can define which HTTP methods(GET, POST, PUT, DELETE) can be used with each API key. For example, in the Sandnox API, if you need to GET data from a specific data channel of a test device, you will need to use the Key for the data channel and the test device.
 
 
 ## Resources
@@ -76,18 +76,18 @@ The developer can define which HTTP methods(GET, POST, PUT, DELETE) can be used 
 Following is a shortlist of useful terms of MCS:
 
 
-### DataChannels
+### Data Channels
 
 The data channel is a logical placeholder in the cloud for data generated either coming from a specific component of a physical device, or a command coming from the cloud intended to push into a specific component of the connected physical device. Simply put, data channel is designed for one-way or two-way communications between the cloud and the connected physical device.
 
-MCS provides several Sandbox API for the user to easily create data channel,  retrieve data from the data channels and update the data channel.
+MCS provides several Sandbox API for the user to easily retrieve data from the data channels and update the data channel.
 
 ### Devices
 
 We will have two types of devices in the MCS, the first kind is the test device. The test device is for the developer to use to test the functionality of the prototype before release.
 The second kind of device is the batch create devices created after a prototype is released and is used for the end user.
 
-MCS also provides APIs for both develoer and the user. For example, to create device, retrieve data from device and remote contol using the device.
+MCS also provides APIs for both develoer and the user. For example, to retrieve data from device and remote contol using the device.
 
 ### Prototype
 

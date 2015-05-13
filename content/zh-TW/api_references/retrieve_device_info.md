@@ -1,20 +1,20 @@
-# Retrieve device information
+# 讀取裝置資訊
 
-## Description
+## 描述
 
-Use **HTTPs GET** to retrieve devices
+使用 **HTTPs GET** 來讀取裝置資訊
 
-## Request URL
+## 請求 URL
 
 ```
 https://api.mediatek.com/mcs/v2/devices/:deviceId
 
 ```
 
-## Action
+## 動做
 HTTPs GET
 
-## Parameters
+## 參數
 
 ### Header
 
@@ -23,99 +23,100 @@ Authorization: `Bearer '{token}'`
 Content-Type:`application/json`
 
 
-## Response
+## 回覆
 
-### Response Code
+### 回覆代碼
 200
 
-### Response Header
+### 回覆 Header
 
 Content-Type:`application/json`
-### Response Body
 
-***Data Format: JSON***
+### 回覆內容
 
-The response body will construct in JSON format with the following fields:
+***回覆格式: JSON***
 
-| Field Name | Type |Description|
+JSON格式的回覆會包含以下幾個欄位：
+
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
 | deviceId | String | Device ID |
 | deviceKey | String | Device Key |
-| name | String | Device Name |
-| description | String | Device Description |
-| product | Object | Product Info |
-| dataChannels | Object Array | Data Channels |
-| fw | Object | Firmware Info |
-| trustIpRange | String Array | Trusted IP range from where the device is allowed to conntect to MCS |
-| lastIp | String | Last IP the device seen from |
-| deviceImageURL | String | Device image URL |
-| isHeartbeating | Bool | Is the device currently online |
-| isVerified | Bool | Has the device registration been verified |
-| isActive | Bool | Is the device active |
-| isTest | Bool | Is the device a test device |
-| activatedAt | Number | Timestamp of the device activation |
-| deactivatedAt | Number | Timestamp of the device deactivation ( Default = null if the device is active and has not been deactivated ) |
-| tags | Object Array | Tags of the device |
-| privilege | String | User's privilege on the device |
+| name | String | 裝置名稱 |
+| description | String | 裝置描述 |
+| product | Object | 產品原型 |
+| dataChannels | Object Array | 資料通道 |
+| fw | Object | 韌體資訊 |
+| trustIpRange | String Array | 可連至MCS的信賴網域範圍 |
+| lastIp | String | 最後一次收到裝置資料點的網域位址 |
+| deviceImageURL | String | 裝置圖片 URL |
+| isHeartbeating | Bool | 裝置是否在線 |
+| isVerified | Bool | 裝置是否已被驗證註冊 |
+| isActive | Bool | 裝置是否已註冊 |
+| isTest | Bool | 是否為測試裝置 |
+| activatedAt | Number | 裝置註冊時間 |
+| deactivatedAt | Number | 裝置註銷時間 (若裝置已註冊且未被註銷，則此值的默認值為null) |
+| tags | Object Array | 裝置標籤 |
+| privilege | String | 裝置使用者權限 |
 
-**Detailed Object Fields**
+**資料詳情**
 
-**product**
+**產品原型**
 
-| Field Name | Type |Description|
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
-| prodId | String | Product ID |
-| prodVersion | String | Product Version |
-| name | String | Product Name |
-| description | String | Product Description |
-| displayConfigs | Object Array | A JSON format object indicatig how each data channel will be displayed |
-| chip | String | Product Chip |
+| prodId | String | 產品原型 ID |
+| prodVersion | String | 產品原型版本 |
+| name | String | 產品原型名稱 |
+| description | String | 產品原型描述 |
+| displayConfigs | Object Array | 一個JSON格式的物件，定義資料通道將如何呈現 |
+| chip | String | 產品原型所使用的晶片類型 |
 
 
-**dataChannel**
+**資料通道**
 
-| Field Name | Type | Description|
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
-| dataChnId | Number | Data Channel ID |
+| dataChnId | Number | 資料通道 ID |
 | isAvailable | Bool | Is the device normal |
-| name | String | Channel Name |
-| channelType | Object | Data Channel Type |
-| isHidden | Bool | Is the data channel hidden to end users? |
-| isControllable | Bool | Is the data channel controllable by cloud commands |
-| description | String | Data Channel Description |
-| unitType | Object | Data Unit Type |
-| format | String | Refer to confluence for content format |
+| name | String | 資料通道名稱|
+| channelType | Object | 資料通道類型 |
+| isHidden | Bool | 資料通道是否對使用者隱藏 |
+| isControllable | Bool | 此資料通道是否為控制類型 |
+| description | String | 資料通道描述 |
+| unitType | Object | 資料通道單位值 |
+| format | String | 資料通道格式 |
 
 
-**fw**
+**韌體**
 
-| Field Name | Type |Description|
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
-| fwId | String | Firmware ID |
-| name | String | Frimware Name |
-| description | String | Firmware Description |
-| version | Number | Firmware Version |
+| fwId | String | 韌體 ID |
+| name | String | 韌體名稱 |
+| description | String | 韌體描述 |
+| version | Number | 韌體版本 |
 
-**displayConfig**
+**顯示設定**
 
-| Field Name | Type |Description|
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
-| displayType | Number  | How to display |
-| displayOrder | Number | The order of displaying the component |
-| dataChnIds | Number Array | ID of data channel that is being configured to display on the console |
+| displayType | Number  | 如何顯示 |
+| displayOrder | Number | 不同元件的顯示順序 |
+| dataChnIds | Number Array | 被設定為顯示的資料通道ID |
 
-**tag**
+**標籤**
 
-| Field Name | Type | Description|
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
-| tagId | Number | Tag ID |
-| name | String | Tag Name |
+| tagId | Number | 標籤 ID |
+| name | String | 標籤名稱 |
 
 
 
-**Example: **
+**範例： **
 
-Request URL
+請求 URL
 ```
 https://api.mediatek.com/mcs/v2/devices/d1234567890
 
@@ -123,7 +124,7 @@ https://api.mediatek.com/mcs/v2/devices/d1234567890,d1234567891
 ```
 
 
-Response Body
+請求內容
 
 ```
 {
@@ -378,18 +379,18 @@ Response Body
    ]
 }
 ```
+## 錯誤回覆
 
-## Error Response
+當錯誤發生時，回覆代碼為非200之其他代碼。回覆內容為JSON格式並會包括以下資訊：
 
-When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
-
-| Field Name | Type |Description|
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
-| code | Integer | Error Code |
-| url | String | url to API Error detail page |
-| description | String | Error Description |
+| code | Integer | 錯誤代碼 |
+| url | String | API錯誤頁面url|
+| description | String | 錯誤描述 |
 
-**Example:**
+
+**範例**
 
 ```
 {

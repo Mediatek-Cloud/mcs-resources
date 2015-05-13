@@ -84,10 +84,10 @@ The response body will construct in JSON format with the following fields:
 | isControllable | Bool | Is the data channel controllable by cloud commands |
 | description | String | Data Channel Description |
 | unitType | Object | Data Unit Type |
-| format | String | Refer to confluence for content format |
+| format | String | data channel format |
 
 
-**fw**
+**firmware**
 
 | Field Name | Type |Description|
 | --- | --- | --- |

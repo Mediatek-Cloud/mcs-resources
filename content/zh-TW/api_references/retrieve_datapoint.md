@@ -1,64 +1,73 @@
-# Retrieve datapoint
+# 讀取資料點
 
-## Description
+## 描述
 
-Use **HTTPs GET** to retrieve data point values of a device
+使用 **HTTPs GET** 來取得裝置回傳的資料點
 
 
-## Request URL
+## 請求 URL
 
-To retrieve the data points for specific data channel:
+讀取特定資料通道中的資料點：
 
 ```
 https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints?start=:startTime&end=:endTime&limit=:limit&offset=:offset
 
 ```
 
+API請求默認值為json格式，如欲使用csv格式，請在API請求URL最後端加上`.csv`。
+使用此API，您可以選擇您要的資料範圍：
 
-The API will by default assume the json format, if you want to use the csv, please add`.csv` after the datapoints.
-
-The API enables you to retrieve four kinds of data:
-
-* To get the last data point:
-
+* 只讀取最後一個資料點：
 
 
     `https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints`
 
 
-* To get the data points within a time frame:
+* 讀取一段時間範圍內的資料點：
 
 
-    Use the `?start=:startTime&end=:endTime` at the end.
+    在請求url尾端加上`?start=:startTime&end=:endTime`
 
 
-* To limit the number of data points that you will get (eg, if you enter the limit=5, you will get the first 5 data points.):
+* 限制您要讀取的資料點數目 (舉例來說, 如果您輸入 :limit=5, 則您會讀取前五筆資料點):
 
 
-    Use the `?limit=:limit&offset=:offset`at the end.
+    在請求url尾端加上 `?limit=:limit`
 
 
-* To retrieve the data points from a specific point(eg, if you enter offset=5, you will not get the first 5 datapoints and start with 6th one):
+* 讀取從某一個資料點受開始的資料(舉例來說, 如果您輸入 offset=5, 則您會讀取第五筆資料點之後的所有資料點):
 
 
-    Use the `?offset=:offset` at the end.
+    在請求url尾端加上 `?offset=:offset`
 
 
+您亦可以將以上四種方式混合使用。
 
-You can choose to combine those conditions.
+### 查詢字串
+下面幾種查詢方式亦可以使用
+
+| 欄位名稱 | 格式 | 是否必填 |描述|
+| --- | --- | --- | --- |
+| start_time | Number | Optional | 查詢起始時間 |
+| end_time | Number | Optional | 查詢中止時間 |
+| limit | Number | Optional | 要回傳的資料點數目 ( 默認值 = 1 ) |
+| offset | Number | Optional | 第幾筆開始的資料點 |
+
+**請注意：**
+
+1.
+使用回傳最後 *n (n=數目)* 的資料點時，將不能指定 *開始時間* 與 *結束時間*時。
+
+2.　當您指定*start_time* 和 *end_time*時，若還是有使用設定回傳資料點數目，此時，此回傳資料點數目的查詢將會被忽略。
 
 
+**每次請求最多只能讀取1000筆資料點**
 
 
-
-
-**Maximum number of returned data points for each data channel: 1000**
-
-
-## Action
+## 動做
 HTTPs GET
 
-## Parameters
+## 參數
 
 ### Header
 
@@ -67,94 +76,75 @@ Device Key
 deviceKey: `device_key_here`
 ```
 
-### Return format
-The return format can be in either JSON or CSV format
+### 回覆格式
+您能選擇回覆JSON或是CSV格式
 
 JSON:
 
-when the request for resource ends with *datapoints*
+請求url結尾為 *datapoints*
 
 
 CSV:
 
-when the reqeust for resouce ends with *datapoints.csv*
-
-
-### Querystring
-Following fields should be constructed and appended to the end of the URL:
-
-
-| Field Name | Type | Required |Description|
-| --- | --- | --- | --- |
-| start_time | Number | Optional | Start Timestamp of the query period |
-| end_time | Number | Optional | End Timestamp of the query period |
-| limit | Number | Optional | number of the data points to be returned ( Default = 1 ) |
-| offset | Number | Optional | offset of the data points being retrieved |
-
-**Note:**
-
-1.
-Returns last *n (n=size)* data points when both *start_time* and *end_time* are not provided
-
-2.
-The parameters *start_time* and *end_time* have higher priority than *size*, i.e., when all three parameters are input, the parameter *size* will be ignored.
+請求url結尾為 *datapoints.csv*
 
 
 
-## Response
+## 回覆
 
-### Response Code
+### 回覆代碼
 200
 
-### Response Header
-For JSON response:
+### 回覆 Header
+JSON 格式:
 ```
 Content-Type:`application/json`
 ```
-For CSV response:
+CSV 格式:
 ```
 Content-Type: `text/csv`
 ```
 
-### Response Body
+### 回覆內容
 
-***Data Format: JSON***
+***資料格式: JSON***
 
-The response body will construct in JSON format with the following fields:
+若使用JSON回覆格式，則會包含以下欄位：
 
-| Field Name | Type | Description|
+| 欄位名稱 | 格式 | 描述|
 | --- | --- | --- | --- |
-| dataChannels | Object Array | Device Channels that contain the result data points |
+| dataChannels | Object Array | 含有資料點的資料通道 |
 
-**Detailed Object Fields**
+**資料詳情**
 
-**dataChannel**
+**資料通道**
 
-| Field Name | Type | Description|
+| 欄位名稱 | 格式 | 描述|
 | --- | --- | --- | --- |
-| dataChnId | Number | Data Channel ID |
-| isOverflow | Bool | Is the number of queried data points more than maximum number|
-| dataPoints | Object Array | Data Points |
+| dataChnId | Number | 資料通道 ID |
+| isOverflow | Bool | 要求的資料點是否超過數目限制|
+| dataPoints | Object Array | 資料點 |
 
 
-**dataPoint**
+**資料點**
 
-| Field Name | Type | Description|
+| 欄位名稱 | 格式 | 描述|
 | --- | --- | --- | --- |
-| createdAt | Number | Unix timestamp of the data point|
-| values | Object | Data Point Value |
+| createdAt | Number | 以Unix timestamp 格式紀錄的資料點建立時間|
+| values | Object | 資料點的值 |
 
-Please note, the unix time is in milliseconds, for human readable time conversion, please refer to http://www.epochconverter.com/
+請注意，我們在此使用的unix timestamp miniseconds時間值，若須轉換成可讀格式，您可以使用以下連結：
+http://www.epochconverter.com/
 
-**Example:**
+**範例：**
 
-Request URL
+請求 URL：
 ```
 https://api.mediatek.com/mcs/v2/devices/a1234567890/datachannels/10001/datapoints?start=946684800&end=946784800
 
 ```
 
-Response Body in json
+JSON格式的回覆內容：
 
 ```
 {
@@ -176,7 +166,7 @@ Response Body in json
 }
 ```
 
-Response Body in csv
+CSV格式的回覆內容：
 
 ```
 test_data_channel,94668480,100
@@ -184,17 +174,20 @@ test_data_channel,94668480,100
 
 
 
-## Error Response
+## 錯誤回覆
 
-When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
+當錯誤發生時，回覆代碼為非200之其他代碼。回覆內容為JSON格式並會包括以下資訊：
 
-| Field Name | Type |Description|
+
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
-| code | Integer | Error Code |
-| url | String | url to API Error detail page |
-| description | String | Error Description |
+| code | Integer | 錯誤代碼 |
+| url | String | API錯誤頁面url|
+| description | String | 錯誤描述 |
 
-**Example:**
+
+
+**範例：**
 
 ```
 {

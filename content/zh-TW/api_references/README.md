@@ -1,96 +1,98 @@
-# API reference
+# API 參考資料集
 
-MediaTek Cloud Sandbox (MCS) have exposed RESTful APIs allowing you to build applications and services that is able to make meaningful communications with MCS for DataPoint upload and retrieves as well as requesting MCS to make TCP socket commands. MCS also based on the communication data uploaded, especially for time-series based data, translate into visual charts for easier reading to the users.
+MediaTek Cloud Sandbox (MCS)提供一系列的RESTful API讓您能夠便利的使用，例如上傳和讀取資料點，或是透過TCP socket對裝置下指令。MCS亦能儲存照時間排序的資料數列，並以圖表畫形式呈現給您。
 
-## Access Point
 
-MCS has made all its RESTful API access point as below:
+## 連接點
+
+所有的MCS RESTful API皆以以下形式呈現：
 
 ```
 https://api.mediatek.com/v2
 ```
 
-## Parameters
+## 參數
 
-Parameters follows right after the access point used to identify a specific resource as part of the URL construct:
+跟在連接點後的參數用來在URL路徑內，定義特定的資源：
 
 ```
 https://api.mediatek.com/v2/devices/{deviceId}/retrieveDataPoints
 
 ```
-In the example above, the deviceId was specified in the URL. For any requests, any parameters not included as part of the URL should be encoded as JSON or CSV with a `content -Type` of `application/json` or `text/csv`.
 
-## Client Errors
-
-Mediatek Cloud Sandbox (MCS) uses the standard HTTP status code to indicate if an API request is succussful or fail. Here states the standard HPPT status code the user may encounter:
-
-**200 OK** - Request Successfully.
-
-**201 Created **- The request has been fulfilled and a new resource is being created.
-
-**202 Accepted** - The request has been accepted for processing, but the process has not yet been completed.
-
-**204 No Content** - The server successfully processed the request, but is not returning any content. Usually used as a response to a successful delete request.
-
-**400 Bad Request** - The server cannot process the request due to the client given parameter is not what the server expected to receive.
-
-**401 Unauthorized** - Authotization is required and has failed or not been provided. A header for Authorization is required.
-
-**403 Forbidden** - The server is refusing to respond to a valid request.
-
-**404 Not Found** - The request resource could not be found.
-
-**405 Method Not Allowed** - The request was made of a resource using a not supported method.
-
-**500, 502 Server Error** - Something went wrong with the MCS server.
+在上方的飯立中，您可以看到deviceId在URL中被定義了。在任何的API 請求中，不是以URL形式傳送的參數，都必須定義以JSON或是CSV格式包裝。您必須定義一個`content -Type` header 為`application/json` 或是 `text/csv`。
 
 
-## HTTP Verbs
+## 客戶端錯誤
 
-The Mediatek Cloud Sandbox (MCS) provides the following types of API:
+Mediatek Cloud Sandbox (MCS) 使用標準HTTP狀態來表達API請求的成功或是錯誤。以下是您呼叫MCS API有可能遇到的HTTP狀態：
 
+**200 OK** - 請求成功。
 
-**GET** - Used for retrieving resource.
+**201 Created **- 請求成功，並且新資源已建立。
 
-**POST** - Used for creating resouce.
+**202 Accepted** - 請求成功，但尚未完成。
 
-**PUT** - Used for updating resource.
+**204 No Content** -請求成功，但伺服器無回應任何內容。通常是刪除特定資源的請求回覆。
 
-**DELETE** - Used for deleting resource.
+**400 Bad Request** - 伺服器無法處理請求，由於客戶端給的參數錯誤。
 
+**401 Unauthorized** - 無提供授權或授權失敗。需要提供授權的header。
 
+**403 Forbidden** -伺服器拒絕對一個不合格的請求做回覆。
 
-## Authentication
+**404 Not Found** - 請求的資源不存在。
 
-All request sent to the API need to be authenticated. A Bearer token for `Authentication` key in the HTTP header is required. If not provided, the server will respond with an  Unauthorized message.
+**405 Method Not Allowed** - 請求的方法不支援。
 
-## API Keys
-
-Each time a product is created, a data channel is created or a device is added, there will be an unique key assigned to each product, data channel or device. This unique key is not editable, but they can be used to access data which they are associated. They cannot access data from any other resource.
-
-The developer can define which HTTP methods(GET, POST, PUT, DELETE) can be used with each API key. For example, in the Sandnox API, if you need to GET data from a specific data channel or product, you will need to use the Key for the data channel and the product.
-
-
-## Resources
-
-Following is a shortlist of useful terms of MCS:
+**500, 502 Server Error** - MCS伺服器錯誤。
 
 
-### DataChannels
+## HTTP 請求方式
 
-The data channel is a logical placeholder in the cloud for data generated either coming from a specific component of a physical device, or a command coming from the cloud intended to push into a specific component of the connected physical device. Simply put, data channel is designed for one-way or two-way communications between the cloud and the connected physical device.
+The Mediatek Cloud Sandbox (MCS) 提供以下型式的API請求方式：
 
-MCS provides several Sandbox API for the user to easily create data channel,  retrieve data from the data channels and update the data channel.
 
-### Devices
+**GET** - 用來取得資源狀態。
 
-We will have two types of devices in the MCS, the first kind is the test device. The test device is for the developer to use to test the functionality of the product before release.
-The second kind of device is the batch create devices created after a product is released and is used for the end user.
+**POST** - 用來建立資源。
 
-MCS also provides APIs for both develoer and the user. For example, to create device, retrieve data from device and remote contol using the device.
+**PUT** - 用來更新資源狀態。
 
-### Product
+**DELETE** - 用來刪除資源。
 
-A product is the service that you are going to deliver as a deliverable in the end. The MSC also provides several APIs for the developers to make use of regarding the product. The developer will add data channels in a product and test the product by creating the test device before release.
+
+
+## 授權
+
+所有的API請求皆須被授權。您必須有一個header `Authentication 為您的Bearer token。如果未提供此授權碼，系統則會回覆您無授權訊息。
+
+
+## API Key
+
+每次當一個產品原型，資料通道，或是測試裝置被建立後，都會有一個獨特的Key被指派給該資源。這個獨特的Key是不可編輯的，且您將再存取此資源時用到。您無法存取您無此Key值的資源。
+
+開發者可以定義哪種API Key將在哪些HTTP請求方式中被需要。舉例來說，如欲從MCS取得某一資料通道的資料，您必須擁有次資料通道以及所述測試裝置的API Key。
+
+
+## 資源
+
+以下是您使用MCS時，會時常使用到的詞彙：
+
+### 資料通道
+
+一個資料通道是一個能夠傳送從裝置回傳的資料至MCS平台，或是能夠將指令從MCS平台傳達至裝置的通道。簡單來說，資料通道是一個雲和裝置之間單方向或是雙方向的溝通管道。
+
+MCS提供了許多API讓使用者能夠快速的存取資料通道上得資料點。
+
+### 裝置
+
+在MCS平台上有兩種種類的裝置，其中第一種是測試裝置。測試裝置為在商品上市前，開發者可以用來測試開發結果的裝置。第二種裝置為商轉後大量給中端使用者實際使用的裝置。
+
+MCS提供了許多API讓開發者和其他使用者能夠快速的存取資料通道上得資料點，或是遠端控制裝置狀態。
+
+### 產品原型
+
+產品原型是您將來要交付的中端商品。MCS提供了許多API讓使用者能夠使用。開發者能在產品原型頁面中開發產品，例如新增資料通道並建立測試裝置來測試確保之後商轉功能。
 
 
