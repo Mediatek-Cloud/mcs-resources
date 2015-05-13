@@ -6,7 +6,7 @@ MediaTek Cloud Sandbox(MCS) 提供您打造准备商转前的穿戴式和物联�
 
 您可以在我们提供的强大的网页仪表板介面上，看到使用我们提供的RESTful API从装置搜集回来的图形化的资料。之后，您可以通过从仪表板发出命令控制您的穿带式和物联网装置。此外，我们提供附属的手机应用程式让您能查看收集到的数据，并从任何地方控制您的装置。
 
-![](images/content01.jpg)
+![](images/introduction/img_introduction_01.png)
 
 以下是您可以透过MediaTek Cloud Sandbox做的事情:
 
@@ -25,7 +25,7 @@ MediaTek Cloud Sandbox(MCS) 提供您打造准备商转前的穿戴式和物联�
 为了让您更通行无阻的使用MCS，我们提供了API，API使用说明文件，问与答，和一系列的教成让您能够快速上手我们所提供的功能和服务。
 
 
-![](images/content_img/content_img-02.jpg)
+![](images/introduction/img_introduction_02.png)
 
 
 ## **事前准备**

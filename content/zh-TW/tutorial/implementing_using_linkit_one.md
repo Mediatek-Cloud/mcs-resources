@@ -7,7 +7,7 @@
 此教程的情境為，替您的LinkIt One開發板建立一個測試裝置，替您的板子上傳一段Arduino code，且使用RESTful API來使您的開發板能上傳位於D13的LED燈光狀態至MCS，同時也可以使用MCS透過TCP Socket來遠程控制LED狀態。
 
 
-![](../images/content_img/content_img-11.jpg)
+![](../images/LinkIt-one-tutorial/img_scenario.png)
 
 
 ## 設置準備
