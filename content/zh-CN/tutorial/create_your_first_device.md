@@ -1,6 +1,6 @@
 # 创建您的第一个测试装置
 
-![](../images/getting started/img_getting_started_03.png)
+![](../images/getting_started/img_getting_started_03.png)
 
 ## 创建测试装置逐步导引
 

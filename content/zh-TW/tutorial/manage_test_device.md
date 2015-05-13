@@ -1,6 +1,6 @@
 # 管理已部署的測試裝置
 
-![](../images/getting started/img_getting_started_04.png)
+![](../images/getting_started/img_getting_started_04.png)
 
 ## 如何管理已部署的測試裝置
 

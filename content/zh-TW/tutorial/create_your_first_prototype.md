@@ -1,6 +1,6 @@
 # 建立您的第一個產品原型
 
-![](../images/getting started/img_getting_started_02.png)
+![](../images/getting_started/img_getting_started_02.png)
 
 ## 建立產品原型逐步導引
 

@@ -1,6 +1,6 @@
 # Manage test device
 
-![](../images/getting started/img_getting_started_04.png)
+![](../images/getting_started/img_getting_started_04.png)
 
 ## How to manage deplyed test devices
 

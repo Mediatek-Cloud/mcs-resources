@@ -9,7 +9,7 @@ Here are the four steps to connect MediaTek Cloud Sandbox to your development an
 
 
 
-![](../images/getting started/img_getting_started_01.png)
+![](../images/getting_started/img_getting_started_01.png)
 
 [Develop Prototype]
 

@@ -9,7 +9,7 @@
 
 
 
-![](../images/getting started/img_getting_started_01.png)
+![](../images/getting_started/img_getting_started_01.png)
 
 [开发产品原型]
 

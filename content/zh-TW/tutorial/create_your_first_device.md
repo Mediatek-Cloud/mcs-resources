@@ -1,6 +1,6 @@
 # 創建您的第一個測試裝置
 
-![](../images/getting started/img_getting_started_03.png)
+![](../images/getting_started/img_getting_started_03.png)
 
 ## 創建測試裝置逐步導引
 

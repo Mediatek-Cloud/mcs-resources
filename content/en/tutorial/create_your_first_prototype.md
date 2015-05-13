@@ -1,6 +1,6 @@
 # Create your first protptype
 
-![](../images/getting started/img_getting_started_02.png)
+![](../images/getting_started/img_getting_started_02.png)
 
 ## How to create a prototype step by step
 

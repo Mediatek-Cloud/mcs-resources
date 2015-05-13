@@ -1,6 +1,6 @@
 # Create your first device
 
-![](../images/getting started/img_getting_started_03.png)
+![](../images/getting_started/img_getting_started_03.png)
 
 ## How to create a test device step by step
 
