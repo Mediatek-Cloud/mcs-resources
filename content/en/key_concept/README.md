@@ -1,3 +1,5 @@
+# **Key concept**
+
 This section describes the key components that make up a Wearables or IoT project in MediaTek Cloud Sandbox. All of your project activities take place within the **Development** pages of the MediaTek Cloud Sandbox. In addition to which, the **My Devices** page enables you to view all the devices you have created or have access to.
 
 # **Development**
