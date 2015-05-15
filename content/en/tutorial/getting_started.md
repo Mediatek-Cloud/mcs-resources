@@ -31,3 +31,146 @@ You can always change the setting of your user profile by clicking on your name 
 
 
 
+
+# Create your first protptype
+
+![](../images/getting_started/img_getting_started_02.png)
+
+## How to create a prototype step by step
+
+
+Step 1. Click Development on the top menu bar.
+
+Step 2. Click Create button to create a new prototype.
+
+
+![](../images/screenshot/screen_shot-01.jpg)
+
+
+
+Step 3. Enter the Prototype name, version, and select chip type, industry and Click Save button. Your Prototype is created.
+
+Step 4. Click Detail button of the prototype just created.
+
+
+![](../images/screenshot/screen_shot-02.jpg)
+
+
+After your prototype is created, you can start to set the data channel, notification, user privilege, create and view test devices in the prototype detail page.
+
+
+
+Step 5. Click Add in the data channel tab.
+
+![](../images/screenshot/screen_shot-03.jpg)
+
+
+
+Step 6. Select the Data Channel type. eg, Controller, Display, or Hybrid. And Click Add button.
+
+![](../images/screenshot/screen_shot-04.jpg)
+
+
+Step 7. Enter the Data Channel name, Id, description and select Data type.
+
+
+Step 8. Click Save button. And now you can start create test devices for the prototype!
+
+
+![](../images/screenshot/screen_shot-05.jpg)
+
+
+For more Data Channel and Data Type information and concept, please refer to the Key concept section for more detail.
+
+
+
+
+# Create your first device
+
+![](../images/getting_started/img_getting_started_03.png)
+
+## How to create a test device step by step
+
+[Prerequisites] Create your first prototype
+
+Step 1. Go to the Prototype Detail Page you just created.
+
+Step 2. Click Create Test Device button on the upper right.
+
+Step 3. There will be a create test device dialog asking for Device name and description. Enter the device name and description and click OK button.
+
+Step 4. You will get a message of creating test device successfully. You can go to the test device detail directly.
+
+Step 5. Or you can also check the test device in **Test Device** tab too.
+
+![](../images/screenshot/screen_shot-06.jpg)
+
+
+Please be noted that the data channels in the test device are inherited and synchronized with the prototype. If you update the data channel in the prototype, the data channels in the test device will change accordingly.
+
+
+## How to get deviceId and deviceKey
+
+
+
+After creating the test device, the developer can view and control the device to make sure its functionality before release the prototype in the future.
+
+You will find the Device Id in two places:
+
+1. **Test Device** tab in prototype detail page.
+
+2. Test device detail page under My device.
+
+
+![](../images/screenshot/screen_shot-07.jpg)
+
+
+
+The deviceId and devicekey will be needed when calling our API to access this device. In the test device detail page, click on the blue font Id and key to copy the entire string to your copy board.
+
+
+# Manage test device
+
+![](../images/getting_started/img_getting_started_04.png)
+
+## How to manage deplyed test devices
+
+The developer can manage the test devices in the Prototype detail page, or in the device detail page under My device. In the future, when the device is released, the end user can view and configure his devices in the My Device console.
+
+### From Developer's view point
+
+In the Development or My device page, the developer can do several configurations:
+
+1.  View Data Channel stautus
+2.  Set Notification
+3.  Set User privileges
+4.  Check Firmware information and update information
+5.  Manage test device
+
+
+### From End User's view point
+In the future, when the prtotyp is released to the market, the end user can view and configure his device under My device by register the end user account on the MCS platform to access his devices.
+
+The user can manage his devices by:
+
+1.  View Data Channel stautus
+2.  Set Notification
+3.  Set User privileges
+4.  Check Firmware information and upgrade
+
+
+
+# Manage your profile
+
+The user can always change the setting of the user profile by clicking on his own name on the upper right panel to edit.
+
+The user can also change your password and the time zone here.
+
+
+![](../images/Profile.JPG)
+
+Your device data channel time-series chart will be based on your time-zone setting.
+
+
+
+
