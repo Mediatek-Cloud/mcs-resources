@@ -3,15 +3,15 @@
 Mobile Application
 
 
-Please click [here](http://mcs.mediatek.com/iot/mobile/android) or scan the QR code below to download the APK:
+Please click [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) or scan the QR code below to download the APK:
+
+<a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud"><img src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" border="0"></a>
 
 (If you already installed previous version, you need to un-install the previous version and install the new version again.)
 
 ![](../images/mobileapp_android.png)
 
 The mobile app currently offers for Android only.
-
-
 
 To install the app, you must have android v4.0 or above version, and open the above download link in your mobile browser
 
