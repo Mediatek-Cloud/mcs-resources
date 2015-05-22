@@ -8,7 +8,7 @@ The Development page has features that enable you to create one or more **Protot
 
 
 - **Data Channels**, each of a particular **Data Type**.
-- **Notifications** for changes in the data received from or sent to a device.
+- **Trigger and action** for changes in the data received from or sent to a device.
 - **User privileges** to enable team members or collaborators to view or edit prototypes and device details.
 - **Firmware** versions that can be pushed to devices.
 - **Test device** that represent each physical device based on the prototype.
@@ -114,7 +114,7 @@ This feature enables you to create test devices from the Prototype details. Each
 
 You use **My Devices** to manage the devices you have created or have been given access to.
 
-In this page, you can see the data channel, user privilege, and notification configurations as defined in the device’s prototype. You can modify the notification and user privilege settings for specific devices on this page. You can also see the device Id and device key, in addition to being able to see those details in the Test device tab in a prototype’s details page.
+In this page, you can see the data channel, user privilege, and trigger and action configurations as defined in the device’s prototype. You can modify the trigger and action and user privilege settings for specific devices on this page. You can also see the device Id and device key, in addition to being able to see those details in the Test device tab in a prototype’s details page.
 
 In addition to listing all the devices created for your prototypes, this page also shows devices from other prototypes that you have been given the access to. The actions you can do to the devices vary depending on the privileges granted to you. For example, if you are a viewer of the device, you can only see the data and cannot make any change to the device.
 
