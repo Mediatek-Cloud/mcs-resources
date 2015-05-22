@@ -23,7 +23,7 @@ AFter creating a prototype, the developer can create a test device to test and c
 
 The developer can monitor all the test devices under each prototype in the Development console, the developer can also view all the test device in the My device console which he has the access for.
 
-In the future, when the prototype is release to the end user, the end user can manage and configure the device in the My device console as well to view the data, set notification, and share the device to other users.
+In the future, when the prototype is release to the end user, the end user can manage and configure the device in the My device console as well to view the data, set trigger and action, and share the device to other users.
 
 [Manage your profile]
 
@@ -56,7 +56,7 @@ Step 4. Click Detail button of the prototype just created.
 ![](../images/screenshot/screen_shot-02.jpg)
 
 
-After your prototype is created, you can start to set the data channel, notification, user privilege, create and view test devices in the prototype detail page.
+After your prototype is created, you can start to set the data channel, trigger and action, user privilege, create and view test devices in the prototype detail page.
 
 
 
@@ -141,8 +141,8 @@ The developer can manage the test devices in the Prototype detail page, or in th
 
 In the Development or My device page, the developer can do several configurations:
 
-1.  View Data Channel stautus
-2.  Set Notification
+1.  View Data channel stautus
+2.  Set Trigger and action
 3.  Set User privileges
 4.  Check Firmware information and update information
 5.  Manage test device
@@ -154,7 +154,7 @@ In the future, when the prtotyp is released to the market, the end user can view
 The user can manage his devices by:
 
 1.  View Data Channel stautus
-2.  Set Notification
+2.  Set Trigger and action
 3.  Set User privileges
 4.  Check Firmware information and upgrade
 
