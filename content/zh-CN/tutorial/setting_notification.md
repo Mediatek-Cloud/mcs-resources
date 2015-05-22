@@ -4,20 +4,21 @@
 
 当您点入产品原型页面后，点选**触发条件和动作分页**。
 
-![](../images/notification/not1.jpg)
+![](../images/trigger/screen_shot_trigger_1.jpg)
 
 点击**新增触发条件和动作**来新增一个触发条件和动作, 输入您的触发条件名称和描述。
+
+![](../images/trigger/screen_shot_trigger_2.jpg)
 
 点击下一步来设定触发条件。选择您要设定触发条件的资料通道并且给予触发条件值。触发条件包含大于，小于，等于，和特定范围之间。
 
 您可以在同一个通知条件中，设定多个资料通道。此时，多个资料通道条件都要符合(且逻辑)，系统才会发出通知。若您想要单一条件符合(或逻辑)就收到通知，您就须设定多个通知条件。
 
-![](../images/notification/not2.jpg)
+![](../images/trigger/screen_shot_trigger_3.jpg)
 
 点击下一步来设定触发动作。您可以选择使用电子邮件或是GCM通知。通知将会被发送给每个有此装置权限的使用者。
 
 
-
-![](../images/notification/not3.jpg)
+![](../images/trigger/screen_shot_trigger_4.jpg)
 
 您在产品原型中设定的触发条件和动作，会被产品原型下所有的测试装置所继承。在测试装置中，您只能更改触发条件的值或是选择打开或是关闭此处发条件和动作。
