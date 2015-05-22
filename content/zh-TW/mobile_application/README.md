@@ -5,7 +5,7 @@
 
 <a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud"><img src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" border="0"></a>
 
-(請注意，若您已經安裝過舊的版本，且欲安裝新版，請先移除舊版再行安裝新版本)
+**(請注意：為了增加效能和安全性，我們將系統全面升級。舊版本的手機應用程式將不再能使用，請於Google play 商店下載最新版本的手機應用程式來連結您的手機與MCS平台)**
 
 ![](../images/mobileapp_android.png)
 

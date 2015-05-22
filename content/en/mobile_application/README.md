@@ -7,7 +7,7 @@ Please click [here](https://play.google.com/store/apps/details?id=com.mediatek.i
 
 <a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud"><img src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" border="0"></a>
 
-(If you already installed previous version, you need to un-install the previous version and install the new version again.)
+**(Please be noted that due to system upgrade to enhace security, the old version of mobile app is not working anymore. Please download the latest version of the mobile app in the Google play store to continue using our MCS mobile app.)**
 
 ![](../images/mobileapp_android.png)
 
@@ -15,7 +15,6 @@ The mobile app currently offers for Android only.
 
 To install the app, you must have android v4.0 or above version, and open the above download link in your mobile browser
 
-**Please note: Android 5.x is currently not supported, we will have a refresh shortly. **
 
 Once installed at first launch you will see the screen below:
 
