@@ -1,7 +1,9 @@
 # 手机应用程序
 
 
-您可以使用以下连结 [here](http://mcs.mediatek.com/iot/mobile/android) 或是QR码来下载我们提供的手机应用程序：
+您可以使用以下连结 [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或是QR码来下载我们提供的手机应用程序：
+
+<a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud"><img src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" border="0"></a>
 
 (请注意，若您已经安装过旧的版本，且欲安装新版，请先移除旧版再行安装新版本)
 
