@@ -24,7 +24,7 @@
 
 **6. 我要去哪裡下載手機應用程式呢? **
 
-請點擊此連結[here](http://mcs.mediatek.com/iot/mobile/android) 或用此QR code來下載手機應用程式:
+請點擊此連結[here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或用此QR code來下載手機應用程式:
 
 ![](../images/mobileapp_android.png)
 

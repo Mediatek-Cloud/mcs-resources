@@ -22,7 +22,7 @@
 
 **6. 我要去哪里下载手机应用程式呢? **
 
-请点击此连结 [here](http://mcs.mediatek.com/iot/mobile/android) 或用此QR code来下载手机应用程式:
+请点击此连结 [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或用此QR code来下载手机应用程式:
 
 ![](../images/mobileapp_android.png)
 
