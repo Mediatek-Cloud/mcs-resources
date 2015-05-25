@@ -21,11 +21,11 @@
 
 一旦登入後，您將可以看到所有您建立的，或是有訪問權限的裝置。
 
-![](../images/mobile_screenshot02.png)
+![](../images/Mobile/mobile_screenshot02.png)
 
 您可以點擊裝置的詳細資料按鈕，來檢視您的裝置狀態：
 
-![](../images/mobile_screenshot03.png)
+![](../images/Mobile/mobile_screenshot03.png)
 
 您可以對控制器類型的資料通道下達指令，以改變他的最新狀態。目前手機無法和網頁板一樣顯示圖形化的資料。
 
