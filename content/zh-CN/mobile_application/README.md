@@ -4,7 +4,7 @@
 您可以使用以下连结 [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或是QR码来下载我们提供的手机应用程序：
 
 <a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud">
-  <img src="https://goo.gl/cIzlpF" border="0">
+  <img src="https://goo.gl/cIzlpF" border="0" target="_blank">
 </a>
 
 **(请注意：为了增加效能和安全性，我们将系统全面升级。旧版本的手机应用程式将不再能使用，请于Google play 商店下载最新版本的手机应用程式来连结您的手机与MCS平台)**
