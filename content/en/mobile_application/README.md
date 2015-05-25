@@ -30,11 +30,11 @@ Do not use login using labs@mediatek.com option. This feature is still under dev
 
 Once logged in, you will be able to see devices that are created and belongs to you
 
-![](../images/mobile_screenshot02.png)
+![](../images/Mobile/mobile_screenshot02.png)
 
 You can also click on any of your devices to see the device detail:
 
-![](../images/mobile_screenshot03.png)
+![](../images/Mobile/mobile_screenshot03.png)
 
 For controller data channel you can fire commands, for data channel it shows the last datapoint. Mobile does not support for viewing history record in charts. For this current version, you will need to manually refresh the display by click on the upper right corner drop down menu and select "refresh"
 
