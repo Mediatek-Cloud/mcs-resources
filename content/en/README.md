@@ -34,5 +34,5 @@ MediaTek Cloud Sandbox is currently in closed-beta.
 ## **Prerequisites for Use**
 To make use of MediaTek Cloud Sandbox you must:
 1. [Register as a member of MediaTek Labs] (http://labs.mediatek.com/dpRegister/create)
-2. [Sign-in to the MediaTek Cloud Sandbox] (http://mcs.mediatek.io/v2console)
+2. [Sign-in to the MediaTek Cloud Sandbox] (http://mcs.mediatek.com/v2console)
 3. Obtain a Device ID (API key) for each device added, for use in RESTful API calls
