@@ -3,8 +3,8 @@
 
 您可以使用以下連結 [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或是QR code來下載我們提供的手機應用程式:
 
-<a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud">
-  <img src="https://goo.gl/cIzlpF" border="0" target="_blank">
+<a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud" target="_blank">
+  <img src="https://goo.gl/cIzlpF" border="0">
 </a>
 
 Also, please update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**
