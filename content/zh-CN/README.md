@@ -31,5 +31,5 @@ MediaTek Cloud Sandbox(MCS) 提供您打造准备商转前的穿戴式和物联�
 ## **事前准备**
 要使用MediaTek Cloud Sandbox，您必须先：
 1. [注册成为MediaTek Labs使用者] (http://labs.mediatek.com/dpRegister/create)
-2. [登入MediaTek Cloud Sandbox] (http://mcs.mediatek.io/v2console)
+2. [登入MediaTek Cloud Sandbox] (http://mcs.mediatek.com/v2console)
 3. 取得装置的DeviceId (API Key)来做API呼叫使用
