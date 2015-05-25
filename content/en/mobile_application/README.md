@@ -9,6 +9,8 @@ Please click [here](https://play.google.com/store/apps/details?id=com.mediatek.i
   <img src="https://goo.gl/cIzlpF" border="0" target="_blank">
 </a>
 
+Also, please update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**
+
 **(Please be noted that due to system upgrade to enhance security, the old version of mobile app is not working anymore. Please download the latest version of the mobile app in the Google play store to continue using our MCS mobile app.)**
 
 ![](../images/mobileapp_android.png)

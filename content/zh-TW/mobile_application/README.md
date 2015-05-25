@@ -7,6 +7,8 @@
   <img src="https://goo.gl/cIzlpF" border="0" target="_blank">
 </a>
 
+Also, please update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**
+
 **(請注意：為了增加效能和安全性，我們將系統全面升級。舊版本的手機應用程式將不再能使用，請於Google play 商店下載最新版本的手機應用程式來連結您的手機與MCS平台)**
 
 ![](../images/mobileapp_android.png)
