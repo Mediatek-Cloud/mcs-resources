@@ -8,7 +8,7 @@
 
 ## Steps For 7681 Update
 
-1. Update 7681 with latest firmware. Please follow [MediaTek LinkIt Connect 7681 Developer’s Guide: 3.2 Firmware uploader](http://labs.mediatek.com/fileMedia/download/60b77480-f08e-46de-b4ab-513916dcff75) for further information. It's recommended to follow `3.2 Firmware uploader`, and use syntax like below:
+1. Update 7681 with latest firmware. Please follow [MediaTek LinkIt Connect 7681 Developer’s Guide: 3.2 Firmware uploader](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) for further information. It's recommended to follow `3.2 Firmware uploader`, and use syntax like below:
 
 	on Windows
 

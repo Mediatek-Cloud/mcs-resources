@@ -7,8 +7,6 @@
   <img src="https://goo.gl/cIzlpF" border="0">
 </a>
 
-Also, please update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**
-
 **(请注意：为了增加效能和安全性，我们将系统全面升级。旧版本的手机应用程式将不再能使用，请于Google play 商店下载最新版本的手机应用程式来连结您的手机与MCS平台同时，若您有使用LinkIt connect 7681装置，请更新至最新版本才可继续使用，请参考以下更新连结[7681 Firmware Update Instruction](../7681_firmware_update/))**
 
 ![](../images/mobileapp_android.png)
