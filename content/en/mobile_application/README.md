@@ -5,7 +5,9 @@ Mobile Application
 
 Please click [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) or scan the QR code below to download the APK:
 
-<a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud"><img src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" border="0"></a>
+<a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud">
+  <img src="https://goo.gl/cIzlpF" border="0">
+</a>
 
 **(Please be noted that due to system upgrade to enhace security, the old version of mobile app is not working anymore. Please download the latest version of the mobile app in the Google play store to continue using our MCS mobile app.)**
 
