@@ -22,6 +22,7 @@
    * [Data channel format](api_references/data_channel_format.md)
    * [Command server format](api_references/command_server_format.md)
 * [Mobile application](mobile_application/README.md)
+* [7681 Firmware Update](7681_firmware_update/README.md)
 * [FAQ](faq/README.md)
 * [Terms of use](terms_of_use/README.md)
 
