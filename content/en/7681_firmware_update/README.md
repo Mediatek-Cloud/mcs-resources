@@ -8,7 +8,7 @@
 
 ## Steps For 7681 Update
 
-1. Update 7681 with latest firmware. Please follow [MediaTek LinkIt Connect 7681 Developer’s Guide: 3.2 Firmware uploader](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) for further information. It's recommended to follow `3.2 Firmware uploader`, and use syntax like below:
+1. Update 7681 with latest firmware. Please follow [MediaTek LinkIt Connect 7681 Developer’s Guide: 3.2 Firmware uploader](https://labs.mediatek.com/fileMedia/download/60b77480-f08e-46de-b4ab-513916dcff75) for further information. It's recommended to follow `3.2 Firmware uploader`, and use syntax like below:
 
 	on Windows
 
@@ -30,7 +30,7 @@
 
 ## Steps For Android App
 
-1. Install latest MediaTek Cloud Sandbox Mobile Application for Android on [Google Play](https://2. play.google.com/store/apps/details?id=com.mediatek.iotcloud)
+1. Install latest MediaTek Cloud Sandbox Mobile Application for Android on [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud)
 2. Link to certain Wifi AP
 3. Sign in & Click on the `+` button on the right-bottom side to add devices
 4. Click on `Smart Connection` and input the Wifi SSID/Password to start Smart Connection

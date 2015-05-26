@@ -1,9 +1,7 @@
 # Mobile application
 
-Mobile Application
 
-
-Please click [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) or scan the QR code below to download the APK:
+Please use [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) or scan the QR code below to get our latest mobile application.
 
 <a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud" target="_blank">
   <img src="https://goo.gl/cIzlpF" border="0">
@@ -12,6 +10,8 @@ Please click [here](https://play.google.com/store/apps/details?id=com.mediatek.i
 **(Please be noted that due to system upgrade to enhance security, the old version of mobile app is not working anymore. Please download the latest version of the mobile app in the Google play store to continue using our MCS mobile app. Also, please update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**)**
 
 ![](../images/mobileapp_android.png)
+
+Or, you can [download the apk](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-2.5.0-production-release.apk) directly.
 
 The mobile app currently offers for Android only.
 

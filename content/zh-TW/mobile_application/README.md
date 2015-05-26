@@ -1,7 +1,7 @@
 # 手機應用程式
 
 
-您可以使用以下連結 [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或是QR code來下載我們提供的手機應用程式:
+請使用 [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或是 QR code 來取得我們提供的手機應用程式:
 
 <a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud" target="_blank">
   <img src="https://goo.gl/cIzlpF" border="0">
@@ -11,7 +11,9 @@
 
 ![](../images/mobileapp_android.png)
 
-目前此手機應用成是只提供安卓（Android）版本。
+或是，您可以選擇 [直接下載 apk](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-2.5.0-production-release.apk)。
+
+目前此手機應用程式只提供安卓（Android）版本。
 
 您必須確保您的安卓（Android）手機版本為v4.0以上，並且使用您的手機瀏覽器打開此下載頁面。
 
