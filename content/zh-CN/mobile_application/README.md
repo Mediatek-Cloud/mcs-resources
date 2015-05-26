@@ -1,18 +1,19 @@
 # 手机应用程序
 
 
-您可以使用以下连结 [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或是QR码来下载我们提供的手机应用程序：
+請使用 [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或是QR码来下载我们提供的手机应用程序：
 
 <a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud" target="_blank">
   <img src="https://goo.gl/cIzlpF" border="0">
 </a>
 
-**(请注意：为了增加效能和安全性，我们将系统全面升级。旧版本的手机应用程式将不再能使用，请于Google play 商店下载最新版本的手机应用程式来连结您的手机与MCS平台同时，若您有使用LinkIt connect 7681装置，请更新至最新版本才可继续使用，请参考以下更新连结[7681 Firmware Update Instruction](../7681_firmware_update/))**
+**(请注意：为了增加效能和安全性，我们将系统全面升级。旧版本的手机应用程式将不再能使用，请于Google play 商店下载最新版本的手机应用程式来连结您的手机与MCS平台同时，若您有使用LinkIt connect 7681装置，请更新至最新版本才可继续使用，请参考以下更新连结 [7681 Firmware Update Instruction](../7681_firmware_update/))**
 
 ![](../images/mobileapp_android.png)
 
-目前此手机应用成是只提供安卓（Android）版本。
+目前此手机应用程序只提供安卓（Android）版本。
 
+或是，您可以选择[直接下载 apk](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-2.5.0-production-release.apk) 。
 
 您必须确保您的安卓（Android）手机版本为v4.0以上，并且使用您的手机浏览器打开此下载页面。
 
