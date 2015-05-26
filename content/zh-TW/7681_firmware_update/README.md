@@ -8,7 +8,7 @@
 
 ## Steps For 7681 Update
 
-1. Update 7681 with latest firmware. Please follow [MediaTek LinkIt Connect 7681 Developer’s Guide: 3.2 Firmware uploader](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) for further information. It's recommended to follow `3.2 Firmware uploader`, and use syntax like below:
+1. Update 7681 with latest firmware. Please follow [MediaTek LinkIt Connect 7681 Developer’s Guide: 3.2 Firmware uploader](https://labs.mediatek.com/fileMedia/download/60b77480-f08e-46de-b4ab-513916dcff75) for further information. It's recommended to follow `3.2 Firmware uploader`, and use syntax like below:
 
 	on Windows
 
@@ -30,7 +30,7 @@
 
 ## Steps For Android App
 
-1. Install latest MediaTek Cloud Sandbox Mobile Application for Android on [Google Play](https://2. play.google.com/store/apps/details?id=com.mediatek.iotcloud)
+1. Install latest MediaTek Cloud Sandbox Mobile Application for Android on [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud)
 2. Link to certain Wifi AP
 3. Sign in & Click on the `+` button on the right-bottom side to add devices
 4. Click on `Smart Connection` and input the Wifi SSID/Password to start Smart Connection
@@ -67,7 +67,7 @@ If you cannot see your device on "Add Device" page, the reason might be
 	b. Smart Connection hasn't been established. As **step 5.** mentioned, it's possible to see "No result" for the first time. Ideally process should be that after you click on "Smart Connection", the 7681 is scanned, and the terminal should show some info about connected to the Wifi AP with SSID & given IP Address. At this time, if you refresh again, the device should show on the list. And after this first connection, you should be able to quickly see devices next time when you enter "Add Device" page.
 
 
-Others 
+Others
 
 - Refreshing. It's recommended to refresh multiple times if you could not find
 - `AT#Default`: Reset 7681 to default status, without Wifi binding. 7681s that already connected with other Wifi AP could not be scanned by other Smart Connection. It's required to use `AT#Default` to reset 7681, so that it could be smart connected by .
