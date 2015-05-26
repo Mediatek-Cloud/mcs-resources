@@ -1,13 +1,13 @@
 # 問與答
 
-**1. 哪些裝置可以和MCS平台相連?**
+**1. 哪些裝置可以和 MCS 平台相連?**
 
-幾乎任何具有互聯網連接功能的設備都可以連接到MCS ，裝置須能夠支持RESTful或TCP Socket。
+幾乎任何具有互聯網連接功能的設備都可以連接到 MCS ，裝置須能夠支持 RESTful 或 TCP Socket。
 
 
 **2.我能在MCS平台上做什麼呢?**
 
-您可以使用MCS開發者平台和RESTful API來快速開發您的產品原型，並連接裝置來實現您的應用。
+您可以使用 MCS 開發者平台和 RESTful API 來快速開發您的產品原型，並連接裝置來實現您的應用。
 
 **3. 我該如何上手?**
 
@@ -30,14 +30,14 @@
 
 目前只支援安卓（Android）手機。
 
-**7. 我已經有了MediaTek Labs帳號了，是否能用此帳號登入MCS平台呢? **
+**7. 我已經有了 MediaTek Labs 帳號了，是否能用此帳號登入 MCS 平台呢? **
 
-是的，您可以不須註冊，直接在登入頁面點擊"使用MediaTek Labs帳號登入"來登入MCS平台。
+是的，您可以不須註冊，直接在登入頁面點擊"使用 MediaTek Labs 帳號登入"來登入 MCS 平台。
 
 
 **8. MCS支援哪些瀏覽器?**
 
-我們建議您可以使用Chrome, Firefox, 或是Safari來瀏覽MCS網站。
+我們建議您可以使用 Chrome, Firefox, 或是 Safari 來瀏覽MCS網站。
 
 
 **問與答的內容沒有您想要問的問題嗎? 您可以直接寫信和我們聯絡[mail](mtkcloudsandbox@mediatek.com) **

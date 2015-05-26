@@ -1,22 +1,22 @@
 # Command server 格式
 
-此章节将会说明所有command server的格式，此格式为command server发送指令置装置的格式。
+此章节将会说明所有command server 的格式，此格式为 command server 发送指令置装置的格式。
 
-**此处使用UNIX timestamp时间格式。
+**此处使用 UNIX timestamp 时间格式。
 
-装置会从command server接收到以下格式的指令，并且使用者可以自行写一段解析程式来处理收到的指令。
+装置会从 command server 接收到以下格式的指令，并且使用者可以自行写一段解析程式来处理收到的指令。
 
-以下为一段范例解析程式用来撷取一个PWM资料型态指令中的资料通道ID，资料值，以及频率。
+以下为一段范例解析程式用来撷取一个 PWM 资料型态指令中的资料通道 ID，资料值，以及频率。
 
 https://gist.github.com/MTK-mcs/e8ee0ad19d5f5755b232
 
 
 ## 事前准备
 
-在装置能接收MCS指令前，装置须先和MCS平台做相连。
+在装置能接收 MCS 指令前，装置须先和 MCS 平台做相连。
 
 
-呼叫RESTful API: GET https://api.mediatek.com/mcs/v2/devices/{deviceId}/connections to 来取得一组ip位置以及连接阜来建立连结。
+呼叫 RESTful API: GET https://api.mediatek.com/mcs/v2/devices/{deviceId}/connections to 来取得一组 ip 位置以及连接阜来建立连结。
 
 Command server 回覆格式:
 
@@ -27,7 +27,7 @@ Command server 回覆格式:
 }
 
 ```
-来打开任意一个tcp connection，并且传送一个heartbeat讯息。
+来打开任意一个 tcp connection，并且传送一个 heartbeat 讯息。
 
 Heartbeat 格式:
 
@@ -35,7 +35,7 @@ Heartbeat 格式:
     deviceId, deviceKey, timestamp
 
 ```
-A当TCP长连结建立后，您将可以开始使用MCS平台来对您的装置下指令。
+当 TCP 长连结建立后，您将可以开始使用 MCS 平台来对您的装置下指令。
 
 指令的形式如下：
 ```
@@ -44,7 +44,7 @@ A当TCP长连结建立后，您将可以开始使用MCS平台来对您的装置�
 ```
 
 
-##  各种资料通道的command格式
+##  各种资料通道的 command 格式
 
 
 ### 开关
@@ -59,33 +59,12 @@ deviceId,deviceKey,timestamp,dataChannelId,{0 or 1}
 
 switch01,, 1
 
-代表将switch01资料通道的状态改为开，并且由系统自动带入时间。
+代表将 switch01 资料通道的状态改为开，并且由系统自动带入时间。
 
 ### 分类
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{Key Value}
 ```
-翻譯自中文
-
-### 开关
-
-```
-deviceId,deviceKey,timestamp,dataChannelId,{0 or 1}
-
-```
-0代表关，1代表开。
-
-范例：
-
-switch01,, 1
-
-代表将switch01资料通道的状态改为开，并且由系统自动带入时间。
-
-### 分类
-```
-deviceId,deviceKey,timestamp,dataChannelId,{Key Value}
-```
-Key value 的值将会对应至您所设定的Key name。
 
 ### 整数
 ```
@@ -101,7 +80,7 @@ deviceId,deviceKey,timestamp,dataChannelId,{Float}
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{Hex value}
 ```
-十六进位数的值为A-F以及0-9。
+十六进位数的值为 A-F 以及 0-9。
 
 ### 字串
 ```

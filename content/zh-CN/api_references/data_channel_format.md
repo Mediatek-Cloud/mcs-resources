@@ -1,19 +1,20 @@
 # 资料通道格式
 
-此章节将会说明所有资料通道的API格式，此格式为装置和command server沟通的格式。
+此章节将会说明所有资料通道的 API 格式，此格式为装置和 command server 沟通的格式。
 
 
 # 资料通道格式
 
-此章节将会说明所有资料通道的API格式，此格式为装置和command server沟通的格式。
+此章节将会说明所有资料通道的 API 格式，此格式为装置和 command server 沟通的格式。
 
-**此处使用UNIX timestamp时间格式，且非必要栏位。您可保持:Timestamp为空，此时时间点则会由MCS所收到资料点的时间。
+**此处使用 UNIX timestamp 时间格式，且非必要栏位。您可保持 Timestamp 为空，此时时间点则会由 MCS 所收到资料点的时间。
 
-MCS支持JSON以及CSV两种格式的资料。
+MCS 支持 JSON 以及 CSV 两种格式的资料。
+。
 
 ## 开关
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -28,7 +29,7 @@ JSON格式：
 ```
 
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{0 or 1}
 
@@ -39,11 +40,11 @@ dataChannelId,timestamp,{0 or 1}
 
 switch01,, 1
 
-代表将switch01资料通道的状态改为开，并且由系统自动带入时间。
+代表将 switch01 资料通道的状态改为开，并且由系统自动带入时间。
 
 ## 分类
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -58,7 +59,7 @@ JSON格式：
 ```
 
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{Key Value}
 ```
@@ -66,7 +67,7 @@ Key value 的值将会对应至您所设定的Key name。
 
 ## 整数
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -81,14 +82,14 @@ JSON格式：
 ```
 
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{Integer}
 ```
 
 ## 浮点数
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -103,14 +104,14 @@ JSON格式：
 ```
 
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{Float}
 ```
 
 ## 十六进位数
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -125,7 +126,7 @@ JSON格式：
 ```
 
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{Hex value}
 ```
@@ -133,7 +134,7 @@ dataChannelId,timestamp,{Hex value}
 
 ## 字串
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -148,14 +149,14 @@ JSON格式：
 ```
 
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{string}
 ```
 
 ## GPS
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
        {
@@ -171,7 +172,7 @@ JSON格式：
 
 ```
 
-CSV格式：
+CSV 格式：
 
 ```
 dataChannelId,timestamp,{latitude},{longitude},{altitude}
@@ -185,7 +186,7 @@ dataChannelId,timestamp,{latitude},{longitude},{altitude}
 
 ## GPIO
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -200,14 +201,14 @@ JSON格式：
 ```
 
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{0 ot 1}
 ```
 0代表低，1代表高。
 
 ## PWM
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -223,7 +224,7 @@ JSON格式：
 ```
 
 
-CSV格式
+CSV 格式
 ```
 dataChannelId,timestamp,{Value},{Period}
 ```

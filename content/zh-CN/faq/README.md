@@ -1,12 +1,12 @@
 # 问与答
 
-**1. 哪些装置可以和MCS平台相连?**
+**1. 哪些装置可以和 MCS 平台相连?**
 
-几乎任何具有互联网连接功能的设备都可以连接到MCS ，装置须能够支持RESTful或TCP Socket。
+几乎任何具有互联网连接功能的设备都可以连接到 MCS ，装置须能够支持 RESTful 或 TCP Socket。
 
-**2. 我能在MCS平台上做什么呢?**
+**2. 我能在 MCS 平台上做什么呢?**
 
-您可以使用MCS开发者平台和RESTful API来快速开发您的产品原型，并连接装置来实现您的应用。
+您可以使用 MCS 开发者平台和 RESTful API 来快速开发您的产品原型，并连接装置来实现您的应用。
 
 **3. 我该如何上手?**
 
@@ -22,20 +22,20 @@
 
 **6. 我要去哪里下载手机应用程式呢? **
 
-请点击此连结 [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或用此QR code来下载手机应用程式:
+请点击此连结 [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或用此 QR code 来下载手机应用程式:
 
 ![](../images/mobileapp_android.png)
 
 目前只支援安卓（Android）手机。
 
-**7. 我已经有了MediaTek Labs帐号了，是否能用此帐号登入MCS平台呢? **
+**7. 我已经有了 MediaTek Labs 帐号了，是否能用此帐号登入 MCS 平台呢? **
 
-是的，您可以不须注册，直接在登入页面点击"使用MediaTek Labs帐号登入"来登入MCS平台。
+是的，您可以不须注册，直接在登入页面点击"使用 MediaTek Labs 帐号登入"来登入 MCS 平台。
 
 
-**8. MCS支援哪些浏览器?**
+**8. MCS 支援哪些浏览器?**
 
-我们建议您可以使用Chrome, Firefox, 或是Safari来浏览MCS网站。
+我们建议您可以使用 Chrome, Firefox, 或是 Safari 来浏览 MCS 网站。
 
 
 

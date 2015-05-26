@@ -1,10 +1,10 @@
 # 連接裝置
 
-要讓您的裝置和MCS平台相連，您必須坐以下動作：
+要讓您的裝置和 MCS 平台相連，您必須做以下動作：
 
-呼叫RESTful API: GET https://api.mediatek.com/mcs/v2/devices/{deviceId}/connections 來取得Socket Server IP 和連接阜的值。
+呼叫 RESTful API: GET https://api.mediatek.com/mcs/v2/devices/{deviceId}/connections 來取得 Socket Server IP 和連接阜的值。
 
-Command server會回覆您以下資料:
+Command server 會回覆您以下資料:
 
 ```
 {
@@ -13,7 +13,7 @@ Command server會回覆您以下資料:
 }
 
 ```
-使用取得的ip位置和連接阜，來打開任意一個tcp connection，並且傳送一個heartbeat訊息。
+使用取得的 ip 位置和連接阜，來打開任意一個 tcp connection，並且傳送一個 heartbeat 訊息。
 
 Heartbeat 形式如下:
 
@@ -21,7 +21,7 @@ Heartbeat 形式如下:
     deviceId, deviceKey, timestamp
 
 ```
-當TCP長連結建立後，您將可以開始使用MCS平台來對您的裝置下指令。
+當 TCP 長連結建立後，您將可以開始使用 MCS 平台來對您的裝置下指令。
 
 指令的形式如下：
 
@@ -29,5 +29,5 @@ Heartbeat 形式如下:
     deviceId, deviceKey, timestamp, dataChnId, commandValue
 
 ```
-您可以在API參考資料集中，查看更多關於各種資料通道的指令形式。
+您可以在 API 參考資料集中，查看更多關於各種資料通道的指令形式。
 

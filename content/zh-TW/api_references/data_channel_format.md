@@ -1,10 +1,10 @@
 # 資料通道格式
 
-此章節將會說明所有資料通道的API格式，此格式為裝置和command server溝通的格式。
+此章節將會說明所有資料通道的 API 格式，此格式為裝置和 command server 溝通的格式。
 
-**此處使用UNIX timestamp時間格式，且非必要欄位。您可保持:Timestamp為空，此時時間點則會由MCS所收到資料點的時間。
+**此處使用 UNIX timestamp 時間格式，且非必要欄位。您可保持 Timestamp為空，此時時間點則會由 MCS 所收到資料點的時間。
 
-MCS支持JSON以及CSV兩種格式的資料。
+MCS 支持 JSON 以及 CSV 兩種格式的資料。
 
 
 ## 開關
@@ -34,11 +34,11 @@ dataChannelId,timestamp,{0 or 1}
 
 switch01,, 1
 
-代表將switch01資料通道的狀態改為開，並且由系統自動帶入時間。
+代表將 switch01 資料通道的狀態改為開，並且由系統自動帶入時間。
 
 ## 分類
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -58,11 +58,11 @@ CSV格式：
 dataChannelId,timestamp,{Key Value}
 ```
 
-Key value 的值將會對應至您所設定的Key name。
+Key value 的值將會對應至您所設定的 Key name。
 
 ## 整數
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -77,14 +77,14 @@ JSON格式：
 ```
 
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{Integer}
 ```
 
 ## 浮點數
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -97,14 +97,14 @@ JSON格式：
 }
 
 ```
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{Float}
 ```
 
 ## 十六進位數
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -119,15 +119,15 @@ JSON格式：
 ```
 
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{Hex value}
 ```
-十六進位數的值為A-F以及0-9。
+十六進位數的值為 A-F 以及 0-9。
 
 ## 字串
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -141,14 +141,14 @@ JSON格式：
 
 ```
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{string}
 ```
 
 ## GPS
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
        {
@@ -164,7 +164,7 @@ JSON格式：
 
 ```
 
-CSV格式：
+CSV 格式：
 
 ```
 dataChannelId,timestamp,{latitude},{longitude},{altitude}
@@ -179,7 +179,7 @@ dataChannelId,timestamp,{latitude},{longitude},{altitude}
 
 ## GPIO
 
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -193,14 +193,14 @@ JSON格式：
 
 ```
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{0 ot 1}
 ```
 0代表低，1代表高。
 
 ## PWM
-JSON格式：
+JSON 格式：
 ```
  "datapoints":[
       {
@@ -216,7 +216,7 @@ JSON格式：
 ```
 
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{Value},{Period}
 ```

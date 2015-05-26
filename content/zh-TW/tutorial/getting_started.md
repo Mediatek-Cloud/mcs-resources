@@ -1,6 +1,6 @@
 # 上手指南
 
-透過以下的四個步驟，您能快速使用MediaTek Cloud Sandbox開發您的物聯網專案:
+透過以下的四個步驟，您能快速使用 MediaTek Cloud Sandbox 開發您的物聯網專案:
 
 
 1. 開發產品原型
@@ -68,7 +68,7 @@
 
 ![](../images/screenshot/screen_shot-04.jpg)
 
-步驟七，輸入資料通道名稱，資料通到ID，描述，並選擇資料型態。
+步驟七，輸入資料通道名稱，資料通道 ID，描述，並選擇資料型態。
 
 步驟八，點擊儲存按鈕。您現在可以為您的產品原型建立測試裝置了！
 
@@ -111,14 +111,14 @@
 
 當您創建好測試裝置後，您可以查看或是控制您的裝置來確保在正式商轉前產品的功能穩定性。
 
-您能夠在兩個地方找到測試裝置的DeviceId和DeviceKey：
+您能夠在兩個地方找到測試裝置的 DeviceId 和 DeviceKey：
 
 1. 產品原型頁面中的**測試裝置分頁**。
 2. 測試裝置詳細資料頁面中。
 
 ![](../images/screenshot/screen_shot-07.jpg)
 
-測試裝置的DeviceId和DeviceKey是用來呼叫API時必須使用到的參數。在測試裝置詳細資料頁面中，您會看到藍色字體的DeviceId和DeviceKey編號，單擊藍色編號，將會立即複製至您的剪貼布。
+測試裝置的 DeviceId 和 DeviceKey 是用來呼叫API時必須使用到的參數。在測試裝置詳細資料頁面中，您會看到藍色字體的 DeviceId 和 DeviceKey 編號，單擊藍色編號，將會立即複製至您的剪貼布。
 
 
 
