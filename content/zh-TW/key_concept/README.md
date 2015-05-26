@@ -66,7 +66,7 @@
 
 - **開/關** — 此類型的資料型態用來表示裝置的兩種狀態，使用者能選擇開啟或是關閉裝置的狀態。例如　一盞燈的開或關。
 
-- **類別** — 此類型的資料型態能用來表示一個任Using this feature you can upload and manage the firmware for a specific prototype. Once devices have been created from the prototype the sandbox will detect compatible devices and offer their users the option to update the devices’ firmware over the air.意的類別。您能定義任何您想要的類別和此類別相對的內容。例如您能用來儲存星期，月份，或是風扇的狀態（關，慢速，中速，高速）。
+- **類別** — 此類型的資料型態能用來表示一個任意的類別。您能定義任何您想要的類別和此類別相對的內容。例如您能用來儲存星期，月份，或是風扇的狀態（關，慢速，中速，高速）。
 
 - **整數** — 此類型的資料型態能用來表示任意的整數，例如某一個使用者一天走了多少步的數值。
 
