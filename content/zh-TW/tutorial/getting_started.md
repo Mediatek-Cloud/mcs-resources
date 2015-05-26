@@ -116,8 +116,7 @@
 1. 產品原型頁面中的**測試裝置分頁**。
 2. 測試裝置詳細資料頁面中。
 
-![](../images/screenshot/screen_ot-07.jpg)
-
+![](../images/screenshot/screen_shot-07.jpg)
 
 測試裝置的DeviceId和DeviceKey是用來呼叫API時必須使用到的參數。在測試裝置詳細資料頁面中，您會看到藍色字體的DeviceId和DeviceKey編號，單擊藍色編號，將會立即複製至您的剪貼布。
 
