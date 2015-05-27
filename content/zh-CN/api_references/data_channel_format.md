@@ -16,6 +16,7 @@ MCS 支持 JSON 以及 CSV 两种格式的资料。
 
 JSON 格式：
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -46,6 +47,7 @@ switch01,, 1
 
 JSON 格式：
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -69,6 +71,7 @@ Key value 的值将会对应至您所设定的Key name。
 
 JSON 格式：
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -91,6 +94,7 @@ dataChannelId,timestamp,{Integer}
 
 JSON 格式：
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -113,6 +117,7 @@ dataChannelId,timestamp,{Float}
 
 JSON 格式：
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -136,6 +141,7 @@ dataChannelId,timestamp,{Hex value}
 
 JSON 格式：
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -158,6 +164,7 @@ dataChannelId,timestamp,{string}
 
 JSON 格式：
 ```
+{
  "datapoints":[
        {
          "dataChnId":"dataChnId",
@@ -188,6 +195,7 @@ dataChannelId,timestamp,{latitude},{longitude},{altitude}
 
 JSON 格式：
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -210,6 +218,7 @@ dataChannelId,timestamp,{0 ot 1}
 ## PWM
 JSON 格式：
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",

@@ -11,6 +11,7 @@ MCS supports both json and csv formats.
 
 For json:
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -41,6 +42,7 @@ To turn the switch01 to on state, and do not give the timestamp.
 
 For json:
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -64,6 +66,7 @@ The Key value will correspond to the Key name that you’ve set.
 
 For json:
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -86,6 +89,7 @@ dataChannelId,timestamp,{Integer}
 
 For json:
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -108,6 +112,7 @@ dataChannelId,timestamp,{Float}
 
 For json:
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -131,6 +136,7 @@ Hex is referred to hexadecimal value which only takes value from A-D and 0-9.
 
 For json:
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -152,6 +158,7 @@ dataChannelId,timestamp,{string}
 ## GPS
 For json:
 ```
+{
  "datapoints":[
        {
          "dataChnId":"dataChnId",
@@ -183,6 +190,7 @@ The range of altitude is from 0 to 20000 in meter.
 
 For json:
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
@@ -205,6 +213,7 @@ dataChannelId,timestamp,{0 ot 1}
 ## PWM
 For json:
 ```
+{
  "datapoints":[
       {
          "dataChnId":"dataChanId",
