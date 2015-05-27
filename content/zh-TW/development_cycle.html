@@ -102,103 +102,15 @@
 
 <div class="row" style="margin: 30px 0;">
   <div class="col-lg-6 col-lg-offset-6 col-xs-10 col-xs-offset-0">
-    <a href="tutorial/implementing_using_linkit_one" class="mcs-btn-lg">
+    <div class="col-lg-12">
+      <a href="tutorial/implementing_using_linkit_one" class="mcs-btn-lg">
       LinkIt One 實際操作
-    </a>
-    <a href="tutorial/implementing_using_mt7681_development_board" class="mcs-btn-lg">
+      </a>
+    </div>
+    <div class="col-lg-12" style="margin-top: 20px;">
+      <a href="tutorial/implementing_using_mt7681_development_board" class="mcs-btn-lg">
       LinkIt Connect 7681 實際操作
-    </a>   
+      </a>   
+    </div>
   </div>
-</div>
-
-<div class="col-xs-12">
-  <h2 class="resource__title">
-    建立產品原型
-  </h2>
-  <p style="text-align: justify;">
-    在開發頁面中，您可以建立一個或是多個的產品原型，並且為您的產品原型建立多個測試裝置來和您的實體裝置作連結。 每個產品原型內含有以下內容：
-  </p>
-  <ul>
-    <li style="margin-left: 15px">
-      資料通道，您可以替每個資料通道選擇一種資料型態類型來傳輸。
-    </li>
-    <li style="margin-left: 15px">
-      通知設定，當裝置狀態改變到達預設時，發出通知。
-    </li>
-    <li style="margin-left: 15px">
-      使用者權限管理，您可以管理您個別的產品原型和裝置的使用者權限，讓其他使用者能共同開發或瀏覽。
-    </li>
-    <li style="margin-left: 15px">
-      韌體管理，您可以管理您產品原型的所有韌體，並決定是否更新至個別裝置。
-    </li>
-    <li style="margin-left: 15px">
-      測試裝置，您可以將測試裝置和實體裝置作連結，來實現您的產品原型設計。
-    </li>
-  </ul>
-  <img src="img/img-prototype.svg" style="margin-top: 15px; margin-bottom: 15px" alt="">
-  <p>
-    當您開發完產品原型後，就可以開始建立測試裝置與您的實體裝置作連結了。
-  </p>
-</div>
-<div class="col-xs-12">
-  <h3 class="resource__title">
-    新增資料通道
-  </h3>
-  <p>
-    一個資料通道代表:
-  </p>
-  <ul>
-    <li style="margin-left: 15px">
-      由MCS所儲存的由裝置的感應元件蒐集而來的資料，或是
-    </li>
-    <li style="margin-left: 15px">
-      透過MCS傳送給裝置的指令
-    </li>
-  </ul>
-  <p>
-    這些資料通道可以分為以下幾類：
-  <p>
-</div>
-<div class="col-sm-4 col-xs-12">
-  <img src="img/img-dc-01.svg" alt="">
-  <h3>
-    顯示器
-  </h1>
-  <p style="text-align: justify;">
-    此類型的資料通道是專門儲存和顯示由裝置的感應元件蒐集而來的資料。例如從裝置感應元件上傳而來的溫度，MCS會將此資料以時間序列方式儲存。
-  </p>
-</div>
-<div class="col-sm-4 col-xs-12">
-  <img src="img/img-dc-02.svg" alt="">
-  <h3>
-    控制器
-  </h1>
-  <p style="text-align: justify;">
-    此類型的資料通道是專門用來傳遞指令至裝置，已控制裝置內元件的狀態。例如控制燈的開或關。
-  </p>
-</div>
-<div class="col-sm-4 col-xs-12">
-  <img src="img/img-dc-03.svg" alt="">
-  <h3>
-    綜合型顯示控制器
-  </h1>
-  <p style="text-align: justify;">
-    此類型的資料型態能同時為顯示器和控制器。例如冷氣機的溫度顯示器，並且同時能控制冷氣的開關或是調整溫度。
-  </p>
-</div>
-<div class="col-xs-12">
-  <h3 class="resource__title">
-    建立測試裝置
-  </h3>
-  <p style="text-align: justify;">
-    在產品原型頁面中，您可以點擊創建測試裝置按鈕來建立測試裝置。每個測試裝置都會被賦予一組DeviceId和DeviceKey，您將會在之後呼叫MCS API來收發資料時，使用到這些資訊。您可以在產品原型中的測試裝置分頁或是裝置詳情頁面中查看關於裝置的詳細資料以及DeviceId和DeviceKey。
-  </p>
-</div>
-<div class="col-xs-12">
-  <h3 class="resource__title">
-    連接測試裝置
-  </h3>
-  <p style="text-align: justify;">
-    將您的開發板連上網路後，使用手機下載MCS 手機應用程式來登入。使用Smart connection功能來將開發板裝置連結至MCS平台，並且註冊相對應的測試裝置。
-  </p>
 </div>
