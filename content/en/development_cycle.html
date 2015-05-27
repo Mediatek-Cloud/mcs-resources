@@ -1,20 +1,24 @@
-<div class="mcs-grid">
-  <div class="mcs-grid-lg-12">
+<div class="row">
+  <div class="col-xs-12">
     <h1>
       Tutorial
     </h1>
   </div>
 </div>
-<div class="mcs-grid">
-  <div class="mcs-grid-lg-12">
+<div class="row">
+  <div class="col-xs-12">
     <h2>
       Development cycle
     </h2>
   </div>
 </div>
-<div class="mcs-grid">
-  <div class="mcs-grid-lg-6">
-    <h2 style="margin-top:170px" class="mcs-color-blue">
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-1 col-sm-push-5 col-xs-12">
+    <img src="img/img-cycle-01.svg" alt="">
+  </div>
+  <div class="col-sm-5 col-sm-offset-0 col-sm-pull-7 col-xs-10 col-xs-offset-1">
+    <h2 class="mcs-dynamic-title mcs-color-blue">
       a. Start
     </h2>
     <p>
@@ -28,45 +32,43 @@
       for a free account
     </p>
   </div>
-  <div class="mcs-grid-lg-6">
-    <img src="img/img-cycle-01.svg" alt="">
-  </div>
 </div>
-<div class="mcs-grid">
-  <div class="mcs-grid-lg-6">
+
+<div class="row">
+  <div class="col-sm-5 col-sm-offset-0 col-xs-12">
     <img src="img/img-cycle-02.svg" alt="">
   </div>
-  <div class="mcs-grid-lg-1" style="height:100px"></div>
-  <div class="mcs-grid-lg-5">
-    <h2 style="margin-top:145px" class="mcs-color-blue">
+  <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+    <h2 class="mcs-dynamic-title mcs-color-blue">
       b. Create Prototype
     </h2>
     <p style="text-align: justify;">
       Click development on the top menu bar to create prototypes. In a prototype you can define data channels, configure notification user privilege, and firmware.
     </p>
   </div>
+
 </div>
-<div class="mcs-grid">
-  <div class="mcs-grid-lg-6">
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-1 col-sm-push-5 col-xs-12">
     <img src="img/img-cycle-03.svg" alt="">
   </div>
-  <div class="mcs-grid-lg-1" style="height:100px"></div>
-  <div class="mcs-grid-lg-5">
-    <h2 style="margin-top:160px;text-align: justify;" class="mcs-color-blue">
+  <div class="col-sm-5 col-sm-offset-0 col-sm-pull-7 col-xs-10 col-xs-offset-1">
+    <h2 style="text-align: justify;" class="mcs-dynamic-title mcs-color-blue">
       c. Add data channel
     </h2>
     <p>
       Click Add in the prototype to create data channels for the test device.
     </p>
   </div>
+
 </div>
-<div class="mcs-grid">
-  <div class="mcs-grid-lg-12">
+<div class="row">
+  <div class="col-xs-12">
     <img src="img/img-cycle-04.svg" alt="">
   </div>
 </div>
-<div class="mcs-grid">
-  <div class="mcs-grid-lg-5">
+<div class="row">
+  <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
     <h2 class="mcs-color-blue">
       d. Create test device
     </h2>
@@ -74,8 +76,7 @@
       After all data channels are set, click Create test device button to create a test device.
     </p>
   </div>
-  <div class="mcs-grid-lg-2" style="height:100px"></div>
-  <div class="mcs-grid-lg-5">
+  <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
     <h2 class="mcs-color-blue">
       e. Connect test device
     </h2>
@@ -84,29 +85,33 @@
     </p>
   </div>
 </div>
-<div class="mcs-grid">
-  <div class="mcs-grid-lg-5">
-    <h2 style="margin-top: 200px;" class="mcs-color-blue">
+<div class="row">
+  <div class="col-sm-5 col-sm-offset-0 col-xs-12">
+    <img src="img/img-cycle-05.svg" alt="">
+  </div>
+  <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+    <h2 class="mcs-dynamic-title mcs-color-blue">
       f. Manage and control the test device
     </h2>
     <p style="text-align: justify;">
       In the My device page. You can manage and view all authorize test devices.
     </p>
-  </div>
-  <div class="mcs-grid-lg-1" style="height:100px"></div>
-  <div class="mcs-grid-lg-6">
-    <img src="img/img-cycle-05.svg" alt="">
+
   </div>
 </div>  
-<div class="mcs-grid-lg-12">
-  <a href="tutorial/implementing_using_linkit_one" ng-click="scrollToTop()" class="mcs-btn-lg">
-    Develop with LinkIt One
-  </a>
-  <a href="tutorial/implementing_using_mt7681_development_board" ng-click="scrollToTop()" class="mcs-btn-lg">
-    Develop with LinkIt Connect 7681
-  </a>   
+
+<div class="row" style="margin: 30px 0;">
+  <div class="col-lg-6 col-lg-offset-6 col-xs-10 col-xs-offset-0">
+    <a href="tutorial/implementing_using_linkit_one" class="mcs-btn-lg">
+      Develop with LinkIt One
+    </a>
+    <a href="tutorial/implementing_using_mt7681_development_board" class="mcs-btn-lg">
+      Develop with LinkIt Connect 7681
+    </a>   
+  </div>
 </div>
-<div class="mcs-grid-lg-12">
+
+<div class="col-xs-12">
   <h2 class="resource__title">
     Create Prototype
   </h2>
@@ -135,7 +140,7 @@
     Once you’ve defined a Prototype, you can add devices as you need throughout your project.
   </p>
 </div>
-<div class="mcs-grid-lg-12">
+<div class="col-xs-12">
   <h3 class="resource__title">
     Add data channel
   </h3>
@@ -154,7 +159,7 @@
     These data channels are implemented in the sandbox as the following types:
   <p>
 </div>
-<div class="mcs-grid-lg-4">
+<div class="col-sm-4 col-xs-12">
   <img src="img/img-dc-01.svg" alt="">
   <h3>
     Display
@@ -163,7 +168,7 @@
     Display data channel takes data generated from a device and show the data to the users. For example, data from a temperature sensor.
   </p>
 </div>
-<div class="mcs-grid-lg-4">
+<div class="col-sm-4 col-xs-12">
   <img src="img/img-dc-02.svg" alt="">
   <h3>
     Controller
@@ -172,7 +177,7 @@
     Controller data channel allows users to send control command to the device. For example, a switch to turn a light on or off.
   </p>
 </div>
-<div class="mcs-grid-lg-4">
+<div class="col-sm-4 col-xs-12">
   <img src="img/img-dc-03.svg" alt="">
   <h3>
     Hybrid
@@ -181,7 +186,7 @@
     This data channel enables a Display and Controller data channel to be combined. For example, as a temperature display and controller for an air conditioner.
   </p>
 </div>
-<div class="mcs-grid-lg-12">
+<div class="col-xs-12">
   <h3 class="resource__title">
     Create test device
   </h3>
@@ -189,7 +194,7 @@
     In the prototype page, you can create a test device by click on the Create test device button. Each device you create is given a deviceId and deviceKey, which you use in the MediaTek Cloud Sandbox APIs to identify data pushed to and pulled from the device. Device details, along with their deviceId and devicekey, are displayed in your test device tab or you can also manage all the test devices in the My Devices page.
   </p>
 </div>
-<div class="mcs-grid-lg-12">
+<div class="col-xs-12">
   <h3 class="resource__title">
     Connect test device
   </h3>
