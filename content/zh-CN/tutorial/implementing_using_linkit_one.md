@@ -24,7 +24,7 @@ a. 登入平台后，点选上方的"开发"，并且点击新增按钮，来新
 
 ![](../images/screenshot/screen_shot-01.jpg)
 
-b. 请跟着画面只是填入产品原型的基本资讯：
+b. 请跟着画面指示填入产品原型的基本资讯：
 
 ![](../images/screenshot/screen_shot-08.jpg)
 
