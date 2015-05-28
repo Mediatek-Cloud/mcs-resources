@@ -30,8 +30,8 @@ JSON格式的請求內容會包含以下幾個欄位：
 | name | String | Yes | 裝置名稱 |
 | isTest | Bool | Yes | 是否為測試裝置 |
 | description | String | No | 裝置描述 |
-| serial | String | No | 開發者可定義是否使用序號。若isTest為真，則不需要。 |
-| deviceImageURL | String | No | 裝置圖片url |
+| serial | String | No | 開發者可定義是否使用序號。若 isTest 為真，則不需要。 |
+| deviceImageURL | String | No | 裝置圖片 url |
 
 
 
@@ -91,12 +91,12 @@ https://api.mediatek.com/mcs/v2/devices
 ```
 
 ## 錯誤回覆
-當錯誤發生時，回覆代碼為非200之其他代碼。回覆內容為JSON格式並會包括以下資訊：
+當錯誤發生時，回覆代碼為非 200 之其他代碼。回覆內容為 JSON 格式並會包括以下資訊：
 
 | 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
 | code | Integer | 錯誤代碼 |
-| url | String | API錯誤頁面url|
+| url | String | API 錯誤頁面 url|
 | description | String | 錯誤描述 |
 
 **範例:**

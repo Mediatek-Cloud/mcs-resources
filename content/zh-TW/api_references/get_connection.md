@@ -3,18 +3,18 @@
 
 ## 描述
 
-使用 **HTTPs GET** 來設置裝置和MCS Command server之間的連線
+使用 **HTTPs GET** 來設置裝置和 MCS Command server 之間的連線
 
 
 ## 請求 URL
 
-設置裝置和MCS Command server之間的連線:
+設置裝置和 MCS Command server 之間的連線:
 
 ```
 https://api.mediatek.com/mcs/v2/devices/:deviceId/connections
 
 ```
-設定裝置和Command server之間的TCP長連結，裝置首先需要呼叫RESTful API `getConnection`來取得一組ip位置以及連接阜來建立TCP長連結。MCS將會回覆ip地址和連接阜資訊給裝置。
+設定裝置和 Command server 之間的 TCP 長連結，裝置首先需要呼叫 RESTful API `getConnection` 來取得一組 ip 位置以及連接阜來建立 TCP 長連結。MCS 將會回覆 ip 地址和連接阜資訊給裝置。
 
 Command server 回覆格式:
 
@@ -25,7 +25,7 @@ Command server 回覆格式:
 }
 
 ```
-當裝置收到覆ip地址和連接阜後，裝置會發出一個heartbeat給command server來驗證。裝置也會每120秒發送一次heartbeat給command server來確保連線。
+當裝置收到覆 ip 地址和連接阜後，裝置會發出一個 heartbeat 給 command server 來驗證。裝置也會每 120 秒發送一次 heartbeat 給 command server 來確保連線。
 
 
 Heartbeat 格式:
@@ -35,7 +35,7 @@ Heartbeat 格式:
 
 ```
 
-當TCP長連結建立後，您將可以透過MCS平台對裝置下指令。
+當 TCP 長連結建立後，您將可以透過 MCS 平台對裝置下指令。
 
 指令格式:
 ```
@@ -61,16 +61,16 @@ deviceKey: `device_key_here`
 
 ### 回覆格式
 
-回覆格式可以有JSON或是CSV兩種
+回覆格式可以有 JSON 或是 CSV 兩種
 
 JSON:
 
-請求url結尾為 *connections*
+請求 url 結尾為 *connections*
 
 
 CSV:
 
-請求url結尾為 *connections.csv*
+請求 url 結尾為 *connections.csv*
 
 
 ## 回覆
@@ -93,12 +93,13 @@ Content-Type: `text/csvt`
 
 ***回覆格式: JSON***
 
-JSON格式的回覆內容會包含以下幾個欄位：
+JSON 格式的回覆內容會包含以下幾個欄位：
 
 | 欄位名稱 | 格式 |描述|
-| --- | --- | --- | --- |
-| ip | array | command server ip位置|
-|port|Integer|command server 提供給裝置連接的連接阜|
+| --- | --- | --- |
+| ip | array | command server ip 位置 |
+| port | integer | command server 提供給裝置連接的連接阜|
+
 
 
 **範例：**
@@ -121,7 +122,7 @@ https://api.mediatek.com/mcs/v2/devices/a1234567890/connections
 
 ## 錯誤回覆
 
-當錯誤發生時，回覆代碼為非200之其他代碼。回覆內容為JSON格式並會包括以下資訊：
+當錯誤發生時，回覆代碼為非 200 之其他代碼。回覆內容為 JSON 格式並會包括以下資訊：
 
 | 欄位名稱 | 格式 |描述|
 | --- | --- | --- |

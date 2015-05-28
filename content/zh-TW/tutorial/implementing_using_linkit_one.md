@@ -81,7 +81,7 @@ c. 測試裝置建立後，點擊"詳細資訊"連結至測試裝置詳情頁面
 
 請注意，deviceId 和 deviceKey 是獨特不可重複的，之後將會在呼叫 API 時使用到。
 
-### 步驟三　取得DeviceId，DeviceKey，以及資料通道ID
+### 步驟三　取得DeviceId，DeviceKey，以及資料通道 ID
 
 下方的摘要訊息為我們與測試裝置溝通時所需要的必要欄位：
 

@@ -47,7 +47,7 @@ JSON格式的回覆會包含以下幾個欄位：
 | product | Object | 產品原型 |
 | dataChannels | Object Array | 資料通道 |
 | fw | Object | 韌體資訊 |
-| trustIpRange | String Array | 可連至MCS的信賴網域範圍 |
+| trustIpRange | String Array | 可連至 MCS 的信賴網域範圍 |
 | lastIp | String | 最後一次收到裝置資料點的網域位址 |
 | deviceImageURL | String | 裝置圖片 URL |
 | isHeartbeating | Bool | 裝置是否在線 |
@@ -55,7 +55,7 @@ JSON格式的回覆會包含以下幾個欄位：
 | isActive | Bool | 裝置是否已註冊 |
 | isTest | Bool | 是否為測試裝置 |
 | activatedAt | Number | 裝置註冊時間 |
-| deactivatedAt | Number | 裝置註銷時間 (若裝置已註冊且未被註銷，則此值的默認值為null) |
+| deactivatedAt | Number | 裝置註銷時間 (若裝置已註冊且未被註銷，則此值的默認值為 null) |
 | tags | Object Array | 裝置標籤 |
 | privilege | String | 裝置使用者權限 |
 
@@ -69,7 +69,7 @@ JSON格式的回覆會包含以下幾個欄位：
 | prodVersion | String | 產品原型版本 |
 | name | String | 產品原型名稱 |
 | description | String | 產品原型描述 |
-| displayConfigs | Object Array | 一個JSON格式的物件，定義資料通道將如何呈現 |
+| displayConfigs | Object Array | 一個 JSON 格式的物件，定義資料通道將如何呈現 |
 | chip | String | 產品原型所使用的晶片類型 |
 
 
@@ -78,7 +78,7 @@ JSON格式的回覆會包含以下幾個欄位：
 | 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
 | dataChnId | Number | 資料通道 ID |
-| isAvailable | Bool | Is the device normal |
+| isAvailable | Bool | 資料是否可用 |
 | name | String | 資料通道名稱|
 | channelType | Object | 資料通道類型 |
 | isHidden | Bool | 資料通道是否對使用者隱藏 |
@@ -381,12 +381,12 @@ https://api.mediatek.com/mcs/v2/devices/d1234567890,d1234567891
 ```
 ## 錯誤回覆
 
-當錯誤發生時，回覆代碼為非200之其他代碼。回覆內容為JSON格式並會包括以下資訊：
+當錯誤發生時，回覆代碼為非 200 之其他代碼。回覆內容為 JSON 格式並會包括以下資訊：
 
 | 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
 | code | Integer | 錯誤代碼 |
-| url | String | API錯誤頁面url|
+| url | String | API 錯誤頁面 url|
 | description | String | 錯誤描述 |
 
 

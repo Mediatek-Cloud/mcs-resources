@@ -14,8 +14,8 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/da
 
 ```
 
-API請求默認值為json格式，如欲使用csv格式，請在API請求URL最後端加上`.csv`。
-使用此API，您可以選擇您要的資料範圍：
+API 請求默認值為 JSON 格式，如欲使用 CSV 格式，請在 API 請求 URL 最後端加上`.csv`。
+使用此 API，您可以選擇您要的資料範圍：
 
 * 只讀取最後一個資料點：
 
@@ -29,7 +29,7 @@ API請求默認值為json格式，如欲使用csv格式，請在API請求URL最�
     在請求url尾端加上`?start=:startTime&end=:endTime`
 
 
-* 限制您要讀取的資料點數目 (舉例來說, 如果您輸入 :limit=5, 則您會讀取前五筆資料點):
+* 限制您要讀取的資料點數目 (舉例來說, 如果您輸入 limit=5, 則您會讀取前五筆資料點):
 
 
     在請求url尾端加上 `?limit=:limit`
@@ -58,10 +58,10 @@ API請求默認值為json格式，如欲使用csv格式，請在API請求URL最�
 1.
 使用回傳最後 *n (n=數目)* 的資料點時，將不能指定 *開始時間* 與 *結束時間*時。
 
-2.　當您指定*start_time* 和 *end_time*時，若還是有使用設定回傳資料點數目，此時，此回傳資料點數目的查詢將會被忽略。
+2.　當您指定 *start_time* 和 *end_time* 時，若還是有使用設定回傳資料點數目，此時，此回傳資料點數目的查詢將會被忽略。
 
 
-**每次請求最多只能讀取1000筆資料點**
+**每次請求最多只能讀取 1000 筆資料點**
 
 
 ## 動作
@@ -77,16 +77,16 @@ deviceKey: `device_key_here`
 ```
 
 ### 回覆格式
-您能選擇回覆JSON或是CSV格式
+您能選擇回覆 JSON 或是 CSV 格式
 
 JSON:
 
-請求url結尾為 *datapoints*
+請求 url 結尾為 *datapoints*
 
 
 CSV:
 
-請求url結尾為 *datapoints.csv*
+請求 url 結尾為 *datapoints.csv*
 
 
 
@@ -109,7 +109,7 @@ Content-Type: `text/csv`
 
 ***資料格式: JSON***
 
-若使用JSON回覆格式，則會包含以下欄位：
+若使用 JSON 回覆格式，則會包含以下欄位：
 
 | 欄位名稱 | 格式 | 描述|
 | --- | --- | --- | --- |
@@ -130,10 +130,10 @@ Content-Type: `text/csv`
 
 | 欄位名稱 | 格式 | 描述|
 | --- | --- | --- | --- |
-| createdAt | Number | 以Unix timestamp 格式紀錄的資料點建立時間|
+| createdAt | Number | 以 Unix timestamp 格式紀錄的資料點建立時間|
 | values | Object | 資料點的值 |
 
-請注意，我們在此使用的unix timestamp miniseconds時間值，若須轉換成可讀格式，您可以使用以下連結：
+請注意，我們在此使用的 unix timestamp miniseconds 時間值，若須轉換成可讀格式，您可以使用以下連結：
 http://www.epochconverter.com/
 
 **範例：**
@@ -144,7 +144,7 @@ https://api.mediatek.com/mcs/v2/devices/a1234567890/datachannels/10001/datapoint
 
 ```
 
-JSON格式的回覆內容：
+JSON 格式的回覆內容：
 
 ```
 {
@@ -155,7 +155,7 @@ JSON格式的回覆內容：
             "isOverflow": false,
             "dataPoints": [
                 {
-                    "recordedAt": 1426457820600,
+                    "recordedAt": 1432538716989,
                     "values": {
                         "value": "HI"
                     }
@@ -166,23 +166,23 @@ JSON格式的回覆內容：
 }
 ```
 
-CSV格式的回覆內容：
+CSV 格式的回覆內容：
 
 ```
-test_data_channel,94668480,100
+test_data_channel,1432538716989,100
 ```
 
 
 
 ## 錯誤回覆
 
-當錯誤發生時，回覆代碼為非200之其他代碼。回覆內容為JSON格式並會包括以下資訊：
+當錯誤發生時，回覆代碼為非 200 之其他代碼。回覆內容為 JSON 格式並會包括以下資訊：
 
 
 | 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
 | code | Integer | 錯誤代碼 |
-| url | String | API錯誤頁面url|
+| url | String | API 錯誤頁面 url|
 | description | String | 錯誤描述 |
 
 

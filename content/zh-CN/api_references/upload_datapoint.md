@@ -11,7 +11,7 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints
 
 ```
 
-API请求默认值为json格式，如欲使用csv格式，请在API请求URL最后端加上`.csv`。
+API 请求默认值为 JSON 格式，如欲使用 CSV 格式，请在 API 请求URL最后端加上`.csv`。
 
 ## 动作
 HTTPs POST
@@ -59,28 +59,28 @@ Content-Type:`text/csv`
 如欲参考更多详细的资料通道类型之格式，请参考以下连结 [here](api_references#data_channel_format).
 
 
-请注意：若您不需要上传装置的时间点,则您可保持*:Timestamp*为空(但保留逗号)，此时时间点则会由MCS所收到资料点的时间。
+请注意：若您不需要上传装置的时间点,则您可保持 *Timestamp* 为空(但保留逗号)，此时时间点则会由 MCS 所收到资料点的时间。
 
 
 范例：
 ```
-1,946684800,26
+1,1432538716989,26
 2,,26.34,12,59
 ```
-第一行：资料通道ID为1，并且给予时间点，26为上传的值(此时的资料通道类型为整数)。
+第一行：资料通道 ID 为 1，并且给予时间点，26 为上传的值(此时的资料通道类型为整数)。
 
-第二行：资料通道ID为2，并且不给予时间点，26.34为上传的值(此时的资料通道类型为浮点数)。
+第二行：资料通道 ID 为 2，并且不给予时间点，26.34 为上传的值(此时的资料通道类型为浮点数)。
 
 
 #### JSON 格式
 
 语法:
 
-每个JSON格式的资料点，都包含下列三种型态的资料：
+每个 JSON 格式的资料点，都包含下列三种型态的资料：
 
 *dataChnId, timestamp, values*
 
-Values是资料点的值，大部分情况下代表一个值。但也有例外，例如GPS资料就会有三个值。
+Values 是资料点的值，大部分情况下代表一个值。但也有例外，例如 GPS 资料就会有三个值。
 
 
 ```
@@ -88,14 +88,14 @@ Values是资料点的值，大部分情况下代表一个值。但也有例外�
    "datapoints":[
       {
          "dataChnId":"1",
-         "timestamp":946684800,
+         "timestamp":1432538716989,
          "values":{
             "value":"26"
          }
       },
       {
          "dataChnId":"2",
-         "timestamp":946684800,
+         "timestamp":1432538716989,
          "values":{
             "latitude":"26.34",
             "longitude":"12",
@@ -106,7 +106,7 @@ Values是资料点的值，大部分情况下代表一个值。但也有例外�
 }
 
 ```
-请注意，我们在此使用的unix timestamp miniseconds时间值，若须转换成可读格式，您可以使用以下连结：
+请注意，我们在此使用的 unix timestamp miniseconds 时间值，若须转换成可读格式，您可以使用以下连结：
 http://www.epochconverter.com/
 
 ## 回覆
@@ -129,7 +129,7 @@ https://api.mediatek.com/mcs/v2/devices/d1234567890/datapoints
 请求内容：
 
 ```
-1,946684800,26
+1,1432538716989,26
 2,,26.34,12,59
 ```
 
@@ -143,12 +143,12 @@ https://api.mediatek.com/mcs/v2/devices/d1234567890/datapoints
 
 ## 错误回覆
 
-当错误发生时，回覆代码为非200之其他代码。回覆内容为JSON格式并会包括以下资讯：
+当错误发生时，回覆代码为非 200 之其他代码。回覆内容为 JSON 格式并会包括以下资讯：
 
 | 栏位名称 | 格式 |描述|
 | --- | --- | --- |
 | code | Integer | 错误代码 |
-| url | String | API错误页面url |
+| url | String | API 错误页面 url |
 | description | String | 错误描述 |
 
 **范例:**

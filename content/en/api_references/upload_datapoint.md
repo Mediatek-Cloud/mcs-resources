@@ -64,7 +64,7 @@ Note: Leave *:Timestamp* field empty (but keep the commas) if device does not wi
 
 Example:
 ```
-1,946684800,26
+1,1432538716989,26
 2,,26.34,12,59
 ```
 Line 1: Data Channel Id = 1, with a given timestamp, 26 is the value of this datapoint (in this case the data type pre-defined as integer)
@@ -88,14 +88,14 @@ Values is the context of the datapoint value, for most cases represented by one 
    "datapoints":[
       {
          "dataChnId":"1",
-         "timestamp":946684800,
+         "timestamp":1432538716989,
          "values":{
             "value":"26"
          }
       },
       {
          "dataChnId":"2",
-         "timestamp":946684800,
+         "timestamp":1432538716989,
          "values":{
             "latitude":"26.34",
             "longitude":"12",
@@ -132,7 +132,7 @@ https://api.mediatek.com/mcs/v2/devices/d1234567890/datapoints
 Request Body
 
 ```
-1,946684800,26
+1,1432538716989,26
 2,,26.34,12,59
 ```
 

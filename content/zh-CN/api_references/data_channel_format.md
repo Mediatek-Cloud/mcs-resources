@@ -35,7 +35,7 @@ CSV 格式：
 dataChannelId,timestamp,{0 or 1}
 
 ```
-0代表关，1代表开。
+0 代表关，1 代表开。
 
 范例：
 
@@ -65,7 +65,7 @@ CSV 格式：
 ```
 dataChannelId,timestamp,{Key Value}
 ```
-Key value 的值将会对应至您所设定的Key name。
+Key value 的值将会对应至您所设定的 Key name。
 
 ## 整数
 
@@ -135,7 +135,7 @@ CSV 格式：
 ```
 dataChannelId,timestamp,{Hex value}
 ```
-十六进位数的值为A-F以及0-9。
+十六进位数的值为 A-F 以及 0-9。
 
 ## 字串
 
@@ -213,7 +213,7 @@ CSV 格式：
 ```
 dataChannelId,timestamp,{0 ot 1}
 ```
-0代表低，1代表高。
+0 代表低，1 代表高。
 
 ## PWM
 JSON 格式：

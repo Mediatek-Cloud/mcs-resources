@@ -53,7 +53,7 @@ Heartbeat 格式:
 deviceId,deviceKey,timestamp,dataChannelId,{0 or 1}
 
 ```
-0代表關，1代表開。
+0 代表關，1 代表開。
 
 範例：
 
@@ -97,13 +97,13 @@ deviceId,deviceKey,timestamp,dataChannelId,{latitude},{longitude},{altitude}
 
 經度範圍從 -180 至 180。 0 至 180 代表東經，0 至 -180 代表西經。
 
-高度範圍從 0 至 20000公尺。
+高度範圍從 0 至 20000 公尺。
 
 ### GPIO
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{0 ot 1}
 ```
-0代表低，1代表高。
+0 代表低，1 代表高。
 
 ### PWM
 ```

@@ -2,14 +2,14 @@
 
 此章節將會說明所有資料通道的 API 格式，此格式為裝置和 command server 溝通的格式。
 
-**此處使用 UNIX timestamp 時間格式，且非必要欄位。您可保持 Timestamp為空，此時時間點則會由 MCS 所收到資料點的時間。
+**此處使用 UNIX timestamp 時間格式，且非必要欄位。您可保持 Timestamp 為空，此時時間點則會由 MCS 所收到資料點的時間。
 
 MCS 支持 JSON 以及 CSV 兩種格式的資料。
 
 
 ## 開關
 
-JSON格式：
+JSON 格式：
 ```
 {
  "datapoints":[
@@ -24,12 +24,12 @@ JSON格式：
 
 ```
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{0 or 1}
 
 ```
-0代表關，1代表開。
+0 代表關，1 代表開。
 
 範例：
 
@@ -55,7 +55,7 @@ JSON 格式：
 ```
 
 
-CSV格式：
+CSV 格式：
 ```
 dataChannelId,timestamp,{Key Value}
 ```
@@ -181,7 +181,7 @@ dataChannelId,timestamp,{latitude},{longitude},{altitude}
 
 經度範圍從 -180 至 180。 0 至 180 代表東經，0 至 -180 代表西經。
 
-高度範圍從 0 至 20000公尺。
+高度範圍從 0 至 20000 公尺。
 
 
 ## GPIO
@@ -205,7 +205,7 @@ CSV 格式：
 ```
 dataChannelId,timestamp,{0 ot 1}
 ```
-0代表低，1代表高。
+0 代表低，1 代表高。
 
 ## PWM
 JSON 格式：

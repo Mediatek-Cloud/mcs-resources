@@ -29,7 +29,7 @@ JSON格式的请求内容会包含以下几个栏位：
 | name | String | Yes | 装置名称 |
 | isTest | Bool | Yes | 是否为测试装置 |
 | description | String | No | 装置描述 |
-| serial | String | No | 开发者可定义是否使用序号。若isTest为真，则不需要。 |
+| serial | String | No | 开发者可定义是否使用序号。若 isTest 为真，则不需要。 |
 | deviceImageURL | String | No | 装置图片url |
 
 
@@ -47,7 +47,7 @@ Content-Type:`application/json`
 
 ***回覆格式: JSON***
 
-JSON格式的回覆内容会包含以下几个栏位：
+JSON 格式的回覆内容会包含以下几个栏位：
 
 | 栏位名称 | 格式 |描述|
 | --- | --- | --- |
@@ -91,7 +91,7 @@ https://api.mediatek.com/mcs/v2/devices
 回覆内容
 
 ## 错误回覆
-当错误发生时，回覆代码为非200之其他代码。回覆内容为JSON格式并会包括以下资讯：
+当错误发生时，回覆代码为非 200 之其他代码。回覆内容为 JSON 格式并会包括以下资讯：
 
 | 栏位名称 | 格式 |描述|
 | --- | --- | --- |

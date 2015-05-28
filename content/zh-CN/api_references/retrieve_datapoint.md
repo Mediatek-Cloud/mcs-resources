@@ -15,9 +15,9 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/da
 ```
 
 
-API请求默认值为json格式，如欲使用csv格式，请在API请求URL最后端加上`.csv`。
+API 请求默认值为 JSON 格式，如欲使用 CSV 格式，请在 API 请求 URL 最后端加上`.csv`。
 
-使用此API，您可以选择您要的资料范围：
+使用此 API，您可以选择您要的资料范围：
 
 * 只读取最后一个资料点：
 
@@ -25,16 +25,16 @@ API请求默认值为json格式，如欲使用csv格式，请在API请求URL最�
 * 读取一段时间范围内的资料点：
 
 
-    在请求url尾端加上`?start=:startTime&end=:endTime`
+    在请求 url 尾端加上`?start=:startTime&end=:endTime`
 
 
-* 限制您要读取的资料点数目(举例来说, 如果您输入:limit=5, 则您会读取前五笔资料点):
+* 限制您要读取的资料点数目(举例来说, 如果您输入 limit=5 , 则您会读取前五笔资料点):
 
 
-    在请求url尾端加上 `?offset=:offset`
+    在请求 url 尾端加上 `?offset=:offset`
 
 
-* 读取从某一个资料点受开始的资料(举例来说, 如果您输入offset=5, 则您会读取第五笔资料点之后的所有资料点):
+* 读取从某一个资料点受开始的资料(举例来说, 如果您输入 offset=5, 则您会读取第五笔资料点之后的所有资料点):
 
 
     Use the `?offset=:offset` at the end.
@@ -43,30 +43,30 @@ API请求默认值为json格式，如欲使用csv格式，请在API请求URL最�
 
 您亦可以将以上四种方式混合使用。
 
-使用**HTTPs GET** 来取得装置回传的资料点
+使用 **HTTPs GET** 来取得装置回传的资料点
 
 
 ## 请求 URL
 
 读取特定资料通道中的资料点：
-API请求默认值为json格式，如欲使用csv格式，请在API请求URL最后端加上`.csv`。
-使用此API，您可以选择您要的资料范围：
+API 请求默认值为 JSON 格式，如欲使用 CSV 格式，请在 API 请求 URL 最后端加上`.csv`。
+使用此 API，您可以选择您要的资料范围：
 
 * 只读取最后一个资料点：
 * 读取一段时间范围内的资料点：
-    在请求url尾端加上`?start=:startTime&end=:endTime`
+    在请求 url 尾端加上`?start=:startTime&end=:endTime`
 
 
-* 限制您要读取的资料点数目(举例来说, 如果您输入:limit=5, 则您会读取前五笔资料点):
+* 限制您要读取的资料点数目(举例来说, 如果您输入 limit=5, 则您会读取前五笔资料点):
 
 
-    在请求url尾端加上 `?limit=:limit`
+    在请求 url 尾端加上 `?limit=:limit`
 
 
-* 读取从某一个资料点受开始的资料(举例来说, 如果您输入offset=5, 则您会读取第五笔资料点之后的所有资料点):
+* 读取从某一个资料点受开始的资料(举例来说, 如果您输入 offset=5, 则您会读取第五笔资料点之后的所有资料点):
 
 
-    在请求url尾端加上 `?offset=:offset`
+    在请求 url 尾端加上 `?offset=:offset`
 
 
 您亦可以将以上四种方式混合使用。
@@ -89,12 +89,12 @@ API请求默认值为json格式，如欲使用csv格式，请在API请求URL最�
 **请注意：**
 
 1.
-使用回传最后*n (n=数目)* 的资料点时，将不能指定*开始时间* 与*结束时间*时。
+使用回传最后 *n (n=数目)* 的资料点时，将不能指定*开始时间* 与*结束时间*时。
 
-2.　当您指定*start_time* 和*end_time*时，若还是有使用设定回传资料点数目，此时，此回传资料点数目的查询将会被忽略。
+2.　当您指定 *start_time* 和 *end_time* 时，若还是有使用设定回传资料点数目，此时，此回传资料点数目的查询将会被忽略。
 
 
-**每次请求最多只能读取1000笔资料点**
+**每次请求最多只能读取 1000 笔资料点**
 
 
 ## 动作
@@ -110,16 +110,16 @@ deviceKey: `device_key_here`
 ```
 
 ### 回覆格式
-您能选择回覆JSON或是CSV格式
+您能选择回覆 JSON 或是 CSV 格式
 
 JSON:
 
-请求url结尾为 *datapoints*
+请求 url 结尾为 *datapoints*
 
 
 CSV:
 
-请求url结尾为 *datapoints.csv*
+请求 url 结尾为 *datapoints.csv*
 
 
 
@@ -142,7 +142,7 @@ Content-Type: `text/csv`
 
 ***资料格式: JSON***
 
-若使用JSON回覆格式，则会包含以下栏位：
+若使用 JSON 回覆格式，则会包含以下栏位：
 
 | 栏位名称 | 格式 | 描述|
 | --- | --- | --- | --- |
@@ -163,10 +163,10 @@ Content-Type: `text/csv`
 
 | 栏位名称 | 格式 | 描述|
 | --- | --- | --- | --- |
-| createdAt | Number | 以Unix timestamp 格式纪录的资料点建立时间|
+| createdAt | Number | 以 Unix timestamp 格式纪录的资料点建立时间|
 | values | Object | 资料点的值 |
 
-请注意，我们在此使用的unix timestamp miniseconds时间值，若须转换成可读格式，您可以使用以下连结：
+请注意，我们在此使用的 unix timestamp miniseconds时间值，若须转换成可读格式，您可以使用以下连结：
 http://www.epochconverter.com/
 
 **范例：**
@@ -177,7 +177,7 @@ https://api.mediatek.com/mcs/v2/devices/a1234567890/datachannels/10001/datapoint
 
 ```
 
-JSON格式的回覆内容：
+JSON 格式的回覆内容：
 
 ```
 {
@@ -188,7 +188,7 @@ JSON格式的回覆内容：
             "isOverflow": false,
             "dataPoints": [
                 {
-                    "recordedAt": 1426457820600,
+                    "recordedAt": 1432538716989,
                     "values": {
                         "value": "HI"
                     }
@@ -199,7 +199,7 @@ JSON格式的回覆内容：
 }
 ```
 
-CSV格式的回覆内容：
+CSV 格式的回覆内容：
 
 ```
 test_data_channel,94668480,100
@@ -207,23 +207,23 @@ test_data_channel,94668480,100
 
 
 
-CSV格式的回覆内容：
+CSV 格式的回覆内容：
 
 ## 错误回覆
 
-当错误发生时，回覆代码为非200之其他代码。回覆内容为JSON格式并会包括以下资讯：
+当错误发生时，回覆代码为非 200 之其他代码。回覆内容为 JSON 格式并会包括以下资讯：
 
-CSV格式的回覆内容：
+CSV 格式的回覆内容：
 
 ## 错误回覆
 
-当错误发生时，回覆代码为非200之其他代码。回覆内容为JSON格式并会包括以下资讯：
+当错误发生时，回覆代码为非 200 之其他代码。回覆内容为 JSON 格式并会包括以下资讯：
 
 
 | 栏位名称 | 格式 |描述|
 | --- | --- | --- |
 | code | Integer | 错误代码 |
-| url | String | API错误页面url|
+| url | String | API 错误页面 url|
 | description | String | 错误描述 |
 
 

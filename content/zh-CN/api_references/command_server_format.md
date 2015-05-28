@@ -53,7 +53,7 @@ Heartbeat 格式:
 deviceId,deviceKey,timestamp,dataChannelId,{0 or 1}
 
 ```
-0代表关，1代表开。
+0 代表关，1 代表开。
 
 范例：
 
@@ -102,7 +102,7 @@ deviceId,deviceKey,timestamp,dataChannelId,{latitude},{longitude},{altitude}
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{0 ot 1}
 ```
-0代表低，1代表高。
+0 代表低，1 代表高。
 
 ### PWM
 ```

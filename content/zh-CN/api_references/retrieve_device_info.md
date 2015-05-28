@@ -77,7 +77,7 @@ JSON格式的回覆会包含以下几个栏位：
 | 栏位名称 | 格式 |描述|
 | --- | --- | --- |
 | dataChnId | Number | 资料通道 ID |
-| isAvailable | Bool | Is the device normal |
+| isAvailable | Bool | 资料是否可用 |
 | name | String | 资料通道名称|
 | channelType | Object | 资料通道类型 |
 | isHidden | Bool | 资料通道是否对使用者隐藏 |
@@ -381,7 +381,7 @@ https://api.mediatek.com/mcs/v2/devices/d1234567890,d1234567891
 
 ## ## 错误回覆
 
-当错误发生时，回覆代码为非200之其他代码。回覆内容为JSON格式并会包括以下资讯：
+当错误发生时，回覆代码为非 200 之其他代码。回覆内容为 JSON 格式并会包括以下资讯：
 
 | 栏位名称 | 格式 |描述|
 | --- | --- | --- |

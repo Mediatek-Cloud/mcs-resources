@@ -163,7 +163,7 @@ Response Body in json
             "isOverflow": false,
             "dataPoints": [
                 {
-                    "recordedAt": 1426457820600,
+                    "recordedAt": 1432538716989,
                     "values": {
                         "value": "HI"
                     }
@@ -177,7 +177,7 @@ Response Body in json
 Response Body in csv
 
 ```
-test_data_channel,94668480,100
+test_data_channel,1432538716989,100
 ```
 
 
