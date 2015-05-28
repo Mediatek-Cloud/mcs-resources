@@ -16,8 +16,6 @@
        * [Retrieve datapoint](api_references/retrieve_datapoint.md)
    * [Device management](api_references/device_management.md)
        * [Retrieve device information](api_references/retrieve_device_info.md)
-       * [Register a device](api_references/register_device.md)
-       * [Deregsiter a device](api_references/deactivate_device.md)
        * [Get connection](api_references/get_connection.md)
    * [Data channel format](api_references/data_channel_format.md)
    * [Command server format](api_references/command_server_format.md)
