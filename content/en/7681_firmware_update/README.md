@@ -4,7 +4,7 @@
 ## Resources
 
 - Mobile APK: MediaTek Cloud Sandbox Mobile Application for Android **(>= 2.5.0)** on [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud). Please check your Android application version is above 2.5.0.
-- 7681 Latest Firmware(2015/05/25): [MT7681_sta_header.bin.gz](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin.gz). Please unzip it to get **MT7681_sta_header.bin** for further update setup.
+- 7681 Latest Firmware(2015/05/25): [MT7681_sta_header.bin](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin).
 
 ## Steps For 7681 Update
 
