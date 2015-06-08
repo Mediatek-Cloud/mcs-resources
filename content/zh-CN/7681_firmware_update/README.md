@@ -92,7 +92,7 @@
 	SM=5, Sub=0
 	SM=6, Sub=0
 	```
-	an example in [MediaTek LinkIt Connect 7681 Developer’s Guide: 4.5.1 States] is like
+	an example in [MediaTek LinkIt Connect 7681 Developer’s Guide: 4.5.1 States](https://labs.mediatek.com/fileMedia/download/60b77480-f08e-46de-b4ab-513916dcff75) is like
 	
 	```
 	==> Recovery Mode /* start to running recovery/Calibration image*/
