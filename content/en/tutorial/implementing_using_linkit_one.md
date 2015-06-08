@@ -1,4 +1,4 @@
-# Implementing using Linkit ONE
+# Develop with Linkit ONE
 
 Here is a simple guide to quickly setup your Linkit One development board (Aster 2502) to quickly connect to MediaTek Cloud Sandbox
 

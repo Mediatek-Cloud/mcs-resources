@@ -1,4 +1,4 @@
-# Implementing using LinkIt Connect 7681 development board
+# Develop with LinkIt Connect 7681 development board
 
 This is a guide to setting up your LinkIt Connect 7681 development board to connect to MediaTek Cloud Sandbox (MCS).
 
