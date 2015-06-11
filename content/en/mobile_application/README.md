@@ -11,7 +11,7 @@ Please use [Google Play](https://play.google.com/store/apps/details?id=com.media
 
 ![](../images/mobileapp_android.png)
 
-Or, you can [download the apk](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-2.5.0-production-release.apk) directly.
+Or, you can [download the apk](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-latest-production-release.apk) directly.
 
 The mobile app currently offers for Android only.
 

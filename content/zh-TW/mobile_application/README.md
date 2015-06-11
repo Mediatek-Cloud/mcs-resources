@@ -11,7 +11,7 @@
 
 ![](../images/mobileapp_android.png)
 
-或是，您可以選擇 [直接下載 apk](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-2.5.0-production-release.apk)。
+或是，您可以選擇 [直接下載 apk](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-latest-production-release.apk)。
 
 目前此手機應用程式只提供安卓（Android）版本。
 
