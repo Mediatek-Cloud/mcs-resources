@@ -1,0 +1,22 @@
+{
+  "name": "mcs-resources",
+  "version": "2.5.18",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mediatek-Cloud/mcs-resources"
+  },
+  "keywords": [
+    "mcs"
+  ],
+  "author": "mtk",
+  "license": "Apache License",
+  "bugs": {
+    "url": "https://github.com/Mediatek-Cloud/mcs-resources/issues"
+  },
+  "homepage": "https://github.com/Mediatek-Cloud/mcs-resources"
+}
