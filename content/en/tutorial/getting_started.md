@@ -74,10 +74,9 @@ Step 6. Select the Data Channel type. eg, Controller, Display, or Hybrid. And Cl
 Step 7. Enter the Data Channel name, Id, description and select Data type.
 
 
-Step 8. Click Save button. And now you can start create test devices for the prototype!
-
-
 ![](../images/screenshot/screen_shot-05.jpg)
+
+Step 8. Click Save button. And now your data channel is created. You will find the data channel Id under the data channel name. You will need this information when calling the device to retrieve data or push command to the data channel of the test device.
 
 
 For more Data Channel and Data Type information and concept, please refer to the Key concept section for more detail.
@@ -126,8 +125,9 @@ You will find the Device Id in two places:
 
 
 
-The deviceId and devicekey will be needed when calling our API to access this device. In the test device detail page, click on the blue font Id and key to copy the entire string to your copy board.
+The deviceId and devicekey will be needed when calling our API to access this device. In the test device detail page, click on the copy button next to the Id and key to copy to your copy board.
 
+Also, you will also need the data channel id when access the data channel of specific test device. In the test device detail page, you can find the data channel Id under each data channel name. Once your device is connected and starting to send data. The Id field will disappear and be substituted with the last updated data point time.
 
 # Manage test device
 

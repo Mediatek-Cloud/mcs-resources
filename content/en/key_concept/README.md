@@ -1,6 +1,18 @@
 # **Key concept**
 
-This section describes the key components that make up a Wearables or IoT project in MediaTek Cloud Sandbox. All of your project activities take place within the **Development** pages of the MediaTek Cloud Sandbox. In addition to which, the **My Devices** page enables you to view all the devices you have created or have access to.
+This section describes the key components that make up a Wearables or IoT project in MediaTek Cloud Sandbox. All of your project activities take place within the **Development** pages of the MediaTek Cloud Sandbox. In addition to which, the **My Devices** page enables you to view all the devices you have created or have access to. Also, in the **Dashboard** you can find the overview of your prototype and test device status and get to know the related recent activity and your platform usage.
+
+# **Dashboard**
+
+Everytime the user log into the MCS console, the user will be directed to the dashboard page. The **Dashboard** contains the following information:
+
+* **Quick start guide** where help the user to get started with the MCS platform.
+* **Overview** where the user finds the latest updated prototype and test device information.
+* **Number of used** where the user finds the platform usage.
+* **Quick resources** where we provides the most popular resource links.
+* **Recent activity** where the user finds the related activities of the prototypes and test devices.
+
+
 
 # **Development**
 
