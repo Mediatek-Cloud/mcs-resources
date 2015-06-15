@@ -1,9 +1,9 @@
 # LinkIt ONE 实际操作
 
-下面是一个简单的指南来快速设置您的 LinkIt One 开发板（Aster 2502 ）连接到 MediaTek Cloud Sandbox。
+下面是一个简单的指南来快速设置您的 LinkIt ONE 开发板（Aster 2502 ）连接到 MediaTek Cloud Sandbox。
 
 ## 情境
-此教程的情境为，替您的 LinkIt One 开发板建立一个测试装置，替您的板子上传一段 Arduino code，且使用 RESTful API 来使您的开发板能上传位于 D13 的 LED 灯光状态至 MCS，同时也可以使用 MCS 透过 TCP Socket 来远程控制 LED 状态。
+此教程的情境为，替您的 LinkIt ONE 开发板建立一个测试装置，替您的板子上传一段 Arduino code，且使用 RESTful API 来使您的开发板能上传位于 D13 的 LED 灯光状态至 MCS，同时也可以使用 MCS 透过 TCP Socket 来远程控制 LED 状态。
 
 ![](../images/LinkIt-one-tutorial/img_scenario.png)
 
