@@ -24,7 +24,7 @@
 
 请点击此连结 [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或用此 QR code 来下载手机应用程式:
 
-![](../images/mobileapp_android.png)
+![](../images/Mobile_application/img_mobileapplication_00.png)
 
 目前只支援安卓（Android）手机。
 

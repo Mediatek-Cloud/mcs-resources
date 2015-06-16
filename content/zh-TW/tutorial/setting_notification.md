@@ -4,22 +4,22 @@
 
 當您點入產品原型頁面後，點選**觸發條件和動作分頁**。
 
-![](../images/trigger/screen_shot_trigger_1.png)
+![](../images/Trigger/img_trigger_01.png)
 
 點擊**新增觸發條件和動作**來新增一個觸發條件和動作, 輸入您的觸發條件名稱和描述。
 
-![](../images/trigger/screen_shot_trigger_2.png)
+![](../images/Trigger/img_trigger_02.png)
 
 點擊下一步來設定觸發條件。選擇您要設定觸發條件的資料通道並且給予觸發條件值。觸發條件包含大於，小於，等於，和特定範圍之間。
 
 您可以在同一個通知條件中，設定多個資料通道。此時，多個資料通道條件都要符合(且邏輯)，系統才會發出通知。若您想要單一條件符合(或邏輯)就收到通知，您就須設定多個通知條件。
 
 
-![](../images/trigger/screen_shot_trigger_3.png)
+![](../images/Trigger/img_trigger_03.png)
 
 點擊下一步來設定觸發動作。您可以選擇使用電子郵件或是 GCM 通知。通知將會被發送給每個有此裝置權限的使用者。
 
 
-![](../images/trigger/screen_shot_trigger_4.png)
+![](../images/Trigger/img_trigger_04.png)
 
 您在產品原型中設定的觸發條件和動作，會被產品原型下所有的測試裝置所繼承。在測試裝置中，您只能更改觸發條件的值或是選擇打開或是關閉此處發條件和動作。

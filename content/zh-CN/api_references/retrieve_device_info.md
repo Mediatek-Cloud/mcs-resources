@@ -1,8 +1,8 @@
-# 读取装置资讯
+# 读取装置信息
 
 ## 描述
 
-使用 **HTTPs GET** 来读取装置资讯
+使用 **HTTPs GET** 来读取装置信息
 
 
 ## 请求 URL
@@ -46,7 +46,7 @@ JSON格式的回覆会包含以下几个栏位：
 | description | String | 装置描述 |
 | product | Object | 产品原型 |
 | dataChannels | Object Array | 资料通道 |
-| fw | Object | 韧体资讯 |
+| fw | Object | 韧体信息 |
 | trustIpRange | String Array | 可连至MCS的信赖网域范围 |
 | lastIp | String | 最后一次收到装置资料点的网域位址 |
 | deviceImageURL | String | 装置图片 URL |
@@ -381,7 +381,7 @@ https://api.mediatek.com/mcs/v2/devices/d1234567890,d1234567891
 
 ## ## 错误回覆
 
-当错误发生时，回覆代码为非 200 之其他代码。回覆内容为 JSON 格式并会包括以下资讯：
+当错误发生时，回覆代码为非 200 之其他代码。回覆内容为 JSON 格式并会包括以下信息：
 
 | 栏位名称 | 格式 |描述|
 | --- | --- | --- |

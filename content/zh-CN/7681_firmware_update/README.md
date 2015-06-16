@@ -9,17 +9,17 @@
 ## Steps For 7681 Update
 
 1. Update 7681 with latest firmware. Please follow [MediaTek LinkIt Connect 7681 Developer’s Guide: 3.2 Firmware uploader](https://labs.mediatek.com/fileMedia/download/60b77480-f08e-46de-b4ab-513916dcff75) for further information. It's recommended to follow `3.2 Firmware uploader`, and use syntax like below:
-	
+
 	on Windows
-	
+
 	```
 	> mt7681_uploader.exe -f MT7681_sta_header.bin -c COM7
 	Or
 	> python mt7681_uploader.py -f MT7681_sta_header.bin -c 	COM7
 	```
-	
+
 	While on Linux
-	
+
 	```
 	> python mt7681_uploader.py -f MT7681_sta_header.bin -c /dev/ttyUSB0
 	```
@@ -79,7 +79,7 @@
 	SM=0, Sub=0
 	SM=2, Sub=0
 	```
-	
+
 3. Certain Wifi AP has been set, and is currently connected to it.
 
 	```
@@ -93,7 +93,7 @@
 	SM=6, Sub=0
 	```
 	an example in [MediaTek LinkIt Connect 7681 Developer’s Guide: 4.5.1 States](https://labs.mediatek.com/fileMedia/download/60b77480-f08e-46de-b4ab-513916dcff75) is like
-	
+
 	```
 	==> Recovery Mode /* start to running recovery/Calibration image*/
 	<== Recovery Mode /* end to running recovery/Calibration image*/
@@ -137,11 +137,11 @@ If you cannot see your device on "Add Device" page, the reason might be
 	a. __Firmware is out-dated__. Please check if you can see Mac address using `AT#MacAddr`. If yes, then it's updated.
 
 	b. __7681 has been connected to another Wifi AP__. If you cannot see  "SM=1", but keep seeing __"SM=2"__, then it's already connected to another Wifi AP. Please use `AT#Default` to reset.
-	
+
 - Mobile APK
 
 	a. __APK is out-dated__. Please install the latest apk as attached.
-	
+
 	b. __Smart Connection hasn't been established__. As **step 5.** mentioned, it's possible to see "No result" for the first time. Ideally process should be that after you click on "Smart Connection", the 7681 is scanned, and the terminal should show some info about connected to the Wifi AP with SSID & given IP Address. At this time, if you refresh again, the device should show on the list. And after this first connection, you should be able to quickly see devices next time when you enter "Add Device" page.
 
 

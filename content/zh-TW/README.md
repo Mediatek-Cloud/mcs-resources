@@ -4,7 +4,7 @@ MediaTek Cloud Sandbox (MCS) 提供您打造準備商業化的穿戴式和物聯
 
 您可以在我們提供的強大的網頁儀表板介面上，看到使用我們提供的 RESTful API 從裝置蒐集回來的圖形化的資料。之後，您可以通過從儀表板發出命令控制您的穿戴式和物聯網裝置。此外，我們提供附屬的手機應用程式讓您能查看蒐集到的數據，並從任何地方控制您的裝置。
 
-![](images/introduction/img_introduction_01.png)
+![](images/Introduction/img_introduction_01.png)
 
 以下是您可以透過 MediaTek Cloud Sandbox 做的事情:
 
@@ -32,7 +32,7 @@ MediaTek Cloud Sandbox (MCS) 提供您打造準備商業化的穿戴式和物聯
 為了讓您更通行無阻的使用 MCS，我們提供了 API、API 使用說明文件，問與答，和一系列的教程讓您能夠快速上手我們所提供的功能和服務。
 
 
-![](images/introduction/img_introduction_02.png)
+![](images/Introduction/img_introduction_02.png)
 
 
 ## **事前準備**

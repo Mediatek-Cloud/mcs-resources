@@ -5,7 +5,8 @@ Here is a simple guide to quickly setup your Linkit ONE development board (Aster
 ## Scenario
 The scenario for this setup is to create a test device on MCS representiong your Linkit ONE board, and to upload Arduino code allowing this board to push datapoint representing the state of LED light at D13 to MCS using RESTful API, while MCS is able to remote control the state of this LED light using TCP Socket.
 
-![](../images/LinkIt-one-tutorial/img_scenario.png)
+
+![](../images/Linkit_ONE/img_linkitone_01.png)
 
 
 ## Setup requirement:
@@ -22,19 +23,19 @@ There is no additional electrical component required to connect to the developme
 
 a. After login, select "Development" at the navigation bar, click "Create" to create a new prototype
 
-![](../images/screenshot/screen_shot-01.jpg)
+![](../images/Linkit_ONE/img_linkitone_02.png)
 
 b. Fill in the detail information as per screen to give a basic profile of this prototype:
 
-![](../images/screenshot/screen_shot-08.jpg)
+![](../images/Linkit_ONE/img_linkitone_03.png)
 
 c. Click "Detail" for the prototype created
 
-![](../images/screenshot/screen_shot-09.jpg)
+![](../images/Linkit_ONE/img_linkitone_04.png)
 
 d. In the prototype Detail Page, select "Data Channel" TAB and click "Add" to create new Data Channel:
 
-![](../images/screenshot/screen_shot-10.jpg)
+![](../images/Linkit_ONE/img_linkitone_05.png)
 
 
 
@@ -42,40 +43,40 @@ We are going to create two Data Channel for this tutorial, one is a Display Data
 
 e. Select "Display" Data Channel and key in the following information
 
-![](../images/screenshot/screen_shot-11.jpg)
+![](../images/Linkit_ONE/img_linkitone_06.png)
 
-![](../images/screenshot/screen_shot-12.jpg)
+![](../images/Linkit_ONE/img_linkitone_07.png)
 
 Please take note of the Data Channel Id, this is the unique identifier when calling API later in the tutorial.
 
 f. Repeat the same step in e, except select "Controller" Data Channel and key in the following information
 
-![](../images/screenshot/screen_shot-13.jpg)
+![](../images/Linkit_ONE/img_linkitone_08.png)
 
-![](../images/screenshot/screen_shot-14.jpg)
+![](../images/Linkit_ONE/img_linkitone_09.png)
 
 Please take note of the Data Channel Id, this is the unique identifier when calling API later in the tutorial.
 
 g. Once completed, you should be able to see two data channel created as below:
 
-![](../images/screenshot/screen_shot-15.jpg)
+![](../images/Linkit_ONE/img_linkitone_10.png)
 
 ### Step 2. Create Test Device
 
 a. Click "Create Test Device" on the right upper corner of the page
 
-![](../images/screenshot/screen_shot-16.jpg)
+![](../images/Linkit_ONE/img_linkitone_11.png)
 
 b. Fill in the name and description of the test device:
 
-![](../images/screenshot/screen_shot-17.jpg)
+![](../images/Linkit_ONE/img_linkitone_12.png)
 
 c. After Test device is created, click "Go to detail" to open the created device detail page:
 
-![](../images/screenshot/screen_shot-18.jpg)
+![](../images/Linkit_ONE/img_linkitone_13.png)
 
 
-![](../images/screenshot/screen_shot-19.jpg)
+![](../images/Linkit_ONE/img_linkitone_14.png)
 
 Please take note of the deviceId and deviceKey for calling API later in the tutorial.
 
@@ -117,15 +118,15 @@ This source code requires HttpClient that can be download
 
 After the code is loaded to the board and make sure Wireless Access Point is made available to the device, with the Serial output confirming it is live and connected:
 
-![](../images/LinkIt-one-tutorial/13-Test-Device.JPG)
+![](../images/Linkit_ONE/img_linkitone_15.png)
 
 You can now goto the device page and be able to click the LED controller, as you click the LED to ON state, the LED on the development board will lid, and moments later the state of the LED data channel will indicate an ON state. As you click the LED to OFF state, the LED on the board will not lid, and moments later the state of the LED data channel will indicate an OFF state.
 
-![](../images/screenshot/screen_shot-20.jpg)
+![](../images/Linkit_ONE/img_linkitone_16.png)
 
-![](../images/screenshot/screen_shot-21.jpg)
+![](../images/Linkit_ONE/img_linkitone_17.png)
 
-![](../images/LinkIt-one-tutorial/16-Test-Device.JPG)
+![](../images/Linkit_ONE/img_linkitone_18.png)
 
 Congratulations! You have completed this tutorial!
 

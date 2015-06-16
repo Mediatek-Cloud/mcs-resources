@@ -36,7 +36,7 @@
 ## **產品原型**
 
 
-![](../images/key_concept/img_key_concepts_01.png)
+![](../images/Key_concept/img_keyconcept_01.png)
 
 **產品原型**是您開發裝置的藍圖。每個產品原型都具有獨特的 Id 和 Key。
 
@@ -57,21 +57,21 @@
 
 ###**顯示器**
 
-![](../images/key_concept/img_key_concepts_dc_01.png)
+![](../images/Key_concept/img_keyconcept_02.png)
 
 此類型的資料通道是專門儲存和顯示由裝置的感應元件蒐集而來的資料。例如從裝置感應元件上傳而來的溫度，MCS 會將此資料以時間序列方式儲存。
 
 
 ###**控制器**
 
-![](../images/key_concept/img_key_concepts_dc_02.png)
+![](../images/Key_concept/img_keyconcept_03.png)
 
 此類型的資料通道是專門用來傳遞指令至裝置，以控制裝置內元件的狀態。例如控制燈的開或關。
 
 
 ###**綜合型顯示控制器**
 
-![](../images/key_concept/img_key_concepts_dc_03.png)
+![](../images/Key_concept/img_keyconcept_04.png)
 
 此類型的資料型態能同時為顯示器和控制器。例如冷氣機的溫度顯示器，並且同時能控制冷氣的開關或是調整溫度。
 

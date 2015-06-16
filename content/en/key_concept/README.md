@@ -30,7 +30,7 @@ Once you’ve defined a Prototype, you can add devices as you need throughout yo
 ## **Prototype**
 
 
-![](../images/key_concept/img_key_concepts_01.png)
+![](../images/Key_concept/img_keyconcept_01.png)
 
 A **Prototype** is the blueprint of the device you’re developing. Each prototype has a unique prototype Id and prototype Key.
 
@@ -49,21 +49,21 @@ These data channels are implemented in the sandbox as the following types:
 
 ###**Display**
 
-![](../images/key_concept/img_key_concepts_dc_01.png)
+![](../images/Key_concept/img_keyconcept_02.png)
 
 This data channel type is for data generated from a component of a device that has no related commands. For example data from a temperature sensor that is pushed to the sandbox and stored as a sequence over time.
 
 
 ###**Controller**
 
-![](../images/key_concept/img_key_concepts_dc_02.png)
+![](../images/Key_concept/img_keyconcept_03.png)
 
 This data channel type is for data generated in the sandbox and sent to the device to control the setting of a logical or physical component in the device. For example, a switch to turn a light on or off.
 
 
 ###**Hybrid**
 
-![](../images/key_concept/img_key_concepts_dc_03.png)
+![](../images/Key_concept/img_keyconcept_04.png)
 
 This data channel enables a Display and Controller data channel to be combined, where there is a logical relationship between the two. For example, as between the data from a temperature sensor and the control settings for an air conditioning unit.
 
