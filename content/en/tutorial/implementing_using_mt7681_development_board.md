@@ -63,7 +63,7 @@ f. To add a controller, in the **Add Data Channel** popup under the **Controller
 ![](../images/screenshot/screen_shot-13.jpg)
 
 
-g. For MT7681 prototypes, the Data Channel Ids follow a defined format — GPIO_nn, where nn is the pin number starting from 00. Create the channel for the first pin, using "GPIO_00". Enter the data channel name ("GPIO_00"), Id ("GPIO_00") and add a description, then select **GPIO** as the data type. Click **Save** to create the Data Channel.
+g. For MT7681 prototypes, the Data Channel Ids follow a defined format — GPIO_nn, where nn is the pin number starting from 00. Create the channel for the first pin, using "GPIO_00". Enter the data channel name ("GPIO 00"), Id ("GPIO_00") and add a description, then select **GPIO** as the data type. Click **Save** to create the Data Channel.
 
 ![](../images/Mobile/connect_9.jpg)
 
