@@ -126,7 +126,7 @@ e. 每 90 秒更新一次 TCP connection 的 heartbeat 連線
 
 當您將範例程式上傳至開發板後，請確保開發板有 Wifi 網路連線，並且有定時傳送訊號顯示裝置已連接並正在待命中：
 
-![](../images/Linkit_ONE/img_linkitone_15.png)
+![](../images/Linkit_ONE/img_linkitone_15.JPG)
 
 您現在可以去裝置詳情頁面，並看到您剛建立的 LED 控制器，當您將控制器狀態設成開，開發板上的 LED 燈即會打開，同時，您將可以看到您所建立的 LED 顯示器的狀態也改變為開了。反之亦然，若控制技設為關，燈即會關閉，並顯示器狀態改為關。
 
@@ -135,7 +135,7 @@ e. 每 90 秒更新一次 TCP connection 的 heartbeat 連線
 
 ![](../images/Linkit_ONE/img_linkitone_17.png)
 
-![](../images/Linkit_ONE/img_linkitone_18.png)
+![](../images/Linkit_ONE/img_linkitone_18.JPG)
 
 恭喜！您已完成此教程！
 

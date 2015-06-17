@@ -118,7 +118,7 @@ This source code requires HttpClient that can be download
 
 After the code is loaded to the board and make sure Wireless Access Point is made available to the device, with the Serial output confirming it is live and connected:
 
-![](../images/Linkit_ONE/img_linkitone_15.png)
+![](../images/Linkit_ONE/img_linkitone_15.JPG)
 
 You can now goto the device page and be able to click the LED controller, as you click the LED to ON state, the LED on the development board will lid, and moments later the state of the LED data channel will indicate an ON state. As you click the LED to OFF state, the LED on the board will not lid, and moments later the state of the LED data channel will indicate an OFF state.
 
@@ -126,7 +126,7 @@ You can now goto the device page and be able to click the LED controller, as you
 
 ![](../images/Linkit_ONE/img_linkitone_17.png)
 
-![](../images/Linkit_ONE/img_linkitone_18.png)
+![](../images/Linkit_ONE/img_linkitone_18.JPG)
 
 Congratulations! You have completed this tutorial!
 
