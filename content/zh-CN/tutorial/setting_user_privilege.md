@@ -13,12 +13,12 @@ MCS　提供了三种使用者权限：
 
 如果您的身分权限是拥有者或是管理员，您可以为特定产品原型或是测试装置增加或是删除使用者权限。
 
-![](../images/UP/up01.JPG)
+![](../images/User_privileges/img_privileges_01.png)
 
 
 在产品原型详细资料或装置详细资料页面中，点选使用者权限分页，点击新增使用者。
 
-![](../images/UP/up02.JPG)
+![](../images/User_privileges/img_privileges_02.png)
 
 输入使用者电子邮件地址来搜寻 MCS 使用者，并选择管理员或是浏览者权限。之后点击储存按钮。
 

@@ -5,7 +5,7 @@
 ## 情境
 此教程的情境为，替您的 LinkIt ONE 开发板建立一个测试装置，替您的板子上传一段 Arduino code，且使用 RESTful API 来使您的开发板能上传位于 D13 的 LED 灯光状态至 MCS，同时也可以使用 MCS 透过 TCP Socket 来远程控制 LED 状态。
 
-![](../images/LinkIt-one-tutorial/img_scenario.png)
+![](../images/Linkit_ONE/img_linkitone_01.png)
 
 
 ## 设置准备
@@ -22,60 +22,60 @@
 
 a. 登入平台后，点选上方的"开发"，并且点击新增按钮，来新增一个新的产品原型。
 
-![](../images/screenshot/screen_shot-01.jpg)
+![](../images/Linkit_ONE/img_linkitone_02.png)
 
-b. 请跟着画面指示填入产品原型的基本资讯：
+b. 请跟着画面指示填入产品原型的基本信息：
 
-![](../images/screenshot/screen_shot-08.jpg)
+![](../images/Linkit_ONE/img_linkitone_03.png)
 
 c. 点击您刚建立的产品原型下方的"详情"按钮
 
-![](../images/screenshot/screen_shot-09.jpg)
+![](../images/Linkit_ONE/img_linkitone_04.png)
 
 d. 在产品原型详情页面中，点击"资料通道"分页，并且点击新增按钮来新增一个资料通道：
 
-![](../images/screenshot/screen_shot-10.jpg)
+![](../images/Linkit_ONE/img_linkitone_05.png)
 
 
 
 在此教程中，我们需要建立两格资料通道，一个是显示器类型的，用来表示开发板上 LED 灯光的状态；另一个则为控制类型的，用来对您的开发板 LED 灯光状态下指令:
 
-e. 点击在"显示器"下方的新增按钮，并输入已下资讯：
+e. 点击在"显示器"下方的新增按钮，并输入已下信息：
 
-![](../images/screenshot/screen_shot-11.jpg)
+![](../images/Linkit_ONE/img_linkitone_06.png)
 
-![](../images/screenshot/screen_shot-12.jpg)
+![](../images/Linkit_ONE/img_linkitone_07.png)
 
 请注意，您在此输入的资料通道 Id 是独特不可重复的，之后将会在呼叫 API 时使用到。
 
-f. 重复步骤e，但是把显示器改成"控制器"，并且输入以下资讯：
+f. 重复步骤e，但是把显示器改成"控制器"，并且输入以下信息：
 
-![](../images/screenshot/screen_shot-13.jpg)
+![](../images/Linkit_ONE/img_linkitone_08.png)
 
-![](../images/screenshot/screen_shot-14.jpg)
+![](../images/Linkit_ONE/img_linkitone_09.png)
 
 请注意，您在此输入的资料通道 Id 是独特不可重复的，之后将会在呼叫 API 时使用到。
 
 g. 完成后，您将会有以下的资料通道：
 
-![](../images/screenshot/screen_shot-15.jpg)
+![](../images/Linkit_ONE/img_linkitone_10.png)
 
 ### 步骤二　建立测试装置
 
 a. 点击画面右上方的"创建测试装置"。
 
-![](../images/screenshot/screen_shot-16.jpg)
+![](../images/Linkit_ONE/img_linkitone_11.png)
 
 b. 输入测试装置名称和描述：
 
-![](../images/screenshot/screen_shot-17.jpg)
+![](../images/Linkit_ONE/img_linkitone_12.png)
 
-c. 测试装置建立后，点击"详细资讯"连结至测试装置详情页面:
+c. 测试装置建立后，点击"详细信息"连结至测试装置详情页面:
 
-![](../images/screenshot/screen_shot-18.jpg)
+![](../images/Linkit_ONE/img_linkitone_13.png)
 
 
-![](../images/screenshot/screen_shot-19.jpg)
+![](../images/Linkit_ONE/img_linkitone_14.png)
 
 请注意，deviceId 和 deviceKey 是独特不可重复的，之后将会在呼叫 API 时使用到。
 
@@ -113,15 +113,15 @@ e. 每90秒更新一次 TCP connection 的 heartbeat 连线
 
 当您将范例程式上传至开发板后，请确保开发板有 Wifi 网路连线，并且有定时传送讯号显示装置已连接并正在待命中：
 
-![](../images/LinkIt-one-tutorial/13-Test-Device.JPG)
+![](../images/Linkit_ONE/img_linkitone_15.png)
 
 您现在可以去装置详情页面，并看到您刚建立的 LED 控制器，当您将控制器状态设成开，开发板上的 LED 灯即会打开，同时，您将可以看到您所建立的 LED 显示器的状态也改变为开了。反之亦然，若控制技设为关，灯即会关闭，并显示器状态改为关。
 
-![](../images/screenshot/screen_shot-20.jpg)
+![](../images/Linkit_ONE/img_linkitone_16.png)
 
-![](../images/screenshot/screen_shot-21.jpg)
+![](../images/Linkit_ONE/img_linkitone_17.png)
 
-![](../images/LinkIt-one-tutorial/16-Test-Device.JPG)
+![](../images/Linkit_ONE/img_linkitone_18.png)
 
 恭喜！您已完成此教程！
 

@@ -15,7 +15,7 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/connections
 
 ```
 
-设定装置和 Command server 之间的 TCP 长连结，装置首先需要呼叫 RESTful API `getConnection` 来取得一组 ip 位置以及连接阜来建立 TCP 长连结。 MCS 将会回覆 ip 地址和连接阜资讯给装置。
+设定装置和 Command server 之间的 TCP 长连结，装置首先需要呼叫 RESTful API `getConnection` 来取得一组 ip 位置以及连接阜来建立 TCP 长连结。 MCS 将会回覆 ip 地址和连接阜信息给装置。
 
 Command server 回覆格式:
 
@@ -121,7 +121,7 @@ https://api.mediatek.com/mcs/v2/devices/a1234567890/connections
 
 ## 错误回覆
 
-当错误发生时，回覆代码为非 200 之其他代码。回覆内容为 JSON 格式并会包括以下资讯：
+当错误发生时，回覆代码为非 200 之其他代码。回覆内容为 JSON 格式并会包括以下信息：
 
 | 栏位名称 | 格式 |描述|
 | --- | --- | --- |

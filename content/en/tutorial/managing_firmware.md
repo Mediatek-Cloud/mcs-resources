@@ -6,13 +6,13 @@ To use the Firmware service, go to the **Firmware tab** in the Prototype detail 
 
 Click **Add firmware** to first upload a new firmware,
 
-![](../images/firmware/fw01.JPG)
+![](../images/Firmware/img_firmware_01.png)
 
 Enter the Firmware name, version, and select a firmware file to upload and click the Upload button.
 
 Next, select the compatible firmware of the fimrware you just uploaded.
 
-![](../images/firmware/fw02.jpg)
+![](../images/Firmware/img_firmware_02.png)
 
 Choose the prerequisite firmware that are compatible for this firmware you've uploaded.
 
@@ -20,15 +20,15 @@ The default option is all firmware selected or you can specify your own selectio
 
 If you do not want to further proceed to directly pushing the firmware upgrade to test devices, you can stop here by clikc on the Done button, or to click on the Next button to push the firmware to devices.
 
-![](../images/firmware/fw03.JPG)
+![](../images/Firmware/img_firmware_03.png)
 
 After selecting the devices you would like to upgrade, click the Push botton. You can also do this step by click on the first icon next to the firmware.
 
-![](../images/firmware/fw04.JPG)
+![](../images/Firmware/img_firmware_04.png)
 
 The user can also upgrade the firmware of a device in the Device detail page. In the Device detail page, click on the frimware tab, and you will see the current using firmware and the firmware that the device can be upgraded to.
 
-![](../images/firmware/fw05.JPG)
+![](../images/Firmware/img_firmware_05.png)
 
 Click on the **Upgrade** button next to the firmware that you want the device to be upgraded.
 

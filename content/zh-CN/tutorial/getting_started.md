@@ -9,7 +9,7 @@
 
 
 
-![](../images/getting_started/img_getting_started_01.png)
+![](../images/Getting_started/img_gettingstarted_01.png)
 
 [开发产品原型]
 
@@ -34,7 +34,7 @@
 # 建立您的第一个产品原型
 
 
-![](../images/getting_started/img_getting_started_02.png)
+![](../images/Getting_started/img_gettingstarted_02.png)
 
 ## 建立产品原型逐步导引
 
@@ -43,7 +43,7 @@
 步骤二，点击创建按钮。
 
 
-![](../images/screenshot/screen_shot-01.jpg)
+![](../images/Getting_started/img_gettingstarted_03.png)
 
 
 
@@ -52,7 +52,7 @@
 步骤四，点击您刚建立的产品原型内的详情按钮。
 
 
-![](../images/screenshot/screen_shot-02.jpg)
+![](../images/Getting_started/img_gettingstarted_04.png)
 
 
 当您建立好产品原型后，您可以开始建立资料通到，通知，设定使用者权限，并且新增测试装置了。
@@ -61,23 +61,23 @@
 
 步骤五，点击新增资料通道分页中的新增按钮。
 
-![](../images/screenshot/screen_shot-03.jpg)
+![](../images/Getting_started/img_gettingstarted_05.png)
 
 
 
 步骤六，选择资料通道型态。例如控制器，显示器，或是综合型控制显示器。之后点选新增按钮。
 
-![](../images/screenshot/screen_shot-04.jpg)
+![](../images/Getting_started/img_gettingstarted_06.png)
 
 
 步骤七，输入资料通道名称，资料通到ID，描述，并选择资料型态。
 
 
 
-![](../images/screenshot/screen_shot-05.jpg)
+![](../images/Getting_started/img_gettingstarted_07.png)
 
 
-步骤八，点击储存按钮。您的资料通道已建立。您可以在资料通道名称下方查看您的data channel Id 。您将会在未来呼叫测试装置取得资料或是下达指令时，需要此资讯。
+步骤八，点击储存按钮。您的资料通道已建立。您可以在资料通道名称下方查看您的data channel Id 。您将会在未来呼叫测试装置取得资料或是下达指令时，需要此信息。
 
 如果您需要了解更多关于资料通道或是资料型态的详细信息，您可以参考资源中的核心概念章节。
 
@@ -86,7 +86,7 @@
 
 # 创建您的第一个测试装置
 
-![](../images/getting_started/img_getting_started_03.png)
+![](../images/Getting_started/img_gettingstarted_08.png)
 
 ## 创建测试装置逐步导引
 
@@ -102,7 +102,7 @@
 
 步骤五，您亦可于产品原型页面中的**测试装置**分页内查看属于此产品原型的测试装置。
 
-![](../images/screenshot/screen_shot-06.jpg)
+![](../images/Getting_started/img_gettingstarted_09.png)
 
 
 请注意，您测试装置中所有的资料通道都是由产品原型继承而来的。如果您在产品原型中更新了资料通道，此更新亦会同时反映至所有属于此产品原型的测试装置。
@@ -121,7 +121,7 @@
 2. 测试装置详细资料页面中。
 
 
-![](../images/screenshot/screen_shot-07.jpg)
+![](../images/Getting_started/img_gettingstarted_10.png)
 
 
 
@@ -133,7 +133,7 @@
 
 # 管理已部署的测试装置
 
-![](../images/getting_started/img_getting_started_04.png)
+![](../images/Getting_started/img_gettingstarted_11.png)
 
 ## 如何管理已部署的测试装置
 
@@ -168,7 +168,7 @@
 用戶也可以在這裡更改您的密碼和時區。
 
 
-![](../images/Profile.JPG)
+![](../images/Getting_started/img_gettingstarted_12.png)
 
 您裝置內的資料通道的時間序列圖將根據你的時區設置。
 

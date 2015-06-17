@@ -30,7 +30,7 @@
 ## **产品原型**
 
 
-![](../images/key_concept/img_key_concepts_01.png)
+![](../images/Key_concept/img_keyconcept_01.png)
 
 **产品原型**是您开发装置的蓝图。每个产品原型都具有独特的 Id 和 Key。
 
@@ -50,21 +50,21 @@
 
 ###**显示器**
 
-![](../images/key_concept/img_key_concepts_dc_01.png)
+![](../images/Key_concept/img_keyconcept_02.png)
 
 此类型的资料通道是专门储存和显示由装置的感应元件搜集而来的资料。例如从装置感应元件上传而来的温度，MCS 会将此资料以时间序列方式储存。
 
 
 ###**控制器**
 
-![](../images/key_concept/img_key_concepts_dc_02.png)
+![](../images/Key_concept/img_keyconcept_03.png)
 
 此类型的资料通道是专门用来传递指令至装置，以控制装置内元件的状态。例如控制灯的开或关。
 
 
 ###**综合型显示控制器**
 
-![](../images/key_concept/img_key_concepts_dc_03.png)
+![](../images/Key_concept/img_keyconcept_04.png)
 
 此类型的资料型态能同时为显示器和控制器。例如冷气机的温度显示器，并且同时能控制冷气的开关或是调整温度。
 

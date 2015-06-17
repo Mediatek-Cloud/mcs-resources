@@ -14,7 +14,7 @@ To complete this setup tutorial, you’ll need:
 2. A Wi-Fi connection available to the development board
 3. MCS mobile app. It’s currently available for Android. Please scan the QR code below to download the APK:
 
-![](../images/mobileapp_android.png)
+![](../images/LinkIt_Connect/img_linkitconnect7681_00.png)
 
 No additional components need to be connected to the development board.
 
@@ -38,34 +38,33 @@ a. On the upper navigator, click **Development**.
 
 b. In the **Prototype List**, click **Create**, to create a new prototype.
 
-![](../images/screenshot/screen_shot-01.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_01.png)
 
 
 c. Enter the prototype name, prototype version, and select your industry. In the **Hardware Platform** dropdown box select **MT7681** and click **Save**. Your Prototype is created.
 
-![](../images/screenshot/screen_shot-22.jpg)
-
+![](../images/LinkIt_Connect/img_linkitconnect7681_02.png)
 
 d. Now you're going to add GPIO controllers to your prototype. Below the listing of the prototype you created, click **Detail** .
 
-![](../images/screenshot/screen_shot-23.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_03.png)
 
 
 e. In **Data channel**, click **Add**.
 
-![](../images/screenshot/screen_shot-03.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_04.png)
 
 
 
 
 f. To add a controller, in the **Add Data Channel** popup under the **Controller** data channel, click **Add**.
 
-![](../images/screenshot/screen_shot-13.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_05.png)
 
 
 g. For MT7681 prototypes, the Data Channel Ids follow a defined format — GPIO_nn, where nn is the pin number starting from 00. Create the channel for the first pin, using "GPIO_00". Enter the data channel name ("GPIO 00"), Id ("GPIO_00") and add a description, then select **GPIO** as the data type. Click **Save** to create the Data Channel.
 
-![](../images/Mobile/connect_9.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_06.png)
 
 
 
@@ -73,14 +72,14 @@ h. To add more GPIO pin controllers, repeat Step e,f, and g using the appropriat
 
 i. Now add the PWM controllers. Repeat Step e and f to open the **Add Data Channel** popup. Enter "PWM_00" as the data channel Id and in **Data Channel Type** select **PWM**. Click **Save** to create the Data Channel.
 
-![](../images/Mobile/connect_10.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_07.png)
 
 
 j. To add more PWM controllers, repeat Step i using the appropriate data channel Id for each pin (PMW_01 to PMW_04).
 
 k. Another data channel type that MT7681 prototypes support is UART. To add a UART data channel, open the **Add Data Channel** popup as described in Step e and create a new Controller as described in step f. Enter the Data Channel Id as "UART" and in the **Data Channel type** select **String** or **Hex** depending on your needs. Click **Save** to create the Data Channel.
 
-![](../images/screenshot/screen_shot-26.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_08.png)
 
 
 You’ve created all the controller Data Channel types that LinkIt Connect 7681 prototypes support. Please continue to Step 2.
@@ -91,15 +90,15 @@ a. Open the MCS mobile app, sign in with your account and select the prototype y
 
 b. After signing in, on the bottom right of the screen tap the add icon.
 
-![](../images/Mobile/connect_1.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_09.png)
 
 c. At the bottom of the screen, click **Smart Connection**. This provides an implementation of MediaTek Smart Connection, for more details see the MediaTek LinkIt Connect 7681 Developer’s Guide.
 
-![](../images/Mobile/connect_2.png)
+![](../images/LinkIt_Connect/img_linkitconnect7681_10.png)
 
 d. Enter the SSID and password of the Wi-Fi AP and click **Start**. The SSID should be automatically populated with the Wi-Fi access points the smartphone is connected to.
 
-![](../images/Mobile/connect_3.png)
+![](../images/LinkIt_Connect/img_linkitconnect7681_11.png)
 
 e. Wait for a few seconds, if Smart Connection was successfully, you should see your device on the list.
 
@@ -112,44 +111,44 @@ Now you can choose to register the device using the MCS mobile app (Step 3A) or 
 
 a. Open the MCS mobile app and sign in. After signing in, on the bottom right of the screen, tap the add icon.
 
-![](../images/Mobile/connect_1.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_12.png)
 
 
 b. If your device’s Wi-Fi settings were provisioned by Smart Connection successfully, it should be shown on the list. You can see the device you'd like to rgister, tap the plus icon to add.
 
-![](../images/Mobile/connect_4.png)
+![](../images/LinkIt_Connect/img_linkitconnect7681_13.png)
 
 c. A list of prototypes will be shown on the screen after you add the device. Select the prototype you'd like to link with the device you just connected and tap **Next** button.
 
-![](../images/Mobile/connect_5.png)
+![](../images/LinkIt_Connect/img_linkitconnect7681_14.png)
 
 d. Enter the device name and description and tap **Save**.
 
-![](../images/Mobile/connect_6.png)
+![](../images/LinkIt_Connect/img_linkitconnect7681_15.png)
 
 
 After the device has registered, the device list will refresh and your device should now be on the list and the data channel you've created.
 
-![](../images/Mobile/connect_7.png)
+![](../images/LinkIt_Connect/img_linkitconnect7681_16.png)
 
 ### Step 3B. Create a test device using the web console
 a. In the MCS web console, in the navigation bar on the top, click **Development** and then click on the **Detail** button of the prototype (the one you created in Step 1) that you'd like to register a device for.
 
-![](../images/screenshot/screen_shot-02.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_17.png)
 
 
 b. To the top right of the page, click **Create Test Device**.
 
-![](../images/screenshot/screen_shot-27.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_18.png)
 
 c. Enter the **device name** and **description** you like and click **OK** button. A pop-up will display after your test device has been successfully created. Click **Go to detail** button.
 
-![](../images/screenshot/screen_shot-18.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_19.png)
 
 
 d. You should be able to find the deviceId and deviceKey of the test device you just created.
 
-![](../images/screenshot/screen_shot-28.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_20.png)
 
 
 e. Now you have to manually flash the id and key into MT7681. Open a terminal that is connected to the development board and enter the following command:
@@ -172,22 +171,22 @@ Your device should now be automatically connected to MCS.
 
 a. Open the MCS mobile app and sign in. Tap on the device you'd like to control.
 
-![](../images/Mobile/connect_7.png)
+![](../images/LinkIt_Connect/img_linkitconnect7681_21.png)
 
 
 b. You’ll see a list of controllers that were added in step 1. Switch a GPIO controller from high to low: the LED on development board should turn on. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
 
-![](../images/Mobile/connect_8.png)
+![](../images/LinkIt_Connect/img_linkitconnect7681_22.png)
 
 ### Step 4B Control your device from the MCS web console
 
 a. On the navigation bar click **My Devices**, then below the device that has just been created and registered click **Details**.
 
-![](../images/screenshot/screen_shot-29.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_23.png)
 
 b. Now you can see the device’s data channels and control their states using the MCS platform. To change the state for a particular data channel, drag that channel’s control bar. Switch a GPIO controller from low to high: the LED on development board should turn on.
 
 
-![](../images/screenshot/screen_shot-30.jpg)
+![](../images/LinkIt_Connect/img_linkitconnect7681_24.png)
 
 

@@ -10,7 +10,7 @@
 
 
 
-![](../images/getting_started/img_getting_started_01.png)
+![](../images/Getting_started/img_gettingstarted_01.png)
 
 [開發產品原型]
 
@@ -36,7 +36,7 @@
 
 # 建立您的第一個產品原型
 
-![](../images/getting_started/img_getting_started_02.png)
+![](../images/Getting_started/img_gettingstarted_02.png)
 
 ## 建立產品原型逐步導引
 
@@ -46,7 +46,7 @@
 步驟二，點擊創建按鈕。
 
 
-![](../images/screenshot/screen_shot-01.jpg)
+![](../images/Getting_started/img_gettingstarted_03.png)
 
 
 
@@ -55,25 +55,25 @@
 
 步驟四，點擊您剛建立的產品原型內的詳情按鈕。
 
-![](../images/screenshot/screen_shot-02.jpg)
+![](../images/Getting_started/img_gettingstarted_04.png)
 
 當您建立好產品原型後，您可以開始建立資料通到，通知，設定使用者權限，並且新增測試裝置了。
 
 
 步驟五，點擊新增資料通道分頁中的新增按鈕。
 
-![](../images/screenshot/screen_shot-03.jpg)
+![](../images/Getting_started/img_gettingstarted_05.png)
 
 步驟六，選擇資料通道型態。例如控制器，顯示器，或是綜合型控制顯示器。之後點選新增按鈕。
 
-![](../images/screenshot/screen_shot-04.jpg)
+![](../images/Getting_started/img_gettingstarted_06.png)
 
 步驟七，輸入資料通道名稱，資料通道 ID，描述，並選擇資料型態。
 
 
 
 
-![](../images/screenshot/screen_shot-05.jpg)
+![](../images/Getting_started/img_gettingstarted_07.png)
 
 
 步驟八，點擊儲存按鈕。您的資料通道已建立。您可以在資料通道名稱下方查看您的 data channel Id 。您將會在未來呼叫測試裝置取得資料或是下達指令時，需要此資訊。
@@ -87,7 +87,7 @@
 
 # 創建您的第一個測試裝置
 
-![](../images/getting_started/img_getting_started_03.png)
+![](../images/Getting_started/img_gettingstarted_08.png)
 
 ## 創建測試裝置逐步導引
 
@@ -104,7 +104,7 @@
 
 步驟五，您亦可於產品原型頁面中的**測試裝置**分頁內查看屬於此產品原型的測試裝置。
 
-![](../images/screenshot/screen_shot-06.jpg)
+![](../images/Getting_started/img_gettingstarted_09.png)
 
 請注意，您測試裝置中所有的資料通道都是由產品原型繼承而來的。如果您在產品原型中更新了資料通道，此更新亦會同時反應至所有屬於此產品原型的測試裝置。
 
@@ -118,7 +118,7 @@
 1. 產品原型頁面中的**測試裝置**分頁。
 2. 測試裝置詳細資料頁面中。
 
-![](../images/screenshot/screen_shot-07.jpg)
+![](../images/Getting_started/img_gettingstarted_10.png)
 
 測試裝置的 DeviceId 和 DeviceKey 是用來呼叫API時必須使用到的參數。在**測試裝置**詳情頁面中，您會看到藍色字體的 DeviceId 和 DeviceKey 編號，單擊右方的複製按鈕，將會立即複製至您的剪貼布。
 
@@ -127,7 +127,7 @@
 
 # 管理已部署的測試裝置
 
-![](../images/getting_started/img_getting_started_04.png)
+![](../images/Getting_started/img_gettingstarted_11.png)
 
 ## 如何管理已部署的測試裝置
 
@@ -164,7 +164,7 @@
 用戶也可以在這裡更改您的密碼和時區。
 
 
-![](../images/Profile.JPG)
+![](../images/Getting_started/img_gettingstarted_12.png)
 
 您裝置內的資料通道的時間序列圖將根據你的時區設置。
 

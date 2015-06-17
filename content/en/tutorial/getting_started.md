@@ -9,7 +9,7 @@ Here are the four steps to connect MediaTek Cloud Sandbox to your development an
 
 
 
-![](../images/getting_started/img_getting_started_01.png)
+![](../images/Getting_started/img_gettingstarted_01.png)
 
 [Develop Prototype]
 
@@ -34,7 +34,7 @@ You can always change the setting of your user profile by clicking on your name 
 
 # Create your first protptype
 
-![](../images/getting_started/img_getting_started_02.png)
+![](../images/Getting_started/img_gettingstarted_02.png)
 
 ## How to create a prototype step by step
 
@@ -44,7 +44,7 @@ Step 1. Click Development on the top menu bar.
 Step 2. Click Create button to create a new prototype.
 
 
-![](../images/screenshot/screen_shot-01.jpg)
+![](../images/Getting_started/img_gettingstarted_03.png)
 
 
 
@@ -53,7 +53,7 @@ Step 3. Enter the Prototype name, version, and select chip type, industry and Cl
 Step 4. Click Detail button of the prototype just created.
 
 
-![](../images/screenshot/screen_shot-02.jpg)
+![](../images/Getting_started/img_gettingstarted_04.png)
 
 
 After your prototype is created, you can start to set the data channel, trigger and action, user privilege, create and view test devices in the prototype detail page.
@@ -62,19 +62,19 @@ After your prototype is created, you can start to set the data channel, trigger 
 
 Step 5. Click Add in the data channel tab.
 
-![](../images/screenshot/screen_shot-03.jpg)
+![](../images/Getting_started/img_gettingstarted_05.png)
 
 
 
 Step 6. Select the Data Channel type. eg, Controller, Display, or Hybrid. And Click Add button.
 
-![](../images/screenshot/screen_shot-04.jpg)
+![](../images/Getting_started/img_gettingstarted_06.png)
 
 
 Step 7. Enter the Data Channel name, Id, description and select Data type.
 
 
-![](../images/screenshot/screen_shot-05.jpg)
+![](../images/Getting_started/img_gettingstarted_07.png)
 
 Step 8. Click Save button. And now your data channel is created. You will find the data channel Id under the data channel name. You will need this information when calling the device to retrieve data or push command to the data channel of the test device.
 
@@ -86,7 +86,7 @@ For more Data Channel and Data Type information and concept, please refer to the
 
 # Create your first device
 
-![](../images/getting_started/img_getting_started_03.png)
+![](../images/Getting_started/img_gettingstarted_08.png)
 
 ## How to create a test device step by step
 
@@ -102,7 +102,7 @@ Step 4. You will get a message of creating test device successfully. You can go 
 
 Step 5. Or you can also check the test device in **Test Device** tab too.
 
-![](../images/screenshot/screen_shot-06.jpg)
+![](../images/Getting_started/img_gettingstarted_09.png)
 
 
 Please be noted that the data channels in the test device are inherited and synchronized with the prototype. If you update the data channel in the prototype, the data channels in the test device will change accordingly.
@@ -121,7 +121,7 @@ You will find the Device Id in two places:
 2. Test device detail page under My device.
 
 
-![](../images/screenshot/screen_shot-07.jpg)
+![](../images/Getting_started/img_gettingstarted_10.png)
 
 
 
@@ -131,7 +131,7 @@ Also, you will also need the data channel id when access the data channel of spe
 
 # Manage test device
 
-![](../images/getting_started/img_getting_started_04.png)
+![](../images/Getting_started/img_gettingstarted_11.png)
 
 ## How to manage deplyed test devices
 
@@ -167,7 +167,7 @@ The user can always change the setting of the user profile by clicking on his ow
 The user can also change your password and the time zone here.
 
 
-![](../images/Profile.JPG)
+![](../images/Getting_started/img_gettingstarted_12.png)
 
 Your device data channel time-series chart will be based on your time-zone setting.
 
