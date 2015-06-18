@@ -3,7 +3,7 @@
 
 MediaTek Cloud Sandbox提供您不可或缺的雲端服務，幫助您開發物聯網應用。當您接受使用者條款後，方能註冊和使用我們的網站服務。
 
-使用MediaTek Cloud Sandbox將會有一些符合法律的使用通知的條款（http://www.mediatek.com/en/legal-notice/）和隱私政策（http://www.mediatek.com/en/privacy-policy/）。MediaTek Cloud Sandbox保留隨時變更使用者條款的權利。
+使用MediaTek Cloud Sandbox將會有一些符合法律的使用通知的條款（http://www.mediatek.com/en/legal-notice/ ）和隱私政策（http://www.mediatek.com/en/privacy-policy/ ）。MediaTek Cloud Sandbox保留隨時變更使用者條款的權利。
 
 
 **基本條款**
