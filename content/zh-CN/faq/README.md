@@ -40,4 +40,4 @@
 
 
 
-**问与答的内容没有您想要问的问题吗? 您可以直接写信和我们联络 [mail](mtkcloudsandbox@mediatek.com) **
+**问与答的内容没有您想要问的问题吗? 您可以直接写信和我们联络 <mcs_cn@mediatek.com> **
