@@ -40,4 +40,4 @@ We strongly recommand you to use the Chrome, Safari, and Firefox to browse the M
 
 
 
-**Don't have the answer you are looking for? send us a <mtkcloudsandbox@mediatek.com> **
+**Don't have the answer you are looking for? send us a email <mtkcloudsandbox@mediatek.com> **
