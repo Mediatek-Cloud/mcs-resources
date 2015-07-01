@@ -23,4 +23,6 @@
 * [7681 Firmware Update](7681_firmware_update/README.md)
 * [FAQ](faq/README.md)
 * [Terms of use](terms_of_use/README.md)
-
+* [Change log](change_log/README.md)
+   * [2.5](change_log/2.5.md)
+   * [2.6](change_log/2.6.md)
