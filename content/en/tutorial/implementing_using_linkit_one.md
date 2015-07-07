@@ -85,7 +85,7 @@ Here is the summary of the neccessary information we have obtained in interactin
 
 | Name | Value | Remark |
 | -- | -- | -- |
-| deviceId | Dsre1qRQ | Unique Identifier for this Test Device |roduct
+| deviceId | Dsre1qRQ | Unique Identifier for this Test Device |
 | deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device |
 | dataChannelId | LED | Data Channel Id for LED status |
 | dataChannelId | LED_CONTROL | Data Channel Id for LED control |
