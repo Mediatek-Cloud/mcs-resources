@@ -184,7 +184,7 @@ The range of latitude is from -90 to 90. 0 to 90 stands for North and 0 to -90 s
 
 The range of longitude is from -180 to 180. 0 to 180 stands for East and 0 to -180 stands for West.
 
-The range of altitude is from 0 to 20000 in meter.
+The range of altitude is from -20000 to 20000 in meter.
 
 ## GPIO
 
@@ -226,6 +226,7 @@ For json:
 }
 
 ```
+The range of Period and Value is from 0 to 1000.
 
 
 For csv:

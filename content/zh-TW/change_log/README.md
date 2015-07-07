@@ -1,7 +1,9 @@
-# MCS Change log Summary
+# MCS 更新日誌總覽
 
-## June 23, 2015
-[New Dashboard is introduced to provide user platform overview](./2.6/)
+## 2015/06/23
+###v2.6
+[全新的儀表板頁面讓使用者能快速瀏覽產品原型和裝置狀態](./2.6)
 
-## May 25, 2015
-[Introduced Chinese version and Trigger and action feature](./2.5/)
+## 2015/05/25
+###v2.5
+[導入繁體中文以及簡體中文版本，以及提供觸發條件與動作功能。](./2.5)
