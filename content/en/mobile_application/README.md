@@ -36,7 +36,7 @@ You can also click on any of your devices to see the device detail:
 
 ![](../images/Mobile_application/img_mobileapplication_03.png)
 
-For controller data channel you can fire commands, for data channel it shows the last datapoint. Mobile does not support for viewing history record in charts. For this current version, you will need to manually refresh the display by click on the upper right corner drop down menu and select "refresh"
+For controller data channel you can fire commands, for data channel it shows the last data point. Mobile does not support for viewing history record in charts. For this current version, you will need to manually refresh the display by click on the upper right corner drop down menu and select "refresh"
 
 There is a Plus-in-circle icon allows you to add new devices. Please note, the new devices funcion is currently not available. For Smart Connection you can use this feature to add LinkIt Connect 7681. For full instruction please refer to [2.Tutorial 2.7 Implementing using Linkit Connect 7681 development board](http://mcs.mediatek.com/resources/latest/tutorial/implementing_using_mt7681_development_board)
 
