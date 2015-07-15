@@ -24,5 +24,5 @@
 * [Change log](change_log/README.md)
    * [2.5](change_log/2.5.md)
    * [2.6](change_log/2.6.md)
-   * [2.7](change_log/27.md)
+   * [2.7](change_log/2.7.md)
 
