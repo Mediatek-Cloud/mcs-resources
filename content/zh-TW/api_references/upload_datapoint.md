@@ -55,8 +55,7 @@ Content-Type:`text/csv`
 
 *:Data_Channel_Id_2, :Timestamp, :Value_1\n*
 
-如欲參考更多詳細的資料通道類型之格式，請參考以下連結
-[here](api_references#data_channel_format).
+如欲參考更多詳細的資料通道類型之格式，請參考資料通道格式，您可點擊右方快速聯結前往.
 
 請注意：若您不需要上傳裝置的時間點,則您可保持 *Timestamp* 為空(但保留逗號)，此時時間點則會由MCS所收到資料點的時間。
 
