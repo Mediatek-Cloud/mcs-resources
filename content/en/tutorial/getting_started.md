@@ -13,7 +13,7 @@ Here are the four steps to connect MediaTek Cloud Sandbox to your development an
 
 [Develop Prototype]
 
-The developer develop a prototype by first create a prototype in the Development console. A prototype may have several data channels which take different datapoint types.
+The developer develop a prototype by first create a prototype in the Development console. A prototype may have several data channels which take different data points types.
 
 [Create Test Device]
 
@@ -127,7 +127,7 @@ You will find the Device Id in two places:
 
 The deviceId and devicekey will be needed when calling our API to access this device. In the test device detail page, click on the copy button next to the Id and key to copy to your copy board.
 
-Also, you will also need the data channel id when access the data channel of specific test device. In the test device detail page, you can find the data channel Id under each data channel name. Once your device is connected and starting to send data. The Id field will disappear and be substituted with the last updated data point time.
+Also, you will also need the data channel id when access the data channel of specific test device. In the test device detail page, you can find the data channel Id under each data channel name. Once your device is connected and starting to send data. The Id field will disappear and be substituted with the last updated data points time.
 
 # Manage test device
 

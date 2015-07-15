@@ -3,7 +3,7 @@
 Here is a simple guide to quickly setup your Linkit ONE development board (Aster 2502) to quickly connect to MediaTek Cloud Sandbox
 
 ## Scenario
-The scenario for this setup is to create a test device on MCS representiong your Linkit ONE board, and to upload Arduino code allowing this board to push datapoint representing the state of LED light at D13 to MCS using RESTful API, while MCS is able to remote control the state of this LED light using TCP Socket.
+The scenario for this setup is to create a test device on MCS representiong your Linkit ONE board, and to upload Arduino code allowing this board to push data points representing the state of LED light at D13 to MCS using RESTful API, while MCS is able to remote control the state of this LED light using TCP Socket.
 
 
 ![](../images/Linkit_ONE/img_linkitone_01.png)

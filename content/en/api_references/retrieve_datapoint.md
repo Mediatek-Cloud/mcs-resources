@@ -1,4 +1,4 @@
-# Retrieve datapoint
+# Retrieve data points
 
 ## Description
 
@@ -15,7 +15,7 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/da
 ```
 
 
-The API will by default assume the json format, if you want to use the csv, please add`.csv` after the datapoints.
+The API will by default assume the json format, if you want to use the csv, please add`.csv` after the data points.
 
 The API enables you to retrieve four kinds of data:
 
@@ -38,7 +38,7 @@ The API enables you to retrieve four kinds of data:
     Use the `?limit=:limit`at the end.
 
 
-* To retrieve the data points from a specific point(eg, if you enter offset=5, you will not get the first 5 datapoints and start with 6th one):
+* To retrieve the data points from a specific point(eg, if you enter offset=5, you will not get the first 5 data points and start with 6th one):
 
 
     Use the `?offset=:offset` at the end.
@@ -132,10 +132,10 @@ The response body will construct in JSON format with the following fields:
 | --- | --- | --- | --- |
 | dataChnId | Number | Data Channel ID |
 | isOverflow | Bool | Is the number of queried data points more than maximum number|
-| dataPoints | Object Array | Data Points |
+| data points | Object Array | Data Points |
 
 
-**dataPoint**
+**data points**
 
 | Field Name | Type | Description|
 | --- | --- | --- | --- |
