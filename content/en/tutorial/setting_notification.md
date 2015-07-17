@@ -26,6 +26,7 @@ Click Next button to select the trigger action. You can select to get email or G
 
 The test device will inherit all the trigger and action from its parent prototype. In the test device, user can only change the value of the trigger criteria or select to turn on or turn off specific trigger and action.
 
+![](../images/Trigger/img_trigger_05.png)
 
 ## Setting trigger and action for different mobiles
 
@@ -36,8 +37,8 @@ If a user has mutiple mobile devices, MCS allows the user to set if each mobile 
 
 In the **User Profile** page, you can see a mobile list here. All the user's mobiles will be listed here if it has the MCS app installed on. You can use the swithc here to control if specific mobile will receivev **all** the notification from MCS.
 
-![](../images/Trigger/img_trigger_05.png)
-
-In the **Test device** page, expand the **Manage your action ** section and you can also see a mobile list here. All the user's mobiles will be listed here if it has the MCS app installed on. You can use the switch here to control if specific mobile will receive the notification from **this test device**.
-
 ![](../images/Trigger/img_trigger_06.png)
+
+In the **Test device** page, expand the **Manage your action** section and you can also see a mobile list here. All the user's mobiles will be listed here if it has the MCS app installed on. You can use the switch here to control if specific mobile will receive the notification from **this test device**.
+
+![](../images/Trigger/img_trigger_07.png)
