@@ -11,7 +11,7 @@ MediaTek Cloud Sandbox提供您不可或缺的云端服务，帮助您开发物�
 MediaTek Cloud Sandbox提供网站服务，API服务，和其他由MediaTek Cloud Sandbox提供帮助用户建立物联网应用等服务。 MediaTek Cloud Sandbox用户能够从设备及其管理层来收集，存储，共享数据。通过使用该服务，您也接受使用者条款并同意以下条款和使用条件的约束：
 
 1. 您同意接受法律声明（http://www.mediatek.com/en/legal-notice/ ）和隐私政策（http://www.mediatek.com/en/privacy-policy/ ）。
-2. 联发科技保留以下权利（i）随时变更或修改使用者条款，并不另行通知（二）发送电子邮件通知使用者条款的更新。
+2. 联发科技保留以下权利（i）随时变更或修改使用者条款，并不另行通知（ii）发送电子邮件通知使用者条款的更新。
 
 3. 使用任何新的功能，扩展或增强的服务，其中包括新的工具和资源的释放，都应遵守我们的使用者条款。这些更改后若您继续使用本服务表示您同意这些因新功能而产生的变化。
 
