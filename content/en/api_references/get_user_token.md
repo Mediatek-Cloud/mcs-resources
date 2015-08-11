@@ -58,7 +58,7 @@ The response body will construct in JSON format with the following fields:
 | Field Name | Type | Description|
 | --- | --- | --- | --- |
 | token | array | the user token |
-|access token| array|the user access token to MCS API|
+|access token| array|the user access token to MCS API, also known as the bearer token|
 
 
 **Example:**
