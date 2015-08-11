@@ -8,7 +8,7 @@ Use **HTTPs POST** to get the user token from MCS.
 ## Request URL
 
 ```
-https://mcs.mediatek.io/oauth/login/thirdpart
+https://mcs.mediatek.com/oauth/login/thirdpart
 
 ```
 To get the user token from MCS to allow you to apply for the user access token to access the MCS APIs from your own third party service.
@@ -65,7 +65,7 @@ The response body will construct in JSON format with the following fields:
 
 Request URL
 ```
-https://mcs.mediatek.io/oauth/login/thirdpart
+https://mcs.mediatek.com/oauth/login/thirdpart
 ```
 
 Response Body
