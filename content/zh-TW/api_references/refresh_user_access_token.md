@@ -28,7 +28,7 @@ HTTPs POST
 
 authorization: `Basic {app key: app secret}.base64'd`
 
-當您取得 AppId 和 AppSecret 之後，您需要使用 64 base 加密此字串：`appId:appSecret`
+當您取得 AppId 和 AppSecret 之後，您需要使用 64 base 加密此字串：`appKey:appSecret`
 
 您可以使用此連結來執行加密動作：
 https://www.base64encode.org/

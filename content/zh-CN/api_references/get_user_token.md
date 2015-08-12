@@ -13,7 +13,7 @@ https://mcs.mediatek.com/oauth/login/thirdpart
 ```
 MCS 提供使用者可以申请 user token，让使用者利用取得 user access token。 使用者可以透过此 user access token 从第三方服务利用 MCS APIs 以取得资料。
 
-为了能够利用此 API 来取得使用者 acces token，您需要先在 MCS 网站先申请 AppId 和 AppSecret。您可以在用戶設定頁面中的第三方服務專區，申請取得此兩項資訊。您需要注意，user token 每两周将会过期。
+为了能够利用此 API 来取得使用者 acces token，您需要先在 MCS 网站先申请 AppKeyd 和 AppSecret。您可以在用戶設定頁面中的第三方服務專區，申請取得此兩項資訊。您需要注意，user token 每两周将会过期。
 
 
 ## 动作
@@ -25,7 +25,7 @@ HTTPs POST
 
 authorization: `Basic {app key: app secret}.base64'd`
 
-当您取得 AppId 和 AppSecret 之后，您需要使用 64 base 加密此字串：`appId:appSecret`
+当您取得 AppId 和 AppSecret 之后，您需要使用 64 base 加密此字串：`appKey:appSecret`
 
 您可以使用此连结来执行加密动作：
 https://www.base64encode.org/

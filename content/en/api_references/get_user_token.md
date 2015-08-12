@@ -13,7 +13,7 @@ https://mcs.mediatek.com/oauth/login/thirdpart
 ```
 To get the user token from MCS to allow you to apply for the user access token to access the MCS APIs from your own third party service.
 
-To use this API to get the user access token, you have to first apply for the AppId and AppSecret from the MCS web console. You can find the apply link in the service provider section in the user profile page. The user token will expire every two weeks.
+To use this API to get the user access token, you have to first apply for the AppKey and AppSecret from the MCS web console. You can find the apply link in the service provider section in the user profile page. The user token will expire every two weeks.
 
 
 ## Action
@@ -25,7 +25,7 @@ HTTPs POST
 
 authorization: `Basic {app key: app secret}.base64'd`
 
-After you get the AppId and AppSecret, you have to encode the string `appId:appSecret` using base 64 to get the authorization code.
+After you get the AppId and AppSecret, you have to encode the string `appKey:appSecret` using base 64 to get the authorization code.
 
 You can use the following link to do the encoding:
 https://www.base64encode.org/

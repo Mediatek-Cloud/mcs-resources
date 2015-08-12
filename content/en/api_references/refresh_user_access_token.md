@@ -26,7 +26,7 @@ HTTPs POST
 
 authorization: `Basic {app key: app secret}.base64'd`
 
-After you get the AppId and AppSecret, you have to encode the string `appId:appSecret` to get the authorization code.
+After you get the AppId and AppSecret, you have to encode the string `appKey:appSecret` to get the authorization code.
 
 You can use the following link to do the encoding:
 https://www.base64encode.org/
