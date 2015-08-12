@@ -27,5 +27,5 @@
    * [2.5](change_log/2.5.md)
    * [2.6](change_log/2.6.md)
    * [2.7](change_log/2.7.md)
-   * [2.8](change_log/28.md)
+   * [2.8](change_log/2.8.md)
 
