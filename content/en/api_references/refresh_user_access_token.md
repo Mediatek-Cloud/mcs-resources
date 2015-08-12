@@ -31,9 +31,9 @@ After you get the AppId and AppSecret, you have to encode the string `appId:appS
 You can use the following link to do the encoding:
 https://www.base64encode.org/
 
-For example, you encode the following string using base 64: `AuMgS2MPK5Z6nqWhVsyV:o1uBjWTzuqbaMnQzSmDp7UhR6M33NOhb5XL0b1YK`
+For example, you encode the following string using base 64: `BuMgS2MPK5Z6nqWhVsyV:o1uBjWTzuqbaMnQzSmDp5UhR6M33NOhb3YL0b1YK`
 
-and you will get `QXVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA3VWhSNk0zM05PaGI1WEwwYjFZSw==`
+and you will get `QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
 
 ### Return format
 The return format is in json format
@@ -75,9 +75,17 @@ http://mcs.mediatek.com/oauth/login/thirdpart/refresh
 ```
 
 Request Header
+```
+authorization: `QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
+```
 
-authorization: `QXVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA3VWhSNk0zM05PaGI1WEwwYjFZSw==`
+Request Body
+```
+{
+    "token": "***",
+}
 
+```
 
 Response Body
 

@@ -25,14 +25,14 @@ HTTPs POST
 
 authorization: `Basic {app key: app secret}.base64'd`
 
-After you get the AppId and AppSecret, you have to encode the string `appId:appSecret` to get the authorization code.
+After you get the AppId and AppSecret, you have to encode the string `appId:appSecret` using base 64 to get the authorization code.
 
 You can use the following link to do the encoding:
 https://www.base64encode.org/
 
-For example, you encode the following string using base 64: `AuMgS2MPK5Z6nqWhVsyV:o1uBjWTzuqbaMnQzSmDp7UhR6M33NOhb5XL0b1YK`
+For example, you encode the following string using base 64: `BuMgS2MPK5Z6nqWhVsyV:o1uBjWTzuqbaMnQzSmDp5UhR6M33NOhb3YL0b1YK`
 
-and you will get `QXVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA3VWhSNk0zM05PaGI1WEwwYjFZSw==`
+and you will get `QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
 
 
 ### Return format
@@ -66,6 +66,19 @@ The response body will construct in JSON format with the following fields:
 Request URL
 ```
 https://mcs.mediatek.com/oauth/login/thirdpart
+```
+
+Request Header
+```
+authorization: `QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
+```
+
+Request Body
+```
+{
+    "email": "MCSuser@mediatek.com",
+    "password": "123456789"
+}
 ```
 
 Response Body
