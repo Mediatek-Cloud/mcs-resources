@@ -32,6 +32,8 @@ For Users
 Authorization: Bearer `{token}`
 ```
 
+You can get the Bearer token by use the `Get User Token API` first. The access token will be the token you use here.
+
 **Content Type**
 
 For JSON format:

@@ -1,6 +1,6 @@
 # MCS Change log Summary
 
-## August 10, 2015
+## August 17, 2015
 ###v2.8
 [Provides MCS AppId and AppSecrete to enable the third party service provider to use MCS APIs.](./2.8)
 

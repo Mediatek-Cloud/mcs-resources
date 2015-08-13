@@ -17,6 +17,8 @@
    * [Get connection](api_references/get_connection.md)
    * [Data channel format](api_references/data_channel_format.md)
    * [Command server format](api_references/command_server_format.md)
+   * [Get User Token](api_references/get_user_token.md)
+   * [Refresh User Access Token](api_references/refresh_user_access_token.md)
 * [Mobile application](mobile_application/README.md)
 * [7681 Firmware Update](7681_firmware_update/README.md)
 * [FAQ](faq/README.md)
@@ -25,5 +27,5 @@
    * [2.5](change_log/2.5.md)
    * [2.6](change_log/2.6.md)
    * [2.7](change_log/2.7.md)
-   * [2.8](change_log/28.md)
+   * [2.8](change_log/2.8.md)
 
