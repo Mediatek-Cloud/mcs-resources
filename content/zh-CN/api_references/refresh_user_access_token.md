@@ -88,7 +88,7 @@ authorization: ` QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0
 请求內容
 ```
 {
-    "token": "***",
+    "token": "***"
 }
 ```
 

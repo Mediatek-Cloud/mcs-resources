@@ -82,7 +82,7 @@ authorization: `QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0z
 Request Body
 ```
 {
-    "token": "***",
+    "token": "***"
 }
 
 ```
