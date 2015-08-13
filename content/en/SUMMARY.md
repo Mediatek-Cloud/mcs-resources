@@ -20,6 +20,7 @@
    * [Get User Token](api_references/get_user_token.md)
    * [Refresh User Access Token](api_references/refresh_user_access_token.md)
 * [Mobile application](mobile_application/README.md)
+* [Mobile application](mobile_application--cn/README.md)
 * [7681 Firmware Update](7681_firmware_update/README.md)
 * [FAQ](faq/README.md)
 * [Terms of use](terms_of_use/README.md)
