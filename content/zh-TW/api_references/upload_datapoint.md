@@ -32,6 +32,8 @@ deviceKey: `device_key_here`
 Authorization: Bearer `{token}`
 ```
 
+此 token，您必須先呼叫 `Get User Token API` 來取得。 Access token 即為您此處使用的 Bearer token。
+
 **Content Type**
 
 JSON 格式:

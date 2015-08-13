@@ -39,6 +39,8 @@ JSON 格式:
 Content-Type:`application/json`
 ```
 
+此 token，您必须先呼叫 `Get User Token API` 来取得。 Access token 即为您此处使用的 Bearer token。
+
 Comma Separated Value (CSV) 格式:
 ```
 Content-Type:`text/csv`
