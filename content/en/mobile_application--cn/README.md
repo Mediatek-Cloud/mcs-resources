@@ -7,8 +7,6 @@ Please use [Download apk](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-
 
 **(If you use LinkIt Connect 7681 device, please update the firmware of your devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update--cn/)**)**
 
-![](../images/Mobile_application/img_mobileapplication_00_cn.png)
-
 
 The mobile app currently offers for Android only.
 
