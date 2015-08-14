@@ -2,7 +2,7 @@
 # 手機應用程式
 
 
-請選擇 [Download here](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk) 或是 QR code 來取得我們提供的手機應用程式:
+請選擇 [直接下載](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk) 或是 QR code 來取得我們提供的手機應用程式:
 
 ![](../images/Mobile_application/img_mobileapplication_00_cn.png)
 

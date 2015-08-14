@@ -1,15 +1,13 @@
 # 手机应用程序
 
 
-請选择[ [直接下载 apk](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk) 或是 QR 码来下载我们提供的手机应用程序：
+請选择[ [直接下载](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk) 或是 QR 码来下载我们提供的手机应用程序：
 
 ![](../images/Mobile_application/img_mobileapplication_00_cn.png)
 
 
 **(请注意：若您有使用 LinkIt connect 7681 装置，请更新至最新版本才可继续使用，请参考以下更新连结 [7681 Firmware Update Instruction](../7681_firmware_update--cn/))**
 
-
-目前此手机应用程序只提供安卓（Android）版本。
 
 您必须确保您的安卓（Android）手机版本为 v4.0 以上，并且使用您的手机浏览器打开此下载页面。
 
@@ -32,3 +30,5 @@
 此外，在画面的左下方，您会看见一个加号，您可以点击此加号来新建测试装置。您亦可以使用 Smart Connection 功能来来接您的 LinkIt Connect 开发板。如欲查看更详细的 LinkIt Connect 使用方式，您可以参考以下教程[2.Tutorial 2.7 Implementing using Linkit Connect 7681 development board]http://mcs.mediatek.com/resources/zh-CN/latest/tutorial/implementing_using_mt7681_development_board)
 
 ![](../images/Mobile_application/img_mobileapplication_04.png)
+
+

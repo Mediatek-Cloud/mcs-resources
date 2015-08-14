@@ -2,8 +2,8 @@
 
 * [Introduction](README.md)
 * [Tutorial](tutorial/README.md)
-   * [Key concepts](key_concept/README.md)
    * [Getting started](tutorial/getting_started.md)
+   * [Key concepts](key_concept/README.md)
    * [Implementing using LinkIt ONE (Aster 2502) development board](tutorial/implementing_using_linkit_one.md)
    * [Implementing using LinkIt Connect 7681 development board](tutorial/implementing_using_mt7681_development_board.md)
    * [Using notification](tutorial/setting_notification.md)
@@ -20,7 +20,7 @@
    * [Get User Token](api_references/get_user_token.md)
    * [Refresh User Access Token](api_references/refresh_user_access_token.md)
 * [Mobile application](mobile_application/README.md)
-* [Mobile application--cn](mobile_application_v2/README.md)
+* [Mobile application--cn](mobile_application--cn/README.md)
 * [7681 Firmware Update](7681_firmware_update/README.md)
 * [7681 Firmware Update--cn](7681_firmware_update--cn/README.md)
 * [FAQ](faq/README.md)
