@@ -1,7 +1,7 @@
 # 手机应用程序
 
 
-請选择[ [直接下载](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk) 或是 QR 码来下载我们提供的手机应用程序：
+請选择[直接下载](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk) 或是 QR 码来下载我们提供的手机应用程序：
 
 ![](../images/Mobile_application/img_mobileapplication_00_cn.png)
 
