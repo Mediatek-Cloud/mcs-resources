@@ -3,8 +3,8 @@
 
 ## Resources
 
-- Mobile APK: MediaTek Cloud Sandbox Mobile Application for Android **(>= 2.5.0)** on [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud). Please check your Android application version is above 2.5.0.
-- 7681 Latest Firmware(2015/05/25): [MT7681_sta_header.bin](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin). With ability to show 7681's Mac Address.
+- Mobile APK: MediaTek Cloud Sandbox Mobile Application for Android **(>= 2.5.0)** [Dowbload here](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk). Please check your Android application version is above 2.5.0.
+- 7681 Latest Firmware(2015/05/25): [MT7681_sta_header.bin](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin). With ability to show 7681's Mac Address.
 
 ## Steps For 7681 Update
 
@@ -30,7 +30,7 @@
 
 ## Steps For Smart Connection on Android App
 
-1. Install latest MediaTek Cloud Sandbox Mobile Application for Android on [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud)
+1. Install latest MediaTek Cloud Sandbox Mobile Application for Android [Download here](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk)
 2. Link to certain Wifi AP
 3. Sign in & Click on the `+` button on the right-bottom side to add devices
 4. Click on `Smart Connection` and input the Wifi SSID/Password to start Smart Connection
@@ -149,3 +149,4 @@ Others
 
 - Refreshing. It's recommended to refresh multiple times if you could not find any.
 - `AT#Default`: Reset 7681 to default status, without Wifi binding. 7681s that already connected with other Wifi AP could not be scanned by other Smart Connection. It's required to use `AT#Default` to reset 7681, so that it could be smart connected by MCS App.
+

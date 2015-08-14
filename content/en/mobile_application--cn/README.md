@@ -1,17 +1,14 @@
 # Mobile application
 
 
-Please use [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) or scan the QR code below to get our latest mobile application.
+Please use [Download apk](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk) or scan the QR code below to get our latest mobile application.
 
-<a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud" target="_blank">
-  <img src="https://goo.gl/cIzlpF" border="0">
-</a>
+![](../images/Mobile_application/img_mobileapplication_00_cn.png)
 
-**(Please be noted that due to system upgrade to enhance security, the old version of mobile app is not working anymore. Please download the latest version of the mobile app in the Google play store to continue using our MCS mobile app. Also, if you use LinkIt Connect 7681 device, please update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**)**
+**(If you use LinkIt Connect 7681 device, please update the firmware of your devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update--cn/)**)**
 
-![](../images/Mobile_application/img_mobileapplication_00.png)
+![](../images/Mobile_application/img_mobileapplication_00_cn.png)
 
-Or, you can [download the apk](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-latest-production-release.apk) directly.
 
 The mobile app currently offers for Android only.
 
@@ -41,4 +38,5 @@ For controller data channel you can fire commands, for data channel it shows the
 There is a Plus-in-circle icon allows you to add new devices. Please note, the new devices funcion is currently not available. For Smart Connection you can use this feature to add LinkIt Connect 7681. For full instruction please refer to [2.Tutorial 2.7 Implementing using Linkit Connect 7681 development board](http://mcs.mediatek.com/resources/latest/tutorial/implementing_using_mt7681_development_board)
 
 ![](../images/Mobile_application/img_mobileapplication_04.png)
+
 
