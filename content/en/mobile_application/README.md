@@ -7,7 +7,7 @@ Please use [Google Play](https://play.google.com/store/apps/details?id=com.media
   <img src="https://goo.gl/cIzlpF" border="0">
 </a>
 
-**(Please be noted that due to system upgrade to enhance security, the old version of mobile app is not working anymore. Please download the latest version of the mobile app in the Google play store to continue using our MCS mobile app. Also, please update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**)**
+**(Please be noted that due to system upgrade to enhance security, the old version of mobile app is not working anymore. Please download the latest version of the mobile app in the Google play store to continue using our MCS mobile app. Also, if you use LinkIt Connect 7681 device, please update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**)**
 
 ![](../images/Mobile_application/img_mobileapplication_00.png)
 
