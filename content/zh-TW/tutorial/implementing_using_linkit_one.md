@@ -91,10 +91,12 @@ c. 測試裝置建立後，點擊"詳細資訊"連結至測試裝置詳情頁面
 | -- | -- | -- |
 | deviceId | Dsre1qRQ | 測試裝置的獨特識別碼 |
 | deviceKey | DFbtsNWg4AuLZ30v  | 測試裝置的 API Key |
-| dataChannelId | LED | 此教程中所需顯示器類型 LED 燈號的資料通道識別碼 |
-| dataChannelId | LED_CONTROL | 此教程中所需控制器類型 LED 燈號的資料通道識別碼 |
+| dataChannelId | LED_Display | 此教程中所需顯示器類型 LED 燈號的資料通道識別碼 |
+| dataChannelId | LED_Control | 此教程中所需控制器類型 LED 燈號的資料通道識別碼 |
 
-請注意，此教程中圖片所顯示的 deviceId 和 deviceKey 會和您實際操作時取得的不一樣，請使用您所取得的值。
+注意一：此教程中圖片所顯示的 deviceId 和 deviceKey 會和您實際操作時取得的不一樣，請使用您所取得的值。
+
+注意二：deviceId 的大小寫是不一樣的，請保持和上方表格資料值相同的大小寫。
 
 
 ### 步驟四　替您的開發板編程

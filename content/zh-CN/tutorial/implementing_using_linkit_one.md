@@ -86,10 +86,12 @@ c. 测试装置建立后，点击"详细信息"连结至测试装置详情页面
 | -- | -- | -- |
 | deviceId | Dsre1qRQ | 测试装置的独特识别码 |
 | deviceKey | DFbtsNWg4AuLZ30v  | 测试装置的 API Key |
-| dataChannelId | LED | 此教程中所需显示器类型 LED 灯号的资料通道识别码 |
-| dataChannelId | LED_CONTROL | 此教程中所需控制器类型 LED 灯号的资料通道识别码 |
+| dataChannelId | LED_Display | 此教程中所需显示器类型 LED 灯号的资料通道识别码 |
+| dataChannelId | LED_Control | 此教程中所需控制器类型 LED 灯号的资料通道识别码 |
 
-请注意，此教程中图片所显示的 deviceId 和 deviceKey 会和您实际操作时取得的不一样，请使用您所取得的值。
+注意二：此教程中图片所显示的 deviceId 和 deviceKey 会和您实际操作时取得的不一样，请使用您所取得的值。
+
+注意二：deviceId 的大小写是不一样的，请保持和上方表格资料值相同的大小写。
 
 ### 步骤四　替您的开发板编程
 操作流程如下：
