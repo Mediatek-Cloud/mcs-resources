@@ -87,10 +87,12 @@ Here is the summary of the neccessary information we have obtained in interactin
 | -- | -- | -- |
 | deviceId | Dsre1qRQ | Unique Identifier for this Test Device |
 | deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device |
-| dataChannelId | LED | Data Channel Id for LED status |
-| dataChannelId | LED_CONTROL | Data Channel Id for LED control |
+| dataChannelId | LED_ Display| Data Channel Id for LED status |
+| dataChannelId | LED_Control | Data Channel Id for LED control |
 
-Please note, the deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
+Note 1: The deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
+
+Note 2: The deviceId are case sensitive.
 
 ### Step 4. Code the development board
 The program flow logics are as follows:
