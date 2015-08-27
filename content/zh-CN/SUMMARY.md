@@ -30,4 +30,5 @@
    * [2.6](change_log/2.6.md)
    * [2.7](change_log/2.7.md)
    * [2.8](change_log/2.8.md)
+   * [2.9](change_log/2.9.md)
 

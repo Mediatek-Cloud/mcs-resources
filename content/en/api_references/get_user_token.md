@@ -115,3 +115,21 @@ When error is incurred, the response code will be non-200 and the response body 
     "options": {}
 }
 ```
+When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
+
+| Field Name | Type |Description|
+| --- | --- | --- |
+| code | Integer | Error Code |
+| message | String | Error Description |
+
+**Example:**
+
+```
+{
+    "apiVersion": "0.0.1",
+    "code": 500,
+    "message": "Invalid or missing client_id parameter",
+    "statusCode": 500,
+    "options": {}
+}
+```
