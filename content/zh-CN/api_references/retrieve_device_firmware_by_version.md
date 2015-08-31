@@ -1,23 +1,23 @@
-# Retrieve Device Firmware by version
+# 取得装置可相容之固件资讯
 
-## Description
+## 描述
 
-Use **HTTPs GET** to retrieve the compatible firmware for specific firmware for the device from MCS.
+使用 **HTTPs GET** 来从 MCS 取得装置特定固件可相容之韧体资讯。
 
 
-## Request URL
+## 请求 URL
 
 ```
 https://api.mediatek.com/mcs/v2/devices/:deviceId/firmwares/available/:versionId
 
 ```
-To retrieve the compatible firmwares for specific firmware for this device.
+取得装置特定固件可相容之韧体资讯。
 
-## Action
+## 动作
 HTTPs GET
 
 
-## Parameters
+## 参数
 ### Header
 
 
@@ -26,48 +26,48 @@ deviceKey: `device_key_here`
 Content-Type:`application/json`
 
 
-### Return format
-The return format is in json format
+### 回覆格式
+回覆格式為 JSON
 
-## Response
+## 回覆
 
-### Response Code
+### 回覆代码
 200
 
-### Response Header
-For JSON response:
+### 回覆 Header
+JSON 格式
 ```
 Content-Type:`application/json`
 ```
 
-### Response Body
+### 回覆內容
 
-***Data Format: JSON***
+***JSON 格式：***
 
-The response body will construct in JSON format with the following fields:
+JSON 格式的回覆内容会包含以下几个栏位：
 
-| Field Name | Type | Description|
+|栏位名称|格式|描述|
 | --- | --- | --- | --- |
-| results | array | the compatible firmwares for specific firmware for this device |
-|code| string|http status code|
-|message|string|system log message|
+| results | array | 所有该装置可相容的固件清单资讯 |
+|code| string|http 状态代码|
+|message|string|系统讯息|
 
 
-**Example:**
+**范例：**
 
-Request URL
+请求 URL
 ```
 https://api.mediatek.com//mcs/v2/devices/DAWfOAsi/firmwares/available/1
 ```
 
-Request Header
+请求 Header
 
 deviceKey: `g06jBWOtB0kqHk2B`
 
 Content-Type:`application/json`
 
 
-Response Body
+回覆內容
 
 ```
 {
@@ -93,17 +93,16 @@ Response Body
 ```
 
 
-## Error Response
+## 错误回覆
 
+当错误发生时，回覆代码为非 200 之其他代码。回覆内容为 JSON 格式并会包括以下资讯：
 
-When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
-
-| Field Name | Type |Description|
+| 栏位名称 | 格式 |描述|
 | --- | --- | --- |
-| code | Integer | Error Code |
-| message | String | Error Description |
+| code | Integer | 错误代码 |
+| message | String | 错误描述 |
 
-**Example:**
+**范例：**
 
 ```
 {

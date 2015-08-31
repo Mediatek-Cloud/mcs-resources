@@ -18,6 +18,8 @@ To complete this setup tutorial, you’ll need:
 
 No additional components need to be connected to the development board.
 
+**(Please be noted that due to system upgrade to enhance security, you have to update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**)**
+
 ## MT7681 controllers list and their corresponding MCS data channel IDs
 The MT7681 chipset provides 5 GPIO pins that can implement PWM and 1 UART port. Below is a list of the pins and their corresponding data channel IDs to use on MCS.
 
