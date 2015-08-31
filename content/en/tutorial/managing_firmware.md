@@ -32,7 +32,7 @@ After selecting the devices you would like to upgrade, click the Push botton. Yo
 
 The user can also upgrade the firmware of a device in the **Device detail** page. In the Device detail page, click on the **firmware tab**, and you will see the current using firmware and the firmware that the device can be upgraded to.
 
-Please be noted that the **Push** button will only be clickable when the device is connected. You can also tell the connection status of the device by the light signal in front of the device name. If the light is green, the device is connected; and if the light is red, the device is offline.
+Please be noted that the **Push** button will only be clickable when the device is connected. You can also tell the connection status of the device by the light signal in front of the device name. If the light is green, the device is connected; and if the light is grey, the device is offline.
 
 ![](../images/Firmware/img_firmware_05.png)
 
@@ -51,7 +51,7 @@ Please be noted, in the MCS platform, we only send the firmware upgrade informat
 * URL: the download url of the firmware being passed
 
 
-Also, for 7681 device, you have to set the firmware version properly. 7681 device can only upgrade to firmware with higher version.
+Also, for 7681 device, we handle the upgradeprocess in the device, and you do not have to do any other coding. Just be noted that you have to set the firmware version uniquely, and due to 7681 device limitation, it can only upgrade to firmware with higher version.
 
 ## Calling APIs to report and download firmware from MCS
 

@@ -1,23 +1,23 @@
-# Retrieve Device Firmware by version
+# 取得裝置可相容之韌體資訊
 
-## Description
+## 描述
 
-Use **HTTPs GET** to retrieve the compatible firmware for specific firmware for the device from MCS.
+使用 **HTTPs GET** 來從 MCS 取得裝置特定韌體可相容之韌體資訊。
 
 
-## Request URL
+## 請求 URL
 
 ```
 https://api.mediatek.com/mcs/v2/devices/:deviceId/firmwares/available/:versionId
 
 ```
-To retrieve the compatible firmwares for specific firmware for this device.
+取得裝置特定韌體可相容之韌體資訊。
 
-## Action
+## 動作
 HTTPs GET
 
 
-## Parameters
+## 參數
 ### Header
 
 
@@ -26,48 +26,48 @@ deviceKey: `device_key_here`
 Content-Type:`application/json`
 
 
-### Return format
-The return format is in json format
+### 回覆格式
+回覆格式為 JSON
 
-## Response
+## 回覆
 
-### Response Code
+### 回覆代碼
 200
 
-### Response Header
-For JSON response:
+### 回覆 Header
+JSON 格式
 ```
 Content-Type:`application/json`
 ```
 
-### Response Body
+### 回覆內容
 
-***Data Format: JSON***
+***JSON 格式：***
 
-The response body will construct in JSON format with the following fields:
+JSON 格式的回覆內容會包含以下幾個欄位：
 
-| Field Name | Type | Description|
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- | --- |
-| results | array | the compatible firmwares for specific firmware for this device |
-|code| string|http status code|
-|message|string|system log message|
+| results | array | 所有該裝置可相容的韌體清單資訊 |
+|code| string|http 狀態代碼|
+|message|string|系統訊息|
 
 
-**Example:**
+**範例：**
 
-Request URL
+請求 URL
 ```
 https://api.mediatek.com//mcs/v2/devices/DAWfOAsi/firmwares/available/1
 ```
 
-Request Header
+請求 Header
 
 deviceKey: `g06jBWOtB0kqHk2B`
 
 Content-Type:`application/json`
 
 
-Response Body
+回覆內容
 
 ```
 {
@@ -93,17 +93,16 @@ Response Body
 ```
 
 
-## Error Response
+## 錯誤回覆
 
+當錯誤發生時，回覆代碼為非 200 之其他代碼。回覆內容為 JSON 格式並會包括以下資訊：
 
-When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
-
-| Field Name | Type |Description|
+| 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
-| code | Integer | Error Code |
-| message | String | Error Description |
+| code | Integer | 錯誤代碼 |
+| message | String | 錯誤描述 |
 
-**Example:**
+**範例：**
 
 ```
 {
