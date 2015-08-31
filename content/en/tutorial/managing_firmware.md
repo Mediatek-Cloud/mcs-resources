@@ -51,7 +51,7 @@ Please be noted, in the MCS platform, we only send the firmware upgrade informat
 * URL: the download url of the firmware being passed
 
 
-Also, for 7681 device, we handle the upgradeprocess in the device, and you do not have to do any other coding. Just be noted that you have to set the firmware version properly. 7681 device can only upgrade to firmware with higher version.
+Also, for 7681 device, we handle the upgradeprocess in the device, and you do not have to do any other coding. Just be noted that you have to set the firmware version uniquely, and due to 7681 device limitation, it can only upgrade to firmware with higher version.
 
 ## Calling APIs to report and download firmware from MCS
 
