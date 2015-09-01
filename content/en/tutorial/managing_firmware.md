@@ -36,7 +36,9 @@ Please be noted that the **Push** button will only be clickable when the device 
 
 ![](../images/Firmware/img_firmware_05.png)
 
-Click on the **Push** button next to the firmware that you want the device to be upgraded to.
+Click on the **Push** button next to the firmware that you want the device to be upgraded to. After push, you will see this success message.
+
+![](../images/Firmware/img_firmware_06.png)
 
 Please be noted, in the MCS platform, we only send the firmware upgrade information to the device, we do not handle the firmware upgrade in the device. Please code your device to receive the information and perform the download and upgrade. The MCS command server will pass the information in the following format to the device after clicking the Push button:
 
@@ -55,7 +57,7 @@ Also, for 7681 device, we handle the upgradeprocess in the device, and you do no
 
 ## Calling APIs to report and download firmware from MCS
 
-MCS provides various firmware APIs for you to report current firmware version of device, retrieve all available firmware for device, and to get the firmware information you would like to upgrade to. However, to use those function, you have to code those APIs in your device.
+MCS provides various firmware APIs for you to report current firmware version of device, retrieve all available firmware for device, and to get the firmware information you would like to upgrade to. However, to use those functions, you have to code those APIs in your device.
 
 For the device to report its firmware version to the MCS platform, please use the **report device firmware** API [here](https://mcs.mediatek.com/resources/latest/api_references/) and code it in the device. Once the device starts to report its firmware version to MCS, it will be shown in the device firmware tab.
 
