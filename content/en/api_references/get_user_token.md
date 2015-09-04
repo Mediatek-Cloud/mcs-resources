@@ -70,7 +70,7 @@ https://mcs.mediatek.com/oauth/login/thirdpart
 
 Request Header
 ```
-authorization: `QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
+authorization: `Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
 ```
 
 Request Body

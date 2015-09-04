@@ -1,6 +1,6 @@
 # MCS Change log Summary
 
-## September 2, 2015
+## September 7, 2015
 ### v2.9
 [Firmware over the air upgrade is now available for all development board!](./2.9)
 
