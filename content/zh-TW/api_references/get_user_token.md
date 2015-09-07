@@ -25,7 +25,7 @@ HTTPs POST
 
 authorization: `Basic {app key: app secret}.base64'd`
 
-當您取得 AppId 和 AppSecret 之後，您需要使用 64 base 加密此字串：`appKey:appSecret`
+當您取得 AppKey 和 AppSecret 之後，您需要使用 64 base 加密此字串：`appKey:appSecret`
 
 您可以使用此連結來執行加密動作：
 https://www.base64encode.org/
@@ -73,7 +73,7 @@ https://mcs.mediatek.com/oauth/login/thirdpart
 
 請求 Header
 ```
-authorization: `Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
+Authorization: `Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
 ```
 
 請求內容
