@@ -25,7 +25,7 @@ HTTPs POST
 
 authorization: `Basic {app key: app secret}.base64'd`
 
-After you get the AppId and AppSecret, you have to encode the string `appKey:appSecret` using base 64 to get the authorization code.
+After you get the AppKey and AppSecret, you have to encode the string `appKey:appSecret` using base 64 to get the authorization code.
 
 You can use the following link to do the encoding:
 https://www.base64encode.org/
@@ -70,7 +70,11 @@ https://mcs.mediatek.com/oauth/login/thirdparty
 
 Request Header
 ```
+<<<<<<< HEAD
 authorization: Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==
+=======
+Authorization: `Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
+>>>>>>> a530a5f1c3b4a54c742b96d85da1f1fed49eb698
 ```
 
 Request Body
