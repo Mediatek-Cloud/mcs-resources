@@ -76,6 +76,28 @@ http://mcs.mediatek.com/oauth/login/thirdparty/refresh
 
 Request Header
 ```
+authorization: Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==
+```
+
+Request Body
+```
+{
+    "token": "***"
+}
+
+```
+
+Response Body
+```
+{
+    "apiVersion": "0.0.1",
+    "code": 200,
+    "message": "Request has succeeded",
+    "results": {
+        "access_token": "***",
+        "userImageURL": "profile/1234567890.jpg",
+        "timezone": "Asia/Taipei",
+        "email": "mcsuser@mediatek.com",
         "nickname": "MCS User",
         "language": "zh-TW",
         "plan": {
