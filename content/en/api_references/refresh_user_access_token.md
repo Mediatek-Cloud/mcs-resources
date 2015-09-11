@@ -9,7 +9,7 @@ Use **HTTPs POST** to refresh the user access token from MCS.
 
 
 ```
-http://mcs.mediatek.com/oauth/login/thirdpart/refresh
+http://mcs.mediatek.com/oauth/login/thirdparty/refresh
 
 ```
 To get the user access token from MCS to access the MCS APIs from your own third party service.
@@ -71,12 +71,16 @@ The response body will construct in JSON format with the following fields:
 
 Request URL
 ```
-http://mcs.mediatek.com/oauth/login/thirdpart/refresh
+http://mcs.mediatek.com/oauth/login/thirdparty/refresh
 ```
 
 Request Header
 ```
+<<<<<<< HEAD
+authorization: Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==
+=======
 Authorization: `Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
+>>>>>>> a530a5f1c3b4a54c742b96d85da1f1fed49eb698
 ```
 
 Request Body

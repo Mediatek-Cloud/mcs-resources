@@ -9,7 +9,7 @@
 
 
 ```
-http://mcs.mediatek.com/oauth/login/thirdpart/refresh
+http://mcs.mediatek.com/oauth/login/thirdparty/refresh
 
 ```
 
@@ -77,12 +77,16 @@ JSON 格式的回覆內容會包含以下幾個欄位：
 
 請求 URL
 ```
-http://mcs.mediatek.com/oauth/login/thirdpart/refresh
+http://mcs.mediatek.com/oauth/login/thirdparty/refresh
 ```
 
 請求 Header
 ```
+<<<<<<< HEAD
+authorization: Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==
+=======
 Authorization: `Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
+>>>>>>> a530a5f1c3b4a54c742b96d85da1f1fed49eb698
 ```
 
 請求內容

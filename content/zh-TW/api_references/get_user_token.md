@@ -8,7 +8,7 @@
 ## 請求 URL
 
 ```
-https://mcs.mediatek.com/oauth/login/thirdpart
+https://mcs.mediatek.com/oauth/login/thirdparty
 
 ```
 MCS 提供使用者可以申請 user token，讓使用者利用取得 user access token。 使用者可以透過此 user access token 從第三方服務利用 MCS APIs 以取得資料。
@@ -68,12 +68,16 @@ JSON 格式的回覆內容會包含以下幾個欄位：
 
 請求 URL
 ```
-https://mcs.mediatek.com/oauth/login/thirdpart
+https://mcs.mediatek.com/oauth/login/thirdparty
 ```
 
 請求 Header
 ```
+<<<<<<< HEAD
+authorization: Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==
+=======
 Authorization: `Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
+>>>>>>> a530a5f1c3b4a54c742b96d85da1f1fed49eb698
 ```
 
 請求內容

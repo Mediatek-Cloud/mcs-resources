@@ -1,6 +1,10 @@
 # Managing Firmware
 
-MediaTek Clous Sandbox(MCS) enables the user to manage the firmware and provides firmware Over-The-Air (FOTA) update to the device.
+MediaTek Clous Sandbox(MCS) enables the user to manage the firmware and provides Firmware Over-The-Air (FOTA) update to the device.
+
+MCS provides firmware repository services for prototype and its test devices. It offers a basic firmware upload/download with version control. It comes with web management console for firmware management and APIs for test device to retrieve compatible firmware from MCS.
+
+MCS does not handle the device firmware upgrade operation itself, user has to code the device or calling the firmware application APIs made available to your development board SDK.
 
 ## Uploading Firmware to Prototype
 
