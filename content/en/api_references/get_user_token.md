@@ -70,11 +70,9 @@ https://mcs.mediatek.com/oauth/login/thirdparty
 
 Request Header
 ```
-<<<<<<< HEAD
+
 authorization: Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==
-=======
-Authorization: `Basic QnVNZ1MyTVBLNVo2bnFXaFZzeVY6bzF1QmpXVHp1cWJhTW5RelNtRHA1VWhSNk0zM05PaGIzWUwwYjFZSw==`
->>>>>>> a530a5f1c3b4a54c742b96d85da1f1fed49eb698
+
 ```
 
 Request Body
