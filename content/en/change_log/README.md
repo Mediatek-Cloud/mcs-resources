@@ -1,5 +1,9 @@
 # MCS Change log Summary
 
+## September 29, 2015
+### v2.10
+[System monitoring page allows you to track the MCS platform system status and stability.](./2.10)
+
 ## September 7, 2015
 ### v2.9
 [Firmware over the air upgrade is now available for all development board!](./2.9)
