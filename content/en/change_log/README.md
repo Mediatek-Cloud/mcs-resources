@@ -1,6 +1,6 @@
 # MCS Change log Summary
 
-## September 29, 2015
+## October 1, 2015
 ### v2.10
 [System monitoring page allows you to track the MCS platform system status and stability.](./2.10)
 
