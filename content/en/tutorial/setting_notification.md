@@ -2,7 +2,7 @@
 
 ## How to add trigger and action
 
-The user can set the trigger and action for a data channel when its value passes the limit of the defined range. The user will get email notification or the GCM notification based on the trigger and action setting. Please be noted that MCS currently only support trigger and action for integer and float data channel types.
+The user can set the trigger and action for a data channel when its value passes the limit of the defined range. The user will get email notification or the Mobile Push notification based on the trigger and action setting. Please be noted that MCS currently only support trigger and action for integer and float data channel types.
 
 
 On the Prototype detail page, click on the **Trigger & action** tab.
@@ -19,7 +19,7 @@ To have more than one data channel rules in trigger criteria, all data channel r
 
 ![](../images/Trigger/img_trigger_03.png)
 
-Click Next button to select the trigger action. You can select to get email or GCM notification when your trigger criteria are met. The email and GCM notification will be sent to anyone who has the access to the test device.
+Click Next button to select the trigger action. You can select to get email or Mobile Push notification when your trigger criteria are met. The email and Mobile Push notification will be sent to anyone who has the access to the test device.
 
 
 ![](../images/Trigger/img_trigger_04.png)

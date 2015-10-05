@@ -12,7 +12,7 @@ MediaTek Cloud Sandbox lets you:
 - Push and Pull data points between a device and the sandbox, using data types such as geo-location, temperature, humidity and more
 - Remotely control your devices using state data points, such as switch-state and more
 - Visualize data points graphically
-- Receive email or GCM notifications when data points are collected or change
+- Receive email or Mobile Push notifications when data points are collected or change
 - Manage the life cycle of devices, as you would in your live implementation
 - Manage and control remotely, using the complementary mobile app
 - Create reports about prototypes, devices and collected data
