@@ -1,9 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
+* [Key concepts](key_concept/README.md)
 * [Tutorial](tutorial/README.md)
    * [Getting started](tutorial/getting_started.md)
-   * [Key concepts](key_concept/README.md)
    * [Implementing using LinkIt ONE (Aster 2502) development board](tutorial/implementing_using_linkit_one.md)
    * [Implementing using LinkIt Connect 7681 development board](tutorial/implementing_using_mt7681_development_board.md)
    * [Using notification](tutorial/setting_notification.md)
