@@ -26,11 +26,6 @@ To support the use of these features, MediaTek Cloud Sandbox provides an API san
 
 
 
-MediaTek Cloud Sandbox is currently in closed-beta.
-
-
-
-
 ## **Prerequisites for Use**
 To make use of MediaTek Cloud Sandbox you must:
 1. [Register as a member of MediaTek Labs] (http://labs.mediatek.com/dpRegister/create)
