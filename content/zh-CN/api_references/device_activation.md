@@ -45,8 +45,8 @@ The response body will construct in JSON format with the following fields:
 | Field Name | Type | Description|
 | --- | --- | --- | --- |
 |code| string|http status code|
-| deviceKey | array | the deviceKey |
-|deviceId|array| the deviceId |
+| deviceKey | string | the deviceKey |
+|deviceId|string| the deviceId |
 |chipname|string|the device name|
 |message|string|system log message|
 
