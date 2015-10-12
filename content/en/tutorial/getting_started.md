@@ -1,38 +1,20 @@
 # Getting started
 
-Here are the four steps to connect MediaTek Cloud Sandbox to your development and prototype lifecycle:
+Here are the steps to connect MediaTek Cloud Sandbox to your development and prototype lifecycle:
 
 1. Develop Prototype
 2. Create Test Device
-3. Managing deployed test devices
-4. Manage your Profile
-
-
+3. Manage Test Device
+4. Beta-release & Device Management
+5. Configure User Profile
 
 ![](../images/Getting_started/img_gettingstarted_01.png)
-
-[Develop Prototype]
-
-The developer develop a prototype by first create a prototype in the Development console. A prototype may have several data channels which take different data points types.
-
-[Create Test Device]
-
-AFter creating a prototype, the developer can create a test device to test and control his device. The developer can also use the my device console to visually view the simulated result for his prototype or to control the devices.
-
-[Managing deployed test devices]
-
-The developer can monitor all the test devices under each prototype in the Development console, the developer can also view all the test device in the My device console which he has the access for.
-
-In the future, when the prototype is release to the end user, the end user can manage and configure the device in the My device console as well to view the data, set trigger and action, and share the device to other users.
-
-[Manage your profile]
-
-You can always change the setting of your user profile by clicking on your name on the upper right panel, and click Profile. You can change the password for your account and change the timezone by selecting your current country. All your prototypes and test devices will use the timezone you have set here.
-
 
 
 
 # Create your first protptype
+
+The developer develop a prototype by first create a prototype in the Development console. A prototype may have several data channels which take different data points types.
 
 ![](../images/Getting_started/img_gettingstarted_02.png)
 
@@ -84,7 +66,9 @@ For more Data Channel and Data Type information and concept, please refer to the
 
 
 
-# Create your first device
+# Create your first test device
+
+AFter creating a prototype, the developer can create a test device to actually test and control the device. The developer can also visually view the simulated result for his prototype or to control the devices in the test device detail page.
 
 ![](../images/Getting_started/img_gettingstarted_08.png)
 
@@ -105,11 +89,10 @@ Step 5. Or you can also check the test device in **Test Device** tab too.
 ![](../images/Getting_started/img_gettingstarted_09.png)
 
 
-Please be noted that the data channels in the test device are inherited and synchronized with the prototype. If you update the data channel in the prototype, the data channels in the test device will change accordingly.
+Please be noted that the data channels in the test device are inherited and synchronized with the prototype. If you update the data channel in the prototype, the data channels in the test device will change accordingly. The purpose for this feature is to ensure you to have the flexibility while developing and testing your prototype before officially release to the end user.
 
 
 ## How to get deviceId and deviceKey
-
 
 
 After creating the test device, the developer can view and control the device to make sure its functionality before release the prototype in the future.
@@ -129,17 +112,17 @@ The deviceId and devicekey will be needed when calling our API to access this de
 
 Also, you will also need the data channel id when access the data channel of specific test device. In the test device detail page, you can find the data channel Id under each data channel name. Once your device is connected and starting to send data. The Id field will disappear and be substituted with the last updated data points time.
 
-# Manage test device
+
 
 ![](../images/Getting_started/img_gettingstarted_11.png)
 
-## How to manage deplyed test devices
+# How to manage test devices
 
-The developer can manage the test devices in the Prototype detail page, or in the device detail page under My device. In the future, when the device is released, the end user can view and configure his devices in the My Device console.
+The developer can monitor all the test devices for each prototype in the Test Device tab in Prototype detail page. The developer can also view all the test device he has the access for in the Test device page.
 
-### From Developer's view point
+## In developmemt stage
 
-In the Development or My device page, the developer can do several configurations:
+In the Development stage, the developer can do several configurations to the test device:
 
 1.  View Data channel stautus
 2.  Set Trigger and action
@@ -147,30 +130,36 @@ In the Development or My device page, the developer can do several configuration
 4.  Check Firmware information and update information
 5.  Manage test device
 
-
-### From End User's view point
-In the future, when the prtotyp is released to the market, the end user can view and configure his device under My device by register the end user account on the MCS platform to access his devices.
-
-The user can manage his devices by:
-
-1.  View Data Channel stautus
-2.  Set Trigger and action
-3.  Set User privileges
-4.  Check Firmware information and upgrade
+In the development stage, to ensure the development flexibility, the test device changes with any modification made to the prototype. While after the prototype is released, the developer can no longer make change to the prototype data channel and trigger & action rules.
 
 
+## Half way there
 
-# Manage your profile
+Congratulation! You have successfully finished the getting started tutorial. Use the tips here and start to create your own prototype!
 
-The user can always change the setting of the user profile by clicking on his own name on the upper right panel to edit.
 
-The user can also change your password and the time zone here.
+You can further continue to beta-release prototype or to configure your user profile setting.
+
+# Beta-release prototype
+
+When your prototype is sufficiently tested and you are ready to release it to a samll group of user for trial run, you can beta-release the prototype.
+
+For more detail about the beta-release the prototype, you can find the tutorial [here](./beta-release).
+
+
+
+# Configure User Profile
+
+You can always change the setting of your user profile by clicking on your name on the upper right panel, and click Profile.
+
+In the User Profile page, you can:
+
+* Change the password for your account.
+* Change the timezone by selecting current country. Your device data channel time-series chart will be based on your time-zone setting.
+* Set preferred language, and MCS will save the seeting whenever you log in.
+* Turn on/off the mobile push notification for MCS mobile app.
+* Manage your 3rd party oauth authentication.
 
 
 ![](../images/Getting_started/img_gettingstarted_12.png)
-
-Your device data channel time-series chart will be based on your time-zone setting.
-
-
-
 
