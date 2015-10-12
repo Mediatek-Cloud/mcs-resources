@@ -42,13 +42,13 @@ Content-Type:`application/json`
 
 The response body will construct in JSON format with the following fields:
 
-| Field Name | Type | Description|
+| Field Name | Type | Description |
 | --- | --- | --- | --- |
-|code| string|http status code|
-| deviceKey|string | the deviceKey |
-|deviceId|string| the deviceId |
-|chipname|string|the device name|
-|message|string|system log message|
+| code | string | http status code |
+| deviceKey | string | the deviceKey |
+| deviceId | string | the deviceId |
+| chipname | string | the device name|
+| message | string | system log message|
 
 
 **Example:**
@@ -84,7 +84,7 @@ Response Body
 
 When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
 
-| Field Name | Type |Description|
+| Field Name | Type | Description |
 | --- | --- | --- |
 | code | Integer | Error Code |
 | message | String | Error Description |
