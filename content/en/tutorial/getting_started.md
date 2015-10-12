@@ -68,7 +68,7 @@ For more Data Channel and Data Type information and concept, please refer to the
 
 # Create your first test device
 
-AFter creating a prototype, the developer can create a test device to actually test and control the device. The developer can also visually view the simulated result for his prototype or to control the devices in the test device detail page.
+After creating a prototype, the developer can create a test device to actually test and control the device. The developer can also visually view the simulated result for his prototype or to control the devices in the test device detail page.
 
 ![](../images/Getting_started/img_gettingstarted_08.png)
 
