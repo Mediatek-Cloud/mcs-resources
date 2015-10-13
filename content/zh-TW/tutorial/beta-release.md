@@ -1,66 +1,61 @@
-# Beta-release prototype
+# 發行產品原型的 Beta 版本
+當產品原型已經過充分的測試時，開發者可以透過發行此產品原型的 Beta 版本給少部分的外部使用者試用。
 
-When your prototype is sufficiently tested and you are ready to release it to a samll group of user for trial run, you can beta-release the prototype.
-
-Once you beta-release your prototype, the prototype will be frozen, which means you can no longer make any modification to the prototype including the prototype detail, data channels, and triiger & action rules. However, you can still add other developers to join this prototype or continue to upload firmware for the test device or device to upgrade.
-
-## How to beta-release prototype
-
-To beta-release the prototype, simply click on the **Beta-release** button on the upper right corner in the prototype detail page.
-
-**(補一張圖在這邊~)**
-
-# Create Device
-
-User can only create devices after the prototype is beta-release and frozen. User can choose to create device at once or separately base on his/her needs.
-
-After devices are created, user can manage those devices in **Management** page, where devices are categorized by prototype. Each device will have a unique activation code, the device will only be available after being activated.
+產品原型進行發行 Beta 版本後，此產品原型將被鎖定，意即開發者無法再針對此原型做任何的修改，包含原型資訊，資料通道，觸發條件與動作。然而，開發者依然可以新增使用者來參與開發或上傳韌體來進行測試裝置的韌體更新。
 
 
-## How to create device
-
-You can choose to create device all at once or separately. Also, you can choose to enter the serial number by manual input or using a pre-defined csv file.
-
-Step 1. Click the Create Device button on the upper right corner in a beta-released prototype.
+## 如何發行產品原型的 Beta 版本
+您可點擊在產品原型頁面中右上角的** Beta 版本發行**按鈕來發行 Beta 版本。
 
 **(補一張圖在這邊~)**
 
-Step 2. Enter the device name and description.
+# 創建裝置
+當產品原型的設計已被確認且進入 Beta 版本發行階段，開發者可選擇一次創建所有的裝置或是根據需求於日後逐步新增。
 
-Step 3. Enter the serail number for the devices. The serail number format is limited to A-Z, a-z, 0-9, and must less the 50 characters.
+在**管理**頁面中的裝置列表是按照產品原型分類，開發者可以在此管理所創建的裝置。此外，每個裝置皆有配發一個不重複的啟用碼。在開始使用此裝置之前必須先完成啟用程序。
 
-Step 4. Click create button.
+## 如何創建裝置
+您可選擇一次創建所有的裝置或是根據需求於日後逐步新增。此外，創建裝置時必須輸入裝置序號，您可以手動輸入或直接匯入定義好的 csv 檔案。
 
-**(補一張圖在這邊~)**
-
-Devices are created in non-activated state and each device will have a unique activation code. The device will only be available after being activated. After activated, the device will get its deviceId and deviceKey like the test device and start to work.
-
-The developer can find the activation code and all other device related information in the **Management** page.
-
-# Device Management
-
-After the prototype is beta-released and you have created several devices for it. You can find all the devices in the **Management** page.
+步驟一：在發行產品原型的 Beta 版本後，按下產品原型頁面右上方的**創建裝置**按鈕。
 
 **(補一張圖在這邊~)**
 
-The developer can see the device count and activation rate for each prototype in the Management page. The developer can further check the devices for each prototype by clicking into the specific prototype in that page.
+步驟二：輸入裝置名稱與描述。
 
-The following information will be enclosed:
-* Device online status
-* Device Serial number
-* Device activation code
-* Device activation date
-* Device last data point time
+步驟三：輸入裝置的序號。序號的格式限制為 A-Z, a-z, 0-9 並且少於 50 個字元。
+
+步驟四：按下**創建**按鈕。
 
 **(補一張圖在這邊~)**
 
-Please be noted that all test device and device will be counted as your account limitation no matter it is activaed or non-activated. Please be noted that only when a device is in non- activated state can it be deleted.
+創建後的裝置仍是處於非啟用狀態。每個裝置配發有一個不重複的啟用碼，在開始使用此裝置之前必須先完成啟用程序。裝置啟用後，將會獲得一組專有的 deviceId 以及 deviceKey。
 
-## How to activate device
+開發者可以透過**管理**頁面來查找裝置的啟用碼以及裝置的其他的相關資訊。
 
-When the device is created, you can find the activation code in the **Management** page. Each device can only be activated once using the activation code.
+# 裝置管理
+開發者可以在**管理**頁面當中管理所有創建的 Beta 裝置。
 
-At current moment, MCS only provides API to activate device. Please find the **device activation** in API reference page [here](../api_references/). For the developer, you can design your own way to activate the device by calling our API.
+**(補一張圖在這邊~)**
 
+在**管理**頁面中，開發者可以看到各個產品原型中目前 Beta 裝置的數量，啟用的比例等。
 
-After the device is activated, there will be a device detail page listing the device detail including the deviceId, deviceKey, data channel value, trigger & action rules, and firmware version.
+同時，亦可更進一步的觀看單一產品原型下 Beta 裝置的詳細資訊。其中包含有：
+
+* 裝置連線狀態
+* 裝置序號
+* 裝置啟用碼
+* 裝置啟用日起
+* 裝置最近一次上傳資料的時間
+
+**(補一張圖在這邊~)**
+
+請注意，無論測試裝置或啟用與尚未啟用的 Beta 裝置皆受到免費開發者帳戶的用量限制。然而 Beta 裝置，只有在非啟用狀態之下才能進行刪除。
+
+## 如何啟用 Beta 裝置
+
+您可以在**管理**頁面中找到 Beta 裝置的啟用碼，並用此啟用該 Beta 裝置。
+
+MCS提供讓開發者藉由所提供的 API 來啟用 Beta 裝置，使用方法請請參閱 API 參考資料集當中的**裝置啟用** [這裡](../api_references/)。開發者可以根據我們所提供的 API自行設計裝置啟用的流程。
+
+當 Beta 裝置完成啟用之後，您將可以在頁面上看到裝置的完整資訊，包含 deviceId， deviceKey，資料通道數據，觸發條件與動作以及韌體的版本。
