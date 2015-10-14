@@ -1,109 +1,109 @@
-# Device activation
+#激活装置
 
-## Description
+##描述
 
-Use **HTTPs GET** to activate the device.
+使用** HTTPs的GET **来激活装置
 
 
-## Request URL
+##请求的URL
+使用以下API来激活您的装置
+
 ```
-https://api.mediatek.com/mcs/v2/devices/activate/:activationCode
+https://api.mediatek.com/mcs/v2/devices/activate/:activati​​onCode
 
 ```
-To activate the device.
 
-## Action
-HTTPs GET
-
-
-## Parameters
-### Header
-
-Content-Type:`application/json`
+##动作
+HTTPs的GET
 
 
-### Return format
-The return format is in json format
+##参数
+###头
 
-## Response
+内容类型：`应用/ json`
 
-### Response Code
+
+###返回类型
+返回格式是JSON格式
+
+##回覆
+
+###回覆代码
 200
 
-### Response Header
-For JSON response:
+###回覆头
+对于JSON响应：
 ```
-Content-Type:`application/json`
+内容类型：`应用/ json`
 ```
 
-### Response Body
+###回覆内容
 
-***Data Format: JSON***
+***回覆格式：JSON ***
 
-The response body will construct in JSON format with the following fields:
+JSON格式的回覆内容会包含以下几个栏位
 
-| Field Name | Type | Description |
+|栏位名称|资料型态|描述|
 | --- | --- | --- | --- |
-| code | String | http status code |
-| deviceKey | String | The deviceKey |
-| deviceId | String | The deviceId |
-| chipname | String | The device name |
-| message | String | System log message |
+|代码|字符串| HTTP状态代码|
+| deviceKey |字符串|该deviceKey |
+| DEVICEID |字符串|该DEVICEID |
+| chipname |字符串|设备名称|
+|消息|字符串|系统日志消息|
 
 
-**Example:**
+**范例：**
 
-Request URL
+请求的URL
 ```
 https://api.mediatek.com/mcs/v2/devices/activate/edb4b2eil152
 ```
 
-Request Header
+请求头
 
 
-Content-Type:`application/json`
+内容类型：`应用/ json`
 
 
-Response Body
+回覆内容
 
 ```
 {
-    "apiVersion": "2.10.1",
-    "code": 200,
-    "message": "Request has succeeded",
-    "deviceId": "JU5z4yVF",
-    "deviceKey": "yQGymH0IRWFSVC37",
-    "chipName": "Device for IoT prototype"
+    “apiVersion”：“2.10.1”
+    “代码”：200，
+    “消息”：“申请成功”，
+    “DEVICEID”：“JU5z4yVF”
+    “deviceKey”：“yQGymH0IRWFSVC37”，
+    “chipName”：“装置物联网雏形”
 }
 
 ```
 
 
-## Error Response
+##错误回覆
 
 
-When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
+當有錯誤發生時，回傳非200之其他回覆代碼。回覆內容為JSON格式並包含以下資訊：
 
-| Field Name | Type |Description |
+|栏位名称|资料型态|描述|
 | --- | --- | --- |
-| code | Integer | Error Code |
-| message | String | Error Description |
+|代码|整数|错误代码|
+|消息|字符串|错误说明|
 
-**Example:**
+**范例：**
 
 ```
 {
-    "apiVersion": "2.10.1",
-    "code": 400,
-    "message": "Wrong activate Code.",
-    "errors": [
-        {
-            "code": 400,
-            "message": "400 Bad Request"
-        }
-    ],
-    "statusCode": 400,
-    "options": {}
+    “apiVersion”：“2.10.1”
+    “代码”：400，
+    “消息”：“错误激活代码。”
+    “错误”：
+        {
+            “代码”：400，
+            “消息”：“400错误的请求”
+        }
+    ]
+    “的StatusCode”：400，
+    “选择”：{}
 }
 ```
-
