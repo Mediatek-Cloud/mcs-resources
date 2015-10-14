@@ -6,7 +6,7 @@
 
 
 ## 請求 URL
-使用以下API來啟用您的裝置
+使用以下 API 來啟用您的裝置
 
 ```
 https://api.mediatek.com/mcs/v2/devices/activate/:activationCode
@@ -23,8 +23,8 @@ HTTPs GET
 Content-Type:`application/json`
 
 
-### Return Type
-The return format is in json format
+### 回覆格式
+回覆格式是 JSON 格式
 
 ## 回覆
 
@@ -32,27 +32,27 @@ The return format is in json format
 200
 
 ### 回覆 Header
-For JSON response:
+JSON 格式：
 ```
 Content-Type:`application/json`
 ```
 
 ### 回覆內容
 
-***回覆格式: JSON***
+***回覆格式： JSON***
 
 JSON格式的回覆內容會包含以下幾個欄位
 
 | 欄位名稱 | 資料型態 | 描述 |
 | --- | --- | --- | --- |
-| code | String | http status code |
-| deviceKey | String | The deviceKey |
-| deviceId | String | The deviceId |
-| chipname | String | The device name |
-| message | String | System log message |
+| code | String | http 狀態碼 |
+| deviceKey | String | The device key |
+| deviceId | String | The device ID |
+| chipname | String | 設備名稱 |
+| message | String | 系統日誌 |
 
 
-**範例:**
+**範例：**
 
 請求 URL
 ```
@@ -60,7 +60,6 @@ https://api.mediatek.com/mcs/v2/devices/activate/edb4b2eil152
 ```
 
 請求 Header
-
 
 Content-Type:`application/json`
 
@@ -73,7 +72,7 @@ Content-Type:`application/json`
     "code": 200,
     "message": "Request has succeeded",
     "deviceId": "JU5z4yVF",
-    "deviceKey": "yQGymH0IRWFSVC37",
+    "deviceKey": "yQGymH0IRWFSVC**",
     "chipName": "Device for IoT prototype"
 }
 
@@ -83,14 +82,14 @@ Content-Type:`application/json`
 ## 錯誤回覆
 
 
-當有錯誤發生時，回傳非200之其他回覆代碼。回覆內容為JSON格式並包含以下資訊：
+當有錯誤發生時，回傳非 200 之其他回覆代碼。回覆內容為 JSON 格式並包含以下資訊：
 
 | 欄位名稱 | 資料型態 | 描述 |
 | --- | --- | --- |
-| code | Integer | Error Code |
-| message | String | Error Description |
+| code | Integer | 錯誤代碼 |
+| message | String | 錯誤說明 |
 
-**範例:**
+**範例：**
 
 ```
 {
