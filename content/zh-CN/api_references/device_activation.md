@@ -43,7 +43,7 @@ Content-Type:`application/json`
 
 JSON 格式的回覆内容会包含以下几个栏位
 
-|栏位名称|资料型态|描述|
+| 栏位名称 | 资料型态 | 描述 |
 | --- | --- | --- | --- |
 | code | String | HTTP 状态码 |
 | deviceKey | String | The device key |
@@ -81,13 +81,12 @@ Content-Type:`application/json`
 
 ## 错误回覆
 
+当有错误发生时，回传非 200 之其他回覆代码。回覆内容为 JSON 格式并包含以下资讯：
 
-當有錯誤發生時，回傳非 200 之其他回覆代碼。回覆內容為 JSON 格式並包含以下資訊：
-
-|栏位名称|资料型态|描述|
+| 栏位名称 | 资料型态 | 描述 |
 | --- | --- | --- |
-| code | Integer |错误代码|
-| message | String|错误说明|
+| code | Integer | 错误代码 |
+| message | String| 错误说明 |
 
 **范例：**
 
