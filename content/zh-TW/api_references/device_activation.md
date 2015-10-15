@@ -1,70 +1,70 @@
-# Device Activation
+# 啟用裝置
 
-## Description
+## 描述
 
-Use **HTTPs GET** to activate the device.
+使用 **HTTPs GET** 來啟用裝置
 
 
-## Request URL
+## 請求 URL
+使用以下 API 來啟用您的裝置
+
 ```
 https://api.mediatek.com/mcs/v2/devices/activate/:activationCode
 
 ```
-To activate the device.
 
-## Action
+## 動作
 HTTPs GET
 
 
-## Parameters
+## 參數
 ### Header
 
 Content-Type:`application/json`
 
 
-### Return format
-The return format is in json format
+### 回覆格式
+回覆格式是 JSON 格式
 
-## Response
+## 回覆
 
-### Response Code
+### 回覆代碼
 200
 
-### Response Header
-For JSON response:
+### 回覆 Header
+JSON 格式：
 ```
 Content-Type:`application/json`
 ```
 
-### Response Body
+### 回覆內容
 
-***Data Format: JSON***
+***回覆格式： JSON***
 
-The response body will construct in JSON format with the following fields:
+JSON格式的回覆內容會包含以下幾個欄位
 
-| Field Name | Type | Description |
+| 欄位名稱 | 資料型態 | 描述 |
 | --- | --- | --- | --- |
-| code | String | http status code |
-| deviceKey | String | The deviceKey |
-| deviceId | String | The deviceId |
-| chipname | String | The device name |
-| message | String | System log message |
+| code | String | http 狀態碼 |
+| deviceKey | String | The device key |
+| deviceId | String | The device ID |
+| chipname | String | 設備名稱 |
+| message | String | 系統日誌 |
 
 
-**Example:**
+**範例：**
 
-Request URL
+請求 URL
 ```
 https://api.mediatek.com/mcs/v2/devices/activate/edb4b2eil152
 ```
 
-Request Header
-
+請求 Header
 
 Content-Type:`application/json`
 
 
-Response Body
+回覆內容
 
 ```
 {
@@ -72,24 +72,24 @@ Response Body
     "code": 200,
     "message": "Request has succeeded",
     "deviceId": "JU5z4yVF",
-    "deviceKey": "yQGymH0IRWFSVC37",
+    "deviceKey": "yQGymH0IRWFSVC**",
     "chipName": "Device for IoT prototype"
 }
 
 ```
 
 
-## Error Response
+## 錯誤回覆
 
 
-When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
+當有錯誤發生時，回傳非 200 之其他回覆代碼。回覆內容為 JSON 格式並包含以下資訊：
 
-| Field Name | Type |Description |
+| 欄位名稱 | 資料型態 | 描述 |
 | --- | --- | --- |
-| code | Integer | Error Code |
-| message | String | Error Description |
+| code | Integer | 錯誤代碼 |
+| message | String | 錯誤說明 |
 
-**Example:**
+**範例：**
 
 ```
 {

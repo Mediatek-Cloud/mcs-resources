@@ -153,18 +153,16 @@
 
 在产品开发阶段，为了确保开发的弹性，测试装置会随着产品原型的变更而跟着改变。当产品原型beta-release 后，开发者将不能再对产品原型的资料通道和触发条件与动作规则做改变。
 
-## Half way there
-Congratulation! You have successfully finished the getting started tutorial. Use the tips here and start to create your own prototype!
+## 您已完成了 1/2 的教程
+
+恭喜！您已经完成了新手入门的教程。让我们开始动手建立自己的产品原型吧！
+此外，您还可以更进一步的 Beta-Release 您的产品原型或是变更你的个人档案。
 
 
-You can further continue to beta-release prototype or to configure your user profile setting.
+# Beta-Release 产品原型
+当您的产品原型已经过充分的测试且准备少量发行给外部使用者做测试时，您可以在 Mediatek Cloud Sandbox 上 Beta-Release 您的产品原型。
 
-
-# Beta-release prototype
-
-When your prototype is sufficiently tested and you are ready to release it to a samll group of user for trial run, you can beta-release the prototype.
-
-For more detail about the beta-release the prototype, you can find the tutorial [here](./beta-release).
+欲了解更多有关 Beta-Release 的介绍，请参考教程文件 [这里](./beta-release)。
 
 
 # 配置您的用戶設定

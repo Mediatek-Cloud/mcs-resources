@@ -1,70 +1,70 @@
-# Device activation
+# 激活装置
 
-## Description
+## 描述
 
-Use **HTTPs GET** to activate the device.
+使用 **HTTPs GET** 来激活装置
 
 
-## Request URL
+## 请求 URL
+使用以下 API 来激活您的装置
+
 ```
-https://api.mediatek.com/mcs/v2/devices/activate/:activationCode
+https://api.mediatek.com/mcs/v2/devices/activate/:activati​​onCode
 
 ```
-To activate the device.
 
-## Action
+## 动作
 HTTPs GET
 
 
-## Parameters
+## 参数
 ### Header
 
 Content-Type:`application/json`
 
 
-### Return format
-The return format is in json format
+### 返回格式
+返回格式是 JSON 格式
 
-## Response
+## 回覆
 
-### Response Code
+### 回覆代码
 200
 
-### Response Header
-For JSON response:
+### 回覆 Header
+JSON 格式：
 ```
 Content-Type:`application/json`
 ```
 
-### Response Body
+### 回覆内容
 
-***Data Format: JSON***
+***回覆格式：JSON***
 
-The response body will construct in JSON format with the following fields:
+JSON 格式的回覆内容会包含以下几个栏位
 
-| Field Name | Type | Description |
+| 栏位名称 | 资料型态 | 描述 |
 | --- | --- | --- | --- |
-| code | String | http status code |
-| deviceKey | String | The deviceKey |
-| deviceId | String | The deviceId |
-| chipname | String | The device name |
-| message | String | System log message |
+| code | String | HTTP 状态码 |
+| deviceKey | String | The device key |
+| deviceId | String | The device ID |
+| chipname | String | 设备名称 |
+| message | String | 系统日志 |
 
 
-**Example:**
+**范例：**
 
-Request URL
+请求 URL
 ```
 https://api.mediatek.com/mcs/v2/devices/activate/edb4b2eil152
 ```
 
-Request Header
-
+请求 Header
 
 Content-Type:`application/json`
 
 
-Response Body
+回覆内容
 
 ```
 {
@@ -72,24 +72,23 @@ Response Body
     "code": 200,
     "message": "Request has succeeded",
     "deviceId": "JU5z4yVF",
-    "deviceKey": "yQGymH0IRWFSVC37",
+    "deviceKey": "yQGymH0IRWFSVC**",
     "chipName": "Device for IoT prototype"
 }
 
 ```
 
 
-## Error Response
+## 错误回覆
 
+当有错误发生时，回传非 200 之其他回覆代码。回覆内容为 JSON 格式并包含以下资讯：
 
-When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
-
-| Field Name | Type |Description |
+| 栏位名称 | 资料型态 | 描述 |
 | --- | --- | --- |
-| code | Integer | Error Code |
-| message | String | Error Description |
+| code | Integer | 错误代码 |
+| message | String| 错误说明 |
 
-**Example:**
+**范例：**
 
 ```
 {
@@ -106,4 +105,3 @@ When error is incurred, the response code will be non-200 and the response body 
     "options": {}
 }
 ```
-

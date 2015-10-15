@@ -1,67 +1,62 @@
-# Beta-release prototype
+# Beta-Release 产品原型
+当产品原型已经过充分的测试后，开发者可以透过发行此产品原型的Beta 版本给少量的外部使用者测试。
 
-When your prototype is sufficiently tested and you are ready to release it to a samll group of user for trial run, you can beta-release the prototype.
-
-Once you beta-release your prototype, the prototype will be frozen, which means you can no longer make any modification to the prototype including the prototype detail, data channels, and triiger & action rules. However, you can still add other developers to join this prototype or continue to upload firmware for the test device or device to upgrade.
-
-## How to beta-release prototype
-
-To beta-release the prototype, simply click on the **Beta-release** button on the upper right corner in the prototype detail page.
-
-**(補一張圖在這邊~)**
-
-# Create Device
-
-User can only create devices after the prototype is beta-release and frozen. User can choose to create device at once or separately base on his/her needs.
-
-After devices are created, user can manage those devices in **Management** page, where devices are categorized by prototype. Each device will have a unique activation code, the device will only be available after being activated.
+产品原型进入 Beta-Release 后，此产品原型将被锁定，意即开发者无法再针对此原型做任何的修改，包含原型资讯，资料通道，触发条件与动作。然而，开发者依然可以新增参与开发的使用者或上传韧体来进行测试装置的韧体更新。
 
 
-## How to create device
+## 如何 Beta-Release 产品原型
+您可点击在产品原型页面中右上角的 **Beta-Release** 按钮来发行 Beta 版本。
 
-You can choose to create device all at once or separately. Also, you can choose to enter the serial number by manual input or using a pre-defined csv file.
+**(补一张图在这边~)**
 
-Step 1. Click the Create Device button on the upper right corner in a beta-released prototype.
+# 创建装置
+当产品原型的设计已被确认且进入 Beta-Release 阶段，开发者可选择一次创建所有的装置或是根据需求于日后逐步新增装置。
 
-**(補一張圖在這邊~)**
+在**管理**页面中的装置列表是按照产品原型分类，开发者可以在此管理所创建的装置。此外，每个装置皆有配发一个独有的激活码，在开始使用此装置之前使用者必须先完成装置的激活程序。
 
-Step 2. Enter the device name and description.
+## 如何创建装置
+您可选择一次创建所有的装置或是根据需求于日后逐步新增。此外，创建装置时必须输入装置序号，您可以手动输入或直接汇入预先定义好的 csv 档案。
 
-Step 3. Enter the serail number for the devices. The serail number format is limited to A-Z, a-z, 0-9, and must less the 50 characters.
+步骤一：在产品原型进入 Beta-Release 阶段后，按下产品原型页面右上方的**创建装置**按钮。
 
-Step 4. Click create button.
+**(补一张图在这边~)**
 
-**(補一張圖在這邊~)**
+步骤二：输入装置名称与描述。
 
-Devices are created in non-activated state and each device will have a unique activation code. The device will only be available after being activated. After activated, the device will get its deviceId and deviceKey like the test device and start to work.
+步骤三：输入装置的序号。序号的格式限制为 AZ, az, 0-9 并且少于 50 个字元。
 
-The developer can find the activation code and all other device related information in the **Management** page.
+步骤四：按下**创建**按钮。
 
-# Device Management
+**(补一张图在这边~)**
 
-After the prototype is beta-released and you have created several devices for it. You can find all the devices in the **Management** page.
+创建后的装置仍是处于非激活状态。每个装置配发有一个独有的激活码，在开始使用此装置之前必须先完成装置激活程序。装置激活后，将会获得一组专有的 deviceId 以及 deviceKey。
 
-**(補一張圖在這邊~)**
+开发者可以透过**管理**页面来查找装置的激活码以及装置的其他的相关资讯。
 
-The developer can see the device count and activation rate for each prototype in the Management page. The developer can further check the devices for each prototype by clicking into the specific prototype in that page.
+# 装置管理
+开发者可以在**管理**页面当中管理所有创建的装置。
 
-The following information will be enclosed:
-* Device online status
-* Device Serial number
-* Device activation code
-* Device activation date
-* Device last data point time
+**(补一张图在这边~)**
 
-**(補一張圖在這邊~)**
+在**管理**页面中，开发者可以看到各个产品原型中目前装置的数量，激活的比例等。
 
-Please be noted that all test device and device will be counted as your account limitation no matter it is activaed or non-activated. Please be noted that only when a device is in non- activated state can it be deleted.
+同时，亦可更进一步的观看单一产品原型下每个装置的详细资讯。其中包含有：
 
-## How to activate device
+* 装置连线状态
+* 装置序号
+* 装置激活码
+* 装置激活日期
+* 装置最近一次上传资料的时间
 
-When the device is created, you can find the activation code in the **Management** page. Each device can only be activated once using the activation code.
+**(补一张图在这边~)**
 
-At current moment, MCS only provides API to activate device. Please find the **device activation** in API reference page [here](../api_references/). For the developer, you can design your own way to activate the device by calling our API.
+请注意，无论测试装置或激活与尚未激活的装置皆受到免费开发者帐户的用量限制。然而装置，只有在非激活状态之下才能进行删除。
 
+## 如何激活装置
 
-After the device is activated, there will be a device detail page listing the device detail including the deviceId, deviceKey, data channel value, trigger & action rules, and firmware version.
+您可以在**管理**页面中找到装置的激活码，并用此激活该装置。
 
+开发者可藉由 Mediatek Cloud Sandbox 所提供的 API 来激活 Beta 装置，使用方法请参阅 API 参考资料集当中的**装置激活** [这里](../api_references/)。
+开发者可以根据我们所提供的 API 自行设计装置激活的流程。
+
+当装置完成激活后，您将可以在页面上看到装置的完整资讯，包含deviceId, deviceKey，资料通道数据，触发条件与动作以及韧体的版本。
