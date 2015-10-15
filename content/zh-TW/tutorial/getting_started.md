@@ -19,9 +19,10 @@
 
 # 建立您的第一個產品原型
 
-開發者能在**開發**頁面建立產品原型。產品原型內，會包括多個能傳替各種形態資料的資料通道。
+開發者能在**開發**頁面建立產品原型。產品原型內，會包括多個能傳遞各種形態資料的資料通道。
 
 ![](../images/Getting_started/img_gettingstarted_02.png)
+
 
 ## 建立產品原型逐步導引
 
@@ -127,19 +128,17 @@
 
 在產品開發階段，為了確保開發的彈性，測試裝置會隨著產品原型的變更而跟著改變。當產品原型 beta-release 後，開發者將不能再對產品原型的資料通道和觸發條件與動作規則做改變。
 
-## Half way there
+## 您已完成了 1/2 的教程
 
-Congratulation! You have successfully finished the getting started tutorial. Use the tips here and start to create your own prototype!
-
-
-You can further continue to beta-release prototype or to configure your user profile setting.
+恭喜！您已經完成了新手入門的教程。讓我們開始動手建立自己的產品原型吧！
+此外，您還可以更進一步的 Beta-Release 您的產品原型或是變更你的個人檔案。
 
 
-# Beta-release prototype
+# Beta-Release 產品原型
 
-When your prototype is sufficiently tested and you are ready to release it to a samll group of user for trial run, you can beta-release the prototype.
+當您的產品原型已經過充分的測試且準備少量發行給外部使用者做測試時，您可以在 Mediatek Cloud Sandbox 上 Beta-Release 您的產品原型。
 
-For more detail about the beta-release the prototype, you can find the tutorial [here](./beta-release).
+欲瞭解更多有關 Beta-Release 的介紹，請參考教程文件 [這裡](./beta-release)。
 
 
 # 配置您的用戶設定
