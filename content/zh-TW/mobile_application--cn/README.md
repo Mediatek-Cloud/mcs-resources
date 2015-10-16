@@ -1,4 +1,3 @@
-# Mobile application--cn
 # 手機應用程式
 
 
