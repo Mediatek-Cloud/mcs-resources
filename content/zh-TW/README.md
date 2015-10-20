@@ -32,7 +32,7 @@ MediaTek Cloud Sandbox (MCS) 提供您打造準備商業化的穿戴式和物聯
 為了讓您更通行無阻的使用 MCS，我們提供了 API 使用說明文件、問與答和一系列的教程讓您能夠快速上手我們所提供的功能和服務。
 
 
-![](images/Introduction/img_introduction_02.png)
+![](images/Introduction/img_introduction_02.jpg)
 
 
 ## **事前準備**
