@@ -1,5 +1,10 @@
 # MCS Change log Summary
 
+## October 26, 2015
+### v2.11
+[New beta-release feature enables you to share your IoT idea!](./2.11)
+
+
 ## October 1, 2015
 ### v2.10
 [System monitoring page allows you to track the MCS platform system status and stability.](./2.10)
