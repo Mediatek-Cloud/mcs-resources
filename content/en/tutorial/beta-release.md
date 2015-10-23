@@ -8,7 +8,7 @@ Once you beta-release your prototype, the prototype will be frozen, which means 
 
 To beta-release the prototype, simply click on the **Beta-release** button on the upper right corner in the prototype detail page.
 
-**(補一張圖在這邊~)**
+![](../images/beta_release/img_betarelease_01.png)
 
 # Create Device
 
@@ -23,7 +23,7 @@ You can choose to create device all at once or separately. Also, you can choose 
 
 Step 1. Click the Create Device button on the upper right corner in a beta-released prototype.
 
-**(補一張圖在這邊~)**
+![](../images/beta_release/img_betarelease_02.png)
 
 Step 2. Enter the device name and description.
 
@@ -31,7 +31,7 @@ Step 3. Enter the serail number for the devices. The serail number format is lim
 
 Step 4. Click create button.
 
-**(補一張圖在這邊~)**
+![](../images/beta_release/img_betarelease_03.png)
 
 Devices are created in non-activated state and each device will have a unique activation code. The device will only be available after being activated. After activated, the device will get its deviceId and deviceKey like the test device and start to work.
 
@@ -41,7 +41,7 @@ The developer can find the activation code and all other device related informat
 
 After the prototype is beta-released and you have created several devices for it. You can find all the devices in the **Management** page.
 
-**(補一張圖在這邊~)**
+![](../images/beta_release/img_betarelease_04.png)
 
 The developer can see the device count and activation rate for each prototype in the Management page. The developer can further check the devices for each prototype by clicking into the specific prototype in that page.
 
@@ -52,7 +52,7 @@ The following information will be enclosed:
 * Device activation date
 * Device last data point time
 
-**(補一張圖在這邊~)**
+![](../images/beta_release/img_betarelease_05.png)
 
 Please be noted that all test device and device will be counted as your account limitation no matter it is activaed or non-activated. Please be noted that only when a device is in non- activated state can it be deleted.
 
