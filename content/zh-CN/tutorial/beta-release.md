@@ -7,7 +7,7 @@
 ## 如何 Beta-Release 产品原型
 您可点击在产品原型页面中右上角的 **Beta-Release** 按钮来发行 Beta 版本。
 
-![](../images/Getting_started/img_gettingstarted_01.png)
+![](../images/beta_release/img_betarelease_01.png)
 
 # 创建装置
 当产品原型的设计已被确认且进入 Beta-Release 阶段，开发者可选择一次创建所有的装置或是根据需求于日后逐步新增装置。
