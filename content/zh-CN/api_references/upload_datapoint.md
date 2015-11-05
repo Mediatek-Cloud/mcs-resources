@@ -13,6 +13,8 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints
 
 API 请求默认值为 JSON 格式，如欲使用 CSV 格式，请在 API 请求URL最后端加上`.csv`。
 
+请注意，MCS 限制单笔上传资料量为一次不能上传多于五笔资料点。
+
 ## 动作
 HTTPs POST
 
