@@ -101,7 +101,7 @@ You will find the Device Id in two places:
 
 1. **Test Device** tab in prototype detail page.
 
-2. Test device detail page under My device.
+2. Test device detail page under Development.
 
 
 ![](../images/Getting_started/img_gettingstarted_10.png)

@@ -182,7 +182,7 @@ b. You’ll see a list of controllers that were added in step 1. Switch a GPIO c
 
 ### Step 4B Control your device from the MCS web console
 
-a. On the navigation bar click **My Devices**, then below the device that has just been created and registered click **Details**.
+a. On the navigation bar click **Test devices** under Development, then below the device that has just been created and registered click **Details**.
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_23.png)
 

@@ -97,7 +97,7 @@
 您能夠在兩個地方找到測試裝置的 DeviceId 和 DeviceKey：
 
 1. 產品原型頁面中的**測試裝置**分頁。
-2. 測試裝置詳細資料頁面中。
+2. 開發下方的測試裝置連結。
 
 ![](../images/Getting_started/img_gettingstarted_10.png)
 
