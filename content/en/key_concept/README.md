@@ -93,6 +93,8 @@ Each Data Channel can hold one of seven types of data:
 
 - **PWM** — this data type represents a PWM signal delivered to a specific GPIO pin, such as level 15 on Pin 3.
 
+- **Analog** — this data type represents an integer within a range of two values defined by users. Analog slider allows user to finely tune the settings, such as music volume controls.
+
 
 ### **Notifications**
 

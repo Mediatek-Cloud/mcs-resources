@@ -10,6 +10,7 @@ MCS supports both json and csv formats.
 ## Switch
 
 For json:
+
 ```
 {
  "datapoints":[
@@ -26,6 +27,7 @@ For json:
 
 
 For csv:
+
 ```
 dataChannelId,timestamp,{0 or 1}
 
@@ -41,6 +43,7 @@ To turn the switch01 to on state, and do not give the timestamp.
 ## Category
 
 For json:
+
 ```
 {
  "datapoints":[
@@ -57,6 +60,7 @@ For json:
 
 
 For csv:
+
 ```
 dataChannelId,timestamp,{Key Value}
 ```
@@ -65,6 +69,7 @@ The Key value will correspond to the Key name that you’ve set.
 ## Integer
 
 For json:
+
 ```
 {
  "datapoints":[
@@ -81,6 +86,7 @@ For json:
 
 
 For csv:
+
 ```
 dataChannelId,timestamp,{Integer}
 ```
@@ -88,6 +94,7 @@ dataChannelId,timestamp,{Integer}
 ## Float
 
 For json:
+
 ```
 {
  "datapoints":[
@@ -104,6 +111,7 @@ For json:
 
 
 For csv:
+
 ```
 dataChannelId,timestamp,{Float}
 ```
@@ -111,6 +119,7 @@ dataChannelId,timestamp,{Float}
 ## Hex
 
 For json:
+
 ```
 {
  "datapoints":[
@@ -127,6 +136,7 @@ For json:
 
 
 For csv:
+
 ```
 dataChannelId,timestamp,{Hex value}
 ```
@@ -135,6 +145,7 @@ Hex is referred to hexadecimal value which only takes value from A-D and 0-9.
 ## String
 
 For json:
+
 ```
 {
  "datapoints":[
@@ -151,12 +162,14 @@ For json:
 
 
 For csv:
+
 ```
 dataChannelId,timestamp,{string}
 ```
 
 ## GPS
 For json:
+
 ```
 {
  "datapoints":[
@@ -189,6 +202,7 @@ The range of altitude is from -20000 to 20000 in meter.
 ## GPIO
 
 For json:
+
 ```
 {
  "datapoints":[
@@ -205,6 +219,7 @@ For json:
 
 
 For csv:
+
 ```
 dataChannelId,timestamp,{0 ot 1}
 ```
@@ -212,6 +227,7 @@ dataChannelId,timestamp,{0 ot 1}
 
 ## PWM
 For json:
+
 ```
 {
  "datapoints":[
@@ -230,6 +246,31 @@ The range of Period and Value is from 0 to 1000.
 
 
 For csv:
+
 ```
 dataChannelId,timestamp,{Value},{Period}
 ```
+
+## Analog
+For json:
+
+```
+{
+ "datapoints":[
+      {
+         "dataChnId":"dataChanId",
+         "values":{
+            "value":"{Integer value}"
+         }
+      }
+   ]
+}
+
+```
+
+For csv:
+
+```
+dataChannelId,timestamp,{Integer value}
+```
+The range of Integer value is defined by users.
