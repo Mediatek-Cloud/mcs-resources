@@ -10,6 +10,7 @@ MCS 支持 JSON 以及 CSV 兩種格式的資料。
 ## 開關
 
 JSON 格式：
+
 ```
 {
  "datapoints":[
@@ -25,6 +26,7 @@ JSON 格式：
 ```
 
 CSV 格式：
+
 ```
 dataChannelId,timestamp,{0 or 1}
 
@@ -40,6 +42,7 @@ switch01,, 1
 ## 分類
 
 JSON 格式：
+
 ```
 {
  "datapoints":[
@@ -56,6 +59,7 @@ JSON 格式：
 
 
 CSV 格式：
+
 ```
 dataChannelId,timestamp,{Key Value}
 ```
@@ -65,6 +69,7 @@ Key value 的值將會對應至您所設定的 Key name。
 ## 整數
 
 JSON 格式：
+
 ```
 {
  "datapoints":[
@@ -79,8 +84,8 @@ JSON 格式：
 
 ```
 
-
 CSV 格式：
+
 ```
 dataChannelId,timestamp,{Integer}
 ```
@@ -88,6 +93,7 @@ dataChannelId,timestamp,{Integer}
 ## 浮點數
 
 JSON 格式：
+
 ```
 {
  "datapoints":[
@@ -101,7 +107,9 @@ JSON 格式：
 }
 
 ```
+
 CSV 格式：
+
 ```
 dataChannelId,timestamp,{Float}
 ```
@@ -109,6 +117,7 @@ dataChannelId,timestamp,{Float}
 ## 十六進位數
 
 JSON 格式：
+
 ```
 {
  "datapoints":[
@@ -125,6 +134,7 @@ JSON 格式：
 
 
 CSV 格式：
+
 ```
 dataChannelId,timestamp,{Hex value}
 ```
@@ -133,6 +143,7 @@ dataChannelId,timestamp,{Hex value}
 ## 字串
 
 JSON 格式：
+
 ```
 {
  "datapoints":[
@@ -148,6 +159,7 @@ JSON 格式：
 ```
 
 CSV 格式：
+
 ```
 dataChannelId,timestamp,{string}
 ```
@@ -155,6 +167,7 @@ dataChannelId,timestamp,{string}
 ## GPS
 
 JSON 格式：
+
 ```
 {
  "datapoints":[
@@ -187,6 +200,7 @@ dataChannelId,timestamp,{latitude},{longitude},{altitude}
 ## GPIO
 
 JSON 格式：
+
 ```
 {
  "datapoints":[
@@ -202,6 +216,7 @@ JSON 格式：
 ```
 
 CSV 格式：
+
 ```
 dataChannelId,timestamp,{0 ot 1}
 ```
@@ -209,6 +224,7 @@ dataChannelId,timestamp,{0 ot 1}
 
 ## PWM
 JSON 格式：
+
 ```
 {
  "datapoints":[
@@ -226,6 +242,31 @@ JSON 格式：
 PWM的值和期間只能為 0 至 1000 之間。
 
 CSV 格式：
+
 ```
 dataChannelId,timestamp,{Value},{Period}
 ```
+
+## 類比
+JSON 格式：
+
+```
+{
+ "datapoints":[
+      {
+         "dataChnId":"dataChanId",
+         "values":{
+            "value":"{Integer value}"
+         }
+      }
+   ]
+}
+
+```
+
+CSV 格式：
+
+```
+dataChannelId,timestamp,{Integer value}
+```
+整數的範圍需由使用者自行定義
