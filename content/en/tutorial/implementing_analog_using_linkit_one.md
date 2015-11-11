@@ -34,11 +34,11 @@ d. In the prototype Detail Page, select "Data Channel" TAB and click "Add" to cr
 We are going to create one **Analog** controller type data channel for this tutorial which will issues command to the board to control the brightness of the LED light.
 
 
-f. Select "Controller" Data Channel and key in the following information
+e. Select "Controller" Data Channel and key in the following information
 
 ![](../images/Linkit_ONE/img_linkitone_08.png)
 
- (補圖)
+![](../images/Linkit_ONE/img_linkitone_19.png)
 
 Please take note of the Data Channel Id, this is the unique identifier when calling API later in the tutorial.
 
@@ -50,14 +50,14 @@ a. Click "Create Test Device" on the right upper corner of the page
 
 b. Fill in the name and description of the test device:
 
- (補圖)
+![](../images/Linkit_ONE/img_linkitone_20.png)
 
 c. After Test device is created, click "Go to detail" to open the created device detail page:
 
 ![](../images/Linkit_ONE/img_linkitone_13.png)
 
 
- (補圖)
+![](../images/Linkit_ONE/img_linkitone_21.png)
 
 Please take note of the deviceId and deviceKey for calling API later in the tutorial.
 
@@ -87,7 +87,7 @@ b. Initiate TCP connection to the socket server
 c. Uploads ~D3 (LED) status to MCS by RESTful API once every 5 seconds:
 POST api.mediatek.com/mcs/v2/devices/{deviceId}/datapoints.csv
 
-**Please noted when using PWM type of data channel, you have to use the pins on LinkIt ONE board that start with ~. For exmape, the ~D3 pin we are demonstrating in this example.**
+**Please noted when using analog and PWM type of data channel, you have to use the pins on LinkIt ONE board that start with ~. For exmape, the ~D3 pin we are demonstrating in this example.**
 
 d. listens for analog commands issued by MCS via TCP connection
 
@@ -99,6 +99,10 @@ Please note:
 This source code requires HttpClient that can be download
 [here](https://github.com/amcewen/HttpClient/releases)
 
+f. Connect your LinkIt ONE development board with a circuit board with the following setting:
+
+![](../images/Linkit_ONE/img_linkitone_23.jpg)
+
 ### Step 5. Turn on the board and see it in action!
 
 After the code is loaded to the board and make sure Wireless Access Point is made available to the device, with the Serial output confirming it is live and connected:
@@ -107,7 +111,7 @@ After the code is loaded to the board and make sure Wireless Access Point is mad
 
 You can now goto the device page and be able to control the LED brightness, as you turn the controller to 255, the LED will turn on to its brightest state. If you turn the controller to 100, the LED is still on but not as bright as 255. And if you turn the controller to 0, the LED is off.
 
-(補圖)
+![](../images/Linkit_ONE/img_linkitone_22.png)
 
 Congratulations! You have completed this tutorial!
 
