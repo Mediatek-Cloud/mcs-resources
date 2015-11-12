@@ -101,7 +101,7 @@ d. 并且保持 TCP connection 连线随时可以接收来自 MCS 的指令
 
 e. 每 90 秒更新一次 TCP connection 的heartbeat 连线
 
-请点击此连结来下载 Arduino 范例程式[here](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/source_code/linkit_sample_ino.ino)
+请点击此连结来下载 Arduino 范例程式[here](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/source_code/AnalogLinkItOneSample)
 
 请注意:
 使用此范例程式需要 HttpClient，您可使用此连结下载

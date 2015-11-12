@@ -93,7 +93,7 @@ d. listens for analog commands issued by MCS via TCP connection
 
 e. refreshes heartbeat for TCP connection every 90 seconds
 
-Sample Arduino C source code please click [here](https://gist.github.com/iamblue/a66502c817f1124bbb26#file-analog-ino-L28)
+Sample Arduino C source code please click [here](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/source_code/AnalogLinkItOneSample)
 
 Please note:
 This source code requires HttpClient that can be download
