@@ -11,6 +11,7 @@
    * [Connect device](tutorial/connect_device.md)
    * [Beta-release](tutorial/beta-release.md)
    * [Implementing analog using LinkIt One](tutorial/implementing_analog_using_linkit_one.md)
+   * [LinkIt One Home](tutorial/linkit_one_home.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
