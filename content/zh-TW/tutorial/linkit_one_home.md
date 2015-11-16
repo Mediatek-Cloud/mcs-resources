@@ -34,7 +34,7 @@
 在 "Sketch" 下拉選單中，選擇匯入 librart，並選擇您剛才所下載的 zip 檔案。
 
 
-(補圖一張~)
+![](../images/Linkit_ONE/img_linkitone_24.png)
 
 # MCS 雲端設定
 
