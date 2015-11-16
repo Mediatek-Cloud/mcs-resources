@@ -35,7 +35,7 @@ Now that your computer and your IDEs are all set up, it's time to integrate some
 
 In the "Sketch" drop-down, click on "Import Libraries", then navigate to your .zip file.
 
-(補圖一張~)
+![](../images/Linkit_ONE/img_linkitone_24.png)
 
 # MCS Cloud Setup
 Almost there! At this point, you're going to want to set up the MCS cloud so you can control and track your board. We've made it really easy; no downloading or coding required!
@@ -44,9 +44,5 @@ Choose the application you would like to start with:
 
 | Simple Switch tutorial | Analog Controller tutorial |
 | -- | -- |
-| <a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud" target="_blank">
-  <img src="https://goo.gl/cIzlpF" border="0" />
-</a> | <a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud" target="_blank">
-  <img src="https://goo.gl/cIzlpF" border="0" />
-</a> |
+|[![](../images/Linkit_ONE/img_linkitone_25.png)](../tutorial/implementing_using_linkit_one)|[![](../images/Linkit_ONE/img_linkitone_26.png)](../tutorial/implementing_analog_using_linkit_one)|
 

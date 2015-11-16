@@ -44,5 +44,4 @@
 
 | 基本的开关教程 | 类比控制器教程 |
 | -- | -- |
-| 補圖連結 | 補圖連結 |
-
+|[![](../images/Linkit_ONE/img_linkitone_25.png)](../tutorial/implementing_using_linkit_one)|[![](../images/Linkit_ONE/img_linkitone_26.png)](../tutorial/implementing_analog_using_linkit_one)|
