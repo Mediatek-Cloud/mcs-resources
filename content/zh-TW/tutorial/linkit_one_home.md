@@ -42,7 +42,7 @@
 
 現在，選擇您想要嘗試的範例吧：
 
-| 基本的開關教程 | 類比控制器教程 |
+| [基本的開關教程](../tutorial/implementing_using_linkit_one) | [類比控制器教程](../tutorial/implementing_analog_using_linkit_one) |
 | -- | -- |
 |[![](../images/Linkit_ONE/img_linkitone_25.png)](../tutorial/implementing_using_linkit_one)|[![](../images/Linkit_ONE/img_linkitone_26.png)](../tutorial/implementing_analog_using_linkit_one)|
 

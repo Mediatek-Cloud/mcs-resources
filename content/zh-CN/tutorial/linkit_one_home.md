@@ -42,6 +42,6 @@
 
 现在，选择您想要尝试的范例吧：
 
-| 基本的开关教程 | 类比控制器教程 |
+| [基本的开关教程](../tutorial/implementing_using_linkit_one) | [类比控制器教程](../tutorial/implementing_analog_using_linkit_one) |
 | -- | -- |
 |[![](../images/Linkit_ONE/img_linkitone_25.png)](../tutorial/implementing_using_linkit_one)|[![](../images/Linkit_ONE/img_linkitone_26.png)](../tutorial/implementing_analog_using_linkit_one)|

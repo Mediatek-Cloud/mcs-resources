@@ -42,7 +42,7 @@ Almost there! At this point, you're going to want to set up the MCS cloud so you
 
 Choose the application you would like to start with:
 
-| Simple Switch tutorial | Analog Controller tutorial |
+| [Simple Switch tutorial](../tutorial/implementing_using_linkit_one) | [Analog Controller tutorial](../tutorial/implementing_analog_using_linkit_one) |
 | -- | -- |
 |[![](../images/Linkit_ONE/img_linkitone_25.png)](../tutorial/implementing_using_linkit_one)|[![](../images/Linkit_ONE/img_linkitone_26.png)](../tutorial/implementing_analog_using_linkit_one)|
 
