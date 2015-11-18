@@ -41,4 +41,6 @@
    * [2.9](change_log/2.9.md)
    * [2.10](change_log/2.10.md)
    * [2.11](change_log/2.11.md)
+   * [2.12](change_log/2.12.md)
+
 
