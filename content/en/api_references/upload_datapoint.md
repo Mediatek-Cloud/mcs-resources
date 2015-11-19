@@ -29,12 +29,13 @@ For Devices
 ```
 deviceKey: `device_key_here`
 ```
-For Users
+For Service provider
 ```
-Authorization: Bearer `{token}`
+appId: `appId_here`
+appSecrete: `appSecrete_here`
 ```
 
-You can get the Bearer token by use the `Get User Token API` first. The access token will be the token you use here.
+You can get the appId and appSecrete under the Service provider section in the Profile page.
 
 **Content Type**
 

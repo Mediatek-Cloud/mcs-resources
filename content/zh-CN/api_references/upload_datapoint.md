@@ -29,10 +29,12 @@ HTTPs POST
 ```
 deviceKey: `device_key_here`
 ```
-若是使用者：
+若是服务提供者:
 ```
-Authorization: Bearer `{token}`
+appId: `appId_here`
+appSecret: `appSecrete_here`
 ```
+您可以在个人档案页面中的服务提供者分页,申请取得 appId 以及 appSecrete。
 
 **Content Type**
 
@@ -40,8 +42,6 @@ JSON 格式:
 ```
 Content-Type:`application/json`
 ```
-
-此 token，您必须先呼叫 `Get User Token API` 来取得。 Access token 即为您此处使用的 Bearer token。
 
 Comma Separated Value (CSV) 格式:
 ```

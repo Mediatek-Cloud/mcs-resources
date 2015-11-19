@@ -29,12 +29,14 @@ HTTPs POST
 ```
 deviceKey: `device_key_here`
 ```
-若是使用者：
+若是服務提供者：
 ```
-Authorization: Bearer `{token}`
+appId: `appId_here`
+appSecrete: `appSecrete_here`
 ```
 
-此 token，您必須先呼叫 `Get User Token API` 來取得。 Access token 即為您此處使用的 Bearer token。
+您可以在個人檔案頁面中的服務提供者分頁，申請取得 appId 以及 appSecrete。
+
 
 **Content Type**
 
