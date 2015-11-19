@@ -1,5 +1,11 @@
 # MCS Change log Summary
 
+## November 23, 2015
+
+### v2.12
+
+[New Analog Controller data channel is available now!](./2.12)
+
 ## October 26, 2015
 
 ### v2.11
