@@ -20,8 +20,6 @@
    * [Get connection](api_references/get_connection.md)
    * [Data channel format](api_references/data_channel_format.md)
    * [Command server format](api_references/command_server_format.md)
-   * [Get User Token](api_references/get_user_token.md)
-   * [Refresh User Access Token](api_references/refresh_user_access_token.md)
    * [Report Device Firmware](api_references/report_device_firmware.md)
    * [Retrieve Device Available Firmware](api_references/retrieve_device_available_firmware.md)
    * [Retrieve Device Firmware by version](api_references/retrieve_device_firmware_by_version.md)
