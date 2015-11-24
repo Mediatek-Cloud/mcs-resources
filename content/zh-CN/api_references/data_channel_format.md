@@ -2,11 +2,6 @@
 
 此章节将会说明所有资料通道的 API 格式，此格式为装置和 command server 沟通的格式。
 
-
-# 资料通道格式
-
-此章节将会说明所有资料通道的 API 格式，此格式为装置和 command server 沟通的格式。
-
 **此处使用 UNIX timestamp 时间格式，且非必要栏位。您可保持 Timestamp 为空，此时时间点则会由 MCS 所收到资料点的时间。
 
 MCS 支持 JSON 以及 CSV 两种格式的资料。
