@@ -4,7 +4,7 @@
 
 The user can set the trigger and action for a data channel when its value passes the limit of the defined range. The user will get email notification or the Mobile Push notification based on the trigger and action setting. Also, MCS also support webhook trigger, you can input the url that you would like to recieve this trigger.
 
-Please be noted that MCS currently only support trigger and action for integer and float data channel types.
+Please be noted that MCS currently only support trigger and action for integer and float data channel types. Also, only the device uploaded data points (data points uploaded with deviceKey) will trigger the action. The data points uploaded by user (via web using authentication) will not be triggered.
 
 
 On the Prototype detail page, click on the **Trigger & action** tab.
@@ -44,3 +44,15 @@ In the **User Profile** page, you can see a mobile list here. All the user's mob
 In the **Test device** page, expand the **Manage your action** section and you can also see a mobile list here. All the user's mobiles will be listed here if it has the MCS app installed on. You can use the switch here to control if specific mobile will receive the notification from **this test device**.
 
 ![](../images/Trigger/img_trigger_07.png)
+
+
+
+# Set up a webhook trigger
+
+To set up a webhook trigger, you have to select the **webhook** as the action in the Trigger & action tab in the prototype. And input the url that you would like to get the webhook trigger.
+
+![](../images/Trigger/img_trigger_08.png)
+
+There is a Test button for you to test if the trigger has been sent to the url. The device name, deviceId, deviceKey, and the triggered value will be sent to the triggered url.
+
+
