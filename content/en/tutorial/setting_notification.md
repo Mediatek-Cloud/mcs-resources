@@ -2,9 +2,9 @@
 
 ## How to add trigger and action
 
-The user can set the trigger and action for a data channel when its value passes the limit of the defined range. The user will get email notification or the Mobile Push notification based on the trigger and action setting. Also, MCS also support webhook trigger, you can input the url that you would like to recieve this trigger.
+The user can set the trigger and action for a data channel when its value passes the limit of the defined range. The user will get email notification or the Mobile Push notification based on the trigger and action setting. Also, MCS also support webhook trigger, you can input the URL that you would like to recieve this trigger.
 
-Please be noted that MCS currently only support trigger and action for integer and float data channel types. Also, only the device uploaded data points (data points uploaded with deviceKey) will trigger the action. The data points uploaded by user (via web using authentication) will not be triggered.
+Please be noted that MCS currently only support trigger and action for integer and float data channel types. Also, only data points uploaded by the device will trigger the action . The data points uploaded by user (via web using authentication) will not be triggered.
 
 
 On the Prototype detail page, click on the **Trigger & action** tab.
