@@ -83,22 +83,32 @@ vim app.js
 2. Type **i** and Copy/paste the following code in the editor
 
 ```
-var mcs = require('mcsjs');
 
-	var myApp = mcs.register({
-		deviceId: 'ABC123',
-		deviceKey: 'XYZ123',
-	});
-	// Replace the device ID and device Key obtained from your test device
-	// created in MCS.
-
-	myApp.on('LED_control', function(time, data) {
-	if(Number(data) === 1){
-		console.log('blink');
-	} else {
-		Console.log(’off’);
-	}
-	});
+var ledPin = 13;
+var firmata = require('firmata');     
+var mcs = require('mcsjs');         
+var myApp = mcs.register({
+  deviceId: 'Input your deviceId',
+  deviceKey: 'Input your deviceKey',
+});
+var board = new firmata.Board("/dev/ttyS0", function(err) {                                                                                             
+  if (err) {                             
+    console.log(err);                          
+    board.reset();                             
+    return;                         
+  }                                                          
+  console.log('connected...');
+  console.log('board.firmware: ', board.firmware);   
+  board.pinMode(ledPin, board.MODES.OUTPUT);
+  
+  myApp.on('LED_control', function(time, data) {
+    if (Number(data) != NaN) {
+      board.digitalWrite(ledPin, board.HIGH);
+    } else {
+      board.digitalWrite(ledPin, board.LOW);
+    }
+  }); 
+});   
 
 ```
 Next, run the Node.js example program.
