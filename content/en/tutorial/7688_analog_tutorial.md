@@ -189,7 +189,7 @@ while True:
 	command = commandChannel.recv(1024)
 	logging.info("recv:" + command)
 	# command can be a response of heart beat or an update of the 	LED_control,
-	# so we split by ',' and drop device id and device key and check 	length
+	# so we split by ',' and drop device id and device key and check length
 	fields = command.split(',')[2:]
 
 	if len(fields) > 1:
@@ -253,7 +253,7 @@ import requests
 		sendHeartBeat(commandChannel)
 		# Re-start the timer periodically
 		global heartBeatTask
-		heartBeatTask = threading.Timer(40, heartBeat, 					[commandChannel]).start()
+		heartBeatTask = threading.Timer(40, heartBeat,[commandChannel]).start()
 
 	heartBeat(s)
 	return s
@@ -264,7 +264,7 @@ import requests
 
 	logging.info("recv:" + command)
 	# command can be a response of heart beat or an update of the 	LED_control,
-	# it’s split by ',' and drop device ID and device key and check 	length
+	# it’s split by ',' and drop device ID and device key and check length
 	fields = command.split(',')[2:]
 
 	if len(fields) > 1:
