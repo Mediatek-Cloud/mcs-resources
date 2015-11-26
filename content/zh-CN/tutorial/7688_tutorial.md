@@ -28,6 +28,7 @@ To uses MCSjs module. It is an easy-to-use HTTP request library. You can install
 ```
 mkdir app && cd app npm init
 ```
+
 4. Press enter to all the prompts when you see several questions, this is the application set up process
 5. Use npm to install module, for example:
 ```

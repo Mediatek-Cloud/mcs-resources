@@ -80,8 +80,7 @@ Here is the Node.js example code that listens for commands from MCS web console.
 ```
 vim app.js
 ```
-2. Type **i** and Copy/paste the following code in the editor
-
+2. Type **i** and Copy/paste the following code in the editor.
 ```
 var mcs = require('mcsjs');
 
@@ -99,8 +98,8 @@ var mcs = require('mcsjs');
 		Console.log(’off’);
 	}
 	});
-
 ```
+
 Next, run the Node.js example program.
 
 ### Run your application
@@ -153,6 +152,7 @@ DEVICE_INFO = {'device_id' : 'YOUR_DEVICE_ID',
 	s.connect((ip, int(port)))
 	s.settimeout(None)
 ```
+
 After the TCP socket is connected to the command server, the server will send commands that reflects the status of the web console, such as the status of the ON/OFF switch. However, MCS requires you to send a heart beat to the command server every minute in order to keep the TCP socket active. You’ll learn to do that in the next step.
 
 
@@ -175,6 +175,7 @@ Create a Python program that sends heart beat to TCP command every 40 seconds us
 		sendHeartBeat(s)
 
 ```
+
 #### Parse the command
 
 The server sends commands in the following format:  deviceId, deviceKey, timestamp, dataChannelId, and commandValue. You can use comma “,” to parse these commands. You also need to check the command type by their length because the server echoes heart beat command back to the device.
@@ -299,6 +300,7 @@ You are now ready to execute the Python program. In the system console, type the
 ```
 # python blink.py
 ```
+
 Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on and off and watch the Wi-Fi LED on LinkIt Smart LinkIt Smart 7688 HDK.
 
 ![](../images/Linkit_ONE/img_linkitone_16.png)
