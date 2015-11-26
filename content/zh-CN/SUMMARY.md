@@ -12,6 +12,9 @@
    * [Beta-release](tutorial/beta-release.md)
    * [Implementing analog using LinkIt ONE](tutorial/implementing_analog_controller_using_linkit_one.md)
    * [LinkIt One Home](tutorial/linkit_one_home.md)
+   * [7688 Tutorial](tutorial/7688_tutorial.md)
+   * [7688 LED tutorial](tutorial/7688_led_tutorial.md)
+   * [7688 analog tutorial](tutorial/7688_analog_tutorial.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
@@ -40,5 +43,4 @@
    * [2.10](change_log/2.10.md)
    * [2.11](change_log/2.11.md)
    * [2.12](change_log/2.12.md)
-
 
