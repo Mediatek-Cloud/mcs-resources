@@ -32,7 +32,7 @@ deviceKey: `device_key_here`
 若是服務提供者：
 ```
 appId: `appId_here`
-appSecrete: `appSecrete_here`
+appSecret: `appSecret_here`
 ```
 
 您可以在個人檔案頁面中的服務提供者分頁，申請取得 appId 以及 appSecrete。

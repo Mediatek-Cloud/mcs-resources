@@ -32,7 +32,7 @@ deviceKey: `device_key_here`
 For Service provider
 ```
 appId: `appId_here`
-appSecrete: `appSecrete_here`
+appSecret: `appSecret_here`
 ```
 
 You can get the appId and appSecrete under the Service provider section in the Profile page.
