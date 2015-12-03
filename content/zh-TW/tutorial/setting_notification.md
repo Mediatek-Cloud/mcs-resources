@@ -65,6 +65,8 @@ MCS 預先定義了多個變數讓您可以在通知的名稱與內容欄位中�
 * **${deviceKey}**: 設備的 Key
 * **${value}**: 資料通道的數值
 
+![](../images/Trigger/img_trigger_09.png)
+
 例如
 
 您可將 Email 的內容設定成
@@ -75,5 +77,3 @@ MCS 預先定義了多個變數讓您可以在通知的名稱與內容欄位中�
 
 	目前 我的客廳 的溫度是 30.
 	
-![](../images/Trigger/img_trigger_09.png)
-

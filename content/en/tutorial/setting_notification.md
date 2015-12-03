@@ -66,6 +66,8 @@ MCS provides pre-defined variables which can be used in both Title and Content f
 * **${deviceKey}**: The key of device
 * **${value}**: The value of this data channel
 
+![](../images/Trigger/img_trigger_09.png)
+
 For example:
 
 You can set Email content as
@@ -75,5 +77,4 @@ You can set Email content as
 The message delivered to users will be replaced with real value, like 
 
 	The temperature of My Living Room is now 30.
-
-![](../images/Trigger/img_trigger_09.png)
+	
