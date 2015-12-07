@@ -2,7 +2,7 @@
 
 When your prototype is sufficiently tested and you are ready to release it to a small group of user for trial run, you can beta-release the prototype.
 
-Once you beta-release your prototype, the prototype will be frozen, which means you can no longer make any modification to the prototype including the prototype detail, data channels, and triiger & action rules. However, you can still add other developers to join this prototype or continue to upload firmware for the test device or device to upgrade.
+Once you beta-release your prototype, the prototype will be frozen, which means you can no longer make any modification to the prototype including the prototype detail, data channels, and trigger & action rules. However, you can still add other developers to join this prototype or continue to upload firmware for the test device or device to upgrade.
 
 ## How to beta-release prototype
 
