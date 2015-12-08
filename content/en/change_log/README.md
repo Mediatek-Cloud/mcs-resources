@@ -1,5 +1,11 @@
 # MCS Change log Summary
 
+## December 8, 2015
+
+### v2.13
+
+[Implement the LinkIt Smart 7688 on MCS to build your IoT application easier and faster.](./2.13)
+
 ## November 23, 2015
 
 ### v2.12
