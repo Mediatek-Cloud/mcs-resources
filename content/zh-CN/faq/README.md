@@ -22,9 +22,12 @@
 
 **6. 我要去哪里下载手机应用程式呢? **
 
-请点击此连结 [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或用此 QR code 来下载手机应用程式:
+若您是使用MCS 全球版本，请点击此连结 [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或用此 QR code 来下载手机应用程式:
 
 ![](../images/Mobile_application/img_mobileapplication_00.png)
+
+
+若您是使用 MCS 中国版本，请点击此连结[here](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk) 直接下载手机应用程式。
 
 目前只支援安卓（Android）手机。
 
@@ -39,5 +42,4 @@
 
 
 
-
-**问与答的内容没有您想要问的问题吗? 您可以直接写信和我们联络 <mtkcloudsandbox@mediatek.com> **
+**问与答的内容没有您想要问的问题吗? 您可以直接写信和我们联络。若您使用 MCS 全球网站，请寄信至<mtkcloudsandbox@mediatek.com>；若您使用 MCS 中国网站，请寄信至<mcs_cn.mail@mediatek.com>。 **

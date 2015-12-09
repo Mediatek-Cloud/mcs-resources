@@ -22,9 +22,13 @@ Currently, the time-zone is bind to your user profile timezone. Youcan change yo
 
 **6. Where can I download the mobile app? **
 
-Please click [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) or scan the QR code below to download the APK:
+If you are using the MCS global version, please click [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) or scan the QR code below to download the APK:
 
 ![](../images/Mobile_application/img_mobileapplication_00.png)
+
+
+Or if you are using the MCS China version, please directly download the apk [here](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk)
+
 
 The mobile app currently offers for Android only.
 
@@ -40,4 +44,4 @@ We strongly recommand you to use the Chrome, Safari, and Firefox to browse the M
 
 
 
-**Don't have the answer you are looking for? send us a email <mtkcloudsandbox@mediatek.com> **
+**Don't have the answer you are looking for? send us a email <mtkcloudsandbox@mediatek.com> if you are using MCS global; or <mcs_cn.mail@mediatek.com> if you are using MCS China.**
