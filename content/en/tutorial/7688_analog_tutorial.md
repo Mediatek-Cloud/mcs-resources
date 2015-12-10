@@ -117,9 +117,7 @@ You are now ready to execute the Node.js program. In the system console, type th
 
 Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on and off and watch the Wi-Fi LED on LinkIt Smart LinkIt Smart 7688 HDK.
 
-![](../images/Linkit_ONE/img_linkitone_16.png)
-
-![](../images/Linkit_ONE/img_linkitone_17.png)
+![](../images/Linkit_ONE/img_linkitone_21.png)
 
 
 
