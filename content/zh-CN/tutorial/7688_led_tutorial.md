@@ -61,7 +61,7 @@ Here is the summary of the neccessary information we have obtained in interactin
 | -- | -- | -- |
 | deviceId | Dsre1qRQ | Unique Identifier for this Test Device, copy your own deviceId in the device detail page. |
 | deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device, copy your own deviceKey in the device detail page. |
-| dataChannelId | LED_control | Data Channel Id for LED control |
+| dataChannelId | LED_Control | Data Channel Id for LED control |
 
 Note 1: The deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
 
