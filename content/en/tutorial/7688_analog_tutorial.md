@@ -11,15 +11,15 @@ a. After login, select "Prototype" under Development at the navigator bar, click
 
 b. Fill in the detail information as per screen to give a basic profile of this prototype:
 
-![](../images/Linkit_ONE/img_linkitone_03.png)
+![](../images/7688/img_7688_03.png)
 
 c. Click "Detail" for the prototype created
 
-![](../images/Linkit_ONE/img_linkitone_04.png)
+![](../images/7688/img_7688_04.png)
 
 d. In the prototype Detail Page, select "Data Channel" TAB and click "Add" to create new Data Channel:
 
-![](../images/Linkit_ONE/img_linkitone_05.png)
+![](../images/7688/img_7688_05.png)
 
 We are going to create one **Analog** controller type data channel for this tutorial which will issues command to the board to control the brightness of the LED light.
 
@@ -28,7 +28,7 @@ e. Select "Controller" Data Channel and key in the following information
 
 ![](../images/Linkit_ONE/img_linkitone_08.png)
 
-![](../images/Linkit_ONE/img_linkitone_19.png)
+![](../images/7688/img_7688_19.png)
 
 Please take note of the Data Channel Id, this is the unique identifier when calling API later in the tutorial.
 
@@ -36,7 +36,7 @@ Please take note of the Data Channel Id, this is the unique identifier when call
 
 a. Click "Create Test Device" on the right upper corner of the page
 
-![](../images/Linkit_ONE/img_linkitone_11.png)
+![](../images/7688/img_7688_20.png)
 
 b. Fill in the name and description of the test device:
 
@@ -47,7 +47,7 @@ c. After Test device is created, click "Go to detail" to open the created device
 ![](../images/Linkit_ONE/img_linkitone_13.png)
 
 
-![](../images/Linkit_ONE/img_linkitone_21.png)
+![](../images/7688/img_7688_21.png)
 
 Please take note of the deviceId and deviceKey for calling API later in the tutorial.
 
@@ -59,7 +59,7 @@ Here is the summary of the neccessary information we have obtained in interactin
 | -- | -- | -- |
 | deviceId | Dsre1qRQ | Unique Identifier for this Test Device, copy your own deviceKey in the device detail page. |
 | deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device, copy your own deviceKey in the device detail page. |
-| dataChannelId | analogTest | Data Channel Id for LED brightness |
+| dataChannelId | analog | Data Channel Id for LED brightness |
 
 Note 1: The deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
 
@@ -117,7 +117,7 @@ You are now ready to execute the Node.js program. In the system console, type th
 
 Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on and off and watch the Wi-Fi LED on LinkIt Smart LinkIt Smart 7688 HDK.
 
-![](../images/Linkit_ONE/img_linkitone_21.png)
+![](../images/7688/img_7688_21.png)
 
 
 
