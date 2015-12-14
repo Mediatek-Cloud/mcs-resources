@@ -12,15 +12,15 @@ a. After login, select "Prototype" under Development at the navigator bar, click
 
 b. Fill in the detail information as per screen to give a basic profile of this prototype:
 
-![](../images/Linkit_ONE/img_linkitone_03.png)
+![](../images/7688/img_7688_03.png)
 
 c. Click "Detail" for the prototype created
 
-![](../images/Linkit_ONE/img_linkitone_04.png)
+![](../images/7688/img_7688_04.png)
 
 d. In the prototype Detail Page, select "Data Channel" TAB and click "Add" to create new Data Channel:
 
-![](../images/Linkit_ONE/img_linkitone_05.png)
+![](../images/7688/img_7688_05.png)
 
 
 We are going to create two Data Channel for this tutorial, one is a Display Data Channel to reflect the status of the LED light on the board; one is a Controller Data Channel that issues command to the board to switch the LED light:
@@ -39,7 +39,7 @@ Please take note of the Data Channel Id, this is the unique identifier when call
 
 a. Click "Create Test Device" on the right upper corner of the page
 
-![](../images/Linkit_ONE/img_linkitone_11.png)
+![](../images/7688/img_7688_14.png)
 
 b. Fill in the name and description of the test device:
 
@@ -50,7 +50,7 @@ c. After Test device is created, click "Go to detail" to open the created device
 ![](../images/Linkit_ONE/img_linkitone_13.png)
 
 
-![](../images/Linkit_ONE/img_linkitone_14.png)
+![](../images/7688/img_7688_16.png)
 
 Please take note of the deviceId and deviceKey for calling API later in the tutorial.
 
@@ -83,31 +83,22 @@ vim app.js
 
 2. Type **i** and Copy/paste the following code in the editor
 ```
-var ledPin = 13;
-var firmata = require('firmata');
 var mcs = require('mcsjs');
-var myApp = mcs.register({
-  deviceId: 'Input your deviceId',
-  deviceKey: 'Input your deviceKey',
-});
-var board = new firmata.Board("/dev/ttyS0", function(err) {
-  if (err) {
-    console.log(err);
-    board.reset();
-    return;
-  }
-  console.log('connected...');
-  console.log('board.firmware: ', board.firmware);
-  board.pinMode(ledPin, board.MODES.OUTPUT);
 
-  myApp.on('LED_control', function(time, data) {
-    if (Number(data) != NaN) {
-      board.digitalWrite(ledPin, board.HIGH);
-    } else {
-      board.digitalWrite(ledPin, board.LOW);
-    }
-  });
-});
+	var myApp = mcs.register({
+		deviceId: 'ABC123',
+		deviceKey: 'XYZ123',
+	});
+	// Replace the device ID and device Key obtained from your test device
+	// created in MCS.
+
+	myApp.on('LED_control', function(time, data) {
+	if(Number(data) === 1){
+		console.log('blink');
+	} else {
+		Console.log(’off’);
+	}
+	});
 ```
 
 Next, run the Node.js example program.
@@ -121,9 +112,9 @@ You are now ready to execute the Node.js program. In the system console, type th
 
 Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on and off and watch the Wi-Fi LED on LinkIt Smart LinkIt Smart 7688 HDK.
 
-![](../images/Linkit_ONE/img_linkitone_16.png)
+![](../images/7688/img_7688_16.png)
 
-![](../images/Linkit_ONE/img_linkitone_17.png)
+![](../images/7688/img_7688_17.png)
 
 
 ## Creating a python program to connect to MCS
@@ -314,7 +305,7 @@ You are now ready to execute the Python program. In the system console, type the
 
 Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on and off and watch the Wi-Fi LED on LinkIt Smart LinkIt Smart 7688 HDK.
 
-![](../images/Linkit_ONE/img_linkitone_16.png)
+![](../images/7688/img_7688_16.png)
 
-![](../images/Linkit_ONE/img_linkitone_17.png)
+![](../images/7688/img_7688_17.png)
 

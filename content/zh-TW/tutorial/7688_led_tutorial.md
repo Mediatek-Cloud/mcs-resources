@@ -12,15 +12,15 @@ a. After login, select "Prototype" under Development at the navigator bar, click
 
 b. Fill in the detail information as per screen to give a basic profile of this prototype:
 
-![](../images/Linkit_ONE/img_linkitone_03.png)
+![](../images/7688/img_7688_03.png)
 
 c. Click "Detail" for the prototype created
 
-![](../images/Linkit_ONE/img_linkitone_04.png)
+![](../images/7688/img_7688_04.png)
 
 d. In the prototype Detail Page, select "Data Channel" TAB and click "Add" to create new Data Channel:
 
-![](../images/Linkit_ONE/img_linkitone_05.png)
+![](../images/7688/img_7688_05.png)
 
 
 We are going to create two Data Channel for this tutorial, one is a Display Data Channel to reflect the status of the LED light on the board; one is a Controller Data Channel that issues command to the board to switch the LED light:
@@ -39,7 +39,7 @@ Please take note of the Data Channel Id, this is the unique identifier when call
 
 a. Click "Create Test Device" on the right upper corner of the page
 
-![](../images/Linkit_ONE/img_linkitone_11.png)
+![](../images/7688/img_7688_14.png)
 
 b. Fill in the name and description of the test device:
 
@@ -50,7 +50,7 @@ c. After Test device is created, click "Go to detail" to open the created device
 ![](../images/Linkit_ONE/img_linkitone_13.png)
 
 
-![](../images/Linkit_ONE/img_linkitone_14.png)
+![](../images/7688/img_7688_16.png)
 
 Please take note of the deviceId and deviceKey for calling API later in the tutorial.
 
@@ -80,7 +80,8 @@ Here is the Node.js example code that listens for commands from MCS web console.
 ```
 vim app.js
 ```
-2. Type **i** and Copy/paste the following code in the editor.
+
+2. Type **i** and Copy/paste the following code in the editor
 ```
 var mcs = require('mcsjs');
 
@@ -108,11 +109,12 @@ You are now ready to execute the Node.js program. In the system console, type th
 ```
 # node app
 ```
+
 Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on and off and watch the Wi-Fi LED on LinkIt Smart LinkIt Smart 7688 HDK.
 
-![](../images/Linkit_ONE/img_linkitone_16.png)
+![](../images/7688/img_7688_16.png)
 
-![](../images/Linkit_ONE/img_linkitone_17.png)
+![](../images/7688/img_7688_17.png)
 
 
 ## Creating a python program to connect to MCS
@@ -303,7 +305,7 @@ You are now ready to execute the Python program. In the system console, type the
 
 Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on and off and watch the Wi-Fi LED on LinkIt Smart LinkIt Smart 7688 HDK.
 
-![](../images/Linkit_ONE/img_linkitone_16.png)
+![](../images/7688/img_7688_16.png)
 
-![](../images/Linkit_ONE/img_linkitone_17.png)
+![](../images/7688/img_7688_17.png)
 
