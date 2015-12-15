@@ -40,7 +40,7 @@ a. Click "Create Test Device" on the right upper corner of the page
 
 b. Fill in the name and description of the test device:
 
-![](../images/Linkit_ONE/img_linkitone_20.png)
+![](../images/7688/img_7688_22.png)
 
 c. After Test device is created, click "Go to detail" to open the created device detail page:
 
@@ -56,7 +56,7 @@ Please take note of the deviceId and deviceKey for calling API later in the tuto
 Here is the summary of the neccessary information we have obtained in interacting with this test device:
 
 | Name | Value | Remark |
-| -- | -- | -- |
+| --- | --- | --- |
 | deviceId | Dsre1qRQ | Unique Identifier for this Test Device, copy your own deviceKey in the device detail page. |
 | deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device, copy your own deviceKey in the device detail page. |
 | dataChannelId | analog | Data Channel Id for LED brightness |
