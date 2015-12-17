@@ -308,5 +308,3 @@ Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on 
 ![](../images/7688/img_7688_16.png)
 
 ![](../images/7688/img_7688_17.png)
-
-![](../images/Linkit_ONE/img_linkitone_17.png)
