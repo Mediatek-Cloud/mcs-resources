@@ -111,7 +111,7 @@ e. 等待幾秒後，如果 Smart Connection 成功，您將會看到您的裝�
 現在，您可以透過 MCS 手機應用程式(步驟 3A)，或是 MCS 網頁版(步驟3B)來註冊您的測試裝置。
 
 
-###步驟3A　使用MCS手機應用程式來註冊 LinkIt Connect 7681 測試裝置
+### 步驟3A　使用MCS手機應用程式來註冊 LinkIt Connect 7681 測試裝置
 
 a. 打開 MCS 手機應用程式並登入。登入後，點擊畫面又下方的新增按鈕。
 
@@ -178,8 +178,9 @@ a. 打開 MCS 手機應用程式並登入。點擊您欲操作的測試裝置。
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_21.png)
 
-b. 您將會看到您在步驟一所建立的資料通道。將 GPIO 控制器狀態從低更改至高：您將會看到開發板上的 LED 燈打開。
+b. 您將會看到您在步驟一所建立的資料通道。將 GPIO 控制器狀態從高更改至低：您將會看到開發板上的 LED 燈打開。
 
+請注意，GPIO 狀態為低時，LED 狀態為亮；GPIO 狀態為高時，LED 狀態為滅。
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_22.png)
 
@@ -190,7 +191,8 @@ a. 點擊網頁版上方開發下的**測試裝置**，在您新增並註冊的�
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_23.png)
 
-b. 您可以看到裝置內的資料通道，並可透過 MCS 傳送指令。您可以透過拖拉控制器來更改裝置狀態。將 GPIO 控制器狀態從低更改至高：您將會看到開發板上的 LED 燈打開。
+b. 您可以看到裝置內的資料通道，並可透過 MCS 傳送指令。您可以透過拖拉控制器來更改裝置狀態。將 GPIO 控制器狀態從高更改至低：您將會看到開發板上的 LED 燈打開。
+
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_24.png)
 

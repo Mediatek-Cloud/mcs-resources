@@ -58,10 +58,10 @@ Please take note of the deviceId and deviceKey for calling API later in the tuto
 Here is the summary of the neccessary information we have obtained in interacting with this test device. You can find the information in the test device detail page.
 
 | Name | Value | Remark |
-| -- | -- | -- |
+| --- | --- | ---|
 | deviceId | Dsre1qRQ | Unique Identifier for this Test Device, copy your own deviceId in the device detail page. |
 | deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device, copy your own deviceKey in the device detail page. |
-| dataChannelId | LED_control | Data Channel Id for LED control |
+| dataChannelId | LED_Control | Data Channel Id for LED control |
 
 Note 1: The deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
 
@@ -92,7 +92,7 @@ var mcs = require('mcsjs');
 	// Replace the device ID and device Key obtained from your test device
 	// created in MCS.
 
-	myApp.on('LED_control', function(time, data) {
+	myApp.on('LED_Control', function(time, data) {
 	if(Number(data) === 1){
 		console.log('blink');
 	} else {
@@ -186,13 +186,13 @@ The server sends commands in the following format:  deviceId, deviceKey, timesta
 while True:
 	command = commandChannel.recv(1024)
 	logging.info("recv:" + command)
-	# command can be a response of heart beat or an update of the 	LED_control,
+	# command can be a response of heart beat or an update of the LED_Control,
 	# so we split by ',' and drop device id and device key and check 	length
 	fields = command.split(',')[2:]
 
 	if len(fields) > 1:
 		timeStamp, dataChannelId, commandString = fields
-	if dataChannelId == 'LED_control':
+	if dataChannelId == 'LED_Control':
 	# check the value - it's either 0 or 1
 		commandValue = int(commandString)
 		logging.info("led :%d" % commandValue)
@@ -261,13 +261,13 @@ import requests
 		command = commandChannel.recv(1024)
 
 	logging.info("recv:" + command)
-	# command can be a response of heart beat or an update of the 	LED_control,
+	# command can be a response of heart beat or an update of the LED_Control,
 	# it’s split by ',' and drop device ID and device key and check 	length
 	fields = command.split(',')[2:]
 
 	if len(fields) > 1:
 		timeStamp, dataChannelId, commandString = fields
-		if dataChannelId == 'LED_control':
+		if dataChannelId == 'LED_Control':
 			# check the value - it's either 0 or 1
 			commandValue = int(commandString)
 			logging.info("led :%d" % commandValue)

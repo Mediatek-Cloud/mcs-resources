@@ -186,7 +186,7 @@ a. On the navigation bar click **Test devices** under Development, then below th
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_23.png)
 
-b. Now you can see the device’s data channels and control their states using the MCS platform. To change the state for a particular data channel, drag that channel’s control bar. Switch a GPIO controller from low to high: the LED on development board should turn on.
+b. Now you can see the device’s data channels and control their states using the MCS platform. To change the state for a particular data channel, drag that channel’s control bar. Switch a GPIO controller from high to low: the LED on development board should turn on.
 
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_24.png)
