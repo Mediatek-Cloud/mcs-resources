@@ -178,7 +178,9 @@ a. 打开 MCS 手机应用程式并登入。点击您欲操作的测试装置。
 ![](../images/LinkIt_Connect/img_linkitconnect7681_21.png)
 
 
-b. 您将会看到您在步骤一所建立的资料通道。将 GPIO 控制器状态从低更改至高：您将会看到开发板上的 LED 灯打开。
+b. 您将会看到您在步骤一所建立的资料通道。将 GPIO 控制器状态从高更改至低：您将会看到开发板上的 LED 灯打开。
+
+请注意，GPIO 状态为低时，LED 状态为亮; GPIO 状态为高时，LED 状态为灭。
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_22.png)
 
@@ -188,7 +190,7 @@ a. 点击网页版上方开发下方的**测试装置**连结，在您新增并�
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_23.png)
 
-b. 您可以看到装置内的资料通道，并可透过 MCS 传送指令。您可以透过拖拉控制器来更改装置状态。 将 GPIO 控制器状态从低更改至高：您将会看到开发板上的 LED 灯打开。
+b. 您可以看到装置内的资料通道，并可透过 MCS 传送指令。您可以透过拖拉控制器来更改装置状态。 将 GPIO 控制器状态从高更改至低：您将会看到开发板上的 LED 灯打开。
 
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_24.png)
