@@ -63,7 +63,6 @@ MCS provides pre-defined variables which can be used in both Title and Content f
 
 * **${deviceId}**: The ID of device
 * **${deviceName}**: The name of device
-* **${deviceKey}**: The key of device
 * **${value}**: The value of this data channel
 
 ![](../images/Trigger/img_trigger_09.png)

@@ -62,7 +62,6 @@ MCS 预先定义了多个变数让您可以在通知的名称与内容栏位中�
 
 * **${deviceId}**: 设备的 ID
 * **${deviceName}**: 设备的名称
-* **${deviceKey}**: 设备的 Key
 * **${value}**: 资料通道的数值
 
 ![](../images/Trigger/img_trigger_09.png)
