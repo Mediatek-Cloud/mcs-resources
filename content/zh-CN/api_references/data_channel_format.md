@@ -276,3 +276,41 @@ CSV 格式：
 dataChannelId,timestamp,{Integer value}
 ```
 整数的范围需由使用者自行定义
+
+## 游戏控制器
+JSON 格式：
+
+```
+{
+ "datapoints":[
+      {
+         "dataChnId":"dataChanId",
+         "values":{
+            "value":"{up/down/right/left value|A/B key value}"
+         }
+      }
+   ]
+}
+
+```
+
+CSV 格式：
+
+```
+dataChannelId,timestamp,{up/down/right/left value|A/B key value}
+```
+使用者可以决定是否同时给上下左右的值和AB键的值。
+您可以使用预设的键盘热键如下：
+
+
+`上= W`
+
+`下= S`
+
+`左= A`
+
+`右= D`
+
+`键A =`
+
+`键B =.`

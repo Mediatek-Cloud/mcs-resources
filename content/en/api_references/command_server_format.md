@@ -106,3 +106,15 @@ deviceId,deviceKey,timestamp,dataChannelId,{0 ot 1}
 deviceId,deviceKey,timestamp,dataChannelId,{value},{period}
 
 ```
+
+### Analog
+```
+deviceId,deviceKey,timestamp,dataChannelId,{value}
+
+```
+
+### Gamepad
+```
+deviceId,deviceKey,timestamp,dataChannelId,{up/down/right/left value|A/B key value}
+
+```

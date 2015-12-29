@@ -110,3 +110,15 @@ deviceId,deviceKey,timestamp,dataChannelId,{0 ot 1}
 deviceId,deviceKey,timestamp,dataChannelId,{value},{period}
 
 ```
+
+### 類比
+```
+deviceId,deviceKey,timestamp,dataChannelId,{value}
+
+```
+
+### 遊戲控制器
+```
+deviceId,deviceKey,timestamp,dataChannelId,{up/down/right/left value|A/B key value}
+```
+

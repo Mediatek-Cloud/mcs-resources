@@ -1,69 +1,70 @@
-# Analog Controller Tutorial
+# Gamepad controller tutorial
 
-In this guide you’ll learn the steps to create a analog controller that allows you to turn on and off the on-board Wi-Fi LED from the web console of MCS using Node.js.
+Here is a simple example demonstrating how to use gamepad data channel controller on a LinkIt ONE development board.
+
 
 ## Creating a new prototype for LinkIt Smart 7688
 
-### Step 1. Create a new prototype with analog controller type data channel
-a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype.
+### Step 1. Create a new prototype with gamepad controller type data channel
+a. After login, select "Prototype" under Development at the navigation bar, click "Create" to create a new prototype.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 
 b. Fill in the detail information as per screen to give a basic profile of this prototype:
 
-![](../images/7688/img_7688_03.png)
+![](../images/Linkit_ONE/img_linkitone_03.png)
 
 c. Click "Detail" for the prototype created
 
-![](../images/7688/img_7688_04.png)
+![](../images/Linkit_ONE/img_linkitone_04.png)
 
 d. In the prototype Detail Page, select "Data Channel" TAB and click "Add" to create new Data Channel:
 
-![](../images/7688/img_7688_05.png)
+![](../images/Linkit_ONE/img_linkitone_05.png)
 
-We are going to create one **Analog** controller type data channel for this tutorial which will issues command to the board to control the brightness of the LED light.
+We are going to create one **Gamepad** controller type data channel for this tutorial which will issues command to the board to control the direction of the remote control car.
 
 
 e. Select "Controller" Data Channel and key in the following information
 
 ![](../images/Linkit_ONE/img_linkitone_08.png)
 
-![](../images/7688/img_7688_19.png)
+![](../images/Linkit_ONE/img_linkitone_27.png)
 
 Please take note of the Data Channel Id, this is the unique identifier when calling API later in the tutorial.
 
 ### Step 2. Create Test Device
 
-a. Click "Create Test Device" on the right upper corner of the page
+a. Click "Create Test Device" in the upper-right corner of the page
 
-![](../images/7688/img_7688_20.png)
+![](../images/Linkit_ONE/img_linkitone_28.png)
 
 b. Fill in the name and description of the test device:
 
-![](../images/7688/img_7688_22.png)
+![](../images/Linkit_ONE/img_linkitone_29.png)
 
 c. After Test device is created, click "Go to detail" to open the created device detail page:
 
 ![](../images/Linkit_ONE/img_linkitone_13.png)
 
 
-![](../images/7688/img_7688_21.png)
+![](../images/Linkit_ONE/img_linkitone_30.png)
 
 Please take note of the deviceId and deviceKey for calling API later in the tutorial.
-
 
 ### Step 3. Obtain Device ID, Device Key, Data Channel ID
 Here is the summary of the neccessary information we have obtained in interacting with this test device:
 
 | Name | Value | Remark |
-| --- | --- | --- |
-| deviceId | Dsre1qRQ | Unique Identifier for this Test Device, copy your own deviceKey in the device detail page. |
-| deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device, copy your own deviceKey in the device detail page. |
-| dataChannelId | analog | Data Channel Id for LED brightness |
+| -- | -- | -- |
+| deviceId | Dsre1qRQ | Unique Identifier for this Test Device |
+| deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device |
+| dataChannelId | Gamepad | Data Channel Id for gamepad controller |
 
 Note 1: The deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
 
 Note 2: The deviceId is case sensitive.
+
 
 # Creating a program to connect to MCS and run the application
 
@@ -109,14 +110,15 @@ var board = new firmata.Board("/dev/ttyS0", function(err) {
 Next, run the Node.js example program.
 
 ### Run your application
-You are now ready to execute the Node.js program. In the system console, type the following command:(# is command prompt and is not part of command.)
+You are now ready to execute the Node.js program. In the system console, type the following command:# is command prompt and is not part of command.
+
 ```
 # node app
 ```
 
 Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on and off and watch the Wi-Fi LED on LinkIt Smart LinkIt Smart 7688 HDK.
 
-![](../images/7688/img_7688_21.png)
+![](../images/7688/img_7688_31.png)
 
 
 
