@@ -48,7 +48,7 @@ c. After Test device is created, click "Go to detail" to open the created device
 ![](../images/Linkit_ONE/img_linkitone_13.png)
 
 
-![](../images/Linkit_ONE/img_7688_30.png)
+![](../images/7688/img_7688_30.png)
 
 Please take note of the deviceId and deviceKey for calling API later in the tutorial.
 
