@@ -165,7 +165,8 @@ Create a Python program that sends heart beat to TCP command every 40 seconds us
 ```
 	# Heartbeat for command server to keep the channel alive
 	def sendHeartBeat(commandChannel):
-		keepAliveMessage = '%(device_id)s,%(device_key)s,0' % 				DEVICE_INFO
+		keepAliveMessage = '%(device_id)s,%(device_key)s,0' %
+		DEVICE_INFO
 		commandChannel.sendall(keepAliveMessage)
 		logging.info("hear beat")
 
@@ -187,8 +188,8 @@ The server sends commands in the following format:  deviceId, deviceKey, timesta
 	while True:
 	command = commandChannel.recv(1024)
 	logging.info("recv:" + command)
-	# command can be a response of heart beat or an update of the 	LED_control,
-	# so we split by ',' and drop device id and device key and check 	length
+	# command can be a response of heart beat or an update of the LED_control,
+	# so we split by ',' and drop device id and device key and check length
 	fields = command.split(',')[2:]
 
 	if len(fields) > 1:
@@ -263,8 +264,8 @@ Replace the above with your device ID and device key.
 		command = commandChannel.recv(1024)
 
 	logging.info("recv:" + command)
-	# command can be a response of heart beat or an update of the 	LED_control,
-	# it’s split by ',' and drop device ID and device key and check 	length
+	# command can be a response of heart beat or an update of the LED_control,
+	# it’s split by ',' and drop device ID and device key and check length
 	fields = command.split(',')[2:]
 
 	if len(fields) > 1:
@@ -310,6 +311,7 @@ Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on 
 ![](../images/7688/img_7688_16.png)
 
 ![](../images/7688/img_7688_17.png)
+
 
 
 
