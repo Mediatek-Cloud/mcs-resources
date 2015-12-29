@@ -91,12 +91,12 @@ vim app.js
 	// Replace the device ID and device Key obtained from your test device
 	// created in MCS.
 
-	myApp.on('LED_Control', function(time, data) {
-	if(Number(data) === 1){
-		console.log('blink');
-	} else {
-		Console.log(’off’);
-	}
+	myApp.on('LED_Control', function(data, time) {
+		if(Number(data) === 1){
+			console.log('blink');
+		} else {
+			console.log(’off’);
+		}
 	});
 ```
 
