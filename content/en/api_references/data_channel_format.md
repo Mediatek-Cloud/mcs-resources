@@ -300,7 +300,7 @@ dataChannelId,timestamp,{up/down/right/left value|A/B key value}
 
 User can decide to only have the up/down/right/left value only or to have the A/B value together at the same time.
 
-The keyboard default pre-defined value is as following:
+You can use pre-defined hotkeys on keyboard to control this data channel:
 
 `up = W`
 

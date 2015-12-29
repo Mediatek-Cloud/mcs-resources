@@ -299,7 +299,8 @@ CSV 格式：
 ```
 dataChannelId,timestamp,{up/down/right/left value|A/B key value}
 ```
-使用者可以决定是否同时给上下左右的值和AB键的值。预设的键盘绑定值如下：
+使用者可以决定是否同时给上下左右的值和AB键的值。
+您可以使用预设的键盘热键如下：
 
 
 `上= W`
