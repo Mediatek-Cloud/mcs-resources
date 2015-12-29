@@ -294,7 +294,8 @@ CSV 格式：
 ```
 dataChannelId,timestamp,{up/down/right/left value|A/B key value}
 ```
-使用者可以決定是否同時給上下左右的值和 AB 鍵的值。預設的鍵盤綁定值如下：
+使用者可以決定是否同時給上下左右的值和 AB 鍵的值。
+您可以使用預設的鍵盤熱鍵如下：
 
 
 `上 = W`
