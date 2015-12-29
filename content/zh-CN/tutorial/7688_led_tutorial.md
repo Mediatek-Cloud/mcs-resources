@@ -103,7 +103,8 @@ vim app.js
 Next, run the Node.js example program.
 
 ### Run your application
-You are now ready to execute the Node.js program. In the system console, type the following command:# is command prompt and is not part of command.
+You are now ready to execute the Node.js program. In the system console, type the following command:(# is command prompt and is not part of command.)
+
 
 ```
 # node app
@@ -130,7 +131,9 @@ Here is the Python code example that listens for commands from MCS web console. 
 To establish a command pipe to MCS, you need to create a TCP socket that connects to the command server. To connect to command server, you need to query the IP address and port of the command server by calling a RESTful API from MCS.
 
 ```
-    DEVICE_INFO = {'device_id' : 'YOUR_DEVICE_ID','device_key' : 'YOUR_DEVICE_KEY'}
+	DEVICE_INFO = {'device_id' : 'YOUR_DEVICE_ID',
+			'device_key' : 'YOUR_DEVICE_KEY'
+	}
 
 	# change 'INFO' to 'WARNING' to filter info messages
 	logging.basicConfig(level='INFO')
@@ -139,7 +142,7 @@ To establish a command pipe to MCS, you need to create a TCP socket that connect
 	# Query command server's IP & port
 	connectionAPI =
 
-	'https://api.mediatek.com/mcs/v2/devices/%(device_id)s/connections.csv'
+	'https://api.mediatek.com/mcs/v2/devices/%(device_id)s/connections.cs		v'
 	r = requests.get(connectionAPI % DEVICE_INFO,
 		headers = {'deviceKey' : DEVICE_INFO['device_key'],
 			'Content-Type' : 'text/csv'})
@@ -150,6 +153,7 @@ To establish a command pipe to MCS, you need to create a TCP socket that connect
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect((ip, int(port)))
 	s.settimeout(None)
+
 ```
 
 After the TCP socket is connected to the command server, the server will send commands that reflects the status of the web console, such as the status of the ON/OFF switch. However, MCS requires you to send a heart beat to the command server every minute in order to keep the TCP socket active. You’ll learn to do that in the next step.
@@ -161,8 +165,7 @@ Create a Python program that sends heart beat to TCP command every 40 seconds us
 ```
 	# Heartbeat for command server to keep the channel alive
 	def sendHeartBeat(commandChannel):
-		keepAliveMessage = '%(device_id)s,%(device_key)s,0' %
-		DEVICE_INFO
+		keepAliveMessage = '%(device_id)s,%(device_key)s,0' % 				DEVICE_INFO
 		commandChannel.sendall(keepAliveMessage)
 		logging.info("hear beat")
 
@@ -173,6 +176,7 @@ Create a Python program that sends heart beat to TCP command every 40 seconds us
 		threading.Timer(40, heartBeat, [s]).start()
 		sendHeartBeat(s)
 
+
 ```
 
 #### Parse the command
@@ -180,19 +184,20 @@ Create a Python program that sends heart beat to TCP command every 40 seconds us
 The server sends commands in the following format:  deviceId, deviceKey, timestamp, dataChannelId, and commandValue. You can use comma “,” to parse these commands. You also need to check the command type by their length because the server echoes heart beat command back to the device.
 
 ```
-    while True:
+	while True:
 	command = commandChannel.recv(1024)
 	logging.info("recv:" + command)
-	# command can be a response of heart beat or an update of the LED_Control,
+	# command can be a response of heart beat or an update of the 	LED_control,
 	# so we split by ',' and drop device id and device key and check 	length
 	fields = command.split(',')[2:]
 
 	if len(fields) > 1:
 		timeStamp, dataChannelId, commandString = fields
-	if dataChannelId == 'LED_Control':
+	if dataChannelId == 'LED_control':
 	# check the value - it's either 0 or 1
 		commandValue = int(commandString)
 		logging.info("led :%d" % commandValue)
+
 
 ```
 
@@ -208,7 +213,7 @@ The following is used in the example:
 Replace the above with your device ID and device key.
 
 ```
-    import requests
+	import requests
 	import socket
 	import threading
 	import logging
@@ -248,7 +253,8 @@ Replace the above with your device ID and device key.
 		sendHeartBeat(commandChannel)
 		# Re-start the timer periodically
 		global heartBeatTask
-		heartBeatTask = threading.Timer(40, heartBeat, [commandChannel]).start()
+		heartBeatTask = threading.Timer(40, heartBeat, 					[commandChannel]).start()
+
 	heartBeat(s)
 	return s
 	def waitAndExecuteCommand(commandChannel):
@@ -257,13 +263,13 @@ Replace the above with your device ID and device key.
 		command = commandChannel.recv(1024)
 
 	logging.info("recv:" + command)
-	# command can be a response of heart beat or an update of the LED_Control,
-	# it’s split by ',' and drop device ID and device key and check length
+	# command can be a response of heart beat or an update of the 	LED_control,
+	# it’s split by ',' and drop device ID and device key and check 	length
 	fields = command.split(',')[2:]
 
 	if len(fields) > 1:
 		timeStamp, dataChannelId, commandString = fields
-		if dataChannelId == 'LED_Control':
+		if dataChannelId == 'LED_control':
 			# check the value - it's either 0 or 1
 			commandValue = int(commandString)
 			logging.info("led :%d" % commandValue)
@@ -304,4 +310,6 @@ Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on 
 ![](../images/7688/img_7688_16.png)
 
 ![](../images/7688/img_7688_17.png)
+
+
 
