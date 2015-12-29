@@ -75,7 +75,7 @@ Note 2: The deviceId is case sensitive.
 
 ## Architecture
 
-![](../images/7688/img_7688_33.png)
+![](../images/7688/img_7688_33.PNG)
 
 The four pins on L298N should be connected to the D2, D3, D4, D5 pints on LinkIt Smart 7688 Duo.
 
