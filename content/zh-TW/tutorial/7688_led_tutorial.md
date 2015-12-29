@@ -254,7 +254,8 @@ Replace the above with your device ID and device key.
 		sendHeartBeat(commandChannel)
 		# Re-start the timer periodically
 		global heartBeatTask
-		heartBeatTask = threading.Timer(40, heartBeat, 					[commandChannel]).start()
+		heartBeatTask = threading.Timer(40, heartBeat,
+		[commandChannel]).start()
 
 	heartBeat(s)
 	return s

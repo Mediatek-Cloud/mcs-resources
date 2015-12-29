@@ -254,7 +254,8 @@ Replace the above with your device ID and device key.
 		sendHeartBeat(commandChannel)
 		# Re-start the timer periodically
 		global heartBeatTask
-		heartBeatTask = threading.Timer(40, heartBeat, 					[commandChannel]).start()
+		heartBeatTask = threading.Timer(40, heartBeat,
+		[commandChannel]).start()
 
 	heartBeat(s)
 	return s
@@ -311,5 +312,6 @@ Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on 
 ![](../images/7688/img_7688_16.png)
 
 ![](../images/7688/img_7688_17.png)
+
 
 
