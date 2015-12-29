@@ -121,7 +121,7 @@ vim app.js
 
       serialPort.on("open", function () {
           // listen the mcs command.
-          myApp.on('gamepad', function(data, time) { // gamepad is your datachannel.
+          myApp.on('Gamepad', function(data, time) { // gamepad is your datachannel.
               serialPort.write(data); // send message to Arduino chip.
           });
       });
