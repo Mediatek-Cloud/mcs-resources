@@ -5,8 +5,8 @@ Here is a simple example demonstrating how to use gamepad data channel controlle
 
 ## Creating a new prototype for LinkIt Smart 7688
 
-### Step 1. Create a new prototype with gamepag controller type data channel
-a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype.
+### Step 1. Create a new prototype with gamepad controller type data channel
+a. After login, select "Prototype" under Development at the navigation bar, click "Create" to create a new prototype.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 
@@ -35,7 +35,7 @@ Please take note of the Data Channel Id, this is the unique identifier when call
 
 ### Step 2. Create Test Device
 
-a. Click "Create Test Device" on the right upper corner of the page
+a. Click "Create Test Device" in the upper-right corner of the page
 
 ![](../images/Linkit_ONE/img_linkitone_28.png)
 
