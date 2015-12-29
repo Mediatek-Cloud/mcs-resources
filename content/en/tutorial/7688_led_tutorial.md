@@ -132,7 +132,7 @@ To establish a command pipe to MCS, you need to create a TCP socket that connect
 
 ```
 	DEVICE_INFO = {'device_id' : 'YOUR_DEVICE_ID',
-			'device_key' : 'YOUR_DEVICE_KEY'
+			    'device_key' : 'YOUR_DEVICE_KEY'
 	}
 
 	# change 'INFO' to 'WARNING' to filter info messages
@@ -142,7 +142,7 @@ To establish a command pipe to MCS, you need to create a TCP socket that connect
 	# Query command server's IP & port
 	connectionAPI =
 
-	'https://api.mediatek.com/mcs/v2/devices/%(device_id)s/connections.cs		v'
+	'https://api.mediatek.com/mcs/v2/devices/%(device_id)s/connections.csv'
 	r = requests.get(connectionAPI % DEVICE_INFO,
 		headers = {'deviceKey' : DEVICE_INFO['device_key'],
 			'Content-Type' : 'text/csv'})
