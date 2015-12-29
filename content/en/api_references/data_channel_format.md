@@ -274,3 +274,42 @@ For csv:
 dataChannelId,timestamp,{Integer value}
 ```
 The range of Integer value is defined by users.
+
+## Gamepad
+For json:
+
+```
+{
+ "datapoints":[
+      {
+         "dataChnId":"dataChanId",
+         "values":{
+            "value":"{up/down/right/left value|A/B key value}"
+         }
+      }
+   ]
+}
+
+```
+
+For csv:
+
+```
+dataChannelId,timestamp,{up/down/right/left value|A/B key value}
+```
+
+User can decide to only have the up/down/right/left value only or to have the A/B value together at the same time.
+
+The keyboard default pre-defined value is as following:
+
+`up = W`
+
+`down = S`
+
+`left = A`
+
+`right = D`
+
+`Key A = ,`
+
+`Key B = .`
