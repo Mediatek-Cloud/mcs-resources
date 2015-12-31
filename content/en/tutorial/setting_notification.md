@@ -55,7 +55,7 @@ To set up a webhook trigger, you have to select the **webhook** as the action in
 
 ![](../images/Trigger/img_trigger_08.png)
 
-There is a Test button for you to test if the trigger has been sent to the url. The device name, deviceId, deviceKey, and the triggered value will be sent to the triggered url.
+There is a Test button for you to test if the trigger has been sent to the url. The device name, deviceId and the triggered value will be sent to the triggered url.
 
 # Use variables in notification message
 

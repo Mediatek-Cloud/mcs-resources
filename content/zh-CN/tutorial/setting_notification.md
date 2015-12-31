@@ -54,7 +54,7 @@
 
 ![](../images/Trigger/img_trigger_08.png)
 
-当您选择 webhook 触发动作后，您可以使用测试按钮，来测试是否通知有被送出。送出之资讯包含装置名称, deviceId, deviceKey, 和触发值。
+当您选择 webhook 触发动作后，您可以使用测试按钮，来测试是否通知有被送出。送出之资讯包含装置名称, deviceId 和触发值。
 
 # 在通知内容中使用变数
 
