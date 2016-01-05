@@ -96,7 +96,7 @@ var board = new firmata.Board("/dev/ttyS0", function(err) {
     deviceId: 'Input your deviceId',
     deviceKey: 'Input your deviceKey',
   });
-  myApp.on('analog', function(time, data) {
+  myApp.on('analog', function(data, time) {
     if(Number(data) != NaN) {
       board.analogWrite(ledPin, Number(data));
     } else {
