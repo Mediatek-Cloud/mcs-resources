@@ -79,7 +79,7 @@ vim app.js
 ```
 
 2. Type **i** and Copy/paste the following code in the editor
-```
+``` js
 var ledPin = 13;
 var firmata = require('firmata');
 var mcs = require('mcsjs');
@@ -109,7 +109,8 @@ var board = new firmata.Board("/dev/ttyS0", function(err) {
 Next, run the Node.js example program.
 
 ### Run your application
-You are now ready to execute the Node.js program. In the system console, type the following command:(# is command prompt and is not part of command.)
+You are now ready to execute the Node.js program. In the system console, type the following command:# is command prompt and is not part of command.
+
 ```
 # node app
 ```

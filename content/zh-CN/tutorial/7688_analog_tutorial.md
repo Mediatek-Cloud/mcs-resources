@@ -79,7 +79,7 @@ vim app.js
 ```
 
 2. Type **i** and Copy/paste the following code in the editor
-```
+``` js
 var ledPin = 13;
 var firmata = require('firmata');
 var mcs = require('mcsjs');
@@ -118,7 +118,6 @@ You are now ready to execute the Node.js program. In the system console, type th
 Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on and off and watch the Wi-Fi LED on LinkIt Smart LinkIt Smart 7688 HDK.
 
 ![](../images/7688/img_7688_21.png)
-
 
 
 

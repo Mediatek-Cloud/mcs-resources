@@ -104,27 +104,27 @@ vim app.js
 ```
 
 6. Type **i** and Copy/paste the following code in the editor
-```
-      var mcs = require('mcsjs');
-      // regist your device to mcs.
+``` js
+var mcs = require('mcsjs');
+// regist your device to mcs.
 
-      var myApp = mcs.register({
-          deviceId: 'Input your deviceId',   // Input your deviceId.
-          deviceKey: 'Input your deviceKey', // Input your deviceKey.
-      });
+var myApp = mcs.register({
+    deviceId: 'Input your deviceId',   // Input your deviceId.
+    deviceKey: 'Input your deviceKey', // Input your deviceKey.
+});
 
-      var SerialPort = require("serialport").SerialPort;
-      var serialPort = new SerialPort("/dev/ttyS0", {
-          baudrate: 57600
-      });
-      // communicate with Arduino chip (32U4).
+var SerialPort = require("serialport").SerialPort;
+var serialPort = new SerialPort("/dev/ttyS0", {
+    baudrate: 57600
+});
+// communicate with Arduino chip (32U4).
 
-      serialPort.on("open", function () {
-          // listen the mcs command.
-          myApp.on('Gamepad', function(data, time) { // gamepad is your datachannel.
-              serialPort.write(data); // send message to Arduino chip.
-          });
-      });
+serialPort.on("open", function () {
+  // listen the mcs command.
+  myApp.on('Gamepad', function(data, time) { // Gamepad is your datachannel.
+    serialPort.write(data); // send message to Arduino chip.
+  });
+});
 ```
 
 Next, run the Node.js example program.
@@ -139,5 +139,4 @@ You are now ready to execute the Node.js program. In the system console, type th
 Go to MediaTek Cloud Sandbox and use the controller panel to control the remote control car to go to the left.
 
 ![](../images/7688/img_7688_31.png)
-
 
