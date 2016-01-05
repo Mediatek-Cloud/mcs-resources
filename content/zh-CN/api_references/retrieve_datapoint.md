@@ -7,67 +7,40 @@
 
 ## 请求 URL
 
-读取特定资料通道中的资料点：
-
-```
-https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints?start=:startTime&end=:endTime&limit=:limit&offset=:offset
-
-```
-
-
-API 请求默认值为 JSON 格式，如欲使用 CSV 格式，请在 API 请求 URL 最后端加上`.csv`。
-
-使用此 API，您可以选择您要的资料范围：
-
-* 只读取最后一个资料点：
-
-
-* 读取一段时间范围内的资料点：
-
-
-    在请求 url 尾端加上`?start=:startTime&end=:endTime`
-
-
-* 限制您要读取的资料点数目(举例来说, 如果您输入 limit=5 , 则您会读取前五笔资料点):
-
-
-    在请求 url 尾端加上 `?offset=:offset`
-
-
-* 读取从某一个资料点受开始的资料(举例来说, 如果您输入 offset=5, 则您会读取第五笔资料点之后的所有资料点):
-
-
-    Use the `?offset=:offset` at the end.
-
-
-
-您亦可以将以上四种方式混合使用。
-
 使用 **HTTPs GET** 来取得装置回传的资料点
 
 
 ## 请求 URL
 
 读取特定资料通道中的资料点：
+
+```
+https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints?start=:startTime&end=:endTime&limit=:limit&offset=:offset
+```
+
+
 API 请求默认值为 JSON 格式，如欲使用 CSV 格式，请在 API 请求 URL 最后端加上`.csv`。
 使用此 API，您可以选择您要的资料范围：
 
 * 只读取最后一个资料点：
-* 读取一段时间范围内的资料点：
-    在请求 url 尾端加上`?start=:startTime&end=:endTime`
+```
+  https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints
+```
 
+* 读取一段时间范围内的资料点：
+```
+在请求 url 尾端加上`?start=:startTime&end=:endTime`
+```
 
 * 限制您要读取的资料点数目(举例来说, 如果您输入 limit=5, 则您会读取前五笔资料点):
-
-
-    在请求 url 尾端加上 `?limit=:limit`
-
+```
+在请求 url 尾端加上 `?limit=:limit`
+```
 
 * 读取从某一个资料点受开始的资料(举例来说, 如果您输入 offset=5, 则您会读取第五笔资料点之后的所有资料点):
-
-
-    在请求 url 尾端加上 `?offset=:offset`
-
+```
+在请求 url 尾端加上 `?offset=:offset`
+```
 
 您亦可以将以上四种方式混合使用。
 

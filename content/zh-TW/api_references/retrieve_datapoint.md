@@ -18,28 +18,25 @@ API 請求默認值為 JSON 格式，如欲使用 CSV 格式，請在 API 請求
 使用此 API，您可以選擇您要的資料範圍：
 
 * 只讀取最後一個資料點：
-
-
-    `https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints`
+```
+https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints
+```
 
 
 * 讀取一段時間範圍內的資料點：
-
-
-    在請求url尾端加上`?start=:startTime&end=:endTime`
-
+```
+在請求url尾端加上`?start=:startTime&end=:endTime`
+```
 
 * 限制您要讀取的資料點數目 (舉例來說, 如果您輸入 limit=5, 則您會讀取前五筆資料點):
-
-
-    在請求url尾端加上 `?limit=:limit`
-
+```
+在請求url尾端加上 `?limit=:limit`
+```
 
 * 讀取從某一個資料點受開始的資料(舉例來說, 如果您輸入 offset=5, 則您會讀取第五筆資料點之後的所有資料點):
-
-
-    在請求url尾端加上 `?offset=:offset`
-
+```
+在請求url尾端加上 `?offset=:offset`
+```
 
 您亦可以將以上四種方式混合使用。
 

@@ -20,29 +20,25 @@ The API will by default assume the json format, if you want to use the csv, plea
 The API enables you to retrieve four kinds of data:
 
 * To get the last data point:
-
-
-
-    `https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints`
+```
+https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints
+```
 
 
 * To get the data points within a time frame:
-
-
-    Use the `?start=:startTime&end=:endTime` at the end.
-
+```
+Use the `?start=:startTime&end=:endTime` at the end.
+```
 
 * To limit the number of data points that you will get (eg, if you enter the limit=5, you will get the first 5 data points.):
-
-
-    Use the `?limit=:limit`at the end.
-
+```
+Use the `?limit=:limit`at the end.
+```
 
 * To retrieve the data points from a specific point(eg, if you enter offset=5, you will not get the first 5 data points and start with 6th one):
-
-
-    Use the `?offset=:offset` at the end.
-
+```
+Use the `?offset=:offset` at the end.
+```
 
 
 You can choose to combine those conditions.
