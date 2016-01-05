@@ -79,7 +79,7 @@ vim app.js
 ```
 
 2. Type **i** and Copy/paste the following code in the editor
-```
+``` js
 var ledPin = 13;
 var firmata = require('firmata');
 var mcs = require('mcsjs');
