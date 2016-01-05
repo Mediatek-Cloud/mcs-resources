@@ -77,12 +77,14 @@ MCS supports node.js and python. You can choose node.js or python base on your p
 Here is the Node.js example code that listens for commands from MCS web console.
 
 1. Create a file app.js using an editor, vi is used in this example:
+
 ```
 vim app.js
 ```
 
 2. Type **i** and Copy/paste the following code in the editor
-```
+
+``` js
 var mcs = require('mcsjs');
 var myApp = mcs.register({
   deviceId: 'ABC123',
