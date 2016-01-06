@@ -284,7 +284,7 @@ For json:
       {
          "dataChnId":"dataChanId",
          "values":{
-            "value":"{up/down/right/left value|A/B key value}"
+            "value":"{up/down/right/left/A/B value| press(1) or release(0)}"
          }
       }
    ]
@@ -295,10 +295,12 @@ For json:
 For csv:
 
 ```
-dataChannelId,timestamp,{up/down/right/left value|A/B key value}
+dataChannelId,timestamp,{up/down/right/left/A/B value| press(1) or release(0)}
 ```
 
 User can decide to only have the up/down/right/left value only or to have the A/B value together at the same time.
+
+For example, if user set the up value to up when you created the data channel, then click up button, the value will be `up|0`. If user press up button, the value will be `up|1`.
 
 You can use pre-defined hotkeys on keyboard to control this data channel:
 

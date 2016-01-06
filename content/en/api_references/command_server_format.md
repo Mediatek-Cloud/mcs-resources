@@ -115,6 +115,6 @@ deviceId,deviceKey,timestamp,dataChannelId,{value}
 
 ### Gamepad
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{up/down/right/left value|A/B key value}
+deviceId,deviceKey,timestamp,dataChannelId,{up/down/right/left/A/B value| press(1) or release(0)}
 
 ```

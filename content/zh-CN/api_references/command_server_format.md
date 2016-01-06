@@ -118,5 +118,5 @@ deviceId，deviceKey，timestamp，dataChannelId，{value}
 
 ### 游戏控制器
 ```
-deviceId，deviceKey，timestamp，dataChannelId，{上/下/左/右 值| A/B 键值}
+deviceId，deviceKey，timestamp，dataChannelId，{up/down/right/left/A/B value| press(1) or release(0)}
 ```

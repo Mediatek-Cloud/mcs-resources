@@ -286,7 +286,7 @@ JSON 格式：
       {
          "dataChnId":"dataChanId",
          "values":{
-            "value":"{up/down/right/left value|A/B key value}"
+            "value":"{up/down/right/left/A/B value| press(1) or release(0)}"
          }
       }
    ]
@@ -297,9 +297,12 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChannelId,timestamp,{up/down/right/left value|A/B key value}
+dataChannelId,timestamp,{up/down/right/left/A/B value| press(1) or release(0)}
 ```
 使用者可以决定是否同时给上下左右的值和AB键的值。
+
+举例来说，若使用在建立游戏控制器资料通道时，将上的值设为 up，当使用者点上时，对应的值为 `up|0`。若长按 up，对应的值则为 `up|1`。
+
 您可以使用预设的键盘热键如下：
 
 
