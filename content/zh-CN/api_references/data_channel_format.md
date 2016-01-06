@@ -339,6 +339,6 @@ CSV 格式:
 ```
 dataChnId,timestamp,{image file base64 encoding string value}
 ```
-在上传图片档案至MCS 之前,您必须先将图片档案转为 base64 编码的字串。上传此字串至图片资料通道后,此图片将会被储存与显示。
+在上传图片档案至 MCS 之前,您必须先将图片档案转为 base64 编码的字串。上传此字串至图片资料通道后,此图片将会被储存与显示。
 
 请注意,目前图片资料通道支援 JPG、JPEG、和 PNG 三种图片档案格式。一旦上传至 MCS  后,则都会被储存为 PNG 档案格式。
