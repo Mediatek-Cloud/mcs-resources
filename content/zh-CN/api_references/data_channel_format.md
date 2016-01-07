@@ -15,7 +15,7 @@ JSON 格式：
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{0 or 1}"
          }
@@ -29,7 +29,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChannelId,timestamp,{0 or 1}
+dataChnId,timestamp,{0 or 1}
 
 ```
 0 代表关，1 代表开。
@@ -48,7 +48,7 @@ JSON 格式：
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{Key value}"
          }
@@ -62,7 +62,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChannelId,timestamp,{Key Value}
+dataChnId,timestamp,{Key Value}
 ```
 Key value 的值将会对应至您所设定的 Key name。
 
@@ -74,7 +74,7 @@ JSON 格式：
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{Integer value}"
          }
@@ -88,7 +88,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChannelId,timestamp,{Integer}
+dataChnId,timestamp,{Integer}
 ```
 
 ## 浮点数
@@ -99,7 +99,7 @@ JSON 格式：
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{Float value}"
          }
@@ -113,7 +113,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChannelId,timestamp,{Float}
+dataChnId,timestamp,{Float}
 ```
 
 ## 十六进位数
@@ -124,7 +124,7 @@ JSON 格式：
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{HEX value}"
          }
@@ -138,7 +138,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChannelId,timestamp,{Hex value}
+dataChnId,timestamp,{Hex value}
 ```
 十六进位数的值为 A-F 以及 0-9。
 
@@ -150,7 +150,7 @@ JSON 格式：
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{string value}"
          }
@@ -164,7 +164,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChannelId,timestamp,{string}
+dataChnId,timestamp,{string}
 ```
 
 ## GPS
@@ -190,7 +190,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChannelId,timestamp,{latitude},{longitude},{altitude}
+dataChnId,timestamp,{latitude},{longitude},{altitude}
 ```
 
 纬度范围从 -90 至 90。 0 至 90 代表北纬，0 至 -90 代表南纬。
@@ -207,7 +207,7 @@ JSON 格式：
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{0 or 1}"
          }
@@ -221,7 +221,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChannelId,timestamp,{0 ot 1}
+dataChnId,timestamp,{0 ot 1}
 ```
 0 代表低，1 代表高。
 
@@ -232,7 +232,7 @@ JSON 格式：
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{string value}",
             "period":"{period value}"
@@ -248,7 +248,7 @@ PWM的值和期间只能为0至1000之间。
 CSV 格式
 
 ```
-dataChannelId,timestamp,{Value},{Period}
+dataChnId,timestamp,{Value},{Period}
 ```
 
 ## 类比
@@ -259,7 +259,7 @@ JSON 格式：
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{Integer value}"
          }
@@ -273,7 +273,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChannelId,timestamp,{Integer value}
+dataChnId,timestamp,{Integer value}
 ```
 整数的范围需由使用者自行定义
 
@@ -284,7 +284,7 @@ JSON 格式：
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{up/down/right/left/A/B value| press(1) or release(0)}"
          }
@@ -297,7 +297,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChannelId,timestamp,{up/down/right/left/A/B value| press(1) or release(0)}
+dataChnId,timestamp,{up/down/right/left/A/B value| press(1) or release(0)}
 ```
 使用者可以决定是否同时给上下左右的值和AB键的值。
 
@@ -317,3 +317,28 @@ dataChannelId,timestamp,{up/down/right/left/A/B value| press(1) or release(0)}
 `键A =`
 
 `键B =.`
+
+## 图片
+
+JSON 格式:
+```
+{
+ "datapoints":[
+      {
+         "dataChnId":"dataChnId",
+         "values":{
+            "value":"{image file base64 encoding string value}"
+         }
+      }
+   ]
+}
+
+```
+
+CSV 格式:
+```
+dataChnId,timestamp,{image file base64 encoding string value}
+```
+在上传图片档案至 MCS 之前,您必须先将图片档案转为 base64 编码的字串。上传此字串至图片资料通道后,此图片将会被储存与显示。
+
+请注意,目前图片资料通道支援 JPG、JPEG、和 PNG 三种图片档案格式。一旦上传至 MCS  后,则都会被储存为 PNG 档案格式。

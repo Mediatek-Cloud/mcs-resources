@@ -15,7 +15,7 @@ For json:
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{0 or 1}"
          }
@@ -29,7 +29,7 @@ For json:
 For csv:
 
 ```
-dataChannelId,timestamp,{0 or 1}
+dataChnId,timestamp,{0 or 1}
 
 ```
 0 stands for OFF, and 1 stands for ON.
@@ -48,7 +48,7 @@ For json:
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{Key value}"
          }
@@ -62,7 +62,7 @@ For json:
 For csv:
 
 ```
-dataChannelId,timestamp,{Key Value}
+dataChnId,timestamp,{Key Value}
 ```
 The Key value will correspond to the Key name that you’ve set.
 
@@ -74,7 +74,7 @@ For json:
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{Integer value}"
          }
@@ -88,7 +88,7 @@ For json:
 For csv:
 
 ```
-dataChannelId,timestamp,{Integer}
+dataChnId,timestamp,{Integer}
 ```
 
 ## Float
@@ -99,7 +99,7 @@ For json:
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{Float value}"
          }
@@ -113,7 +113,7 @@ For json:
 For csv:
 
 ```
-dataChannelId,timestamp,{Float}
+dataChnId,timestamp,{Float}
 ```
 
 ## Hex
@@ -124,7 +124,7 @@ For json:
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{HEX value}"
          }
@@ -138,7 +138,7 @@ For json:
 For csv:
 
 ```
-dataChannelId,timestamp,{Hex value}
+dataChnId,timestamp,{Hex value}
 ```
 Hex is referred to hexadecimal value which only takes value from A-D and 0-9.
 
@@ -150,7 +150,7 @@ For json:
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{string value}"
          }
@@ -164,7 +164,7 @@ For json:
 For csv:
 
 ```
-dataChannelId,timestamp,{string}
+dataChnId,timestamp,{string}
 ```
 
 ## GPS
@@ -190,7 +190,7 @@ For json:
 For csv:
 
 ```
-dataChannelId,timestamp,{latitude},{longitude},{altitude}
+dataChnId,timestamp,{latitude},{longitude},{altitude}
 ```
 
 The range of latitude is from -90 to 90. 0 to 90 stands for North and 0 to -90 stands for South.
@@ -207,7 +207,7 @@ For json:
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{0 or 1}"
          }
@@ -221,7 +221,7 @@ For json:
 For csv:
 
 ```
-dataChannelId,timestamp,{0 ot 1}
+dataChnId,timestamp,{0 ot 1}
 ```
 0 stands for Low, and 1 stands for High.
 
@@ -232,7 +232,7 @@ For json:
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{string value}",
             "period":"{period value}"
@@ -248,7 +248,7 @@ The range of Period and Value is from 0 to 1000.
 For csv:
 
 ```
-dataChannelId,timestamp,{Value},{Period}
+dataChnId,timestamp,{Value},{Period}
 ```
 
 ## Analog
@@ -258,7 +258,7 @@ For json:
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{Integer value}"
          }
@@ -271,7 +271,7 @@ For json:
 For csv:
 
 ```
-dataChannelId,timestamp,{Integer value}
+dataChnId,timestamp,{Integer value}
 ```
 The range of Integer value is defined by users.
 
@@ -282,7 +282,7 @@ For json:
 {
  "datapoints":[
       {
-         "dataChnId":"dataChanId",
+         "dataChnId":"dataChnId",
          "values":{
             "value":"{up/down/right/left/A/B value| press(1) or release(0)}"
          }
@@ -295,7 +295,7 @@ For json:
 For csv:
 
 ```
-dataChannelId,timestamp,{up/down/right/left/A/B value| press(1) or release(0)}
+dataChnId,timestamp,{up/down/right/left/A/B value| press(1) or release(0)}
 ```
 
 User can decide to only have the up/down/right/left value only or to have the A/B value together at the same time.
@@ -315,3 +315,32 @@ You can use pre-defined hotkeys on keyboard to control this data channel:
 `Key A = ,`
 
 `Key B = .`
+
+## Image
+
+For json:
+
+```
+{
+ "datapoints":[
+      {
+         "dataChnId":"dataChnId",
+         "values":{
+            "value":"{image file base64 encoding string value}"
+         }
+      }
+   ]
+}
+
+```
+
+
+For csv:
+
+```
+dataChnId,timestamp,{image file base64 encoding string value}
+```
+
+To upload an image to the image display data channel, you have to convert the image file to base64 encoding. Upload the base 64 encoding string to the data channel, then the image will saved and shown.
+
+Please be noted that the image data channel supports uploading files in JPG, JPEG, and PNG formats. However, after uploaded to MCS, all types of files will be saved in .PNG format.

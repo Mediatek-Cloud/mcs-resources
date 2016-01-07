@@ -50,7 +50,7 @@ Heartbeat 格式:
 ### 開關
 
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{0 or 1}
+deviceId,deviceKey,timestamp,dataChnId,{0 or 1}
 
 ```
 0 代表關，1 代表開。
@@ -63,34 +63,34 @@ switch01,, 1
 
 ### 分類
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{Key Value}
+deviceId,deviceKey,timestamp,dataChnId,{Key Value}
 ```
 Key value 的值將會對應至您所設定的 Key name。
 
 ### 整數
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{Integer}
+deviceId,deviceKey,timestamp,dataChnId,{Integer}
 ```
 
 ### 浮點數
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{Float}
+deviceId,deviceKey,timestamp,dataChnId,{Float}
 ```
 
 ### 十六進位數
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{Hex value}
+deviceId,deviceKey,timestamp,dataChnId,{Hex value}
 ```
 十六進位數的值為 A-F 以及 0-9。
 
 ### 字串
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{string}
+deviceId,deviceKey,timestamp,dataChnId,{string}
 ```
 
 ### GPS
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{latitude},{longitude},{altitude}
+deviceId,deviceKey,timestamp,dataChnId,{latitude},{longitude},{altitude}
 ```
 
 緯度範圍從 -90 至 90。 0 至 90 代表北緯，0 至 -90 代表南緯。
@@ -101,24 +101,28 @@ deviceId,deviceKey,timestamp,dataChannelId,{latitude},{longitude},{altitude}
 
 ### GPIO
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{0 ot 1}
+deviceId,deviceKey,timestamp,dataChnId,{0 ot 1}
 ```
 0 代表低，1 代表高。
 
 ### PWM
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{value},{period}
+deviceId,deviceKey,timestamp,dataChnId,{value},{period}
 
 ```
 
 ### 類比
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{value}
+deviceId,deviceKey,timestamp,dataChnId,{value}
 
 ```
 
 ### 遊戲控制器
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{up/down/right/left/A/B value|press(1) or release(0)}
+deviceId,deviceKey,timestamp,dataChnId,{up/down/right/left/A/B value|press(1) or release(0)}
 ```
 
+### 圖片
+```
+deviceId,deviceKey,timestamp,dataChnId,{image file base64 encoding string value}
+```
