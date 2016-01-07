@@ -335,7 +335,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChnId,timestamp,{image file base64 encoding tring value}
+dataChnId,timestamp,{image file base64 encoding string value}
 ```
 在上傳圖片檔案至 MCS 之前，您必須先將圖片檔案轉為 base64 編碼的字串。上傳此字串至圖片資料通道後，此圖片將會被儲存與顯示。
 
