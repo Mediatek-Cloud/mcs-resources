@@ -104,27 +104,27 @@ vim app.js
 ```
 
 6. Type **i** and Copy/paste the following code in the editor
-``` js
-var mcs = require('mcsjs');
-// regist your device to mcs.
+```
+  var mcs = require('mcsjs');
 
-var myApp = mcs.register({
-    deviceId: 'Input your deviceId',   // Input your deviceId.
-    deviceKey: 'Input your deviceKey', // Input your deviceKey.
-});
-
-var SerialPort = require("serialport").SerialPort;
-var serialPort = new SerialPort("/dev/ttyS0", {
-    baudrate: 57600
-});
-// communicate with Arduino chip (32U4).
-
-serialPort.on("open", function () {
-  // listen the mcs command.
-  myApp.on('Gamepad', function(data, time) { // Gamepad is your datachannel.
-    serialPort.write(data); // send message to Arduino chip.
+  // regist your device to mcs.
+  var myApp = mcs.register({
+  deviceId: 'Input your deviceId',   // Input your deviceId.
+     deviceKey: 'Input your deviceKey', // Input your deviceKey.
   });
-});
+
+  var SerialPort = require("serialport").SerialPort;
+  var serialPort = new SerialPort("/dev/ttyS0", {
+      baudrate: 57600
+  });
+
+  // communicate with Arduino chip (32U4).
+  serialPort.on("open", function () {
+      // listen the mcs command.
+      myApp.on('gamepad', function(data, time) { // gamepad is your datachannel.
+          serialPort.write(data); // send message to Arduino chip.
+      });
+  });
 ```
 
 Next, run the Node.js example program.

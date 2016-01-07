@@ -16,6 +16,7 @@
    * [7688 LED tutorial](tutorial/7688_led_tutorial.md)
    * [7688 analog tutorial](tutorial/7688_analog_tutorial.md)
    * [7688 gamepad tutorial](tutorial/7688_gamepad_tutorial.md)
+   * [7688 imagedisplay tutorial](tutorial/7688_imagedisplay_tutorial.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
