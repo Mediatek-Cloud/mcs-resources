@@ -100,11 +100,13 @@ Then you will see a test.jpg file in your root directory.
 Now we are ready to upload the Node.js example code to the 7688 development board.
 
 1. Create a file app.js using an editor, vi is used in this example:
+
 ```
 vim app.js
 ```
 
 2. Type **i** and Copy/paste the following code in the editor
+
 ```
 var mcs = require('mcsjs');
 var exec = require('child_process').exec;

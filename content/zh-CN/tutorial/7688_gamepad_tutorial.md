@@ -104,6 +104,7 @@ vim app.js
 ```
 
 6. Type **i** and Copy/paste the following code in the editor
+
 ```
   var mcs = require('mcsjs');
 
