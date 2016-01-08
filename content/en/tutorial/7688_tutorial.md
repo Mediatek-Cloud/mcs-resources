@@ -74,4 +74,4 @@ Choose the application you would like to start with:
 
 | [Simple Switch tutorial](../tutorial/7688_led_tutorial) | [Analog Controller tutorial](../tutorial/7688_analog_tutorial) |[Gamepad Controller tutorial](../tutorial/7688_gamepad_tutorial)|[Image Display tutorial](../tutorial/7688_imagedisplay_tutorial)|
 | -- | -- | -- |
-|[![](../images/Linkit_ONE/img_linkitone_25.png)](../tutorial/7688_led_tutorial)|[![](../images/Linkit_ONE/img_linkitone_26.png)](../tutorial/7688_analog_tutorial)|[![](../images/7688/img_7688_32.png)](../tutorial/7688_gamepad_tutorial)|![](../images/7688/img_7688_39.png)](../tutorial/7688_imagedisplay_tutorial)|
+|[![](../images/Linkit_ONE/img_linkitone_25.png)](../tutorial/7688_led_tutorial)|[![](../images/Linkit_ONE/img_linkitone_26.png)](../tutorial/7688_analog_tutorial)|[![](../images/7688/img_7688_32.png)](../tutorial/7688_gamepad_tutorial)|[![](../images/7688/img_7688_39.png)](../tutorial/7688_imagedisplay_tutorial)|
