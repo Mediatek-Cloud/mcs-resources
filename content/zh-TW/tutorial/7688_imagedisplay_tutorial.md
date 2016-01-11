@@ -141,6 +141,6 @@ You are now ready to execute the Node.js program. In the system console, type th
 # node app
 ```
 
-Go to MediaTek Cloud Sandbox and you will see the uploaded image in the image shown in the image display dat channel.
+Go to MediaTek Cloud Sandbox and you will see the uploaded image shown in the image display data channel.
 
 ![](../images/7688/img_7688_38.png)
