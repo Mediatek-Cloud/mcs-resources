@@ -344,3 +344,21 @@ dataChnId,timestamp,{image file base64 encoding string value}
 To upload an image to the image display data channel, you have to convert the image file to base64 encoding. Upload the base 64 encoding string to the data channel, then the image will saved and shown.
 
 Please be noted that the image data channel supports uploading files in JPG, JPEG, and PNG formats. However, after uploaded to MCS, all types of files will be saved in .PNG format.
+
+
+## Video Stream
+
+Unlike the other data channels of which the data points can be uploaded by either JSON or CSV format, you have to set up a video converter on your device before you can start streaming on MCS. 
+
+Here are the video specifications the MCS currently supports:
+ 
+* Video format: MPEG1
+* Maximum resolution supported: 320x240
+* Maximum fps supported: 30
+* URL of MCS video relay server: 
+
+	```
+	http://52.76.74.57:8082/:deviceId/:deviceKey/:dataChnId/:width/:height
+	```
+
+* Recommended video converter on LinkIt Smart 7688: FFmpeg
