@@ -72,6 +72,6 @@ Click [here](https://mcs.mediatek.com/oauth/en/login) to sign in.
 
 Choose the application you would like to start with:
 
-| [Simple Switch tutorial](../tutorial/7688_led_tutorial) | [Analog Controller tutorial](../tutorial/7688_analog_tutorial) |[Gamepad Controller tutorial](../tutorial/7688_gamepad_tutorial)|[Image Display tutorial](../tutorial/7688_imagedisplay_tutorial)|
-| -- | -- | --|
-|[![](../images/Linkit_ONE/img_linkitone_25.png)](../tutorial/7688_led_tutorial)|[![](../images/Linkit_ONE/img_linkitone_26.png)](../tutorial/7688_analog_tutorial)|[![](../images/7688/img_7688_32.png)](../tutorial/7688_gamepad_tutorial)|[![](../images/7688/img_7688_39.png)](../tutorial/7688_imagedisplay_tutorial)|
+| [Simple Switch](../tutorial/7688_led_tutorial) | [Analog Controller ](../tutorial/7688_analog_tutorial) |[Gamepad Controller ](../tutorial/7688_gamepad_tutorial)|[Image Display ](../tutorial/7688_imagedisplay_tutorial)|[Video Stream ](../tutorial/7688_videostreaming_tutorial)|[FOTA ](../tutorial/7688_fota_tutorial)
+| -- | -- | -- |-- |-- |
+|[![](../images/Linkit_ONE/img_linkitone_25.png)](../tutorial/7688_led_tutorial)|[![](../images/Linkit_ONE/img_linkitone_26.png)](../tutorial/7688_analog_tutorial)|[![](../images/7688/img_7688_32.png)](../tutorial/7688_gamepad_tutorial)|[![](../images/7688/img_7688_39.png)](../tutorial/7688_imagedisplay_tutorial)|![](../images/7688/img_7688_40.png)](../tutorial/7688_videostream_tutorial)|![](../images/7688/img_7688_50.png)](../tutorial/7688_fota_tutorial)
