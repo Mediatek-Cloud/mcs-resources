@@ -68,12 +68,9 @@ This data channel type is for data generated in the sandbox and sent to the devi
 This data channel enables a Display and Controller data channel to be combined, where there is a logical relationship between the two. For example, as between the data from a temperature sensor and the control settings for an air conditioning unit.
 
 
-### Data Types
+### Data Channel Types
 
-
-
-
-Each Data Channel can hold one of seven types of data:
+MCS provides following data channels to control the devices or display the data points.
 
 - **ON/OFF** — this data type represents a switch and enables the user to activate or deactivate a component of the device, such as turning a light on or off.
 
@@ -93,13 +90,16 @@ Each Data Channel can hold one of seven types of data:
 
 - **PWM** — this data type represents a PWM signal delivered to a specific GPIO pin, such as level 15 on Pin 3.
 
-- **Analog** — this data type represents an integer within a range of two values defined by users. Analog slider allows user to finely tune the settings, such as music volume controls.
+- **Analog** — this data channel represents an integer within a range of two values defined by users. Analog slider allows user to finely tune the settings, such as music volume controls.
+
+- **Gamepad** — this data channel represents a direction contorller with four-way digital buttons. You can control your robot or remote contorl car easily with this data channel.
+
+- **Image** — this is a display type of data channels for images. The images will be stored in PNG format after uploaded.
+
+- **Video Stream** — this is a display type of data channels for video streaming application, such as a home surveillance camera.
 
 
 ### Notifications
-
-
-
 
 This function enables you to define criteria that trigger an email or cloud-based notification as well as define additional user’s the notification will be sent to — you as the prototype owner receive notifications by default.
 

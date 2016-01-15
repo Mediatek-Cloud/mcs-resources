@@ -34,6 +34,7 @@ Heartbeat format:
 After the TCP long connecion is built, the user can give command to the device via the MSC platform.
 
 The command Format:
+
 ```
     deviceId, deviceKey, timestamp, dataChnId, commandValue
 

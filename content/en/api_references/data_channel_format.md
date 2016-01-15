@@ -348,9 +348,9 @@ Please be noted that the image data channel supports uploading files in JPG, JPE
 
 ## Video Stream
 
-Unlike the other data channels of which the data points can be uploaded by either JSON or CSV format, you have to set up a video converter on your device before you can start streaming on MCS. 
+Unlike the other data channels of which the data points can be uploaded by either JSON or CSV format, you have to install a video converter on your device before you can start streaming on MCS. 
 
-Here are the video specifications the MCS currently supports:
+Here are the video specifications that MCS currently supports:
  
 * Video format: MPEG1
 * Maximum resolution supported: 320x240
