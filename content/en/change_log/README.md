@@ -1,5 +1,11 @@
 # MCS Change log Summary
 
+## January 18, 2016
+
+### v2.14
+
+[New video streaming, image, and gamepad data channels are available!](./2.14)
+
 ## December 8, 2015
 
 ### v2.13
