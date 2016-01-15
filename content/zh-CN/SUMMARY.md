@@ -17,6 +17,7 @@
    * [7688 analog tutorial](tutorial/7688_analog_tutorial.md)
    * [7688 gamepad tutorial](tutorial/7688_gamepad_tutorial.md)
    * [7688 imagedisplay tutorial](tutorial/7688_imagedisplay_tutorial.md)
+   * [7688 fota tutorial](tutorial/7688_fota_tutorial.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
@@ -46,4 +47,6 @@
    * [2.11](change_log/2.11.md)
    * [2.12](change_log/2.12.md)
    * [2.13](change_log/2.13.md)
+   * [2.14](change_log/2.14.md)
+
 
