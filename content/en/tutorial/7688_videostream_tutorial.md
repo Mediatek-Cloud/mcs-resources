@@ -105,9 +105,9 @@ Note 2: The deviceId is case sensitive.
 5. Test if FFmpeg can send streaming content to MCS successfully. 
 
 	```
-	ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://52.76.74.57:8082/:deviceId/:deviceKey/:dataChnId/176/144
+	ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/176/144
 	```
-	The deviceId, deviceKey and dataChnId need to be replaced with the real value you just obtained.
+	The deviceId, deviceKey and dataChnId need to be replaced with the real value you just obtained. You also need to specify the video resolution in the URL. In this example, the resolution is 176x144.
 	You can view on either MCS web console or App to make sure the video stream works. 
 	
 ## Developing a Node.js progream to connect with MCS
@@ -138,7 +138,7 @@ var myApp = mcs.register({
   deviceId: deviceId,
   deviceKey: deviceKey,
 });
-exec('ffmpeg -s ' + width + 'x' + height + ' -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://52.76.74.57:8082/' + deviceId + '/' +deviceKey + '/' + dataChnId + '/' + width + '/' + height, function(error, stdout, stderr) {
+exec('ffmpeg -s ' + width + 'x' + height + ' -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/' + deviceId + '/' +deviceKey + '/' + dataChnId + '/' + width + '/' + height, function(error, stdout, stderr) {
   console.log('stdout: ' + stdout);
   console.log('stderr: ' + stderr);
   if (error !== null) {
