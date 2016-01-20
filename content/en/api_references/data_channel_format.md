@@ -348,7 +348,7 @@ Please be noted that the image data channel supports uploading files in JPG, JPE
 
 ## Video Stream
 
-Unlike the other data channels of which the data points can be uploaded by either JSON or CSV format, you have to install a video converter on your device before you can start streaming on MCS. 
+Unlike the other data channels of which the data points can be uploaded in either JSON or CSV format, video stream data channel needs a video converter instlled on the device before you can start streaming on MCS. 
 
 Here are the video specifications that MCS currently supports:
  
@@ -358,7 +358,12 @@ Here are the video specifications that MCS currently supports:
 * URL of MCS video relay server: 
 
 	```
-	http://52.76.74.57:8082/:deviceId/:deviceKey/:dataChnId/:width/:height
+	http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/:width/:height
 	```
+	Please replace the deviceId, deviceKey, dataChnID, width and height with the real values. The width and height represent the display resolution of your video. 
 
 * Recommended video converter on LinkIt Smart 7688: FFmpeg
+
+	```
+	ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/176/144
+	```
