@@ -1,13 +1,11 @@
 # LinkIt Smart 7688 Tutorial
 
-In this guide you’ll learn the steps to create some application to control the LinkIt Smart 7688 from the web console of MCS using Node.js or python.
+In this guide you’ll learn the steps to create some applications to control the LinkIt Smart 7688 from the web console of MCS using Node.js or python.
 
-1. a simple remote switch that allows you to turn on and off the on-board Wi-Fi LED.
-2. a somple remote analog controller allows you to control the brightness of the LED.
 
 # Set up your development environment
 
-Full details on setting up the necessary LinkIt Smart 7688 development environment can be found in Get Started. Complete this before you continue, if you haven’t already set up your development environment.
+Full details on setting up the necessary LinkIt Smart 7688 development environment can be found in [Get Started](http://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/whatis_7688/index.gsp). Complete this before you continue, if you haven’t already set up your development environment.
 
 
 ## Set up MCS account
