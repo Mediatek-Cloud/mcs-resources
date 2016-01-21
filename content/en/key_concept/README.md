@@ -68,7 +68,7 @@ This data channel type is for data generated in the sandbox and sent to the devi
 This data channel enables a Display and Controller data channel to be combined, where there is a logical relationship between the two. For example, as between the data from a temperature sensor and the control settings for an air conditioning unit.
 
 
-### Data Channel Types
+### Data Types
 
 MCS provides following data channels to control the devices or display the data points.
 
