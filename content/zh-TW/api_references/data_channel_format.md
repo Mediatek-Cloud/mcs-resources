@@ -352,14 +352,14 @@ dataChnId,timestamp,{image file base64 encoding string value}
 * 最大畫面更新率：30 fps
 * MCS 影像串流服務器：
 
-	```
-	http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/:width/:height
-	```
-	請將其中的 deviceId, deviceKey, dataChnId, width 和 height 更換成您設備上實際的數據。其中 width 與 height 是上傳影像串流時所設定的解析度大小。
+```
+http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/:width/:height
+```
+請將其中的 deviceId, deviceKey, dataChnId, width 和 height 更換成您設備上實際的數據。其中 width 與 height 是上傳影像串流時所設定的解析度大小。
 	
 * 在 LinkIt Smart 7688 上建議的視頻轉換器套件：FFmpeg
 
-	```
-	ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/176/144
-	```
+```
+ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/176/144
+```
 
