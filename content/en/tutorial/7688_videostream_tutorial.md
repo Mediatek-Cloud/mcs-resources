@@ -99,7 +99,6 @@ Note 2: The deviceId is case sensitive.
 	```
 	mkdir app && cd app npm init
 	npm install mcsjs
-	npm install bluebird
 	```
 
 5. Test if FFmpeg can send streaming content to MCS successfully. 
@@ -127,8 +126,6 @@ You are now ready to write the Node.js program on the 7688 development board.
 	```
 var mcs = require('mcsjs');
 var exec = require('child_process').exec;
-var Promise = require('bluebird');
-var fs = Promise.promisifyAll(require('fs'));
 var deviceId = 'Input your deviceId';
 var deviceKey = 'Input your deviceKey';
 var dataChnId = 'Input your `video stream` data channel Id';
