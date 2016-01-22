@@ -341,3 +341,25 @@ dataChnId,timestamp,{image file base64 encoding string value}
 
 請注意，目前圖片資料通道支援 JPG、JPEG、和 PNG三種圖片檔案格式。一旦上傳至 MCS 後，則都會被儲存為 PNG 檔案格式。
 
+## 影像串流
+
+有別於其他資料通道，可以透過上傳 CSV 或是 JSON 格式的資料更新資料點，您在使用影像串流前必須先在設備上安裝視頻轉換器套件。
+
+以下是目前 MCS 所支援的影像串流規格
+
+* 影像格式：MPEG1
+* 最大解析度：320x240
+* 最大畫面更新率：30 fps
+* MCS 影像串流服務器：
+
+```
+http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/:width/:height
+```
+請將其中的 deviceId, deviceKey, dataChnId, width 和 height 更換成您設備上實際的數據。其中 width 與 height 是上傳影像串流時所設定的解析度大小。
+	
+* 在 LinkIt Smart 7688 上建議的視頻轉換器套件：FFmpeg
+
+```
+ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/176/144
+```
+

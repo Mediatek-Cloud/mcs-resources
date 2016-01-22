@@ -342,3 +342,25 @@ dataChnId,timestamp,{image file base64 encoding string value}
 在上传图片档案至 MCS 之前,您必须先将图片档案转为 base64 编码的字串。上传此字串至图片资料通道后,此图片将会被储存与显示。
 
 请注意,目前图片资料通道支援 JPG、JPEG、和 PNG 三种图片档案格式。一旦上传至 MCS  后,则都会被储存为 PNG 档案格式。
+
+## 视频流
+
+有别于其他资料通道，可以透过上传 CSV 或是 JSON 格式的资料更新资料点，您在使用影像串流前必须先在设备上安装视频转换器套件。
+
+以下是目前 MCS 所支援的视频流规格
+
+* 视频格式：MPEG1
+* 最大解析度：320x240
+* 最大画面更新率：30 fps
+* MCS 视频流服务器：
+
+```
+http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/:width/:height
+```
+请将其中的 deviceId, deviceKey, dataChnId, width 和 height 更换成您设备上实际的数据。其中 width 与 height 是上载视频流时所设定的解析度大小。
+	
+* 在 LinkIt Smart 7688 上建议的视频转换器套件：FFmpeg
+
+```
+ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/176/144
+```
