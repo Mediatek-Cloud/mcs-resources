@@ -10,7 +10,7 @@ In this tutorial, we will first go through the following steps:
 
 ## How to generate a .hex file in the Arduino IDE
 
-We will need to prepare two firmware files for this tutorial, one is for the LED to blink once evey second, and the other one is to blink every 100 miniseconds. You can also use the example on the Arduino IDE by click on File -> Example to select the code you would like to try.
+We will need to prepare two firmware files for this tutorial, one is for the LED to blink once evey second, and the other one is to blink every 100 miliseconds. You can also use the example on the Arduino IDE by click on File -> Example to select the code you would like to try.
 
 ### Prepare the arduino code for the firmware
 1. Open the Arduino IDE and start coding.
@@ -28,7 +28,7 @@ Here is the two firmware files we will use in this tutorial.
 
 [Blink every second](http://cdn.mediatek.com/1s.hex)
 
-[Blink every 100 minisecond](http://cdn.mediatek.com/100ms.hex)
+[Blink every 100 milisecond](http://cdn.mediatek.com/100ms.hex)
 
 
 ## Prepare the LinkIt Smart 7688 development board
@@ -49,7 +49,7 @@ npm install superagent
 vim app.js
 ```
 
-6. Type **i** and Copy/paste the following code in the editor
+6. Type **i** and copy/paste the following code in the editor
 
 ```
 var mcs = require('mcsjs');
