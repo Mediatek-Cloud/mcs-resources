@@ -17,6 +17,7 @@
    * [7688 analog tutorial](tutorial/7688_analog_tutorial.md)
    * [7688 gamepad tutorial](tutorial/7688_gamepad_tutorial.md)
    * [7688 imagedisplay tutorial](tutorial/7688_imagedisplay_tutorial.md)
+   * [7688 videostream tutorial](tutorial/7688_videostream_tutorial.md)
    * [7688 fota tutorial](tutorial/7688_fota_tutorial.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
