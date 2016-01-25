@@ -63,7 +63,32 @@ Step 8. Click Save button. And now your data channel is created. You will find t
 
 For more Data Channel and Data Type information and concept, please refer to the Key concept section for more detail.
 
+## How to create a prototype by importing a json file
 
+In addition to ceate a prototype by your own, you can also choose to import an existing prototype that shared by other users. You can also export your prototype for other user as well.
+
+### How to export existing prototype
+
+Here is the step by step guide to export he existing prototype:
+
+Step 1. Go to the Prototype Detail Page you would like to export.
+
+Step 2. Click More button and select **Export**.
+
+Step 3. Save the prototype json file.
+
+
+### How to create prototype by importing json file
+
+Here is the step by step guide to import a prototype:
+
+Step 1. Go to the Prototype list Page.
+
+Step 2. Click **Create** prototype button.
+
+Step 3. Select create prototype by importing json file.
+
+Step 4. Paste the json code or upload the json file.
 
 
 # Create your first test device
