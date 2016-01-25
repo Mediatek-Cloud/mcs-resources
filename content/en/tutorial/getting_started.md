@@ -67,7 +67,7 @@ For more Data Channel and Data Type information and concept, please refer to the
 
 In addition to ceate a prototype by your own, you can also choose to import an existing prototype that shared by other users. You can also export your prototype for other user as well.
 
-### How to export existing prototype
+### How to export the existing prototype
 
 Here is the step by step guide to export he existing prototype:
 
