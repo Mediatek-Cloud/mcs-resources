@@ -83,13 +83,11 @@ Note 2: The deviceId is case sensitive.
 1. Make sure your 7688 development board is connected to your computer.
 2. Connect to the console of 7688 development borad through `ssh` command. 
 
-
 ```
 ssh root@mylinkit.local
 ```
 	 
 3. Install FFmpeg package on the 7688 development board.
-
 
 ```
 opkg update
@@ -98,14 +96,12 @@ opkg install ffmpeg
 	
 4. Install necessary Node.js package on the 7688 development board.
  
-
 ```
 mkdir app && cd app npm init
 npm install mcsjs
 ```
 
 5. Test if FFmpeg can send streaming content to MCS successfully. 
-
 
 ```
 ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/176/144
@@ -121,13 +117,11 @@ You are now ready to write the Node.js program on the 7688 development board.
 
 1. Create a file called app.js using an editor, vi is used in this example:
 
-
 ```
-vim app.jp
+vim app.js
 ```
 
 2. Type **i** and copy/paste the following code in the editor. Please remember to replace the deviceId, deviceKey and dataChnId to the real values. 
-
 
 ```
 var mcs = require('mcsjs');
@@ -153,7 +147,6 @@ exec('ffmpeg -s ' + width + 'x' + height + ' -f video4linux2 -r 30 -i /dev/video
 ### Run your program
 
 Let's execute the Node.js program. In the 7688 system console, type the following command
-
 
 ```
 node app
