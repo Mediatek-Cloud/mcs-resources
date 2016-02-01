@@ -1,33 +1,34 @@
-# **MediaTek Cloud Sandbox introduction**
+# MediaTek Cloud Sandbox introduction
 
-MediaTek Cloud Sandbox(MCS) offers you the data and device management services commonly needed during the development and pre-commercial testing of Wearables and IoT devices. It frees you from having to develop your own cloud infrastructure to support prototype development.
+MediaTek Cloud Sandbox (MCS) provides free cloud-based data and device management services used in the development and pre-commercial testing of Wearable and IoT devices. It frees you from having to develop your own cloud infrastructure to support such prototype development.
 
-Using a RESTful API you collect data from your devices, which you can view in a powerful web-based dashboard that offers a range of display and graphing options. Then you can control your Wearables and IoT devices by issuing commands from the dashboard. In addition, a complementary smartphone app lets you review collected data and control your devices from anywhere.
+Use RESTful APIs to collect data from the devices and view the data on a powerful web-based dashboard that offers a range of display and graphing options as well as the ability to issue commands to control your Wearable and IoT devices. In addition, a complementary smartphone app lets you review collected data and control your devices anytime and anywhere.
 
 ![](images/Introduction/img_introduction_01.png)
 
-MediaTek Cloud Sandbox lets you:
+With MediaTek Cloud Sandbox you can:
 
 - Define Wearables and IoT prototype profiles and individual devices within a profile
-- Push and Pull data points between a device and the sandbox, using data types such as geo-location, temperature, humidity and more
+- Push and Pull data points between a device and the MCS such as geo-location, temperature, humidity and more
 - Remotely control your devices using state data points, such as switch-state and more
 - Visualize data points graphically
-- Receive email or Mobile Push notifications when data points are collected or change
-- Manage the life cycle of devices, as you would in your live implementation
-- Manage and control remotely, using the complementary mobile app
-- Create reports about prototypes, devices and collected data
-- Perform FOTA firmware updates
+- Receive email or Mobile Push notifications when data points are collected or changed
+- Manage device’s life cycle, in the same manner as in a live implementation
+- Manage and control devices remotely, using the complementary mobile app
+- Create reports about the prototypes, devices and collected data
+- Perform FOTA (Firmware Over the Air) updates
 - Control access to data and devices with granular security control
 
-To support the use of these features, MediaTek Cloud Sandbox provides an API sandbox, API reference, FAQ and set of tutorials to ensure you can quickly get up to speed with the use of its features and facilities.
-
+As part of MCS member support, MediaTek Cloud Sandbox provides an API sandbox, an API reference, FAQ and a set of tutorials to help you get up to speed using MCS features and facilities.
 
 ![](images/Introduction/img_introduction_02.jpg)
 
 
+## Prerequisites for Use
 
-## **Prerequisites for Use**
-To make use of MediaTek Cloud Sandbox you must:
-1. [Register as a member of MediaTek Labs] (http://labs.mediatek.com/dpRegister/create)
-2. [Sign-in to the MediaTek Cloud Sandbox] (http://mcs.mediatek.com/v2console)
-3. Obtain a Device ID (API key) for each device added, for use in RESTful API calls
+To make use of MediaTek Cloud Sandbox, you must:
+
+1. [Register as a member of MCS] (https://mcs.mediatek.com/oauth/en/signup) or [sign in with MediaTek Labs account] (https://mcs.mediatek.com/oauth/en/login).
+2. Verify and complete the registration process by clicking the sent to your email address. 
+3. Create your own prototypes, data channels and devices and start to manage your devices and data via MCS web console, mobile App or RESTful APIs. 
+
