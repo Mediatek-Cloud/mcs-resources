@@ -32,14 +32,17 @@ Command server 回覆格式:
 Heartbeat 格式:
 
 ```
-    deviceId, deviceKey, timestamp
+    deviceId,deviceKey,timestamp
 
 ```
+
+若您不希望在 heartbeat 中传送实际的 timestamp，您可以直接在 timestamp 栏位输入 0 为其值。
+
 当 TCP 长连结建立后，您将可以开始使用 MCS 平台来对您的装置下指令。
 
 指令的形式如下：
 ```
-    deviceId, deviceKey, timestamp, dataChnId, commandValue
+    deviceId,deviceKey,timestamp,dataChnId,commandValue
 
 ```
 

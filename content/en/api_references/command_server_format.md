@@ -28,15 +28,18 @@ Open a tcp connection to the given ip and port and send a heartbeat message.
 Heartbeat format:
 
 ```
-    deviceId, deviceKey, timestamp
+    deviceId,deviceKey,timestamp
 
 ```
+The timestamp is optional, if you do not want to send the timestamp, just put 0 in the timestamp field.
+
+
 After the TCP long connecion is built, the user can give command to the device via the MSC platform.
 
 The command Format:
 
 ```
-    deviceId, deviceKey, timestamp, dataChnId, commandValue
+    deviceId,deviceKey,timestamp,dataChnId,commandValue
 
 ```
 
