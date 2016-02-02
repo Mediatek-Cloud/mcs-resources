@@ -1,6 +1,6 @@
 # MCS Change log Summary
 
-## January 25, 2016
+## February 2, 2016
 
 ### v2.14
 
