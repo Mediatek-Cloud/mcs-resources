@@ -281,7 +281,7 @@ JSON 格式：
       {
          "dataChnId":"dataChnId",
          "values":{
-            "value":"{up/down/right/left/A/B value| press(1) or release(0)}"
+            "value":"{up/down/right/left/A/B value|press(1) or release(0)}"
          }
       }
    ]
@@ -356,7 +356,7 @@ dataChnId,timestamp,{image file base64 encoding string value}
 http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/:width/:height
 ```
 請將其中的 deviceId, deviceKey, dataChnId, width 和 height 更換成您設備上實際的數據。其中 width 與 height 是上傳影像串流時所設定的解析度大小。
-	
+
 * 在 LinkIt Smart 7688 上建議的視頻轉換器套件：FFmpeg
 
 ```
