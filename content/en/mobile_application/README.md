@@ -1,5 +1,6 @@
 # Mobile application
 
+This tutorial illustrates how to install the MCS mobile application to view and manage devices.
 
 Please use [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) or scan the QR code below to get our latest mobile application.
 
@@ -7,38 +8,31 @@ Please use [Google Play](https://play.google.com/store/apps/details?id=com.media
   <img src="https://goo.gl/cIzlpF" border="0">
 </a>
 
-**(Please be noted that due to system upgrade to enhance security, the old version of mobile app is not working anymore. Please download the latest version of the mobile app in the Google play store to continue using our MCS mobile app. Also, if you use LinkIt Connect 7681 device, please update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**)**
+**(Please note that due to enhanced security system upgrade, old version of the mobile app is not supported anymore. Please download the latest version from the Google play store. If you’re using a LinkIt Connect 7681 device, please also update the firmware using the latest version. Detailed update steps are described in **[7681 Firmware Update Instruction](../7681_firmware_update/)**)**
+
 
 ![](../images/Mobile_application/img_mobileapplication_00.png)
 
-Or, you can [download the apk](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-latest-production-release.apk) directly.
+Or, you can also [download the apk](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-latest-production-release.apk) directly.
 
-The mobile app currently offers for Android only.
+The MCS mobile app supports Android only at the time of writing.
 
-To install the app, you must have android v4.0 or above version, and open the above download link in your mobile browser
+To install the app, you must have android v4.0 or above. Open the above link in your mobile browser.
 
-
-Once installed at first launch you will see the screen below:
+After the app is installed and launched,  you’ll see the screen shown below:
 
 ![](../images/Mobile_application/img_mobileapplication_01.png)
 
-
-**Please note:**
-
-Do not use login using labs@mediatek.com option. This feature is still under developement. When you first sign-on with MCS using Labs@mediatek when accessing MCS website, in the background we have created your new account in MCS using the email address as your account ID. Therefore, the current fix is, you can go back to web site and  click "forgot password" and enter your email address, a forgot password reset email will send to your mailbox. You can then set a new password and come back and login by using your email and the new password. You can then be able to login to the Moble App in the same fashion.
-
-
-Once logged in, you will be able to see devices that are created and belongs to you
+After you’ve signed in, you’ll be able to see devices that are created and belongs to you.
 
 ![](../images/Mobile_application/img_mobileapplication_02.png)
 
-You can also click on any of your devices to see the device detail:
+You can also click on any of your devices to see the device details:
 
 ![](../images/Mobile_application/img_mobileapplication_03.png)
 
-For controller data channel you can fire commands, for data channel it shows the last data point. Mobile does not support for viewing history record in charts. For this current version, you will need to manually refresh the display by click on the upper right corner drop down menu and select "refresh"
+You can send commands to control your devices in controller data channels and see the latest data points in each data channel.  
 
-There is a Plus-in-circle icon allows you to add new devices. Please note, the new devices funcion is currently not available. For Smart Connection you can use this feature to add LinkIt Connect 7681. For full instruction please refer to [2.Tutorial 2.7 Implementing using Linkit Connect 7681 development board](http://mcs.mediatek.com/resources/latest/tutorial/implementing_using_mt7681_development_board)
+The **Plus-in-circle** icon allows you to add new devices. For Smart Connection you can use this feature to add LinkIt Connect 7681 devices. For detailed instruction please refer to [Tutorial: Develop with LinkIt Connect 7681 development board](http://mcs.mediatek.com/resources/latest/tutorial/implementing_using_mt7681_development_board)
 
 ![](../images/Mobile_application/img_mobileapplication_04.png)
-
