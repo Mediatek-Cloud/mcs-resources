@@ -286,7 +286,7 @@ JSON 格式：
       {
          "dataChnId":"dataChnId",
          "values":{
-            "value":"{up/down/right/left/A/B value| press(1) or release(0)}"
+            "value":"{up/down/right/left/A/B value|press(1) or release(0)}"
          }
       }
    ]
@@ -297,7 +297,7 @@ JSON 格式：
 CSV 格式：
 
 ```
-dataChnId,timestamp,{up/down/right/left/A/B value| press(1) or release(0)}
+dataChnId,timestamp,{up/down/right/left/A/B value|press(1) or release(0)}
 ```
 使用者可以决定是否同时给上下左右的值和AB键的值。
 
@@ -358,7 +358,7 @@ dataChnId,timestamp,{image file base64 encoding string value}
 http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/:width/:height
 ```
 请将其中的 deviceId, deviceKey, dataChnId, width 和 height 更换成您设备上实际的数据。其中 width 与 height 是上载视频流时所设定的解析度大小。
-	
+
 * 在 LinkIt Smart 7688 上建议的视频转换器套件：FFmpeg
 
 ```
