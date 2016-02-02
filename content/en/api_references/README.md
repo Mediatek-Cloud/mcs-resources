@@ -3,9 +3,9 @@
 MediaTek Cloud Sandbox (MCS) provides RESTful APIs for building applications and services that are able to make meaningful communications with MCS including data point uploads and retrievals as well as commands via TCP socket. MCS also provides eady-to-read visual charts based on the uploaded data, including time-series data for real time applications. 
 
 
-## Access Point
+## Request URL
 
-Standard MCS RESTful API access point has the following URL construct:
+Standard MCS RESTful API request has the following URL construct:
 
 ```
 https://api.mediatek.com/v2
