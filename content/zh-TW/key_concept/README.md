@@ -161,3 +161,53 @@ MCS 提供了以下多種資料通道，以供使用者操作遠端設備或顯�
 裝置建立後，使用者可以在**管理**頁面中管理這些依照產品原型分類的裝置。每個裝置都有獨特的激活碼，裝置需要先被激活，才可以正式被啟用。
 
 
+# Command Server
+
+將您的裝置與 command server 做連接，您即可以透過 MCS 頁面來控制您的裝置。若您不僅僅希望只將裝置接收的資料點上傳
+至 MCS，並且希望同時能透過 MCS 發出指令控制您的裝置，您必須將裝置與 MCS 的 command server 做連接。
+
+以下是將裝置與 command server 做連接的步驟：
+
+1. 建立裝置與 command server 之間的 TCP 長連結。
+3. 維持 heart beat 訊號。
+4. 透過 MCS 頁面對裝置下指令。
+
+
+## 建立 TCP 長連結
+
+設定裝置和 Command server 之間的 TCP 長連結，裝置首先需要呼叫 RESTful API `getConnection` 來取得一組 ip 位置以及連接阜來建立 TCP 長連結。MCS 將會回覆 ip 地址和連接阜資訊給裝置。
+
+
+使用 **HTTPs GET** 來設置裝置和 MCS Command server 之間的連線。
+
+```
+https://api.mediatek.com/mcs/v2/devices/:deviceId/connections
+
+```
+
+## 維持 heart beat 訊號
+
+當裝置收到覆 ip 地址和連接阜後，裝置會發出一個 heartbeat 給 command server 來驗證。裝置也會每 120 秒發送一次 heartbeat 給 command server 來確保連線。
+
+Heartbeat 格式:
+
+```
+    deviceId,deviceKey,timestamp
+
+```
+若您不希望在 heartbeat 中傳送實際的 timestamp，您可以直接在 timestamp 欄位輸入 0 為其值。
+
+
+## 透過 MCS 頁面對裝置下指令
+
+當 TCP 長連結建立後，您將可以開始使用 MCS 平台來對您的裝置下指令。
+
+指令將會使用以下隔世被傳送：
+
+```
+    deviceId,deviceKey,timestamp,dataChnId,commandValue
+
+```
+
+更多資訊, 請參考 [command server 格式](https://mcs.mediatek.com/resources/zh-TW/latest/api_references/#command-server-格式)。
+

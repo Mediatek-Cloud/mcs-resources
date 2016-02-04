@@ -32,7 +32,7 @@ Once get the server ip and port to connect, the device need to send a heartbeat 
 Heartbeat format:
 
 ```
-    deviceId, deviceKey, timestamp
+    deviceId,deviceKey,timestamp
 
 ```
 
@@ -41,7 +41,7 @@ After the TCP long connecion is built, the user can give command to the device v
 The command Format:
 ```
 {
-    deviceId, deviceKey, timestamp, dataChnId, commandValue
+    deviceId,deviceKey,timestamp,dataChnId,commandValue
 }
 
 ```

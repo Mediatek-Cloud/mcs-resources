@@ -152,3 +152,52 @@ MCS 提供了以下多种资料通道，以供使用者操作远程设备或显�
 装置建立后，使用者可以在**管理**页面中管理这些依照产品原型分类的装置。每个装置都有独特的激活码，装置需要先被激活，才可以正式被启用。
 
 
+# Command Server
+
+将您的装置与 command server 做连接，您即可以透过 MCS 页面来控制您的装置。若您不仅仅希望只将装置接收的资料点上传
+至 MCS，并且希望同时能透过 MCS 发出指令控制您的装置，您必须将装置与 MCS 的 command server 做连接。
+
+以下是将装置与 command server 做连接的步骤：
+
+1. 建立装置与 command server 之间的 TCP 长连结。
+3. 维持 heartbeat 讯号。
+4. 透过 MCS 页面对装置下指令。
+
+
+## 建立 TCP 长连结
+
+设定装置和 Command server 之间的 TCP 长连结，装置首先需要呼叫 RESTful API `getConnection` 来取得一组 ip 位置以及连接阜来建立 TCP 长连结。 MCS 将会回覆 ip 地址和连接阜资讯给装置。
+
+
+使用 **HTTPs GET** 来设置装置和 MCS Command server 之间的连线。
+
+```
+https://api.mediatek.com/mcs/v2/devices/:deviceId/connections
+
+```
+
+## 维持 heartbeat 讯号
+
+当装置收到覆 ip 地址和连接阜后，装置会发出一个 heartbeat 给 command server 来验证。装置也会每 120 秒发送一次 heartbeat 给 command server 来确保连线。
+
+Heartbeat 格式:
+
+```
+    deviceId,deviceKey,timestamp
+
+```
+若您不希望在 heartbeat 中传送实际的 timestamp，您可以直接在 timestamp 栏位输入 0 为其值。
+
+
+## 透过 MCS 页面对装置下指令
+
+当 TCP 长连结建立后，您将可以开始使用 MCS 平台来对您的装置下指令。
+
+指令将会使用以下隔世被传送：
+
+```
+    deviceId,deviceKey,timestamp,dataChnId,commandValue
+
+```
+
+更多资讯, 请参考 [command server 格式](https://mcs.mediatek.com/resources/zh-CN/latest/api_references/#command-server-格式)。
