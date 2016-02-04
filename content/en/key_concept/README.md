@@ -151,7 +151,7 @@ After devices are created, user can manage those devices in **Management** page,
 Command server is for you to give command to the device from MCS. If you wish not only to upload data to MCS but also need to control your device using the MCS console, you have to connect the device to the command server in order to give command to device through MCS.
 
 Here is the steps to connect your device to MCS:
-1. Build a TCP long connection tetween command server and device.
+1. Build a TCP long connection between command server and device.
 2. Maintaining heart beat.
 3. Give command through MCS console.
 
