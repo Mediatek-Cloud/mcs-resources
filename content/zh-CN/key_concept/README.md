@@ -178,7 +178,7 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/connections
 
 ## 维持 heartbeat 讯号
 
-当装置收到覆 ip 地址和连接阜后，装置会发出一个 heartbeat 给 command server 来验证。装置也会每 120 秒发送一次 heartbeat 给 command server 来确保连线。
+当装置收到 ip 地址和连接阜后，装置会发出一个 heartbeat 给 command server 来验证。装置也会每 120 秒发送一次 heartbeat 给 command server 来确保连线。
 
 Heartbeat 格式:
 
