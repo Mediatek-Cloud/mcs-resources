@@ -160,8 +160,8 @@ MCS 提供了以下多种资料通道，以供使用者操作远程设备或显�
 以下是将装置与 command server 做连接的步骤：
 
 1. 建立装置与 command server 之间的 TCP 长连结。
-3. 维持 heartbeat 讯号。
-4. 透过 MCS 页面对装置下指令。
+2. 维持 heartbeat 讯号。
+3. 透过 MCS 页面对装置下指令。
 
 
 ## 建立 TCP 长连结
@@ -178,12 +178,12 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/connections
 
 ## 维持 heartbeat 讯号
 
-当装置收到覆 ip 地址和连接阜后，装置会发出一个 heartbeat 给 command server 来验证。装置也会每 120 秒发送一次 heartbeat 给 command server 来确保连线。
+当装置收到 ip 地址和连接阜后，装置会发出一个 heartbeat 给 command server 来验证。装置也会每 120 秒发送一次 heartbeat 给 command server 来确保连线。
 
 Heartbeat 格式:
 
 ```
-    deviceId,deviceKey,timestamp
+deviceId,deviceKey,timestamp
 
 ```
 若您不希望在 heartbeat 中传送实际的 timestamp，您可以直接在 timestamp 栏位输入 0 为其值。
@@ -193,10 +193,10 @@ Heartbeat 格式:
 
 当 TCP 长连结建立后，您将可以开始使用 MCS 平台来对您的装置下指令。
 
-指令将会使用以下隔世被传送：
+指令将会使用以下格式被传送：
 
 ```
-    deviceId,deviceKey,timestamp,dataChnId,commandValue
+deviceId,deviceKey,timestamp,dataChnId,commandValue
 
 ```
 
