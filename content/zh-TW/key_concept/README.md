@@ -202,7 +202,7 @@ deviceId,deviceKey,timestamp
 
 當 TCP 長連結建立後，您將可以開始使用 MCS 平台來對您的裝置下指令。
 
-指令將會使用以下隔世被傳送：
+指令將會使用以下格式被傳送：
 
 ```
 deviceId,deviceKey,timestamp,dataChnId,commandValue
