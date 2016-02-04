@@ -4,7 +4,7 @@
 請使用 [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) 或是 QR code 來取得我們提供的手機應用程式:
 
 <a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud" target="_blank">
-  <img src="https://goo.gl/cIzlpF" border="0">
+  <img src="https://goo.gl/Rcus7Q" border="0">
 </a>
 
 **(請注意：為了增加效能和安全性，我們將系統全面升級。舊版本的手機應用程式將不再能使用，請於 Google play 商店下載最新版本的手機應用程式來連結您的手機與 MCS 平台。同時，若您有使用 LinkIt connect 7681 裝置，請更新至最新版本才可繼續使用，請參考以下更新連結[7681 Firmware Update Instruction](../7681_firmware_update/))**

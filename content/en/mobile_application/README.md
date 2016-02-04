@@ -4,7 +4,7 @@
 Please use [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) or scan the QR code below to get our latest mobile application.
 
 <a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud" target="_blank">
-  <img src="https://goo.gl/cIzlpF" border="0">
+  <img src="https://goo.gl/Rcus7Q" border="0">
 </a>
 
 **(Please be noted that due to system upgrade to enhance security, the old version of mobile app is not working anymore. Please download the latest version of the mobile app in the Google play store to continue using our MCS mobile app. Also, if you use LinkIt Connect 7681 device, please update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**)**
