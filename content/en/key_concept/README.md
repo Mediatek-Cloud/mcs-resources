@@ -183,7 +183,7 @@ The timestamp is optional, if you do not want to send the timestamp, just put 0 
 
 ## Give command through MCS console
 
-After the TCP long connecion is built, the user can give command to the device via the MSC console.
+After the TCP long connection is built, the user can give command to the device via the MSC console.
 
 The command format will be parse in the following format:
 
