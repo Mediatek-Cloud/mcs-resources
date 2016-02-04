@@ -358,12 +358,12 @@ Here are the video specifications that MCS currently supports:
 * URL of MCS video relay server:
 
 ```
-http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/:width/:height
+http://stream-mcs.mediatek.com/:deviceId/:deviceKey/:dataChnId/:width/:height
 ```
 Please replace the deviceId, deviceKey, dataChnID, width and height with the real values. The width and height represent the display resolution of your video.
 
 * Recommended video converter on LinkIt Smart 7688: FFmpeg
 
 ```
-ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/176/144
+ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/:deviceId/:deviceKey/:dataChnId/176/144
 ```
