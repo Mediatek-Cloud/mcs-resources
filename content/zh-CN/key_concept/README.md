@@ -193,7 +193,7 @@ deviceId,deviceKey,timestamp
 
 当 TCP 长连结建立后，您将可以开始使用 MCS 平台来对您的装置下指令。
 
-指令将会使用以下隔世被传送：
+指令将会使用以下格式被传送：
 
 ```
 deviceId,deviceKey,timestamp,dataChnId,commandValue
