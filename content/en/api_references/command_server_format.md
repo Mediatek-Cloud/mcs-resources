@@ -5,10 +5,6 @@ The command server format of each data type is defined here. It is the format th
 
 The device will get the data as the following format from the command server, and the user can write a parser in the device to parse the data needed.
 
-Here is an example of how to parse and extract the datachannelId, value, and period of a PWM.
-
-https://gist.github.com/MTK-mcs/e8ee0ad19d5f5755b232
-
 
 ## Prerequsite
 Before the device can get the command from command server, you need to first connect the device to MCS.
