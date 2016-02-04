@@ -152,8 +152,8 @@ Command server is for you to give command to the device from MCS. If you wish no
 
 Here is the steps to connect your device to MCS:
 1. Build a TCP long connection tetween command server and device.
-3. Maintaining heart beat.
-4. Give command through MCS console.
+2. Maintaining heart beat.
+3. Give command through MCS console.
 
 
 ## Build a TCP long connection
@@ -174,7 +174,7 @@ Once get the server ip and port to connect, the device need to send a heartbeat 
 Heartbeat format:
 
 ```
-    deviceId,deviceKey,timestamp
+deviceId,deviceKey,timestamp
 
 ```
 The timestamp is optional, if you do not want to send the timestamp, just put 0 in the timestamp field.
@@ -188,7 +188,7 @@ After the TCP long connecion is built, the user can give command to the device v
 The command format will be parse in the following format:
 
 ```
-    deviceId,deviceKey,timestamp,dataChnId,commandValue
+deviceId,deviceKey,timestamp,dataChnId,commandValue
 
 ```
 
