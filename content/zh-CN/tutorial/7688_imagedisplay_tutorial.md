@@ -126,7 +126,7 @@ child = exec('fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --
     }
     fs.readFileAsync('/tmp/test.jpg')
     .then(function(data) {
-        myApp.emit('album01','', new Buffer(data).toString('base64'));
+        myApp.emit('Image','', new Buffer(data).toString('base64'));
     });
 });
 ```
