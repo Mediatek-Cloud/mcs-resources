@@ -94,8 +94,8 @@ opkg install ffmpeg
 
 4. Install necessary Node.js package on the 7688 development board.
 ```
-mkdir app && cd app npm init
-npm install mcsjs
+mkdir app && cd app && npm init
+npm install mcsjs --save
 ```
 
 5. Test if FFmpeg can send streaming content to MCS successfully.
