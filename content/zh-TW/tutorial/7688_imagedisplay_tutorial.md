@@ -88,7 +88,13 @@ opkg update
 opkg install fswebcam
 ```
 
-4. Try to capture a screenshot.
+4. Install the `mcsjs` and `bluebird` package.
+```
+npm install mcsjs
+npm install bluebird --save
+```
+
+5. Try to capture a screenshot.
 ```
 fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --save /tmp/test.jpg
 ```
