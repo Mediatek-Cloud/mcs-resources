@@ -99,7 +99,6 @@ npm install mcsjs
 ```
 
 5. Test if FFmpeg can send streaming content to MCS successfully.
-
 ```
 ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/:deviceId/:deviceKey/:dataChnId/176/144
 ```
