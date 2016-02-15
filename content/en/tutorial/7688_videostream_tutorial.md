@@ -80,7 +80,7 @@ Note 2: The deviceId is case sensitive.
 
 ## Set up the device
 
-1. Make sure the 7688 development board has been switched to Station mode and connect to the same network as your computer successfully.
+1. Make sure the 7688 development board has been switched to station mode and connect to the same network as your computer successfully.
 2. Connect to the console of 7688 development borad through `ssh` command on your computer.
 
 	```
