@@ -80,33 +80,33 @@ Note 2: The deviceId is case sensitive.
 
 ## Set up the device
 
-1. Make sure your 7688 development board is connected to your computer.
-2. Connect to the console of 7688 development borad through `ssh` command.
+1. Make sure the 7688 development board has been switched to Station mode and connect to the same network as your computer successfully.
+2. Connect to the console of 7688 development borad through `ssh` command on your computer.
 
-```
-ssh root@mylinkit.local
-```
+	```
+	ssh root@mylinkit.local
+	```
 
 3. Install FFmpeg package on the 7688 development board.
 
-```
-opkg update
-opkg install ffmpeg
-```
+	```
+	opkg update
+	opkg install ffmpeg
+	```
 
 4. Install necessary Node.js package on the 7688 development board.
 
-```
-mkdir app && cd app npm init
-npm install mcsjs
-```
+	```
+	mkdir app && cd app npm init
+	npm install mcsjs
+	```
 
 5. Test if FFmpeg can send streaming content to MCS successfully.
 
-```
-ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/:deviceId/:deviceKey/:dataChnId/176/144
-```
-The deviceId, deviceKey and dataChnId need to be replaced with the real value you just obtained. You also need to specify the video resolution in the URL. In this example, the resolution is 176x144.
+	```
+	ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/:deviceId/:deviceKey/:dataChnId/176/144
+	```
+The :deviceId, :deviceKey and :dataChnId need to be replaced with the real value you just obtained. You also need to specify the video resolution in the URL. In this example, the resolution is 176x144.
 You can view on either MCS web console or App to make sure the video stream works.
 
 ## Developing a Node.js progream to connect with MCS
@@ -117,13 +117,13 @@ You are now ready to write the Node.js program on the 7688 development board.
 
 1. Create a file called app.js using an editor, vi is used in this example:
 
-```
-vim app.js
-```
+	```
+	vim app.js
+	```
 
 2. Type **i** and copy/paste the following code in the editor. Please remember to replace the deviceId, deviceKey and dataChnId to the real values.
 
-```
+	```
 var mcs = require('mcsjs');
 var exec = require('child_process').exec;
 var deviceId = 'Input your deviceId';
@@ -142,7 +142,7 @@ exec('ffmpeg -s ' + width + 'x' + height + ' -f video4linux2 -r 30 -i /dev/video
     console.log('exec error: ' + error);
   }
 });
-```
+	```
 
 ### Run your program
 
