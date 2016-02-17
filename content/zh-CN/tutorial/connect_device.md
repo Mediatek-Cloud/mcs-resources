@@ -19,14 +19,14 @@ Command server 会回覆您以下资料:
 Heartbeat 形式如下:
 
 ```
-    deviceId, deviceKey, timestamp
+    deviceId,deviceKey,timestamp
 
 ```
 当 TCP 长连结建立后，您将可以开始使用 MCS 平台来对您的装置下指令。
 
 指令的形式如下：
 ```
-    deviceId, deviceKey, timestamp, dataChnId, commandValue
+    deviceId,deviceKey,timestamp,dataChnId,commandValue
 
 ```
 

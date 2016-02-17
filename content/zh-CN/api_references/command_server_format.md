@@ -6,9 +6,6 @@
 
 装置会从 command server 接收到以下格式的指令，并且使用者可以自行写一段解析程式来处理收到的指令。
 
-以下为一段范例解析程式用来撷取一个 PWM 资料型态指令中的资料通道 ID，资料值，以及频率。
-
-https://gist.github.com/MTK-mcs/e8ee0ad19d5f5755b232
 
 
 ## 事前准备
@@ -32,14 +29,17 @@ Command server 回覆格式:
 Heartbeat 格式:
 
 ```
-    deviceId, deviceKey, timestamp
+    deviceId,deviceKey,timestamp
 
 ```
+
+若您不希望在 heartbeat 中传送实际的 timestamp，您可以直接在 timestamp 栏位输入 0 为其值。
+
 当 TCP 长连结建立后，您将可以开始使用 MCS 平台来对您的装置下指令。
 
 指令的形式如下：
 ```
-    deviceId, deviceKey, timestamp, dataChnId, commandValue
+    deviceId,deviceKey,timestamp,dataChnId,commandValue
 
 ```
 

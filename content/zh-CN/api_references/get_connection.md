@@ -33,7 +33,7 @@ Command server 回覆格式:
 Heartbeat 格式:
 
 ```
-    deviceId, deviceKey, timestamp
+    deviceId, deviceKey,timestamp
 
 ```
 
@@ -42,7 +42,7 @@ Heartbeat 格式:
 指令格式:
 ```
 {
-    deviceId, deviceKey, timestamp, dataChnId, commandValue
+    deviceId,deviceKey,timestamp,dataChnId,commandValue
 }
 
 ```

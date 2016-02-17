@@ -88,10 +88,17 @@ opkg update
 opkg install fswebcam
 ```
 
-4. Try to capture a screenshot.
+4. Install the `mcsjs` and `bluebird` package.
+```
+npm install mcsjs
+npm install bluebird --save
+```
+
+5. Try to capture a screenshot.
 ```
 fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --save /tmp/test.jpg
 ```
+
 
 Then you will see a test.jpg file in your root directory.
 
@@ -126,7 +133,7 @@ child = exec('fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --
     }
     fs.readFileAsync('/tmp/test.jpg')
     .then(function(data) {
-        myApp.emit('album01','', new Buffer(data).toString('base64'));
+        myApp.emit('Image','', new Buffer(data).toString('base64'));
     });
 });
 ```

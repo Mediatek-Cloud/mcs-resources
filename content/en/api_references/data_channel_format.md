@@ -284,7 +284,7 @@ For json:
       {
          "dataChnId":"dataChnId",
          "values":{
-            "value":"{up/down/right/left/A/B value| press(1) or release(0)}"
+            "value":"{up/down/right/left/A/B value|press(1) or release(0)}"
          }
       }
    ]
@@ -295,7 +295,7 @@ For json:
 For csv:
 
 ```
-dataChnId,timestamp,{up/down/right/left/A/B value| press(1) or release(0)}
+dataChnId,timestamp,{up/down/right/left/A/B value|press(1) or release(0)}
 ```
 
 User can decide to only have the up/down/right/left value only or to have the A/B value together at the same time.
@@ -348,22 +348,22 @@ Please be noted that the image data channel supports uploading files in JPG, JPE
 
 ## Video Stream
 
-Unlike the other data channels of which the data points can be uploaded in either JSON or CSV format, video stream data channel needs a video converter instlled on the device before you can start streaming on MCS. 
+Unlike the other data channels of which the data points can be uploaded in either JSON or CSV format, video stream data channel needs a video converter instlled on the device before you can start streaming on MCS.
 
 Here are the video specifications that MCS currently supports:
- 
+
 * Video format: MPEG1
 * Maximum resolution supported: 320x240
 * Maximum fps supported: 30
-* URL of MCS video relay server: 
+* URL of MCS video relay server:
 
 ```
-http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/:width/:height
+http://stream-mcs.mediatek.com/:deviceId/:deviceKey/:dataChnId/:width/:height
 ```
-Please replace the deviceId, deviceKey, dataChnID, width and height with the real values. The width and height represent the display resolution of your video. 
+Please replace the deviceId, deviceKey, dataChnID, width and height with the real values. The width and height represent the display resolution of your video.
 
 * Recommended video converter on LinkIt Smart 7688: FFmpeg
 
 ```
-ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/176/144
+ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/:deviceId/:deviceKey/:dataChnId/176/144
 ```

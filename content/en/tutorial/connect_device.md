@@ -1,9 +1,11 @@
 # Connect device
 
+This tutorial demonstrates how to connect device to receive command from MCS.
 
-To connect the device:
 
-Call the RESTful API: GET https://api.mediatek.com/mcs/v2/devices/{deviceId}/connections to obtain the response value for Socket Server IP and Port.
+### Step 1. Call the RESTful API:
+
+GET https://api.mediatek.com/mcs/v2/devices/{deviceId}/connections to obtain the response value for Socket Server IP and Port.
 Command server respond format:
 
 ```
@@ -13,20 +15,23 @@ Command server respond format:
 }
 
 ```
-Open a tcp connection to the given ip and port and send a heartbeat message.
+### Step 2. Open a TCP connection using the given IP and port and send a heartbeat message.
+
 
 Heartbeat format:
 
 ```
-    deviceId, deviceKey, timestamp
+    deviceId,deviceKey,timestamp
 
 ```
-After the TCP long connecion is built, the user can give command to the device via the MSC platform.
+After the TCP long connection is established, you can give command to the device through the MSC platform.
 
 The command Format:
 ```
-    deviceId, deviceKey, timestamp, dataChnId, commandValue
+    deviceId,deviceKey,timestamp,dataChnId,commandValue
 
 ```
 
-You can refer to the command server format in the API reference page to find more detail for the formats for each kind of data channel types.
+You've connected the device.
+
+Please refer to the command server format in the API reference page for more details on the formats of data channel types.

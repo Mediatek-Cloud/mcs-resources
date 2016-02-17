@@ -1,14 +1,14 @@
-# Video Stream Tutorial 
+# Video Stream Tutorial
 
-Here is a simple example for live streaming on MCS! 
+Here is a simple example for live streaming on MCS!
 
 We will guide you how to create a video stream data channel on MCS web console and set up a video converter on LinkIt Smart 7688 to transcode and start streaming.
 
 ## Create a new prototype for LinkIt Smart 7688
 
-### Step 1. Create a new prototype with video stream data channel 
+### Step 1. Create a new prototype with video stream data channel
 
-a. After login, select "Prototype" under "Development" at the navigation bar and click "Create" to create a new prototype. 
+a. After login, select "Prototype" under "Development" at the navigation bar and click "Create" to create a new prototype.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 
@@ -24,7 +24,7 @@ d. In the prototype Detail Page, select "Data Channel" TAB and click "Add" to cr
 
 ![](../images/7688/img_7688_05.png)
 
-We would like to add a **video stream** data channel which can display the live streaming grabbed by your LinkIt Smart 7688. 
+We would like to add a **video stream** data channel which can display the live streaming grabbed by your LinkIt Smart 7688.
 
 e. Select "Display" type of Data Channel and fill in the following information.
 
@@ -35,15 +35,15 @@ Please take note of the Data Channel ID which you just filled in, you will need 
 
 ### Step 2. Create Test Device
 
-a. Click "Create Test Device" in the upper-right corner of prototype detail page. 
+a. Click "Create Test Device" in the upper-right corner of prototype detail page.
 
 ![](../images/7688/img_7688_52.png)
 
-b. Fill in the name and description of the test device. 
+b. Fill in the name and description of the test device.
 
 ![](../images/7688/img_7688_53.png)
 
-c. After the test device is created, click "Go to detail" to visit the device detail page. 
+c. After the test device is created, click "Go to detail" to visit the device detail page.
 
 ![](../images/Linkit_ONE/img_linkitone_13.png)
 
@@ -59,7 +59,7 @@ Here is the summary of the neccessary information we have obtained in interactin
 | --- | --- | --- |
 | deviceId | Dsre1qRQ | Unique Identifier for this Test Device |
 | deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device |
-| dataChannelId | Image | Data Channel Id for image display data channel|
+| dataChannelId | Video | Data Channel Id for image display data channel|
 
 Note 1: The deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
 
@@ -77,38 +77,35 @@ Note 2: The deviceId is case sensitive.
 * Connect the micro-USB end of the charging cable to PWR port on the 7688 development board and the USB end to your computer.
 * Use USB OTG cable to connect your web camera to the USB HOST port on the 7688 development board.
 
-	
+
 ## Set up the device
 
-1. Make sure your 7688 development board is connected to your computer.
-2. Connect to the console of 7688 development borad through `ssh` command. 
+1. Make sure the 7688 development board has been switched to station mode and connect to the same network as your computer successfully.
+2. Connect to the console of 7688 development borad through `ssh` command on your computer.
+```
+ssh root@mylinkit.local
+```
 
-	```
-	 ssh root@mylinkit.local
-	```
-	 
 3. Install FFmpeg package on the 7688 development board.
+```
+opkg update
+opkg install ffmpeg
+```
 
-	```
-	opkg update
-	opkg install ffmpeg
-	```
-	
-4. Install necessary Node.js package on the 7688 development board. 
+4. Install necessary Node.js package on the 7688 development board.
+```
+mkdir app && cd app && npm init
+npm install mcsjs --save
+```
 
-	```
-	mkdir app && cd app npm init
-	npm install mcsjs
-	```
+5. Test if FFmpeg can send streaming content to MCS successfully.
+```
+ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/:deviceId/:deviceKey/:dataChnId/176/144
+```
 
-5. Test if FFmpeg can send streaming content to MCS successfully. 
+The :deviceId, :deviceKey and :dataChnId need to be replaced with the real value you just obtained. You also need to specify the video resolution in the URL. In this example, the resolution is 176x144.
+You can view on either MCS web console or App to make sure the video stream works.
 
-	```
-	ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/:deviceId/:deviceKey/:dataChnId/176/144
-	```
-	The deviceId, deviceKey and dataChnId need to be replaced with the real value you just obtained. You also need to specify the video resolution in the URL. In this example, the resolution is 176x144.
-	You can view on either MCS web console or App to make sure the video stream works. 
-	
 ## Developing a Node.js progream to connect with MCS
 
 ### Create your program
@@ -116,14 +113,12 @@ Note 2: The deviceId is case sensitive.
 You are now ready to write the Node.js program on the 7688 development board.
 
 1. Create a file called app.js using an editor, vi is used in this example:
+```
+vim app.js
+```
 
-	```
-	vim app.jp
-	```
-
-2. Type **i** and copy/paste the following code in the editor. Please remember to replace the deviceId, deviceKey and dataChnId to the real values. 
-
-	```
+2. Type **i** and copy/paste the following code in the editor. Please remember to replace the deviceId, deviceKey and dataChnId to the real values.
+```
 var mcs = require('mcsjs');
 var exec = require('child_process').exec;
 var deviceId = 'Input your deviceId';
@@ -135,23 +130,22 @@ var myApp = mcs.register({
   deviceId: deviceId,
   deviceKey: deviceKey,
 });
-exec('ffmpeg -s ' + width + 'x' + height + ' -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream.mcs.mediatek.com:80/' + deviceId + '/' +deviceKey + '/' + dataChnId + '/' + width + '/' + height, function(error, stdout, stderr) {
+exec('ffmpeg -s ' + width + 'x' + height + ' -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/' + deviceId + '/' +deviceKey + '/' + dataChnId + '/' + width + '/' + height, function(error, stdout, stderr) {
   console.log('stdout: ' + stdout);
   console.log('stderr: ' + stderr);
   if (error !== null) {
     console.log('exec error: ' + error);
   }
 });
-	```
+```
 
 ### Run your program
 
 Let's execute the Node.js program. In the 7688 system console, type the following command
-
 ```
 node app
 ```
 
-and go to MCS and will see the video streaming shown in the video stream data channel. 
+and go to MCS and will see the video streaming shown in the video stream data channel.
 
 ![](../images/7688/img_7688_55.png)

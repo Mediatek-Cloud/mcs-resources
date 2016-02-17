@@ -145,3 +145,52 @@ Once you beta-release your prototype, the prototype will be frozen, which means 
 
 A device is different from a test device. Test devices inherits the changes made to the prototype; A device doesn’t. You can only create a device after the prototype is beta-released and frozen. You can choose to create devices all at once or separately based on your needs.
 After the devices are created, user can manage them in the **Management** page, where devices are categorized by prototype. Each device will have a unique activation code and the device will only be available after it's been activated.
+
+
+# Command Server
+
+Command server is for you to give command to the device from MCS. If you wish not only to upload data to MCS but also need to control your device using the MCS console, you have to connect the device to the command server in order to give command to device through MCS.
+
+Here is the steps to connect your device to MCS:
+1. Build a TCP long connection between command server and device.
+2. Maintaining heart beat.
+3. Give command through MCS console.
+
+
+## Build a TCP long connection
+
+To set up TCP long connection between the device and the command server, the device will need to first send a REST API getConnection to request a set of ip and port to build a TCP connection. The MCS will respond with its IP address and a port to the device.
+
+Use **HTTPs GET** to  set up connections between device and command server.
+
+```
+https://api.mediatek.com/mcs/v2/devices/:deviceId/connections
+
+```
+
+## Maintaining heartbeat
+
+Once get the server ip and port to connect, the device need to send a heartbeat to the command server to be identified. The device also need to sent heartbeats to the server every 120 seconds to stay connected, or the server will disconnect the device.
+
+Heartbeat format:
+
+```
+deviceId,deviceKey,timestamp
+
+```
+The timestamp is optional, if you do not want to send the timestamp, just put 0 in the timestamp field.
+
+
+
+## Give command through MCS console
+
+After the TCP long connection is built, the user can give command to the device via the MSC console.
+
+The command format will be parse in the following format:
+
+```
+deviceId,deviceKey,timestamp,dataChnId,commandValue
+
+```
+
+For more detail, please refer to the [command server format](https://mcs.mediatek.com/resources/latest/api_references/#get-connection).

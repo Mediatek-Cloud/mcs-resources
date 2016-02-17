@@ -64,8 +64,6 @@ Step 8. Click Save button. And now your data channel is created. You will find t
 For more Data Channel and Data Type information and concept, please refer to the Key concept section for more detail.
 
 
-
-
 # Create your first test device
 
 After creating a prototype, the developer can create a test device to actually test and control the device. The developer can also visually view the simulated result for his prototype or to control the devices in the test device detail page.
