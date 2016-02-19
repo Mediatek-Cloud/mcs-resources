@@ -1,9 +1,13 @@
 # Develop with Linkit ONE
 
-Here is a simple guide to quickly setup your Linkit ONE development board (Aster 2502) to quickly connect to MediaTek Cloud Sandbox
+This guide provides instruction to help you setup your LinkIt ONE development board (Aster 2502) and connect it to MediaTek Cloud Sandbox.
 
 ## Scenario
-The scenario for this setup is to create a test device on MCS representiong your Linkit ONE board, and to upload Arduino code allowing this board to push data points representing the state of LED light at D13 to MCS using RESTful API, while MCS is able to remote control the state of this LED light using TCP Socket.
+
+The scenario for this tutorial is to create a test device on MCS representing your LinkIt ONE board, then upload an Arduino code to the board and push data points representing the brightness of a LED light  (D13 pin of the board) to MCS using a RESTful API. Lastly, use MCS to remote control the brightness of the LED light using a TCP Socket.
+
+**D13 is a pin name on LinkIt ONE development board.**
+
 
 
 ![](../images/Linkit_ONE/img_linkitone_01.png)
@@ -11,77 +15,77 @@ The scenario for this setup is to create a test device on MCS representiong your
 
 ## Setup requirement:
 
-To complete this test setup, you will need:
+To complete this tutorial, you'll need:
 
-1. Battery Pack to power up the micro-USB of the development board
-2. A Wifi access point made available to the development board
+1. A battery Pack to power up the development board through the onboard micro-USB connector
+2. A Wi-Fi access point to connect with the development board
 
 There is no additional electrical component required to connect to the development board.
 
 
-### Step 1. Create a new Prototype with Switch-Type data channel
+### Step 1. Create a new Prototype using the switch type data channel
 
-a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype.
+a. After signing in MSC, select **Prototype** under **Development** at the top navigation bar, click **Create** to create a new prototype.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 
-b. Fill in the detail information as per screen to give a basic profile of this prototype:
+b. Provide a basic profile for the prototype by filling in the detailed information.
 
 ![](../images/Linkit_ONE/img_linkitone_03.png)
 
-c. Click "Detail" for the prototype created
+c. Click **Detail** for the prototype created
 
 ![](../images/Linkit_ONE/img_linkitone_04.png)
 
-d. In the prototype Detail Page, select "Data Channel" TAB and click "Add" to create new Data Channel:
+d. In the **Detail** page under **Prototype**, select **Data Channel** tab and click **Add** to create a new Data Channel:
 
 ![](../images/Linkit_ONE/img_linkitone_05.png)
 
 
 
-We are going to create two Data Channel for this tutorial, one is a Display Data Channel to reflect the status of the LED light on the board; one is a Controller Data Channel that issues command to the board to switch the LED light:
+In this tutorial, you'll create two Data Channels. First one is a Display Data Channel to reflect the status of the LED light on the board; second one is a Controller Data Channel  to switch the LED light by issuing commands to the board:
 
-e. Select "Display" Data Channel and key in the following information
+e. Select **Display** Data Channel and enter in the following information:
 
 ![](../images/Linkit_ONE/img_linkitone_06.png)
 
 ![](../images/Linkit_ONE/img_linkitone_07.png)
 
-Please take note of the Data Channel Id, this is the unique identifier when calling API later in the tutorial.
+Please take note of the Data Channel ID, this is the unique identifier used for an API that’s called later in the tutorial.
 
-f. Repeat the same step in e, except select "Controller" Data Channel and key in the following information
+f. Repeat steps e to create the **Controller** Data Channel and enter in the following information:
 
 ![](../images/Linkit_ONE/img_linkitone_08.png)
 
 ![](../images/Linkit_ONE/img_linkitone_09.png)
 
-Please take note of the Data Channel Id, this is the unique identifier when calling API later in the tutorial.
+Please take note of the Data Channel ID, this is the unique identifier used for an API that’s called later in the tutorial.
 
-g. Once completed, you should be able to see two data channel created as below:
+g. After completing the above steps , you'll see two data channels created as shown below:
 
 ![](../images/Linkit_ONE/img_linkitone_10.png)
 
 ### Step 2. Create Test Device
 
-a. Click "Create Test Device" on the right upper corner of the page
+a. Click **Create Test Device** on the upper right
 
 ![](../images/Linkit_ONE/img_linkitone_11.png)
 
-b. Fill in the name and description of the test device:
+b. Enter the name and description of the test device:
 
 ![](../images/Linkit_ONE/img_linkitone_12.png)
 
-c. After Test device is created, click "Go to detail" to open the created device detail page:
+c. After Test device is created, click **Go to detail** to open the device detail page:
 
 ![](../images/Linkit_ONE/img_linkitone_13.png)
 
 
 ![](../images/Linkit_ONE/img_linkitone_14.png)
 
-Please take note of the deviceId and deviceKey for calling API later in the tutorial.
+Please take note of the deviceId and devicekey which will be used for an API call later in the tutorial.
 
-### Step 3. Obtain Device ID, Device Key, Data Channel ID
-Here is the summary of the neccessary information we have obtained in interacting with this test device:
+### Step 3. Obtain deviceId, deviceKey, Data Channel ID
+Summary information obtained from interacting with this test device is shown below:
 
 | Name | Value | Remark |
 | -- | -- | -- |
@@ -90,39 +94,39 @@ Here is the summary of the neccessary information we have obtained in interactin
 | dataChannelId | LED_ Display| Data Channel Id for LED status |
 | dataChannelId | LED_Control | Data Channel Id for LED control |
 
-Note 1: The deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
+Note 1: The deviceId and deviceKey shown may be different from yours, please use your obtained value instead.
 
-Note 2: The deviceId are case sensitive.
+Note 2: The deviceId is case sensitive.
 
 ### Step 4. Code the development board
 The program flow logics are as follows:
 
-a. Calls RESTful API:
+a. Call RESTful API:
 GET api.mediatek.com/mcs/v2/devices/{deviceId}/connections.csv
 To obtain the response value for Socket Server IP and Port
 
 b. Initiate TCP connection to the socket server
 
-c. Uploads D13 (LED) status to MCS by RESTful API once every 5 seconds:
+c. Upload D13 pin (LED) status to MCS once every 5 seconds using the RESTful API:
 POST api.mediatek.com/mcs/v2/devices/{deviceId}/datapoints.csv
 
-d. listens for switching commands issued by MCS via TCP connection
+d. Listen for switch commands issued through MCS via TCP connection
 
-e. refreshes heartbeat for TCP connection every 90 seconds
+e. Refreshe heartbeat for TCP connection every 90 seconds
 
-Sample Arduino C source code please click [here](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/source_code/linkit_sample_ino.ino)
+For the sample Arduino C source code please click  [here](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/source_code/linkit_sample_ino.ino)
 
 Please note:
-This source code requires HttpClient that can be download
+This source code requires HttpClient that can be download from
 [here](https://github.com/amcewen/HttpClient/releases)
 
-### Step 5. Turn on the board and see it in action!
+### Step 5. Switch the controller and see the LED in action
 
-After the code is loaded to the board and make sure Wireless Access Point is made available to the device, with the Serial output confirming it is live and connected:
+Please ensure that the code is loaded to the board and the Wi-Fi AP is online and connected to the board by checking the Serial output message confirmation:
 
 ![](../images/Linkit_ONE/img_linkitone_15.JPG)
 
-You can now goto the device page and be able to click the LED controller, as you click the LED to ON state, the LED on the development board will lid, and moments later the state of the LED data channel will indicate an ON state. As you click the LED to OFF state, the LED on the board will not lid, and moments later the state of the LED data channel will indicate an OFF state.
+You’re now ready to control the LED. Go to the device page and switch the controller by clicking the **ON** state, the LED on the development board will switch on, and a few seconds later, the display type LED data channel will indicate an ON state. Next, click the  **OFF** state, the LED will switch off, and the display type LED data channel state will indicate an OFF state.
 
 ![](../images/Linkit_ONE/img_linkitone_16.png)
 
@@ -130,7 +134,7 @@ You can now goto the device page and be able to click the LED controller, as you
 
 ![](../images/Linkit_ONE/img_linkitone_18.JPG)
 
-Congratulations! You have completed this tutorial!
+Congratulations! You have completed this tutorial.
 
 
 

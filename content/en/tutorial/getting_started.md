@@ -1,44 +1,44 @@
-# Getting started
+# Getting Started
 
-Here are the steps to connect MediaTek Cloud Sandbox to your development and prototype lifecycle:
+The steps to connect MediaTek Cloud Sandbox to your prototype for your IoT development are as follows:
 
-1. Develop Prototype
-2. Create Test Device
-3. Manage Test Device
+1. Develop the Prototype
+2. Create the Test Device
+3. Manage the Test Device
 4. Beta-release & Device Management
-5. Configure User Profile
+5. Configure the User Profile
 
 ![](../images/Getting_started/img_gettingstarted_01.png)
 
 
 
-# Create your first protptype
+# Create Your First Prototype
 
-The developer develop a prototype by first create a prototype in the Development console. A prototype may have several data channels which take different data points types.
+You can create a new prototype in the Development console page. A prototype may have several data channels that can take different data point types.
 
 ![](../images/Getting_started/img_gettingstarted_02.png)
 
-## How to create a prototype step by step
+## How To Create a Prototype Step by Step
 
 
-Step 1. Click Development on the top menu bar.
+Step 1. Click **Prototype** under **Development** on the top menu bar.
 
-Step 2. Click Create button to create a new prototype.
+Step 2. Click **Create** button to create a new prototype.
 
 
 ![](../images/Getting_started/img_gettingstarted_03.png)
 
 
 
-Step 3. Enter the Prototype name, version, and select chip type, industry and Click Save button. Your Prototype is created.
+Step 3. Enter the Prototype name, version, and select the chip type, industry and Click **Save**. Your Prototype is created.
 
-Step 4. Click Detail button of the prototype just created.
+Step 4. Click **Detail** of the prototype you've just created.
 
 
 ![](../images/Getting_started/img_gettingstarted_04.png)
 
 
-After your prototype is created, you can start to set the data channel, trigger and action, user privilege, create and view test devices in the prototype detail page.
+After your prototype is created, you can set the data channel, trigger and action, user privilege, and create and view test devices in the prototype detail page.
 
 
 
@@ -48,115 +48,115 @@ Step 5. Click Add in the data channel tab.
 
 
 
-Step 6. Select the Data Channel type. eg, Controller, Display, or Hybrid. And Click Add button.
+Step 6. Select the Data Channel type, such as Controller, Display, or Hybrid. And Click **Add**.
 
 ![](../images/Getting_started/img_gettingstarted_06.png)
 
 
-Step 7. Enter the Data Channel name, Id, description and select Data type.
+Step 7. Enter the Data Channel name, ID, description and select the Data type.
 
 
 ![](../images/Getting_started/img_gettingstarted_07.png)
 
-Step 8. Click Save button. And now your data channel is created. You will find the data channel Id under the data channel name. You will need this information when calling the device to retrieve data or push command to the data channel of the test device.
+Step 8. Click **Save**, your data channel is created. You'll find the data channelId under the data channel name. You will need this information when calling the device to retrieve data or push command to the data channel of the test device.
 
 
-For more Data Channel and Data Type information and concept, please refer to the Key concept section for more detail.
+For more Data Channel and Data Type information, please refer to the key concept section for details.
 
 
-# Create your first test device
+# Create Your First Test Device
 
-After creating a prototype, the developer can create a test device to actually test and control the device. The developer can also visually view the simulated result for his prototype or to control the devices in the test device detail page.
+After creating a prototype, you can also create a test device to perform test and control operations as wll as to view the simulated result of the prototype and to control the devices in the test device detail page.
 
 ![](../images/Getting_started/img_gettingstarted_08.png)
 
-## How to create a test device step by step
+## How to Create a Test Device Step by Step
 
-[Prerequisites] Create your first prototype
+[Prerequisites] Create Your First Prototype
 
-Step 1. Go to the Prototype Detail Page you just created.
+Step 1. Go to the Prototype Detail Page you've just created.
 
-Step 2. Click Create Test Device button on the upper right.
+Step 2. Click **Create Test Device** on the upper right.
 
-Step 3. There will be a create test device dialog asking for Device name and description. Enter the device name and description and click OK button.
+Step 3. There will be a create test device dialog asking for the Device name and description. Enter the device name and description and click **OK**.
 
-Step 4. You will get a message of creating test device successfully. You can go to the test device detail directly.
+Step 4. You'll get a message showing test device's created successfully. You can go to the test device detail page to check information.
 
-Step 5. Or you can also check the test device in **Test Device** tab too.
+Step 5. Or you can check the test device in **Test Device** tab.
 
 ![](../images/Getting_started/img_gettingstarted_09.png)
 
 
-Please be noted that the data channels in the test device are inherited and synchronized with the prototype. If you update the data channel in the prototype, the data channels in the test device will change accordingly. The purpose for this feature is to ensure you to have the flexibility while developing and testing your prototype before officially release to the end user.
+Please note that the data channels in the test device are inherited from and synchronized with the prototype. If you update the data channel in the prototype, the data channels in the test device will be updated accordingly. The purpose of this feature is to provide flexibility for developing and testing your prototype before it's officially released to the end user.
 
 
-## How to get deviceId and deviceKey
+## How To Get eviceId and deviceKey
 
 
-After creating the test device, the developer can view and control the device to make sure its functionality before release the prototype in the future.
+After creating the test device, you can view and control the device to ensure its functionality before releasing the prototype.
 
-You will find the Device Id in two places:
+You will find the DeviceId in two places:
 
-1. **Test Device** tab in prototype detail page.
+1. **Test Device** tab in the prototype detail page.
 
-2. Test device detail page under Development.
+2. Test device detail page under **Development**.
 
 
 ![](../images/Getting_started/img_gettingstarted_10.png)
 
 
 
-The deviceId and devicekey will be needed when calling our API to access this device. In the test device detail page, click on the copy button next to the Id and key to copy to your copy board.
+The deviceId and devicekey is needed when calling MCS API to access the device. In the **Test devices**, **Detail** page, click **Copy** next to the deviceId and deviceKey to copy the information onto your copy board.
 
-Also, you will also need the data channel id when access the data channel of specific test device. In the test device detail page, you can find the data channel Id under each data channel name. Once your device is connected and starting to send data. The Id field will disappear and be substituted with the last updated data points time.
+You'll also need the data channel ID when accessing the data channel of a specific test device. In the test device detail page, you can find the data channel ID under each data channel name. Once your device is connected and sending data, the data channel ID field will be replaced by the last updated data point timestamp.
 
 
 
 ![](../images/Getting_started/img_gettingstarted_11.png)
 
-# How to manage test devices
+# How To Manage Test Devices
 
-The developer can monitor all the test devices for each prototype in the Test Device tab in Prototype detail page. The developer can also view all the test device he has the access for in the Test device page.
+You can monitor all test devices for each prototype in the **Test Device** tab in the Prototype detail page. You can also view all test devices that you have access to in the Test device page under Development.
 
-## In developmemt stage
+## In Development Stage
 
-In the Development stage, the developer can do several configurations to the test device:
+In the Development stage, you can do several configurations to the test device, they are:
 
-1.  View Data channel stautus
-2.  Set Trigger and action
-3.  Set User privileges
-4.  Check Firmware information and update information
+1.  View data channel status
+2.  Set trigger and action
+3.  Set user privileges
+4.  Check firmware and update information
 5.  Manage test device
 
-In the development stage, to ensure the development flexibility, the test device changes with any modification made to the prototype. While after the prototype is released, the developer can no longer make change to the prototype data channel and trigger & action rules.
+To ensure flexibility in the development stage, any modification made to the prototype will be updated in the test device as well. While after the prototype is released, you can no longer make change to the prototype data channel and trigger and action rules.
 
 
-## Half way there
+## You're Half Way There
 
-Congratulation! You have successfully finished the getting started tutorial. Use the tips here and start to create your own prototype!
+Congratulations! You've successfully finished the getting started tutorial. Please feel free to  use the tips from here and start creating your own prototype!
 
 
-You can further continue to beta-release prototype or to configure your user profile setting.
+You can proceed to beta-releasing prototype or skip to configure your user profile.
 
-# Beta-release prototype
+# Beta-releasing Prototype
 
-When your prototype is sufficiently tested and you are ready to release it to a samll group of user for trial run, you can beta-release the prototype.
+When your prototype is sufficiently tested and you're ready to release it to an small group of user for a trial run, you can beta-release the prototype.
 
-For more detail about the beta-release the prototype, you can find the tutorial [here](./beta-release).
+For more details about beta-releasing the prototype, please find the tutorial [here](./beta-release).
 
 
 
 # Configure User Profile
 
-You can always change the setting of your user profile by clicking on your name on the upper right panel, and click Profile.
+You can always change the setting of your user profile by clicking on your name on the upper right panel, and click **Profile**.
 
 In the User Profile page, you can:
 
 * Change the password for your account.
 * Change the timezone by selecting current country. Your device data channel time-series chart will be based on your time-zone setting.
-* Set preferred language, and MCS will save the seeting whenever you log in.
-* Turn on/off the mobile push notification for MCS mobile app.
-* Manage your 3rd party oauth authentication.
+* Set preferred language and MCS will save the settings whenever you log in.
+* Switch the mobile push notification on/off for MCS mobile app.
+* Manage your third party OAuth authentication.
 
 
 ![](../images/Getting_started/img_gettingstarted_12.png)

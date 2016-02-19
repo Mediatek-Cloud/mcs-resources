@@ -85,7 +85,7 @@ Note 2: The deviceId is case sensitive.
 ```
 ssh root@mylinkit.local
 ```
-	
+
 3. Install FFmpeg package on the 7688 development board.
 ```
 opkg update
@@ -102,7 +102,7 @@ npm install mcsjs --save
 ```
 ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/:deviceId/:deviceKey/:dataChnId/176/144
 ```
-	
+
 The :deviceId, :deviceKey and :dataChnId need to be replaced with the real value you just obtained. You also need to specify the video resolution in the URL. In this example, the resolution is 176x144.
 You can view on either MCS web console or App to make sure the video stream works.
 
