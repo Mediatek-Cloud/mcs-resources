@@ -32,7 +32,7 @@ Step 4. Click **Create**.
 
 ![](../images/beta_release/img_betarelease_03.png)
 
-When a new device is created, it's in inactive and has a unique activation code. The device will only become available after being activated. After it's activated, it will get a unique device ID and device key, like the test device, and it's ready to work.
+When a new device is created, it's in inactive and has a unique activation code. The device will only become available after being activated. After it's activated, it will get a unique deviceId and deviceKey, like the test device, and it's ready to work.
 
 You can find the activation code and all other device related information in the **Management** page.
 
