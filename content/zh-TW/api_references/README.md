@@ -3,9 +3,9 @@
 MediaTek Cloud Sandbox (MCS) 提供一系列的 RESTful API 讓您能夠便利的使用，例如上傳和讀取資料點，或是透過 TCP socket 對裝置下指令。MCS 亦能儲存照時間排序的資料數列，並以圖表化形式呈現給您。
 
 
-## 連接點
+## Request URL
 
-所有的 MCS RESTful API 皆以以下形式呈現：
+您可以透過以下網址來呼叫 MSC API：
 
 ```
 https://api.mediatek.com/v2
