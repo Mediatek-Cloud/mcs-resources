@@ -146,12 +146,12 @@ c. Enter the **Device name** and **Device description** you like and click **Cre
 ![](../images/LinkIt_Connect/img_linkitconnect7681_19.png)
 
 
-d. You should be able to find the device ID and device key of the test device you've just created.
+d. You should be able to find the deviceId and deviceKey of the test device you've just created.
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_20.png)
 
 
-e. Now you need to manually flash the ID and key into MT7681. Open a terminal that is connected to the development board and enter the following command:
+e. Now you need to manually flash the deviceId and deviceKey into MT7681. Open a terminal that is connected to the development board and enter the following command:
 
 ```
 AT#FLASH -s0x180e9 -c[deviceId]
