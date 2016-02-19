@@ -29,9 +29,7 @@
 
 ![](../images/Mobile_application/img_mobileapplication_03.png)
 
-您可以对控制器类型的资料通道下达指令，以改变他的最新状态。目前手机无法和网页板一样显示图形化的资料。
-
-您可以对控制器类型的资料通道下达指令，以改变他的最新状态。目前手机无法和网页板一样显示图形化的资料。
+您可以对控制器类型的资料通道下达指令，以改变他的最新状态。
 
 此外，在画面的左下方，您会看见一个加号，您可以点击此加号来新建测试装置。您亦可以使用 Smart Connection 功能来来接您的 LinkIt Connect 开发板。如欲查看更详细的 LinkIt Connect 使用方式，您可以参考以下教程[2.Tutorial 2.7 Implementing using Linkit Connect 7681 development board]http://mcs.mediatek.com/resources/zh-CN/latest/tutorial/implementing_using_mt7681_development_board)
 
