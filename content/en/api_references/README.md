@@ -1,96 +1,100 @@
 # API references
 
-MediaTek Cloud Sandbox (MCS) have exposed RESTful APIs allowing you to build applications and services that is able to make meaningful communications with MCS for data points upload and retrieves as well as requesting MCS to make TCP socket commands. MCS also based on the communication data uploaded, especially for time-series based data, translate into visual charts for easier reading to the users.
+MediaTek Cloud Sandbox (MCS) provides RESTful APIs for building applications and services that are able to make meaningful communications with MCS including data point uploads and retrievals as well as commands via TCP socket. MCS also provides eady-to-read visual charts based on the uploaded data, including time-series data for real time applications. 
 
-## Access Point
 
-MCS has made all its RESTful API access point as below:
+## Request URL
+
+Standard MCS RESTful API request has the following URL construct:
 
 ```
 https://api.mediatek.com/v2
 ```
 
+
 ## Parameters
 
-Parameters follows right after the access point used to identify a specific resource as part of the URL construct:
+The parameters that are part of URL are used to identify a specific resource. 
 
 ```
 https://api.mediatek.com/v2/devices/{deviceId}/retrieveDataPoints
-
 ```
-In the example above, the deviceId was specified in the URL. For any requests, any parameters not included as part of the URL should be encoded as JSON or CSV with a `content -Type` of `application/json` or `text/csv`.
+
+In the example above, the **device ID** is specified in the URL.
+
+
+Also, the perementers can be in the message body of a POST request. The request body must be formatted as either JSON or CSV. For each POST request, please specify the **content-type** in the header. 
+
+* `content-type: application/json` stands for JSON format.
+* `content-type: text/csv` stands for CSV format.
+
 
 ## Client Errors
 
-Mediatek Cloud Sandbox (MCS) uses the standard HTTP status code to indicate if an API request is succussful or fail. Here states the standard HTTP status code the user may encounter:
+MediaTek Cloud Sandbox (MCS) uses the standard HTTP status code to indicate if an API request is successful or failed. The HTTP status codes users may encounter are:
 
-**200 OK** - Request Successfully.
+**200 OK** - The request is successful.
 
-**201 Created **- The request has been fulfilled and a new resource is being created.
+**201 Created**- The request has been fulfilled and a new resource is being created.
 
-**202 Accepted** - The request has been accepted for processing, but the process has not yet been completed.
+**202 Accepted** - The request has been accepted for processing, but the process has not been completed yet.
 
-**204 No Content** - The server successfully processed the request, but is not returning any content. Usually used as a response to a successful delete request.
+**204 No Content** - The server processed the request successfully, but isn’t returning any content. This is usually used as a response for a successful delete request.
 
-**400 Bad Request** - The server cannot process the request due to the client given parameter is not what the server expected to receive.
+**400 Bad Request** - The server cannot process the request due to an unexpected parameter received from the client. 
 
-**401 Unauthorized** - Authotization is required and has failed or not been provided. A header for Authorization is required.
+**401 Unauthorized** -Authorization has failed or it hasn’t been provided. A header for Authorization is required.
 
 **403 Forbidden** - The server is refusing to respond to a valid request.
 
-**404 Not Found** - The request resource could not be found.
+**404 Not Found** - The requested resource could not be found.
 
-**405 Method Not Allowed** - The request was made of a resource using a not supported method.
+**405 Method Not Allowed** - The request was made from a resource that used a method which is not supported.
 
-**500, 502 Server Error** - Something went wrong with the MCS server.
+**500, 502 Server Error** - MCS server has encountered an error.
 
 
 ## HTTP Verbs
 
-The Mediatek Cloud Sandbox (MCS) provides the following types of API:
+The MCS RESTful APIs can be accessed with following HTTP methods:
 
+**GET** - To retrieve resources.
 
-**GET** - Used for retrieving resource.
+**POST** - To create resources.
 
-**POST** - Used for creating resouce.
+**PUT** - To update resources.
 
-**PUT** - Used for updating resource.
-
-**DELETE** - Used for deleting resource.
-
+**DELETE** - To delete resources.
 
 
 ## Authentication
 
-All request sent to the API need to be authenticated. A Bearer token for `Authentication` key in the HTTP header is required. If not provided, the server will respond with an  Unauthorized message.
+Except for data point uploads and retrievals APIs, all requests sent to the API server need to be authenticated. A Bearer token for **Authorization** key in the HTTP header is required. If it is not provided, the server will respond with an **Unauthorized** message.
 
-## API Keys
 
-Each time a prototype is created, a data channel is created or a device is added, there will be an unique key assigned to each prototype, data channel or device. This unique key is not editable, but they can be used to access data which they are associated. They cannot access data from any other resource.
+## Resource IDs
 
-The developer can define which HTTP methods(GET, POST, PUT, DELETE) can be used with each API key. For example, in the Sandnox API, if you need to GET data from a specific data channel of a test device, you will need to use the Key for the data channel and the test device.
+When a prototype or a data channel is created, or when a device is added, a unique ID is assigned to each prototype, data channel or device. This unique ID is not editable, but it can be used to access data with which it is associated. However, the key cannot access data from any other resource.
+
+For example, to GET data from a specific data channel of a test device, you will need to use a data channel ID for the data channel of the test device.
 
 
 ## Resources
 
 Following is a shortlist of useful terms of MCS:
 
-
 ### Data Channels
 
-The data channel is a logical placeholder in the cloud for data generated either coming from a specific component of a physical device, or a command coming from the cloud intended to push into a specific component of the connected physical device. Simply put, data channel is designed for one-way or two-way communications between the cloud and the connected physical device.
+The data channel is a logical placeholder in the cloud for data generated from a specific component of a physical device, or a command from the cloud to be pushed into a specific component of the connected physical device. In other words, data channel is designed for one-way or two-way communications between the cloud and the connected physical device.
 
-MCS provides several Sandbox API for the user to easily retrieve data from the data channels and update the data channel.
+MCS provides RESTful APIs to easily retrieve data from the data channels and update the data channel.
 
 ### Devices
 
-We will have two types of devices in the MCS, the first kind is the test device. The test device is for the developer to use to test the functionality of the prototype before release.
-The second kind of device is the batch create devices created after a prototype is released and is used for the end user.
+There are two types of devices which you can create in MCS: test device and Beta device. The test device enables you to test the functionality of the prototype before it is Beta-released. The Beta device can be created after a prototype is Beta-released and it’s used by the end user.
 
-MCS also provides APIs for both develoer and the user. For example, to retrieve data from device and remote contol using the device.
+MCS provides RESTful APIs for you and the end user. For example, APIs that enable data retrieval from a device and that allow remote control using the device.
 
 ### Prototype
 
-A prototype is the service that you are going to deliver as a deliverable in the end. The MSC also provides several APIs for the developers to make use of regarding the prototype. The developer will add data channels in a prototype and test the prototype by creating the test device before release.
-
-
+A prototype is a service that’s delivered as a result. The MSC provides several APIs to make use of the prototype. The developer can add data channels in a prototype and test the prototype by creating a test device before releasing it.

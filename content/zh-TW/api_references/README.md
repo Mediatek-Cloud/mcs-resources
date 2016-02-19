@@ -3,9 +3,9 @@
 MediaTek Cloud Sandbox (MCS) 提供一系列的 RESTful API 讓您能夠便利的使用，例如上傳和讀取資料點，或是透過 TCP socket 對裝置下指令。MCS 亦能儲存照時間排序的資料數列，並以圖表化形式呈現給您。
 
 
-## 連接點
+## Request URL
 
-所有的 MCS RESTful API 皆以以下形式呈現：
+您可以透過以下網址來呼叫 MSC API：
 
 ```
 https://api.mediatek.com/v2
@@ -29,7 +29,7 @@ Mediatek Cloud Sandbox (MCS) 使用標準 HTTP 狀態來表達 API 請求的成�
 
 **200 OK** - 請求成功。
 
-**201 Created **- 請求成功，並且新資源已建立。
+**201 Created**- 請求成功，並且新資源已建立。
 
 **202 Accepted** - 請求成功，但尚未完成。
 
@@ -68,11 +68,11 @@ The MediaTek Cloud Sandbox (MCS) 提供以下型式的 API 請求方式：
 所有的 API 請求皆須被授權。您必須有一個 header `Authentication` 為您的 Bearer token。如果未提供此授權碼，系統則會回覆您無授權訊息。
 
 
-## API Key
+## 資源 ID
 
-每次當一個產品原型，資料通道，或是測試裝置被建立後，都會有一個獨特的 Key 被指派給該資源。這個獨特的 Key 是不可編輯的，且您將再存取此資源時用到。您無法存取您無此 Key 值的資源。
+每次當一個產品原型，資料通道，或是測試裝置被建立後，都會有一個獨特的 ID 被指派給該資源。這個獨特的 ID 是不可編輯的，且您將再存取此資源時用到。您無法存取您無 ID 的資源。
 
-開發者可以定義哪種 API Key 將在哪些 HTTP 請求方式中被需要。舉例來說，如欲從 MCS 取得某一資料通道的資料，您必須擁有此資料通道以及所述測試裝置的 API Key。
+舉例來說，如欲從 MCS 取得某一資料通道的資料，您必須擁有此資料通道以及所述測試裝置的資源 ID。
 
 
 ## 資源

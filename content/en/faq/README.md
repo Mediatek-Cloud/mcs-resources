@@ -1,26 +1,25 @@
 # FAQ
 
-**1. What kind of device can be connected to MSC platform?**
+**1. What kind of devices can be connected to the MSC platform?**
 
-Almost any device that has an internet connection can be connected to MCS, as long as it can work with RESTful or TCP Sockets.
+Almost any device that has an internet connection can be connected to MCS, as long as it can work with RESTful (Representational State Transfer) APIs or TCP Sockets.
 
 **2. What can I develop with MCS?**
 
-The MCS developer platform and RESTful API allow you to quickly develop a prototype and connect the device to it to be utilized.
+The MCS developement platform and RESTful APIs enable you to quickly develop a prototype and connect it to a free cloud-based service.
 
 **3. How do I get started with MCS?**
 
-We provides tutorials with detail steps by steps and screen capture assists you to quickly develop your first prototype. Click on the Resource on the upper navigator bar and select the Tutorial you would like to start with.
+MCS provides detailed step-by-step tutorials with screen captures to assist you in developing your first prototype. Sign in MCS and on the upper right navigator bar, click **Resources** menu and select the tutorial you would like to start with.**4. Can I transfer or share my prototype and device with other users?**
 
-**4. Can I transfer or share my prototype and device to other users?**
-
-Controlling access rights for your prototypes and devices is made simple in the Development or My device User privilege section provided with MCS. You can choose what kind of access level each user may have, eg, viewer access to only read the data, or administrator access to co-develop.
+Yes. You can assign user access privileges such as read-only viewer or co-develop administrator for your prototypes and devices in MCS. Sign in MCS and in the **Development** menu, click **Prototype** or **Test devices**. In the prototype or device detalied page click **User privileges** tab and set the access privileges there.
 
 **5.Can I change my prototype and device's time zone?**
 
-Currently, the time-zone is bind to your user profile timezone. Youcan change your timezone by clicking your name on the right upper pannel, and select profile where you can change your timezone there.
+Yes. The prototype and device time-zone is binded to your user profile time-zone and you can change it by clicking your user name on the upper right navigation bar, and select **Profile** where you can change the time-zone.
 
-**6. Where can I download the mobile app? **
+
+**6. Where can I download the mobile app?**
 
 If you are using the MCS global version, please click [here](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) or scan the QR code below to download the APK:
 
@@ -30,18 +29,18 @@ If you are using the MCS global version, please click [here](https://play.google
 Or if you are using the MCS China version, please directly download the apk [here](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk)
 
 
-The mobile app currently offers for Android only.
+The mobile App supports Android only at the time of writing.
 
-**7. I have an account with Labs@mediatek.com, can I single-sign-on to the MCS? **
+**7. I have an account with Labs@mediatek.com, can I single-sign-on to the MCS?**
 
-Yes, you can. Simply click "Login with Labs@mediatek.com" you shall have access to our MCS without furhter signup forms.
-
-
-**8. What browser does the MCS support?**
-
-We strongly recommand you to use the Chrome, Safari, and Firefox to browse the MCS site.
+Yes, you can. Click **Sign in with Labs@mediatek.com** in MCS sign in page and you’ll have access to MCS without additional sign ins.
 
 
+**8. Which browsers does the MCS support?**
+
+It’s  strongly recommended to use Chrome, Safari, and Firefox to browse the MCS site.
 
 
-**Don't have the answer you are looking for? send us a email <mtkcloudsandbox@mediatek.com> if you are using MCS global; or <mcs_cn.mail@mediatek.com> if you are using MCS China.**
+
+
+**Didn't find the answer you're looking for? Send us an email at: <mtkcloudsandbox@mediatek.com> if you are using MCS global; or <mcs_cn.mail@mediatek.com> if you are using MCS China.**
