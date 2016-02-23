@@ -114,7 +114,7 @@ You are now ready to execute the Node.js program. In the system console, type th
 
 ### Step 1. Create a new Prototype
 
-a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype.
+a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype or [import from json](http://cdn.mediatek.com/tutorial/7688/7688_FOTA_TW.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 

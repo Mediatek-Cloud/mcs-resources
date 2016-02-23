@@ -6,7 +6,7 @@ Here is a simple example demonstrating how to use display type of image data cha
 ## Creating a new prototype for LinkIt Smart 7688
 
 ### Step 1. Create a new prototype with image display type data channel
-a. After login, select "Prototype" under Development at the navigation bar, click "Create" to create a new prototype.
+a. After login, select "Prototype" under Development at the navigation bar, click "Create" to create a new prototype or [import from json](http://cdn.mediatek.com/tutorial/7688/7688_image_EN.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 

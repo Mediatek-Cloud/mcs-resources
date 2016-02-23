@@ -34,7 +34,9 @@ The MT7681 chipset provides 5 GPIO pins that can implement PWM and 1 UART port. 
 
 ## Step-by-step
 
-### Step 1. Create a LinkIt Connect 7681 Prototype with GPIO, PWM and UART data channels
+### Step 1. Create a LinkIt Connect 7681 Prototype with GPIO, PWM and UART data channels.
+
+You can create by finish Step 1 or [import from json](http://cdn.mediatek.com/tutorial/LinkIt_7681/LinkIt_7681_EN.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
 
 a. On the upper navigator, click **Development**.
 
@@ -70,16 +72,12 @@ g. For MT7681 prototypes, the Data Channel Ids follow a defined format — GPIO_
 
 
 
-h. To add more GPIO pin controllers, repeat Step e,f, and g using the appropriate data channel Id for each pin (GPIO_01 to GPIO_04).
-
-i. Now add the PWM controllers. Repeat Step e and f to open the **Add Data Channel** popup. Enter "PWM_00" as the data channel Id and in **Data Channel Type** select **PWM**. Click **Save** to create the Data Channel.
+h. Now add the PWM controllers. Repeat Step e and f to open the **Add Data Channel** popup. Enter "PWM_00" as the data channel Id and in **Data Channel Type** select **PWM**. Click **Save** to create the Data Channel.
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_07.png)
 
 
-j. To add more PWM controllers, repeat Step i using the appropriate data channel Id for each pin (PMW_01 to PMW_04).
-
-k. Another data channel type that MT7681 prototypes support is UART. To add a UART data channel, open the **Add Data Channel** popup as described in Step e and create a new Controller as described in step f. Enter the Data Channel Id as "UART" and in the **Data Channel type** select **String** or **Hex** depending on your needs. Click **Save** to create the Data Channel.
+i. Another data channel type that MT7681 prototypes support is UART. To add a UART data channel, open the **Add Data Channel** popup as described in Step e and create a new Controller as described in step f. Enter the Data Channel Id as "UART" and in the **Data Channel type** select **String** or **Hex** depending on your needs. Click **Save** to create the Data Channel.
 
 ![](../images/LinkIt_Connect/img_linkitconnect7681_08.png)
 

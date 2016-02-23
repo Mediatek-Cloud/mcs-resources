@@ -20,7 +20,7 @@
 
 ### 步骤一　替您的产品原型新增一个开关类型的资料通道
 
-a. 登入平台后，点选上方的"开发"，并且点击新增按钮，来新增一个新的产品原型。
+a. 登入平台后，点选上方的"开发"，并且点击新增按钮，来新增一个新的产品原型。您亦可直接汇入此[范例产品原型](http://cdn.mediatek.com/tutorial/LinkIt_ONE/LinkIt_ONE_switch_CN.json)，若您选择直接汇入产品原型，您可以跳过步骤一，直接从步骤二开始。
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 

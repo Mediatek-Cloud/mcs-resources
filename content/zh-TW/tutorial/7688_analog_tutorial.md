@@ -5,7 +5,7 @@ In this guide you’ll learn the steps to create a analog controller that allows
 ## Creating a new prototype for LinkIt Smart 7688
 
 ### Step 1. Create a new prototype with analog controller type data channel
-a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype.
+a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype or [import from json](http://cdn.mediatek.com/tutorial/7688/7688_analog_TW.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 
