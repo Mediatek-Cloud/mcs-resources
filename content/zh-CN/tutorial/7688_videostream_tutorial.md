@@ -71,8 +71,8 @@ Note 2: The deviceId is case sensitive.
 ## Pre-requisite
 
 * LinkIt Smart 7688 or LinkIt Smart 7688 Duo
-* an USB OTG cable
-* an USB charging cable
+* a USB OTG cable
+* a USB charging cable
 * a web camera (in this tutorial, we use the Logitech C310)
 * Connect the micro-USB end of the charging cable to PWR port on the 7688 development board and the USB end to your computer.
 * Use USB OTG cable to connect your web camera to the USB HOST port on the 7688 development board.
