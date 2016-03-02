@@ -8,7 +8,7 @@ We will guide you how to create a video stream data channel on MCS web console a
 
 ### Step 1. Create a new prototype with video stream data channel
 
-a. After login, select "Prototype" under "Development" at the navigation bar and click "Create" to create a new prototype.
+a. After login, select "Prototype" under "Development" at the navigation bar and click "Create" to create a new prototype or [import from json](http://cdn.mediatek.com/tutorial/7688/7688_video_CN.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 

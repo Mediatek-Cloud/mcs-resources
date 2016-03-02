@@ -8,7 +8,7 @@ We will guide you how to create a video stream data channel on MCS web console a
 
 ### Step 1. Create a new prototype with video stream data channel
 
-a. After login, select "Prototype" under "Development" at the navigation bar and click "Create" to create a new prototype.
+a. After login, select "Prototype" under "Development" at the navigation bar and click "Create" to create a new prototype or [import from json](http://cdn.mediatek.com/tutorial/7688/7688_video_TW.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 
@@ -102,7 +102,7 @@ npm install mcsjs --save
 ```
 ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/:deviceId/:deviceKey/:dataChnId/176/144
 ```
-	
+
 The :deviceId, :deviceKey and :dataChnId need to be replaced with the real value you just obtained. You also need to specify the video resolution in the URL. In this example, the resolution is 176x144.
 You can view on either MCS web console or App to make sure the video stream works.
 
