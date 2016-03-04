@@ -6,7 +6,7 @@
 
 [New prototype export and import function is available!](./2.15)
 
-## February 2, 2016
+## February 3, 2016
 
 ### v2.14
 
