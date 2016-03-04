@@ -29,6 +29,6 @@ As part of MCS member support, MediaTek Cloud Sandbox provides an API sandbox, a
 To make use of MediaTek Cloud Sandbox, you must:
 
 1. [Register as a member of MCS] (https://mcs.mediatek.com/oauth/en/signup) or [sign in with MediaTek Labs account] (https://mcs.mediatek.com/oauth/en/login).
-2. Verify and complete the registration process by clicking the sent to your email address. 
-3. Create your own prototypes, data channels and devices and start to manage your devices and data via MCS web console, mobile App or RESTful APIs. 
+2. Verify and complete the registration process by clicking the sent to your email address.
+3. Create your own prototypes, data channels and devices and start to manage your devices and data via MCS web console, mobile App or RESTful APIs.
 

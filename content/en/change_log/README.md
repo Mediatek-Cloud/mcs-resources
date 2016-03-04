@@ -2,6 +2,12 @@
 
 ## February 3, 2016
 
+### v2.15
+
+[New prototype export and import function is available!](./2.15)
+
+## March 7, 2016
+
 ### v2.14
 
 [New video streaming, image, and gamepad data channels are available!](./2.14)
