@@ -53,7 +53,7 @@ Please take note of the deviceId and deviceKey, you will need this information w
 
 ### Step 3. Obtain Device ID, Device Key and Data Channel ID
 
-Here is the summary of the neccessary information we have obtained in interacting with this test device:
+Here is the summary of the necessary information we have obtained in interacting with this test device:
 
 | Name | Value | Remark |
 | --- | --- | --- |
@@ -61,18 +61,18 @@ Here is the summary of the neccessary information we have obtained in interactin
 | deviceKey | DFbtsNWg4AuLZ30v  | Unique API Key for this Test Device |
 | dataChannelId | Video | Data Channel Id for image display data channel|
 
-Note 1: The deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
+Note 1: The deviceId and deviceKey shown here will be different to yours, please use your obtained value instead.
 
 Note 2: The deviceId is case sensitive.
 
 
-# Developing a program on your deivce to connect with MCS
+# Developing a program on your device to connect with MCS
 
 ## Pre-requisite
 
 * LinkIt Smart 7688 or LinkIt Smart 7688 Duo
-* an USB OTG cable
-* an USB charging cable
+* a USB OTG cable
+* a USB charging cable
 * a web camera (in this tutorial, we use the Logitech C310)
 * Connect the micro-USB end of the charging cable to PWR port on the 7688 development board and the USB end to your computer.
 * Use USB OTG cable to connect your web camera to the USB HOST port on the 7688 development board.
@@ -81,7 +81,7 @@ Note 2: The deviceId is case sensitive.
 ## Set up the device
 
 1. Make sure the 7688 development board has been switched to station mode and connect to the same network as your computer successfully.
-2. Connect to the console of 7688 development borad through `ssh` command on your computer.
+2. Connect to the console of 7688 development board through `ssh` command on your computer.
 ```
 ssh root@mylinkit.local
 ```
@@ -106,7 +106,7 @@ ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 80
 The :deviceId, :deviceKey and :dataChnId need to be replaced with the real value you just obtained. You also need to specify the video resolution in the URL. In this example, the resolution is 176x144.
 You can view on either MCS web console or App to make sure the video stream works.
 
-## Developing a Node.js progream to connect with MCS
+## Developing a Node.js program to connect with MCS
 
 ### Create your program
 
