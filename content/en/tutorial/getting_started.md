@@ -65,7 +65,7 @@ For more Data Channel and Data Type information, please refer to the key concept
 
 ## How to create a prototype by importing a JSON file
 
-In addition to ceate a prototype by your own, you can also choose to import an existing prototype that shared by other users. You can also export your prototype for other users as well.
+In addition to create a prototype by your own, you can also choose to import an existing prototype that shared by other users. You can also export your prototype for other users as well.
 
 ### How to export the existing prototype
 
@@ -76,6 +76,8 @@ Step 1. Go to the Prototype Detail Page you would like to export.
 Step 2. Click More button and select **Export**.
 
 Step 3. Save the prototype JSON file.
+
+Please note that the Webhook URL set in **Trigger & Action** will be replaced with http://localhost in the exported JSON to prevent users who import the JSON file from sending their device data to your server.
 
 
 ### How to create prototype by importing JSON file
