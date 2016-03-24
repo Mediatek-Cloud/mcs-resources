@@ -56,7 +56,7 @@ Following fields should be constructed and appended to the end of the URL:
 
 **Note:**
 
-1.If you choose to use limit to query the last *n (n=size)* data points, then you cannot at the same time use both *start_time* and *end_time*.
+1.If you choose to use limit to query the last *n (n=number)* data points, then you cannot at the same time use both *start_time* and *end_time*.
 
 2.
 The parameters *start_time* and *end_time* have higher priority than *limit*, i.e., when all three parameters are input, the parameter *size* will be ignored.
