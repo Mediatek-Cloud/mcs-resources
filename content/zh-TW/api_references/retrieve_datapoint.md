@@ -53,7 +53,7 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/da
 **請注意：**
 
 1.
-使用回傳最後 *n (n=數目)* 的資料點時，將不能指定 *開始時間* 與 *結束時間*時。
+使用 limit 查詢最後 *n (n=數目)* 的資料點時，將不能指定 *start_time* 與 *end_time*時。
 
 2.　當您指定 *start_time* 和 *end_time* 時，若還是有使用設定回傳資料點數目，此時，此回傳資料點數目的查詢將會被忽略。
 

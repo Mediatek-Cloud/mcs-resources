@@ -50,5 +50,6 @@
    * [2.13](change_log/2.13.md)
    * [2.14](change_log/2.14.md)
    * [2.15](change_log/2.15.md)
+   * [2.16](change_log/2.16.md)
 
 
