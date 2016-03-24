@@ -4,7 +4,7 @@
 
 ### v2.16
 
-[Make your device data public and share via social networks.](./2.15)
+[Make your device data public and share via social networks.](./2.16)
 
 ## March 7, 2016
 
