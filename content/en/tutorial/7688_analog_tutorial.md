@@ -80,6 +80,7 @@ vim app.js
 ```
 
 2. Type **i** and Copy/paste the following code in the editor
+
 ```
 var ledPin = 13;
 var firmata = require('firmata');

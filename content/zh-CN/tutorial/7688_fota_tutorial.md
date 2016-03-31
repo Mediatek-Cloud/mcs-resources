@@ -52,6 +52,7 @@ vim app.js
 6. Type **i** and copy/paste the following code in the editor
 
 ```
+
 var mcs = require('mcsjs');
 var spawn = require('child_process').spawn;
 var fs = require('fs');
