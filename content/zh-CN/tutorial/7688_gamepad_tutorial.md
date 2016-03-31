@@ -112,6 +112,7 @@ vim app.js
   var myApp = mcs.register({
       deviceId: 'Input your deviceId',   // Input your deviceId.
       deviceKey: 'Input your deviceKey', // Input your deviceKey.
+      host: 'api.mediatek.com'
   });
 
   var SerialPort = require("serialport").SerialPort;

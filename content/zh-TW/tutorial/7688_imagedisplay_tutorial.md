@@ -122,6 +122,7 @@ var fs = Promise.promisifyAll(require("fs"));
 var myApp = mcs.register({
   deviceId: 'Input your deviceId',
   deviceKey: 'Input your deviceKey',
+  host: 'api.mediatek.com'
 });
 
 child = exec('fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --save /tmp/test.jpg', function (error, stdout, stderr) {

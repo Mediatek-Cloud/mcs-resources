@@ -61,6 +61,7 @@ var fwName = 'fw.hex';
 var myApp = mcs.register({
   deviceId: 'Input your deviceID',
   deviceKey: 'Input your deviceKey',
+  host: 'api.mediatek.com'
 });
 
 var download = function(url, dest, cb) {

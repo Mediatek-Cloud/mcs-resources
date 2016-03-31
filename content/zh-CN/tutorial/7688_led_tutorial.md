@@ -89,6 +89,7 @@ var mcs = require('mcsjs');
 var myApp = mcs.register({
   deviceId: 'ABC123',
   deviceKey: 'XYZ123',
+  host: 'api.mediatek.com'
 });
 
 // Replace the device ID and device Key obtained from your test device

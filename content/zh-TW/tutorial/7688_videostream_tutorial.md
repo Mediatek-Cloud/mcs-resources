@@ -129,6 +129,7 @@ var height = 144;
 var myApp = mcs.register({
   deviceId: deviceId,
   deviceKey: deviceKey,
+  host: 'api.mediatek.com'
 });
 exec('ffmpeg -s ' + width + 'x' + height + ' -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/' + deviceId + '/' +deviceKey + '/' + dataChnId + '/' + width + '/' + height, function(error, stdout, stderr) {
   console.log('stdout: ' + stdout);
