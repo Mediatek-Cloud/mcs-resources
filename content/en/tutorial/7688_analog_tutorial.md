@@ -1,6 +1,6 @@
 # Analog Controller Tutorial
 
-In this guide you’ll learn the steps to create a analog controller that allows you to turn on and off the on-board Wi-Fi LED from the web console of MCS using Node.js.
+In this guide you’ll learn the steps to create a analog controller that allows you to turn on and off the on-board Wi-Fi LED from the web console of MCS using Node.js. Please note that to run this example, you will need a **LinkIt Smart 7688 Duo** board.
 
 ## Creating a new prototype for LinkIt Smart 7688
 
@@ -68,18 +68,53 @@ Note 2: The deviceId is case sensitive.
 
 # Creating a program to connect to MCS and run the application
 
-MCS supports node.js and python. You can choose node.js or python base on your preference.
+LinkIt Smart 7688 supports node.js and python. You can choose node.js or python base on your preference.
 
 ## Creating a Node.js program to connect to MCS
 
-Here is the Node.js example code that listens for commands from MCS web console.
+Here is the Node.js example code that listens for commands from MCS web console. Here in the example, we will use the firmata module to contol the analog data channel in the 7688 board. The following steps includes how to install the firmata module into the board.
 
-1. Create a file app.js using an editor, vi is used in this example:
+1. Use Arduino to upload this [code](https://gist.githubusercontent.com/edgarsilva/e73c15a019396d6aaef2/raw/60941ec6981a1cb79609daf8441a52a6e7345c63/StandardFirmataForATH0.ino) into the **LinkIt Smart 7688 Duo** board. For more information about how to install the LinkIt Smart 7688 Duo port driver, please refer to the [MediaTek Labs website](http://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/get_started/7688_duo/arduino/index.gsp).
+
+2. Download the firmata.tar file [here](http://cdn.mediatek.com/tutorial/7688/firmata.tar). For users in China, you can download the firmata.tar file [here](http://cdn.mediatek.cn/tutorial/firmata.tar).
+
+3. Connect to the console of 7688 development board through `ssh` command on your computer.
+
+```
+ssh root@mylinkit.local
+```
+4. Create app folder under root.
+
+```
+mkdir app && cd app && npm init
+```
+
+5. Create node_modules foder in app directory under root.
+
+```
+mkdir node_modules
+```
+
+6. Open the command line tool **in your computer** and copy the firmata.tar file into the 7688 board.
+
+```
+scp ./firmata.tar root@mylinkit.local:/root/app/node_modules/
+```
+
+7. Go back to **7688 terminal**, and go to `/root/app/node_modules/` directory.
+8. Unzip the `firmata.tar`.
+
+```
+tar -xvf ./firmata
+```
+9. Go back to `/root/app/` directory.
+10. Create a file app.js using an editor, vim is used in this example:
+
 ```
 vim app.js
 ```
 
-2. Type **i** and Copy/paste the following code in the editor
+11. Type **i** and Copy/paste the following code in the editor
 
 ```
 var ledPin = 13;
@@ -117,7 +152,7 @@ Next, run the Node.js example program.
 You are now ready to execute the Node.js program. In the system console, type the following command:# is command prompt and is not part of command.
 
 ```
-# node app
+# node app.js
 ```
 
 Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on and off and watch the Wi-Fi LED on LinkIt Smart LinkIt Smart 7688 HDK.
