@@ -79,42 +79,36 @@ Here is the Node.js example code that listens for commands from MCS web console.
 2. Download the firmata.tar file [here](http://cdn.mediatek.com/tutorial/7688/firmata.tar). For users in China, you can download the firmata.tar file [here](http://cdn.mediatek.cn/tutorial/firmata.tar).
 
 3. Connect to the console of 7688 development board through `ssh` command on your computer.
-
 ```
 ssh root@mylinkit.local
 ```
 4. Create app folder under root.
-
 ```
 mkdir app && cd app && npm init
 ```
 
 5. Create node_modules foder in app directory under root.
-
 ```
 mkdir node_modules
 ```
 
 6. Open the command line tool **in your computer** and copy the firmata.tar file into the 7688 board.
-
 ```
 scp ./firmata.tar root@mylinkit.local:/root/app/node_modules/
 ```
 
 7. Go back to **7688 terminal**, and go to `/root/app/node_modules/` directory.
 8. Unzip the `firmata.tar`.
-
 ```
 tar -xvf ./firmata
 ```
 9. Go back to `/root/app/` directory.
 10. Create a file app.js using an editor, vim is used in this example:
-
 ```
 vim app.js
 ```
 
-11. Type **i** and Copy/paste the following code in the editor
+11. Type **i** and Copy/paste the following code in the editor.
 
 ```
 var ledPin = 13;
