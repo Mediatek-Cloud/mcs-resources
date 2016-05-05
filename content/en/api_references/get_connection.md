@@ -15,7 +15,7 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/connections
 
 ```
 
-To set up TCP long connection between the device and the command server, the device will need to first send a REST API `getConnection` to request a set of ip and port to build a TCP connection. The MCS will respond with its IP address and a port to the device.
+To set up TCP long connection between the device and the command server, the device will need to first send a REST API `Get connection` to request a set of ip and port to build a TCP connection. The MCS will respond with its IP address and a port to the device.
 
 Command server respond format:
 
@@ -36,7 +36,11 @@ Heartbeat format:
 
 ```
 
+The timestamp is in UNIX time format. If you do not want to send the timestamp, just put 0 in the timestamp field and the system will use the system time as the timestamp.
+
+
 After the TCP long connecion is built, the user can give command to the device via the MSC platform.
+
 
 The command Format:
 ```
@@ -54,7 +58,7 @@ HTTPs GET
 ### Header
 
 
-Content-Type:`application/json` or `text/csvt`
+Content-Type:`application/json` or `text/csv`
 
 
 deviceKey: `device_key_here`
@@ -85,7 +89,7 @@ Content-Type:`application/json`
 ```
 For CSV response:
 ```
-Content-Type: `text/csvt`
+Content-Type: `text/csv`
 ```
 
 ### Response Body

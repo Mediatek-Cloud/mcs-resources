@@ -14,7 +14,7 @@
 https://api.mediatek.com/mcs/v2/devices/:deviceId/connections
 
 ```
-設定裝置和 Command server 之間的 TCP 長連結，裝置首先需要呼叫 RESTful API `getConnection` 來取得一組 ip 位置以及連接阜來建立 TCP 長連結。MCS 將會回覆 ip 地址和連接阜資訊給裝置。
+設定裝置和 Command server 之間的 TCP 長連結，裝置首先需要呼叫 RESTful API `Get connection` 來取得一組 ip 位置以及連接阜來建立 TCP 長連結。MCS 將會回覆 ip 地址和連接阜資訊給裝置。
 
 Command server 回覆格式:
 
@@ -34,6 +34,7 @@ Heartbeat 格式:
     deviceId,deviceKey,timestamp
 
 ```
+此處使用 UNIX timestamp 時間格式。若您不希望在 heartbeat 中傳送實際的 timestamp，您可以直接在 timestamp 欄位輸入 0 為其值 ，系統將自動帶入系統時間。
 
 當 TCP 長連結建立後，您將可以透過 MCS 平台對裝置下指令。
 
@@ -53,7 +54,7 @@ HTTPs GET
 ### Header
 
 
-Content-Type:`application/json` or `text/csvt`
+Content-Type:`application/json` or `text/csv`
 
 
 deviceKey: `device_key_here`
@@ -86,7 +87,7 @@ Content-Type:`application/json`
 ```
 CSV格式:
 ```
-Content-Type: `text/csvt`
+Content-Type: `text/csv`
 ```
 
 ### 回覆內容
