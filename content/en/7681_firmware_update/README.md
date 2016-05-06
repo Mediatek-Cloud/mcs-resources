@@ -4,18 +4,21 @@
 ## Resources
 
 - Mobile APK: MediaTek Cloud Sandbox Mobile Application for Android **(>= 2.5.0)** on [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud). Please check your Android application version is above 2.5.0.
-- LinkIt Connect 7681 Latest Firmware(2015/05/25): [MT7681_sta_header.bin](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin). With LinkIt Connect 7681's MAC address display.
+- 7681 Latest Firmware(2015/05/25): [MT7681_sta_header_com.bin](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin). With ability to show 7681's Mac Address. (This firmware is for MCS global environment, if you are using MCS China site, please go to [this page](http://mcs.mediatek.cn/resources/latest/7681_firmware_update--cn/) to download the firmware for MCS China site.)
+
+
 ## Steps for LinkIt Connect 7681 Firmware Update
 
-1. Update your LinkIt Connect 7681 development board with the latest firmware. Please check [MediaTek LinkIt Connect 7681 Developer’s Guide: section 3.2, Firmware Uploader](https://labs.mediatek.com/fileMedia/download/60b77480-f08e-46de-b4ab-513916dcff75) for more information. Please use the following syntax as described in the aforementioned section from the developer’s guide:
+1. Update your LinkIt Connect 7681 development board with the latest firmware. Please check [MediaTek LinkIt Connect 7681 Developer’s Guide: section 3.2, Firmware Uploader](https://labs.mediatek.com/fileMedia/download/60b77480-f08e-46de-b4ab-513916dcff75) for more information. Please use the following syntax as described in the aforementioned section from the developer’s guide:
+
 	For Windows:
 
 	```
 	> mt7681_uploader.exe -f MT7681_sta_header.bin -c COM7
 	```
-	
+
 	or
-	
+
 	```
 	> python mt7681_uploader.py -f MT7681_sta_header.bin -c COM7
 	```
@@ -151,5 +154,6 @@ If you can't see your device on **Add Device** page, it could be due to one of t
 
 Others
 
-- Refresh Scan. It's recommended to refresh scan multiple times if you can’t find the AP.- `AT#Default`: Resets LinkIt Connect 7681 to default status without a Wi-Fi binding. For 7681s that are already connected to other Wi-Fi AP, they aren’t scanned by other Smart Connection. It's required to use `AT#Default` to reset LinkIt Connect 7681 in order to be smart connected by the MCS App.
+- Refresh Scan. It's recommended to refresh scan multiple times if you can’t find the AP.
+- `AT#Default`: Resets LinkIt Connect 7681 to default status without a Wi-Fi binding. For 7681s that are already connected to other Wi-Fi AP, they aren’t scanned by other Smart Connection. It's required to use `AT#Default` to reset LinkIt Connect 7681 in order to be smart connected by the MCS App.
 

@@ -19,7 +19,7 @@
 
 此外，您不需要額外的電子組件，就可以連接到開發板了。
 
-**(請注意：為了增加效能和安全性，我們將系統全面升級。請將韌體更新至最新版本才可繼續使用，請參考以下更新連結[7681 Firmware Update Instruction](../7681_firmware_update/))**
+**(請注意：請將韌體更新至最新版本才可繼續使用，請參考以下更新連結**[7681 Firmware Update Instruction](../7681_firmware_update/))**。若您使用 MCS Global 環境，請使用此韌體 **[MT7681_sta_header_com.bin](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin)**。若您使用 MCS China 環境，請使用此韌體 **[MT7681_sta_header_cn.bin](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin)**。**
 
 
 ## MT7681　控制器清單以及相對的 MCS 資料通道 ID

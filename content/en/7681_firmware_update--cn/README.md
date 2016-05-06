@@ -4,7 +4,7 @@
 ## Resources
 
 - Mobile APK: MediaTek Cloud Sandbox Mobile Application for Android **(>= 2.5.0)** [Download here](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk). Please check your Android application version is above 2.5.0.
-- 7681 Latest Firmware(2015/05/25): [MT7681_sta_header.bin](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin). With ability to show 7681's Mac Address.
+- 7681 Latest Firmware(2015/05/25): [MT7681_sta_header_cn.bin](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin). With ability to show 7681's Mac Address. (This firmware is for MCS China environment, if you are using MCS Global site, please go to [this page](https://mcs.mediatek.com/resources/latest/7681_firmware_update/) to download the firmware for MCS Global site.)
 
 ## Steps For 7681 Update
 
