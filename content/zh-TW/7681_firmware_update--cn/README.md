@@ -3,12 +3,12 @@
 
 ## Resources
 
-- Mobile APK: MediaTek Cloud Sandbox Mobile Application for Android **(>= 2.5.0)** [Dowbload here](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk). Please check your Android application version is above 2.5.0.
-- 7681 Latest Firmware(2015/05/25): [MT7681_sta_header_cn.bin](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin). With ability to show 7681's Mac Address. (This firmware is for MCS China environment, if you are using MCS Global site, please go to [this page](https://mcs.mediatek.com/resources/latest/7681_firmware_update/) to download the firmware for MCS Global site.)
+- Mobile APK: MediaTek Cloud Sandbox Mobile Application for Android **( version 2.5.0 or above )**. [Download here](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-latest-production-release.apk).
+- 7681 Latest Firmware(2015/05/25): [MT7681_sta_header_cn.bin](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin). With ability to show 7681's Mac Address. (This firmware is for MCS China environment. If you are using MCS Global, please go to MCS Global site to download the firmware for MCS Global.)
 
 ## Steps For 7681 Update
 
-1. Update 7681 with latest firmware. Please follow [MediaTek LinkIt Connect 7681 Developer’s Guide: 3.2 Firmware uploader](https://labs.mediatek.com/fileMedia/download/60b77480-f08e-46de-b4ab-513916dcff75) for further information. It's recommended to follow `3.2 Firmware uploader`, and use syntax like below:
+1. Update 7681 with latest firmware. Please follow MediaTek LinkIt Connect 7681 Developer’s Guide: 3.2 Firmware uploader at MediaTek Labs website for further information. It's recommended to follow `3.2 Firmware uploader`, and use syntax like below:
 
 	on Windows
 

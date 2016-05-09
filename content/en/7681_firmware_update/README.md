@@ -3,8 +3,8 @@
 
 ## Resources
 
-- Mobile APK: MediaTek Cloud Sandbox Mobile Application for Android **(>= 2.5.0)** on [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud). Please check your Android application version is above 2.5.0.
-- 7681 Latest Firmware(2015/05/25): [MT7681_sta_header_com.bin](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin). With ability to show 7681's Mac Address. (This firmware is for MCS global environment, if you are using MCS China site, please go to [this page](http://mcs.mediatek.cn/resources/latest/7681_firmware_update--cn/) to download the firmware for MCS China site.)
+- Mobile APK: MediaTek Cloud Sandbox Mobile Application for Android **( version 2.5.0 or above )**. [Download at Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud).
+- 7681 Latest Firmware(2015/05/25): [MT7681_sta_header_com.bin](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin). With ability to show 7681's Mac Address. (This firmware is for MCS global environment. If you are using MCS China, please go to MCS China site to download the firmware for MCS China.)
 
 
 ## Steps for LinkIt Connect 7681 Firmware Update

@@ -31,7 +31,7 @@ You can also click on any of your devices to see the device details:
 
 ![](../images/Mobile_application/img_mobileapplication_03.png)
 
-You can send commands to control your devices in controller data channels and see the latest data points in each data channel.  
+You can send commands to control your devices in controller data channels and see the latest data points in each data channel.
 
 The **Plus-in-circle** icon allows you to add new devices. For Smart Connection you can use this feature to add LinkIt Connect 7681 devices. For detailed instruction please refer to [Tutorial: Develop with LinkIt Connect 7681 development board](http://mcs.mediatek.com/resources/latest/tutorial/implementing_using_mt7681_development_board)
 

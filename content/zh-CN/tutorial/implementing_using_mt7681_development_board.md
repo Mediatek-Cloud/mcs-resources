@@ -18,7 +18,7 @@
 
 此外，您不需要额外的电子组件，就可以连接到开发板了。
 
-**(请注意：请将固件新至最新版本才可继续使用，请参考以下更新连结** [7681 Firmware Update Instruction](../7681_firmware_update/))**。若您使用 MCS Global 环境，请使用此固件 **[MT7681_sta_header_com.bin](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin)**。若您使用 MCS China 环境，请使用此固件 **[MT7681_sta_header_cn.bin](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin)**。**
+**(请注意：请将固件新至最新版本才可继续使用，请参考以下更新连结** [7681 Firmware Update Instruction](../7681_firmware_update/)**。)**
 
 ## MT7681　控制器清单以及相对的 MCS 资料通道 ID
 MT7681晶片组提供了五组 GPIO 针脚，您亦可使用 PWM 资料型态和一组 UART 阜。以下是 MT7681 的针脚和对应的资料通道 ID。

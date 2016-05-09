@@ -30,8 +30,8 @@
    * [Report Device Firmware](api_references/report_device_firmware.md)
    * [Retrieve Device Available Firmware](api_references/retrieve_device_available_firmware.md)
    * [Retrieve Device Firmware by version](api_references/retrieve_device_firmware_by_version.md)
-   * [Retrieve Firmware URL](api_references/retrieve_firmware_url.md)
    * [Device activation](api_references/device_activation.md)
+* [Retrieve Firmware URL](api_references/retrieve_firmware_url.md)
 * [Mobile application](mobile_application/README.md)
 * [Mobile application--cn](mobile_application--cn/README.md)
 * [7681 Firmware Update](7681_firmware_update/README.md)
@@ -51,5 +51,4 @@
    * [2.14](change_log/2.14.md)
    * [2.15](change_log/2.15.md)
    * [2.16](change_log/2.16.md)
-
 

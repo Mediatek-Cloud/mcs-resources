@@ -18,7 +18,7 @@ To complete this setup tutorial, you’ll need:
 
 No additional components need to be connected to the development board.
 
-**(Please note: You have to update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**). If you are using MCS Global site, please use this firmware **[MT7681_sta_header_com.bin](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin)**. If you are using MCS China site, please use this firmware **[MT7681_sta_header_cn.bin](https://s3.cn-north-1.amazonaws.com.cn/mtk.linkit/mcs-resources/firmwares/MT7681_sta_header.bin)**.**
+**(Please note: You have to update the firmware of your 7681 devices to the latest version. Detailed update steps are listed in **[7681 Firmware Update Instruction](../7681_firmware_update/)**.) **
 
 
 ## MT7681 controllers list and their corresponding MCS data channel IDs
