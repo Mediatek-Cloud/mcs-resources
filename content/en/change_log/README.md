@@ -1,5 +1,11 @@
 # MCS Change log Summary
 
+## May 25, 2016
+
+### v2.17
+
+[Embed data channels you like to other websites.](./2.17)
+
 ## March 28, 2016
 
 ### v2.16
