@@ -2,9 +2,11 @@
 
 Firmware Over the Air (FOTA) is a wildly used function nowadays. You can push the new firmware to connected devices using the MCS FOTA function.
 
+**This tutorial requires a LinkIt Smart 7688 DUO development board.**
+
 In this tutorial, we will first go through the following steps:
 1. how to generate the firmware file (.hex file) in the Arduino IDE
-2. what you need to prepare for the 7688 development board
+2. what you need to prepare for the 7688 DUO development board
 3. how to use the MCS console to push the firmware to the devices.
 
 
@@ -31,9 +33,9 @@ Here is the two firmware files we will use in this tutorial.
 [Blink every 100 milisecond](http://cdn.mediatek.com/100ms.hex)
 
 
-## Prepare the LinkIt Smart 7688 development board
+## Prepare the LinkIt Smart 7688 DUO development board
 
-1. Make sure your LinkIt Smart 7688 is connected.
+1. Make sure your LinkIt Smart 7688 DUO is connected.
 2. using command `ssh` to go into to the command console.
 3. Create a folder using the following command:
 ```
@@ -166,7 +168,7 @@ c. Click the firmware tab and you will see the uploaded firmware and the Push bu
 
 ### Step 3. Pushing firmware to devices
 
-When the 7688 development board is connected, you will see the Push button turn green. And you can click to push the firmware to the 7688 development board.
+When the 7688 DUO development board is connected, you will see the Push button turn green. And you can click to push the firmware to the 7688 development board.
 
 ![](../images/7688/img_7688_49.png)
 
