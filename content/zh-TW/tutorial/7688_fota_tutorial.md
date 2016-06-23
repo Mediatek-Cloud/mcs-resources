@@ -2,12 +2,14 @@
 
 Firmware Over the Air (FOTA) is a wildly used function nowadays. You can push the new firmware to connected devices using the MCS FOTA function.
 
+**This tutorial requires a LinkIt Smart 7688 DUO development board.**
+
 In this tutorial, we will first go through the following steps:
 1. how to generate the firmware file (.hex file) in the Arduino IDE
 2. what you need to prepare for the 7688 DUO development board
 3. how to use the MCS console to push the firmware to the devices.
 
-**This tutorial requires a LinkIt Smart 7688 DUO development board.**
+
 
 ## How to generate a .hex file in the Arduino IDE
 
