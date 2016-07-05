@@ -47,7 +47,7 @@ mcs/:deviceId/:deviceKey/:dataChnId
 ### Switch
 
 ```
-timestamp,deviceId,{0 or 1}
+timestamp,dataChnId,{0 or 1}
 
 ```
 0 stands for OFF, and 1 stands for ON.
@@ -60,34 +60,34 @@ To turn the switch01 to on state, and do not give the timestamp.
 
 ### Category
 ```
-timestamp,deviceId,{Key Value}
+timestamp,dataChnId,{Key Value}
 ```
 The Key value will correspond to the Key name that you’ve set.
 
 ### Integer
 ```
-timestamp,deviceId,{Integer}
+timestamp,dataChnId,{Integer}
 ```
 
 ### Float
 ```
-timestamp,deviceId,{Float}
+timestamp,dataChnId,{Float}
 ```
 
 ### Hex
 ```
-timestamp,deviceId,{Hex value}
+timestamp,dataChnId,{Hex value}
 ```
 Hex is referred to hexadecimal value which only takes value from A-D and 0-9.
 
 ### String
 ```
-timestamp,deviceId,{string}
+timestamp,dataChnId,{string}
 ```
 
 ### GPS
 ```
-timestamp,deviceId,{latitude},{longitude},{altitude}
+timestamp,dataChnId,{latitude},{longitude},{altitude}
 ```
 
 The range of latitude is from -90 to 90. 0 to 90 stands for North and 0 to -90 stands for South.
@@ -98,30 +98,30 @@ The range of altitude is from 0 to 20000 in meter.
 
 ### GPIO
 ```
-timestamp,deviceId,{0 ot 1}
+timestamp,dataChnId,{0 ot 1}
 ```
 0 stands for Low, and 1 stands for High.
 
 ### PWM
 ```
-timestamp,deviceId,{value},{period}
+timestamp,dataChnId,{value},{period}
 
 ```
 
 ### Analog
 ```
-timestamp,deviceId,{value}
+timestamp,dataChnId,{value}
 
 ```
 
 ### Gamepad
 ```
-timestamp,deviceId,{up/down/right/left/A/B value| press(1) or release(0)}
+timestamp,dataChnId,{up/down/right/left/A/B value| press(1) or release(0)}
 
 ```
 
 ### Image
 ```
-timestamp,deviceId,{image file base64 encoding string value}
+timestamp,dataChnId,{image file base64 encoding string value}
 
 ```

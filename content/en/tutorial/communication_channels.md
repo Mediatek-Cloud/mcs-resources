@@ -69,7 +69,7 @@ mcs/:deviceId/:deviceKey/:dataChnId
 
 The format that you will receive when **subcribe** to a channel or **publish** to MCS:
 ```
-timestamp,deviceId,value
+timestamp,dataChnId,value
 ```
 
 For more information about the value format for MQTT, please refer to this [link](../api_references/mqtt_communication_format).
