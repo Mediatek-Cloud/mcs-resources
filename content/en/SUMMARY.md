@@ -19,6 +19,7 @@
    * [7688 imagedisplay tutorial](tutorial/7688_imagedisplay_tutorial.md)
    * [7688 videostream tutorial](tutorial/7688_videostream_tutorial.md)
    * [7688 fota tutorial](tutorial/7688_fota_tutorial.md)
+   * [TCP and MQTT connection](tutorial/communication_channels.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
@@ -31,6 +32,7 @@
    * [Retrieve Device Available Firmware](api_references/retrieve_device_available_firmware.md)
    * [Retrieve Device Firmware by version](api_references/retrieve_device_firmware_by_version.md)
    * [Device activation](api_references/device_activation.md)
+   * [MQTT communication format](api_references/mqtt_communication_format.md)
 * [Retrieve Firmware URL](api_references/retrieve_firmware_url.md)
 * [Mobile application](mobile_application/README.md)
 * [Mobile application--cn](mobile_application--cn/README.md)
@@ -52,5 +54,4 @@
    * [2.15](change_log/2.15.md)
    * [2.16](change_log/2.16.md)
    * [2.17](change_log/2.17.md)
-
 
