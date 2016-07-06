@@ -94,6 +94,14 @@ The keep alive is a time interval, the client device commits to by sending regul
 
 ### FOTA via MQTT
 
+Please note, if you would like to send FOTA using the MQTT communication, you have to subscibe one of the topic to the wilcard devel.
+
+The format is as following:
+
+```
+mcs/:deviceId/:deviceKey/+
+```
+
 Once the device is connected and online via MQTT, and user pushed firmware to device. MCS server will send the following FOTA information to the device:
 
 ** timestamp, FOTA, version, MD5, URL**
