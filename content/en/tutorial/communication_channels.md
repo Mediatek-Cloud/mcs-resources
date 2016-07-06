@@ -45,7 +45,7 @@ Please note, MCS is using **server site signed** mechanism while using the encyp
 
 ### Subscribe & Publish
 
-After you've connected to the MCS MQTT broker. you can subscribe to specific device or data channel; you can also publish to specific data channel.
+After you've connected to the MCS MQTT broker, you can subscribe to specific device or data channel; you can also publish to specific data channel.
 
 For **subscription**, the topic is defined in the following format:
 
