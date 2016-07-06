@@ -45,7 +45,7 @@ Please note, MCS is using **server site signed** mechanism while using the encyp
 
 ### Subscribe & Publish
 
-After you've connected to the MCS MQTT broker. you can subscribe to specific device or data channel; you can also publish to specific data channel.
+After you've connected to the MCS MQTT broker, you can subscribe to specific device or data channel; you can also publish to specific data channel.
 
 For **subscription**, the topic is defined in the following format:
 
@@ -85,8 +85,8 @@ QoS or Quality of Service is one of the key features of MQTT. Currently, MCS onl
 
 The MCS MQTT Broker also supports Retained message and Offline message as the MQTT standard defined.
 
-* Retained message:This message will be sent everytime a client is subscribe to the topic. For example, a welcome message.
-*  Offline message: This message will be keep in the broker if the client is offline, and sent to the client when it goes online.
+* Retained message: This message will be sent everytime a client is subscribe to the topic. For example, a welcome message.
+* Offline message: This message will be keep in the broker if the client is offline, and sent to the client when it goes online.
 
 ### Keep Alive
 
