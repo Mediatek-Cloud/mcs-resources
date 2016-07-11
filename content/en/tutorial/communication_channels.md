@@ -85,7 +85,7 @@ QoS or Quality of Service is one of the key features of MQTT. Currently, MCS onl
 
 The MCS MQTT Broker also supports Retained message and Offline message as the MQTT standard defined.
 
-* Retained message:This message will be sent everytime a client is subscribe to the topic. For example, a welcome message.
+* Retained message: This message will be sent everytime a client is subscribe to the topic. For example, a welcome message.
 * Offline message: This message will be keep in the broker if the client is offline, and sent to the client when it goes online.
 
 ### Keep Alive
