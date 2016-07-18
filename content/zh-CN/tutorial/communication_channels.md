@@ -96,7 +96,7 @@ MCS MQTT Broker 以 MQTT 标准模式提供保留讯息与离线讯息的服务�
 
 ### 透过 MQTT 做 FOTA
 
-请注意，若您要使用 MQTT 通道来做 FOTA，您需要订阅至 wild card 层级的主题。
+请注意，若您要使用 MQTT 通道来做 FOTA，您需要订阅至 wildcard 层级的主题。
 
 格式如下：
 
