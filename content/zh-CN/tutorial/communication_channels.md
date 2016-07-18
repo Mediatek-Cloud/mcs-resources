@@ -27,9 +27,9 @@ Command Server 是一个**单向的 TCP 通讯**，只支援从 MCS 传送指令
 * deviceKey: 装置的 deviceKey
 * timestamp: 按下推播按钮的时间点
 * FOTA: 字串
-* version: 被传替的韧体版本
-* MD5: 被传替的韧体 MD5
-* URL: 被传替的韧体的下载网址
+* version: 被传递的韧体版本
+* MD5: 被传递的韧体 MD5
+* URL: 被传递的韧体的下载网址
 
 更多关于 FOTA 的资讯，请查看[此连结](../tutorial/managing_firmware)。
 
@@ -110,8 +110,8 @@ mcs/:deviceId/:deviceKey/+
 
 * timestamp: 按下推播按钮的时间点
 * FOTA: 字串
-* version: 被传替的韧体版本
-* MD5: 被传替的韧体 MD5
-* URL: 被传替的韧体的下载网址
+* version: 被传递的韧体版本
+* MD5: 被传递的韧体 MD5
+* URL: 被传递的韧体的下载网址
 
 更多关于 FOTA 的资讯，请查看[此连结](../tutorial/managing_firmware)。
