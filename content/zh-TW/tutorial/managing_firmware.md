@@ -46,7 +46,7 @@ MCS 將不會處理裝置端的韌體更新，使用者需自行開發您的開�
 
 請注意, MCS 平台只會將韌體更新資訊傳遞到裝置端，我們將不會處理裝置端的韌體更新程序。您必須自行開發您的裝置，以下載和更新韌體。
 
-當您按下推播按鈕後，MCS command server 會將資訊以以下格式傳替給裝置：
+當您按下推播按鈕後，MCS command server 會將資訊以以下格式傳遞給裝置：
 
 **deviceId, deviceKey, timestamp, FOTA, version, MD5, URL**
 
