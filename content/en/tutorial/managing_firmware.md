@@ -44,7 +44,7 @@ Click **Push** button next to the firmware you want to use for device upgrade. A
 
 ![](../images/Firmware/img_firmware_06.png)
 
-Please note, in the MCS platform, firmware upgrade information is sent to a device, howeverm the firmware upgrade process is not handled. Please create code for your device in order to receive the information and perform firmware download and upgrade.
+Please note, in the MCS platform, firmware upgrade information is sent to a device, however the firmware upgrade process is not handled. Please create code for your device in order to receive the information and perform firmware download and upgrade.
 
 The MCS command server will pass the code information to the device in the following format after clicking **Push**:
 
@@ -79,6 +79,7 @@ For a device to report its firmware version to the MCS platform, please use the 
 If you don't want to do the firmware upgrade through the MCS platform, you can use the **Retrieve device available firmware** API [here](https://mcs.mediatek.com/resources/latest/api_references/) to get all the available firmware for the device.
 
 After you've retrieved the available firmware list and you've decided on the firmware version for upgrade, use the **Retrieve firmware URL** API [here](https://mcs.mediatek.com/resources/latest/api_references/) to get the download location of the firmware.
+
 
 
 

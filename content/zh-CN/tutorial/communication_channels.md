@@ -1,4 +1,4 @@
-# TCP 和 MQTT 连结
+﻿# TCP 和 MQTT 连结
 
 您可以选择使用 **Command Server** 来建立 TCP 连线，或是 **MQTT** 来将装置与 MCS 平台做沟通。装置与 MCS 平台相连之后，您可以透过电脑或是手机将指令发送给装置，或是接收装置上传的资料。
 
@@ -19,7 +19,7 @@ Command Server 是一个**单向的 TCP 通讯**，只支援从 MCS 传送指令
 
  ### 透过 Command Server 做 FOTA
 
-当您的装置已经透过 Command Server 与 MCS 连结， 并且您希望做韧体更新。当您按下推播按钮后，MCS Command Server 会将资讯以以下格式传替给装置：
+当您的装置已经透过 Command Server 与 MCS 连结， 并且您希望做韧体更新。当您按下推播按钮后，MCS Command Server 会将资讯以以下格式传递给装置：
 
 **deviceId, deviceKey, timestamp, FOTA, version, MD5, URL**
 
@@ -87,7 +87,7 @@ QoS 或是 Quality of Service 为 MQTT 重要特色之一. 目前 MCS 只支援 
 MCS MQTT Broker 以 MQTT 标准模式提供保留讯息与离线讯息的服务。
 
 * 保留讯息：此讯息会在每次有端点装置订阅特定主题时传送。例如：欢迎讯息。
-* 离线讯息：此讯息当端点装置离现时，会暂时保留在伺服器端，当端点装置上线时传送。
+* 离线讯息：此讯息当端点装置离线时，会暂时保留在伺服器端，当端点装置上线时传送。
 
 ### 保持连线（Keep Alive）
 
@@ -104,7 +104,7 @@ MCS MQTT Broker 以 MQTT 标准模式提供保留讯息与离线讯息的服务�
 mcs/:deviceId/:deviceKey/+
 ```
 
-当您的装置已经透过 MQTT 与 MCS 连结， 并且您希望做韧体更新。当您按下推播按钮后，MCS MQTT Broker 会将资讯以以下格式传替给装置：
+当您的装置已经透过 MQTT 与 MCS 连结， 并且您希望做韧体更新。当您按下推播按钮后，MCS MQTT Broker 会将资讯以以下格式传递给装置：
 
 ** timestamp, FOTA, version, MD5, URL**
 
@@ -115,3 +115,4 @@ mcs/:deviceId/:deviceKey/+
 * URL: 被传替的韧体的下载网址
 
 更多关于 FOTA 的资讯，请查看[此连结](../tutorial/managing_firmware)。
+

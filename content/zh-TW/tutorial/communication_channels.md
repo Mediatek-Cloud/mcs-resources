@@ -19,7 +19,7 @@ Command Server 是一個**單向的 TCP 通訊**，只支援從 MCS 傳送指令
 
  ### 透過 Command Server 做 FOTA
 
-當您的裝置已經透過 Command Server 與 MCS 連結， 並且您希望做韌體更新。當您按下推播按鈕後，MCS Command Server 會將資訊以以下格式傳替給裝置：
+當您的裝置已經透過 Command Server 與 MCS 連結， 並且您希望做韌體更新。當您按下推播按鈕後，MCS Command Server 會將資訊以以下格式傳遞給裝置：
 
 **deviceId, deviceKey, timestamp, FOTA, version, MD5, URL**
 
@@ -87,7 +87,7 @@ QoS 或是 Quality of Service 為 MQTT 重要特色之一. 目前 MCS 只支援 
 MCS MQTT Broker 以 MQTT 標準模式提供保留訊息與離線訊息的服務。
 
 * 保留訊息：此訊息會在每次有端點裝置訂閱特定主題時傳送。例如：歡迎訊息。
-* 離線訊息：此訊息當端點裝置離現時，會暫時保留在伺服器端，當端點裝置上線時傳送。
+* 離線訊息：此訊息當端點裝置離線時，會暫時保留在伺服器端，當端點裝置上線時傳送。
 
 ### 保持連線（Keep Alive）
 
@@ -104,7 +104,7 @@ MCS MQTT Broker 以 MQTT 標準模式提供保留訊息與離線訊息的服務�
 mcs/:deviceId/:deviceKey/+
 ```
 
-當您的裝置已經透過 MQTT 與 MCS 連結， 並且您希望做韌體更新。當您按下推播按鈕後，MCS MQTT Broker 會將資訊以以下格式傳替給裝置：
+當您的裝置已經透過 MQTT 與 MCS 連結， 並且您希望做韌體更新。當您按下推播按鈕後，MCS MQTT Broker 會將資訊以以下格式傳遞給裝置：
 
 ** timestamp, FOTA, version, MD5, URL**
 

@@ -1,4 +1,4 @@
-# MQTT 沟通格式
+﻿# MQTT 沟通格式
 
 此章节将会说明所有 MQTT 沟通格式，此格式为当装置有订阅主题,或是欲传送资讯至 MQTT Broker 时，所会接收或是发送的格式。
 
@@ -52,7 +52,7 @@ timestamp,dataChnId,{0 or 1}
 
 范例：
 
-switch01,, 1
+, switch01, 1
 
 代表将 switch01 资料通道的状态改为开，并且由系统自动带入时间。
 
@@ -123,3 +123,4 @@ timestamp,dataChnId,{up/down/right/left/A/B value| press(1) or release(0)}
 timestamp,dataChnId,{image file base64 encoding string value}
 
 ```
+

@@ -58,7 +58,7 @@ MCS 將不會處理裝置端的韌體更新，使用者需自行開發您的開�
 * MD5: 被傳替的韌體 MD5
 * URL: 被傳替的韌體的下載網址
 
-若您的裝置是透過 MQTT 和 MCS 做相連，當您按下推播按鈕後，MCS  MQTT Broker 會將資訊以以下格式傳替給裝置：
+若您的裝置是透過 MQTT 和 MCS 做相連，當您按下推播按鈕後，MCS MQTT Broker 會將資訊以以下格式傳替給裝置：
 
 **timestamp, FOTA, version, MD5, URL**
 

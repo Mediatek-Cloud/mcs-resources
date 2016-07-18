@@ -52,7 +52,7 @@ timestamp,dataChnId,{0 or 1}
 
 範例：
 
-switch01,, 1
+,switch01, 1
 
 代表將 switch01 資料通道的狀態改為開，並且由系統自動帶入時間。
 
