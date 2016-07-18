@@ -1,118 +1,120 @@
-# TCP and MQTT Connection
+# TCP 和 MQTT 連結
 
-To start sending and receiving device data, you can choose from the **Command Server** to build up a TCP connection or **MQTT** to communicate with the MCS server. By connecting your device to Command Server or MCS MQTT Broker, you can giving commands to the device from the MCS console or mobile device or receiving data from the connected devices.
+您可以選擇使用 **Command Server** 來建立 TCP 連線，或是 **MQTT** 來將裝置與 MCS 平台做溝通。裝置與 MCS 平台相連之後，您可以透過電腦或是手機將指令發送給裝置，或是接收裝置上傳的資料。
 
-The **Command Server** is a **one-way TCP connumication**, it only supports the message or command giving from the MCS server to the connected device; while the **MQTT** is a **two-ways comunication**, you can both send message to the connected device or the device can send message to the MCS server.
+**Command Server** 是一個**單向的 TCP 通訊**，只支援從 MCS 傳送指令或是訊息至裝置端；**MQTT** 則是一個**雙向的通訊模式**，您可以同時傳送指令至裝置或是接收裝置上傳的資料。
 
-MCS supports this two kinds of communication at the same time, but we highly recommand you only implement one kind of communication on a device.
+MCS 支援此兩種通訊方式，並且我們建議您在一個裝置上，只使用其中一種方式。
+
 
 ## Command Server
- Command Server is a **one-way** communication, it ony send the command from the MCS to the connected device.
+Command Server 是一個**單向的 TCP 通訊**，只支援從 MCS 傳送指令或是訊息至裝置端。
 
-### Set Up Connection
- To build a connection bwtween the Command Server and your device, you have to first call the [Get connection API](https://mcs.mediatek.com/resources/latest/api_references/#get-connection) to get connection IP and port. Then by keep sending heartbeat to maintain the connection.
+### 設定連線
+在裝置能接收 MCS 指令前，裝置須先和 MCS 平台做相連。呼叫 RESTful API: GET https://api.mediatek.com/mcs/v2/devices/{deviceId}/connections to 來取得一組 ip 位置以及連接阜來建立連結。之後，透過傳送 heartbeat 來維持連線。
 
 
-### Communication Format
- To send commands via Command Server to device, you can refer to the [Command Server format](https://mcs.mediatek.com/resources/latest/api_references/#command-server-format) to send correct command to different data channels.
+### 通訊格式
+透過 Command Server 傳送指令，您可以參考 [Command Server 格式](https://mcs.mediatek.com/resources/latest/api_references/#command-server-format) 來傳送正確的格式給不同的資料通道。
 
- ### FOTA via Command Server
+ ### 透過 Command Server 做 FOTA
 
-Once the device is connected and online via command server, and user pushed firmware to device. MCS server will send the following FOTA information to the device:
+當您的裝置已經透過 Command Server 與 MCS 連結， 並且您希望做韌體更新。當您按下推播按鈕後，MCS Command Server 會將資訊以以下格式傳替給裝置：
 
 **deviceId, deviceKey, timestamp, FOTA, version, MD5, URL**
 
-* deviceId: the deviceId of the device
-* deviceKey: the deviceKey of the device
-* timestamp: the timestamp when the firmware is pushed
-* FOTA: a string
-* version: the version of the firmware being passed
-* MD5: the MD5 of the firmware being passed
-* URL: the download URL of the firmware being passed
+* deviceId: 裝置的 deviceId
+* deviceKey: 裝置的 deviceKey
+* timestamp: 按下推播按鈕的時間點
+* FOTA: 字串
+* version: 被傳替的韌體版本
+* MD5: 被傳替的韌體 MD5
+* URL: 被傳替的韌體的下載網址
 
-For more information about FOTA, please refer to [this link](../tutorial/managing_firmware).
+更多關於 FOTA 的資訊，請查看[此連結](../tutorial/managing_firmware)。
 
 ## MQTT
-MQTT is a **two-ways** connectivity protocol. It was designed as a lightweight publish and subscribe messaging transport. You can explore more information about the MQTT protocal [here](http://mqtt.org/). MCS follows standard MQTT protocal and supports basic MQTT features like offline message and retained message.
+MQTT 是一種**雙向的**是一個輕量的訂閱和發佈通訊協定。您可以在[此連結](http://mqtt.org/)中查看更多關於 MQTT 通訊的資訊。MCS 採用標準的 MQTT 通訊模式，並且支援多種 MQTT 特色功能，包括離線訊息與保留訊息。
 
-### Set Up Connection
+### 設定連線
 
-MQTT Broker Host: mqtt.mcs.mediatek.com
+MQTT 伺服器： mqtt.mcs.mediatek.com
 
-Port: 1883(un-encrypted) or 8883(encrypted)
+連接阜： 1883(未加密) 或 8883(加密)
 
-Please note, MCS is using **server site signed** mechanism while using the encypted port.
+請注意， 當您使用加密阜時，MCS 使用**伺服器端加密**方式。
 
-### Subscribe & Publish
+### 訂閱 & 發佈
 
-After you've connected to the MCS MQTT broker. You can subscribe to specific device or data channel; you can also publish to specific data channel.
+當您連結上 MCS MQTT 伺服器後，您可以訂閱整個裝置或是個別資料通道的訊息；或是發佈訊息至特定資料通道。
 
-For **subscription**, the topic is defined in the following format:
+當要**訂閱**特定資料通道時，訂閱主題的格式如下：
 
 ```
 mcs/:deviceId/:deviceKey/:dataChnId
 ```
 
-Or to subscribe all data channels in a device:
+或是可訂閱特定裝置下全部資料通道：
 
 ```
 mcs/:deviceId/:deviceKey/+
 ```
 
-For **publish**, the topic is defined in the following format:
+當要**發佈**時, 發佈主題的格式如下：
 
 ```
 mcs/:deviceId/:deviceKey/:dataChnId
 ```
 
-### Communication Format
+### 通訊格式
 
-The format that you will receive when **subcribe** to a channel or **publish** to MCS:
+以下格式為您**訂閱**主題時會收到的訊息內容，或是**發佈** 時亦是使用此相同格式：
 ```
 timestamp,dataChnId,value
 ```
 
-For more information about the value format for MQTT, please refer to this [link](../api_references/mqtt_communication_format).
+若要查看更多關於 MQTT 資料格式，您可以參考[此連結](../api_references/mqtt_communication_format)。
 
 ### Quality of Service (QoS)
 
-QoS or Quality of Service is one of the key features of MQTT. Currently, MCS only supports QoS0 and QoS1.
+QoS 或是 Quality of Service 為 MQTT 重要特色之一. 目前 MCS 只支援 QoS0 和 QoS1。
 
-* QoS 0: Send only once. This fire and forget method is the default messaging level that does not guarantee message delivery.
-* QoS 1: Deliver at least once. This level guarantees that the message is delivered, but do not enforce one-time delivery.
+* QoS 0: 只送一次。此種送後不理的方式為最基礎的傳遞模式，且不保證訊息的成功傳達與否。
+* QoS 1: 傳送至少一次。此種傳遞模式確保訊息一定會被傳達，但不限於只有傳遞一次。
 
-### Retained Message & Offline Message
+### 保留訊息 & 離線訊息
 
-The MCS MQTT Broker also supports Retained message and Offline message as the MQTT standard defined.
+MCS MQTT Broker 以 MQTT 標準模式提供保留訊息與離線訊息的服務。
 
-* Retained message: This message will be sent everytime a client is subscribe to the topic. For example, a welcome message.
-* Offline message: This message will be keep in the broker if the client is offline, and sent to the client when it goes online.
+* 保留訊息：此訊息會在每次有端點裝置訂閱特定主題時傳送。例如：歡迎訊息。
+* 離線訊息：此訊息當端點裝置離現時，會暫時保留在伺服器端，當端點裝置上線時傳送。
 
-### Keep Alive
+### 保持連線（Keep Alive）
 
-The keep alive is a time interval, the client device commits to by sending regular PING Request messages to the MQTT broker. The MQTT broker response with PING Response and this mechanism will allow both sides to determine if the other one is still alive and reachable. MCS MQTT follows the MQTT standard to maintain the keep alive between the client and broker.
+保持連線為端點裝置承諾，在一定的時間區間內，定期發送訊息至伺服器端以保持連線。同時伺服器端也會回覆訊息給端點裝置，讓彼此判斷對方是否在線。MCS MQTT Broker 採用標準化的 MQTT 保持連線規則。
 
-### FOTA via MQTT
 
-Please note, if you would like to send FOTA using the MQTT communication, you have to subscibe one of the topic to the wilcard devel.
+### 透過 MQTT 做 FOTA
 
-The format is as following:
+請注意，若您要使用 MQTT 通道來做 FOTA，您需要訂閱至 wild card 層級的主題。
+
+格式如下：
 
 ```
 mcs/:deviceId/:deviceKey/+
 ```
 
-Once the device is connected and online via MQTT, and user pushed firmware to device. MCS server will send the following FOTA information to the device:
+當您的裝置已經透過 MQTT 與 MCS 連結， 並且您希望做韌體更新。當您按下推播按鈕後，MCS MQTT Broker 會將資訊以以下格式傳替給裝置：
 
 ** timestamp, FOTA, version, MD5, URL**
 
-* timestamp: the timestamp when the firmware is pushed
-* FOTA: a string
-* version: the version of the firmware being passed
-* MD5: the MD5 of the firmware being passed
-* URL: the download URL of the firmware being passed
+* timestamp: 按下推播按鈕的時間點
+* FOTA: 字串
+* version: 被傳替的韌體版本
+* MD5: 被傳替的韌體 MD5
+* URL: 被傳替的韌體的下載網址
 
-For more information about FOTA, please refer to [this link](../tutorial/managing_firmware).
+更多關於 FOTA 的資訊，請查看[此連結](../tutorial/managing_firmware)。
 
 
 

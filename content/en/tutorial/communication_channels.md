@@ -94,7 +94,7 @@ The keep alive is a time interval, the client device commits to by sending regul
 
 ### FOTA via MQTT
 
-Please note, if you would like to send FOTA using the MQTT communication, you have to subscibe one of the topic to the wilcard devel.
+Please note, if you would like to send FOTA using the MQTT communication, you have to subscibe one of the topic to the wild card devel.
 
 The format is as following:
 

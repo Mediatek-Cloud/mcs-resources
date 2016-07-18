@@ -44,7 +44,9 @@ Click **Push** button next to the firmware you want to use for device upgrade. A
 
 ![](../images/Firmware/img_firmware_06.png)
 
-Please note, in the MCS platform, firmware upgrade information is sent to a device, howeverm the firmware upgrade process is not handled. Please create code for your device in order to receive the information and perform firmware download and upgrade. The MCS command server will pass the code information to the device in the following format after clicking **Push**:
+Please note, in the MCS platform, firmware upgrade information is sent to a device, howeverm the firmware upgrade process is not handled. Please create code for your device in order to receive the information and perform firmware download and upgrade.
+
+The MCS command server will pass the code information to the device in the following format after clicking **Push**:
 
 **deviceId, deviceKey, timestamp, FOTA, version, MD5, URL**
 
@@ -56,6 +58,15 @@ Please note, in the MCS platform, firmware upgrade information is sent to a devi
 * MD5: the MD5 of the firmware being passed
 * URL: the download URL of the firmware being passed
 
+Or if you are using the MQTT to connect the device, the MCS MQTT Broker will pass the code information to the device in the following format after clicking **Push**:
+
+**timestamp, FOTA, version, MD5, URL**
+
+* timestamp: the timestamp when the firmware is pushed
+* FOTA: a string
+* version: the version of the firmware being passed
+* MD5: the MD5 of the firmware being passed
+* URL: the download URL of the firmware being passed
 
 Also, for devices based on LinkIt Connect 7681, the firmware upgrade process is handled by MCS, and you do not need to do any additional coding. However, you need to set a unique firmware version due to device limitation related to LinkIt Connect 7681, which is that it can only upgrade to a firmware with higher version.
 

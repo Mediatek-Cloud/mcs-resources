@@ -6,7 +6,7 @@ In this guide you’ll learn the steps to create a simple remote switch that all
 
 ### Step 1. Create a new Prototype with Switch-Type data channel
 
-a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype or [import from json](http://cdn.mediatek.com/tutorial/7688/7688_switch_CN.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
+a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype or [import from json](http://cdn.mediatek.com/tutorial/7688/7688_switch_EN.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 
@@ -76,19 +76,25 @@ MCS supports node.js and python. You can choose node.js or python base on your p
 
 Here is the Node.js example code that listens for commands from MCS web console.
 
-1. Create a file app.js using an editor, vi is used in this example:
+* Create a file app.js using an editor, vi is used in this example:
 
 ```
 vim app.js
 ```
 
-2. Type **i** and Copy/paste the following code in the editor
+### Connect Using Command Server or MQTT
 
-``` js
+
+MCS provides two kinds of communication between the device and MCS, the **Command Server** and the **MQTT**. Please only choose one to implement on your device.
+
+#### Connect using Command Server
+* Type **i** and Copy/paste the following code in the editor.
+
+```
 var mcs = require('mcsjs');
 var myApp = mcs.register({
-  deviceId: 'ABC123',
-  deviceKey: 'XYZ123',
+  deviceId: 'Input your deviceId',
+  deviceKey: 'Input your deviceKey',
   host: 'api.mediatek.com'
 });
 
@@ -100,6 +106,33 @@ myApp.on('LED_Control', function(data, time) {
     console.log('blink');
   } else {
     console.log(’off’);
+  }
+});
+
+```
+#### Connect using MQTT
+* Type **i** and Copy/paste the following code in the editor.
+
+```
+var mcs = require('mcsjs');
+
+var myApp = mcs.register({
+  deviceId: 'Input your deviceId',
+  deviceKey: 'Input your deviceKey',
+  host: 'api.mediatek.com',
+  mqttHost: 'mqtt.mcs.mediatek.com',
+  method: 'mqtt',
+  port: 1883,
+  qos: 0
+});
+// Replace the device ID and device Key obtained from your test device
+// created in MCS.
+
+myApp.on('LED_Control', function(data, time) {
+  if(Number(data) === 1){
+    console.log('blink');
+  } else {
+    console.log('off');
   }
 });
 
@@ -311,4 +344,5 @@ Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on 
 ![](../images/7688/img_7688_16.png)
 
 ![](../images/7688/img_7688_17.png)
+
 

@@ -1,4 +1,4 @@
-# Simple Switch Tutorial
+﻿# Simple Switch Tutorial
 
 In this guide you’ll learn the steps to create a simple remote switch that allows you to turn on and off the on-board Wi-Fi LED from the web console of MCS using Node.js or python.
 
@@ -128,7 +128,7 @@ var myApp = mcs.register({
 // Replace the device ID and device Key obtained from your test device
 // created in MCS.
 
-myApp.on('LED_control', function(data, time) {
+myApp.on('LED_Control', function(data, time) {
   if(Number(data) === 1){
     console.log('blink');
   } else {
@@ -344,4 +344,5 @@ Go to MediaTek Cloud Sandbox and use the controller panel to flip the button on 
 ![](../images/7688/img_7688_16.png)
 
 ![](../images/7688/img_7688_17.png)
+
 
