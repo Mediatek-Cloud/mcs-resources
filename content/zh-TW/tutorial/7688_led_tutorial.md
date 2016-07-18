@@ -6,7 +6,7 @@ In this guide you’ll learn the steps to create a simple remote switch that all
 
 ### Step 1. Create a new Prototype with Switch-Type data channel
 
-a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype or [import from json](http://cdn.mediatek.com/tutorial/7688/7688_switch_EN.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
+a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype or [import from json](http://cdn.mediatek.com/tutorial/7688/7688_switch_TW.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 
