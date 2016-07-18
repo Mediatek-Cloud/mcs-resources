@@ -59,7 +59,7 @@ MCS 将不会处理装置端的固件更新，使用者需自行开发您的开�
 * MD5：被传递的固件 MD5
 * URL：被传递的固件的下载网址
 
-若您的装置是透过 MQTT 和 MCS 做相连，当您按下推播按钮后，MCS MQTT Broker 会将资讯以以下格式传替给装置：
+若您的装置是透过 MQTT 和 MCS 做相连，当您按下推播按钮后，MCS MQTT Broker 会将资讯以以下格式传递给装置：
 
 **timestamp, FOTA, version, MD5, URL**
 
