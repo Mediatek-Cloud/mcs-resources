@@ -46,7 +46,7 @@ MCS 将不会处理装置端的固件更新，使用者需自行开发您的开�
 
 请注意，MCS 平台只会将固件更新资讯传递到装置端，我们将不会处理装置端的固件更新程序。您必须自行开发您的装置，以下载和更新固件。
 
-当您按下推播按钮后，MCS command server 会将资讯以以下格式传替给装置：
+当您按下推播按钮后，MCS command server 会将资讯以以下格式传递给装置：
 
 
 **deviceId,deviceKey,timestamp,FOTA,version,MD5,URL**
@@ -59,7 +59,7 @@ MCS 将不会处理装置端的固件更新，使用者需自行开发您的开�
 * MD5：被传递的固件 MD5
 * URL：被传递的固件的下载网址
 
-若您的装置是透过 MQTT 和 MCS 做相连，当您按下推播按钮后，MCS MQTT Broker 会将资讯以以下格式传替给装置：
+若您的装置是透过 MQTT 和 MCS 做相连，当您按下推播按钮后，MCS MQTT Broker 会将资讯以以下格式传递给装置：
 
 **timestamp,FOTA,version,MD5,URL**
 
