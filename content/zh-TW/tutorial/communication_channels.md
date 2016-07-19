@@ -21,7 +21,7 @@ Command Server 是一個**單向的 TCP 通訊**，只支援從 MCS 傳送指令
 
 當您的裝置已經透過 Command Server 與 MCS 連結， 並且您希望做韌體更新。當您按下推播按鈕後，MCS Command Server 會將資訊以以下格式傳遞給裝置：
 
-**deviceId, deviceKey, timestamp, FOTA, version, MD5, URL**
+**deviceId,deviceKey,timestamp,FOTA,version,MD5,URL**
 
 * deviceId: 裝置的 deviceId
 * deviceKey: 裝置的 deviceKey
@@ -106,7 +106,7 @@ mcs/:deviceId/:deviceKey/+
 
 當您的裝置已經透過 MQTT 與 MCS 連結， 並且您希望做韌體更新。當您按下推播按鈕後，MCS MQTT Broker 會將資訊以以下格式傳遞給裝置：
 
-** timestamp, FOTA, version, MD5, URL**
+** timestamp,FOTA,version,MD5,URL**
 
 * timestamp: 按下推播按鈕的時間點
 * FOTA: 字串

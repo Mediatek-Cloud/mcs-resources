@@ -20,7 +20,7 @@ MCS supports this two kinds of communication at the same time, but we highly rec
 
 Once the device is connected and online via command server, and user pushed firmware to device. MCS server will send the following FOTA information to the device:
 
-**deviceId, deviceKey, timestamp, FOTA, version, MD5, URL**
+**deviceId,deviceKey,timestamp,FOTA,version,MD5,URL**
 
 * deviceId: the deviceId of the device
 * deviceKey: the deviceKey of the device
@@ -104,7 +104,7 @@ mcs/:deviceId/:deviceKey/+
 
 Once the device is connected and online via MQTT, and user pushed firmware to device. MCS server will send the following FOTA information to the device:
 
-** timestamp, FOTA, version, MD5, URL**
+**timestamp,FOTA,version,MD5,URL**
 
 * timestamp: the timestamp when the firmware is pushed
 * FOTA: a string

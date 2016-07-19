@@ -21,7 +21,7 @@ Command Server 是一个**单向的 TCP 通讯**，只支援从 MCS 传送指令
 
 当您的装置已经透过 Command Server 与 MCS 连结， 并且您希望做韧体更新。当您按下推播按钮后，MCS Command Server 会将资讯以以下格式传递给装置：
 
-**deviceId, deviceKey, timestamp, FOTA, version, MD5, URL**
+**deviceId,deviceKey,timestamp,FOTA,version,MD5,URL**
 
 * deviceId: 装置的 deviceId
 * deviceKey: 装置的 deviceKey
@@ -106,7 +106,7 @@ mcs/:deviceId/:deviceKey/+
 
 当您的装置已经透过 MQTT 与 MCS 连结， 并且您希望做韧体更新。当您按下推播按钮后，MCS MQTT Broker 会将资讯以以下格式传递给装置：
 
-** timestamp, FOTA, version, MD5, URL**
+**timestamp,FOTA,version,MD5,URL**
 
 * timestamp: 按下推播按钮的时间点
 * FOTA: 字串

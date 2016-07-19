@@ -48,7 +48,7 @@ MCS 將不會處理裝置端的韌體更新，使用者需自行開發您的開�
 
 當您按下推播按鈕後，MCS command server 會將資訊以以下格式傳替給裝置：
 
-**deviceId, deviceKey, timestamp, FOTA, version, MD5, URL**
+**deviceId,deviceKey,timestamp,FOTA,version,MD5,URL**
 
 * deviceId: 裝置的 deviceId
 * deviceKey: 裝置的 deviceKey
@@ -60,7 +60,7 @@ MCS 將不會處理裝置端的韌體更新，使用者需自行開發您的開�
 
 若您的裝置是透過 MQTT 和 MCS 做相連，當您按下推播按鈕後，MCS MQTT Broker 會將資訊以以下格式傳替給裝置：
 
-**timestamp, FOTA, version, MD5, URL**
+**timestamp,FOTA,version,MD5,URL**
 
 * timestamp: 按下推播按鈕的時間點
 * FOTA: 字串

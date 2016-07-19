@@ -48,7 +48,7 @@ Please note, in the MCS platform, firmware upgrade information is sent to a devi
 
 The MCS command server will pass the code information to the device in the following format after clicking **Push**:
 
-**deviceId, deviceKey, timestamp, FOTA, version, MD5, URL**
+**deviceId,deviceKey,timestamp,FOTA,version,MD5,URL**
 
 * deviceId: the deviceId of the device
 * deviceKey: the deviceKey of the device
@@ -60,7 +60,7 @@ The MCS command server will pass the code information to the device in the follo
 
 Or if you are using the MQTT to connect the device, the MCS MQTT Broker will pass the code information to the device in the following format after clicking **Push**:
 
-**timestamp, FOTA, version, MD5, URL**
+**timestamp,FOTA,version,MD5,URL**
 
 * timestamp: the timestamp when the firmware is pushed
 * FOTA: a string
