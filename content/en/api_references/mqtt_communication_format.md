@@ -1,4 +1,4 @@
-# MQTT communication format
+﻿# MQTT communication format
 
 The MQTT communication format of each data type is defined here. This format is for both subscribe or publish.
 
@@ -54,7 +54,7 @@ timestamp,dataChnId,{0 or 1}
 
 For example:
 
-switch01,, 1
+, switch01, 1
 
 To turn the switch01 to on state, and do not give the timestamp.
 

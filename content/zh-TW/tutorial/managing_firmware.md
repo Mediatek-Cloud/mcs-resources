@@ -44,17 +44,30 @@ MCS 將不會處理裝置端的韌體更新，使用者需自行開發您的開�
 
 ![](../images/Firmware/img_firmware_06.png)
 
-請注意, MCS 平台只會將韌體更新資訊傳遞到裝置端，我們將不會處理裝置端的韌體更新程序。您必須自行開發您的裝置，以下載和更新韌體。當您按下推播按鈕後，MCS command server 會將資訊以以下格式傳替給裝置：
+請注意, MCS 平台只會將韌體更新資訊傳遞到裝置端，我們將不會處理裝置端的韌體更新程序。您必須自行開發您的裝置，以下載和更新韌體。
 
-**deviceId, deviceKey, timestamp, FOTA, version, MD5, URL**
+當您按下推播按鈕後，MCS command server 會將資訊以以下格式傳遞給裝置：
+
+**deviceId,deviceKey,timestamp,FOTA,version,MD5,URL**
 
 * deviceId: 裝置的 deviceId
 * deviceKey: 裝置的 deviceKey
 * timestamp: 按下推播按鈕的時間點
 * FOTA: 字串
-* version: 被傳替的韌體版本
-* MD5: 被傳替的韌體 MD5
-* URL: 被傳替的韌體的下載網址
+* version: 被傳遞的韌體版本
+* MD5: 被傳遞的韌體 MD5
+* URL: 被傳遞的韌體的下載網址
+
+若您的裝置是透過 MQTT 和 MCS 做相連，當您按下推播按鈕後，MCS MQTT Broker 會將資訊以以下格式傳替給裝置：
+
+**timestamp,FOTA,version,MD5,URL**
+
+* timestamp: 按下推播按鈕的時間點
+* FOTA: 字串
+* version: 被傳遞的韌體版本
+* MD5: 被傳遞的韌體 MD5
+* URL: 被傳遞的韌體的下載網址
+
 
 此外，若您是使用 7681 開發板，您將不必額外對開發板進行開發，我們已經內建韌體更新功能。您唯一需要注意的是確認韌體版本號有被正確設置，版本號需要為獨特不能重複的。此外，7681 裝置由於硬體限制，只能接受版本號高於現有版本的韌體更新。
 
