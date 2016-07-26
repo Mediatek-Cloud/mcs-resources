@@ -1,5 +1,11 @@
 # MCS Change log Summary
 
+## July 27, 2016
+
+### v2.17
+
+[MQTT service is online. Connect device via MQTT protocol.](./2.18)
+
 ## May 25, 2016
 
 ### v2.17
