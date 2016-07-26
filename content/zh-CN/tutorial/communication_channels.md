@@ -34,7 +34,7 @@ Command Server 是一个**单向的 TCP 通讯**，只支援从 MCS 传送指令
 更多关于 FOTA 的资讯，请查看[此连结](../tutorial/managing_firmware)。
 
 ## MQTT
-MQTT 是一种**双向的**是一个轻量的订阅和发布通讯协定。您可以在[此连结](http://mqtt.org/)中查看更多关于 MQTT 通讯的资讯。 MCS 采用标准的 MQTT 通讯模式，并且支援多种 MQTT 特色功能，包括离线讯息与保留讯息。
+MQTT 是一种**双向的**轻量级订阅和发布通讯协定。您可以在[此连结](http://mqtt.org/)中查看更多关于 MQTT 通讯的资讯。 MCS 采用标准的 MQTT 通讯模式，并且支援多种 MQTT 特色功能，包括离线讯息与保留讯息。
 
 ### 设定连线
 
