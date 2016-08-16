@@ -73,7 +73,7 @@ mcs/:deviceId/:deviceKey/:dataChnId
 timestamp,dataChnId,value
 ```
 
-若要查看更多关于 MQTT 资料格式，您可以参考[此连结](../api_references/mqtt_communication_format)。
+若要查看更多关于 MQTT 资料格式，您可以参考[此连结](https://mcs.mediatek.com/resources/zh-CN/latest/api_references/#mqtt-沟通格式)。
 
 ### Quality of Service (QoS)
 
