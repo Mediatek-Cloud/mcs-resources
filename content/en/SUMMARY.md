@@ -20,6 +20,9 @@
    * [7688 videostream tutorial](tutorial/7688_videostream_tutorial.md)
    * [7688 fota tutorial](tutorial/7688_fota_tutorial.md)
    * [TCP and MQTT connection](tutorial/communication_channels.md)
+   * [Develop 7687 with C](tutorial/develop_7687_with_c.md)
+   * [Develop 7687 with JS](tutorial/develop_7687_with_js.md)
+   * [7687 GPIO](tutorial/7687_gpio.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
@@ -55,5 +58,4 @@
    * [2.16](change_log/2.16.md)
    * [2.17](change_log/2.17.md)
    * [2.18](change_log/2.18.md)
-
 
