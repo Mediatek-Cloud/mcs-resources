@@ -3,7 +3,9 @@
 In this guide you’ll learn the steps to create some applications to control the LinkIt 7687 from the web console of MCS using Node.js.
 
 
-## Develop with Node.js
+## Develop with Microlattice.js
+
+To use Node.js to develop, you need to install the Microlattice package.
 
 ### Set up your development environment
 
