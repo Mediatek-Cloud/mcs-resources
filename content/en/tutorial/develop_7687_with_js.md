@@ -1,6 +1,6 @@
 # Develop with LinkIt 7687 using Node.js
 
-In this guide you’ll learn the steps to create some applications to control the LinkIt 7687 from the web console of MCS using C
+In this guide you’ll learn the steps to create some applications to control the LinkIt 7687 from the web console of MCS using Node.js.
 
 
 ## Develop with Node.js
@@ -22,15 +22,19 @@ For windows developer, please prepare the following:
 update-core
 ```
 
-4. Install **unzip** and **make**:
+4. Install msys2 packages by:
 ```
 pacman -S tar unzip
 pacman -S make
+pacman -S git
+pacman -S wget
 ```
 
 ### Set up Microlattice development environment
 
-1. You must have Node.js (0.10.32 ~ 4.2.2) enviropnment to continue.
+1. You must have Node.js (0.10.32 ~ 4.x.x) enviropnment to continue.
+    * For Mac/Linux user, use [nvm](https://github.com/creationix/nvm) to install.
+    * For Windows user, download the [Node.js](https://nodejs.org/en/) here.
 2. Open command line tool and input:
 ```
 npm install microlattice -g
@@ -67,13 +71,17 @@ ml create
 
 1. Download the latest LinkIt 7687 [3.3.1 SDK](https://cdn.mediatek.com/download_page/index.html?platform=RTOS&version=v3.3.1&filename=LinkIt_SDK_V3.3.1_public.tar.gz).
 2. Put the downloaded **LinkIt_SDK_V3.3.1_public.tar.gz** into the sdk folder in your project.
-3. Download the [gcc](https://launchpad.net/gcc-arm-embedded/4.8/4.8-2014-q3-update/+download/gcc-arm-none-eabi-4_8-2014q3-20140805-win32.zip) and rename it as **gcc-arm-none-eabi.zip**. Put the **gcc-arm-none-eabi.zip** file into your project sdk folder as well.
+3. **(Windows only)**Download the [gcc](https://launchpad.net/gcc-arm-embedded/4.8/4.8-2014-q3-update/+download/gcc-arm-none-eabi-4_8-2014q3-20140805-win32.zip) and rename it as **gcc-arm-none-eabi.zip**. Put the **gcc-arm-none-eabi.zip** file into your project sdk folder as well.
 4. Copy cache file:
 ```
 cp ./node_modules/ml-mt7687-config/templates/v3.3.1_out.zip ./sdk
 ```
 
-5. npm run installEnv
+5. Install the environment:
+```
+npm run installEnv
+```
+
 6. **(Windows only)** Copy the 4 files in sdk folder to **./sdk/tools/gcc/gcc-arm-none-eabi/** folder and cover the original ones. If there is any file conflict, remove the original ones and paste again.
 7. **(Windows only)** Go to the **root** folder and input the following:
 ```
