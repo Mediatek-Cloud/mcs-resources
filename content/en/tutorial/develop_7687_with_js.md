@@ -1,15 +1,15 @@
-# Develop with LinkIt 7687 using Node.js
+# Develop with LinkIt 7687 using Javascript
 
-In this guide you’ll learn the steps to create some applications to control the LinkIt 7687 from the web console of MCS using Node.js.
+In this guide you’ll learn the steps to create some applications to control the LinkIt 7687 from the web console of MCS using Javascript.
 
 
 ## Develop with Microlattice.js
 
-To use Node.js to develop, you need to install the Microlattice package.
+To use Javascript to develop, you need to install the Microlattice package.
 
 ### Set up your development environment
 
-If you wish to develop your LinkIt 7687 using node.js, you can use our microlattice.js package.
+If you wish to develop your LinkIt 7687 using Javascript, you can use our microlattice.js package.
 Follow the following instruction.
 
 #### Prerequisite for Windows developer
