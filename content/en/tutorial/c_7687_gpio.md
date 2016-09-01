@@ -11,13 +11,30 @@ Here in this tutorial, we will illustrate how to build a simple switch using the
 ## Code your development board
 
 1. Copy **mcs_gpio_tcp** to your **{SDK_Root}/project/mt7687_hdk/apps/mcs_gpio_tcp**.
-2. Edit the **{SDK_Root}/project/mt7687_hdk/apps/mcs_gpio_tcp/main.c** as:
+2. Edit the **{SDK_Root}/project/mt7687_hdk/apps/mcs_gpio_tcp/main.c** as the following:
+
+** Connect Using Command Server**
+
 ```
 #define deviceId "Input your deviceId"
 #define deviceKey "Input your deviceKey"
 #define Ssid "Input your wifi"
 #define Password "Input your password"
-#define host "com"
+#define host "com" // If you are using MCS China, use cn instead of com
+```
+
+** Connect Using MQTT**
+
+```
+#define deviceId "Input your deviceId"
+#define deviceKey "Input your deviceKey"
+#define Ssid "Input your wifi Ssid"
+#define Password "Input your wifi password"
+#define topic "mcs/{Input your deviceId}/{Input your deviceKey}/+"
+#define host "com" // If you are using MCS China, use cn instead of com
+#define server "mqtt.mcs.mediatek.com"
+#define port "1883"
+#define clientId "mt7687"
 ```
 
 3. Build the Simple switch image by input the following command in **SDK root** directory:
