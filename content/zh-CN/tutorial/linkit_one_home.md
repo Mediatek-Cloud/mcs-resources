@@ -33,7 +33,7 @@
 
 现在，您的电脑与开发环境都已设置完成，我们准备将一些library 也一起放入吧！以此教程来说，为一需要新增的library 为HttpClient，您可以在此[连结](https://github.com/amcewen/HttpClient/releases)下载。下载zip 档案，然后打开您的Arduino IDE。
 
-在"Sketch" 下拉选单中，选择汇入librart，并选择您刚才所下载的zip 档案。
+在"Sketch" 下拉选单中，选择汇入library，并选择您刚才所下载的zip 档案。
 
 ![](../images/Linkit_ONE/img_linkitone_24.png)
 

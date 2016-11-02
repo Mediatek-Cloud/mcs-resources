@@ -57,6 +57,9 @@ To set up a webhook trigger, you have to select the **webhook** as the action in
 
 There is a Test button for you to test if the trigger has been sent to the url. The device name, deviceId and the triggered value will be sent to the triggered url.
 
+
+MCS supports customized webhook body message. You can also use the pre-defined variables. For the customized variables, please refer to the following paragraph.
+
 # Use variables in notification message
 
 MCS provides pre-defined variables which can be used in both Title and Content fileds. These variables will be replaced with real values when the action is triggered. The pre-defined variables include:
