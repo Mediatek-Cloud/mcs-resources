@@ -1,4 +1,4 @@
-﻿# Simple Switch Tutorial
+# Simple Switch Tutorial
 
 In this guide you’ll learn the steps to create a simple remote switch that allows you to turn on and off the on-board Wi-Fi LED from the web console of MCS using Node.js or python.
 
