@@ -1,4 +1,4 @@
-# Connecting MCS with IFTTT Triger
+# Connecting MCS with IFTTT 
 
 In this tutorial, we will learn how to set up MCS with [IFTTT](https://ifttt.com/). You can connect your MCS device with IFTTT and interact with many other IoT and social media service providers on IFTTT platform such as Google and Facebook.
 
@@ -63,6 +63,7 @@ https://api.mediatek.com/mcs/v2/devices/{deviceId}/datapoints
 8. Click **Create Action** button to Finish.
 
 Now you can test the IFTTT recipe by uploading an integer above 30 to MCS temperature data channel, then wait for a moment, you will see the switch data channel automatically turn on.
+
 
 
 
