@@ -24,6 +24,7 @@
    * [Develop 7687 with JS](tutorial/develop_7687_with_js.md)
    * [JS_7687_GPIO](tutorial/7687_gpio.md)
    * [C_7687_GPIO](tutorial/c_7687_gpio.md)
+   * [IFTTT Triger](tutorial/ifttt_triger.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
@@ -59,4 +60,6 @@
    * [2.16](change_log/2.16.md)
    * [2.17](change_log/2.17.md)
    * [2.18](change_log/2.18.md)
+   * [2.19](change_log/2.19.md)
+
 

@@ -1,8 +1,14 @@
 # MCS Change log Summary
 
+## November 3, 2016
+
+### v2.19
+
+[MCS supports interaction with IFTTT recipe.](./2.19)
+
 ## July 27, 2016
 
-### v2.17
+### v2.18
 
 [MQTT service is online. Connect device via MQTT protocol.](./2.18)
 
