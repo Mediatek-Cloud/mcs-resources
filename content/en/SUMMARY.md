@@ -60,4 +60,6 @@
    * [2.16](change_log/2.16.md)
    * [2.17](change_log/2.17.md)
    * [2.18](change_log/2.18.md)
+   * [2.19](change_log/2.19.md)
+
 
