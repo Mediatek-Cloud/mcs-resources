@@ -28,15 +28,15 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/da
 在請求url尾端加上`?start=:startTime&end=:endTime`
 ```
 
+請注意，若您只使用開始時間和結束時間，系統只會回覆您此區間內的最後一筆資料。若您希望取得此區間內的更多資料點，您可以使用 **limit** 來定義您想取得此區間內的幾筆資料點。
+
+
 * 限制您要讀取的資料點數目 (舉例來說, 如果您輸入 limit=5, 則您會讀取前五筆資料點):
 ```
 在請求url尾端加上 `?limit=:limit`
 ```
 
-* 讀取從某一個資料點受開始的資料(舉例來說, 如果您輸入 offset=5, 則您會讀取第五筆資料點之後的所有資料點):
-```
-在請求url尾端加上 `?offset=:offset`
-```
+
 
 您亦可以將以上四種方式混合使用。
 

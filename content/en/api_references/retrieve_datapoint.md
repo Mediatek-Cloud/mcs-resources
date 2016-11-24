@@ -30,15 +30,14 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/da
 Use the `?start=:startTime&end=:endTime` at the end.
 ```
 
+Please note if you only give start time and end time, the system will only return the latest datapoint of the period. If you wish to return all the datapoints in the peirod, you have to also give **limit** to define how many points you would like to retrieve.
+
+
 * To limit the number of data points that you will get (eg, if you enter the limit=5, you will get the first 5 data points.):
 ```
 Use the `?limit=:limit`at the end.
 ```
 
-* To retrieve the data points from a specific point(eg, if you enter offset=5, you will not get the first 5 data points and start with 6th one):
-```
-Use the `?offset=:offset` at the end.
-```
 
 
 You can choose to combine those conditions.
