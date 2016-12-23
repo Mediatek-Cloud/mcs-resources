@@ -6,7 +6,7 @@ In this guide you’ll learn the steps to create a simple remote switch that all
 
 ### Step 1. Create a new Prototype with Switch-Type data channel
 
-a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype or [import from json](http://cdn.mediatek.com/tutorial/7688/7688_switch_TW.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
+a. After login, select "Prototype" under Development at the navigator bar, click "Create" to create a new prototype or [import from json](http://cdn.mediatek.com/tutorial/7688/7688_switch_CN.json). If you import the prototype from json, you can skip Step 1 and start from Step 2.
 
 ![](../images/Linkit_ONE/img_linkitone_02.png)
 
@@ -76,6 +76,12 @@ MCS supports node.js and python. You can choose node.js or python base on your p
 
 Here is the Node.js example code that listens for commands from MCS web console.
 
+First, install the `mcsjs` and `mraa` package.
+```
+npm install mcsjs
+npm install mraa
+```
+
 * Create a file app.js using an editor, vi is used in this example:
 
 ```
@@ -92,21 +98,27 @@ MCS provides two kinds of communication between the device and MCS, the **Comman
 
 ```
 var mcs = require('mcsjs');
-var myApp = mcs.register({
-  deviceId: 'Input your deviceId',
-  deviceKey: 'Input your deviceKey',
-  host: 'api.mediatek.com'
-});
+var m = require('mraa');
+var myLed = new m.Gpio(44);
 
+myLed.dir(m.DIR_OUT); //set LED pinmode to output
+
+var myApp = mcs.register({
+     deviceId: 'Input your deviceId',
+     deviceKey: 'Input your deviceKey',
+     host: 'api.mediatek.com'
+});
 // Replace the device ID and device Key obtained from your test device
 // created in MCS.
 
 myApp.on('LED_Control', function(data, time) {
-  if(Number(data) === 1){
-    console.log('blink');
-  } else {
-    console.log(’off’);
-  }
+ if(Number(data) === 1){
+     console.log('blink');
+     myLed.write(0);
+ } else {
+     console.log('off');
+     myLed.write(1);
+ }
 });
 
 ```
@@ -131,8 +143,10 @@ var myApp = mcs.register({
 myApp.on('LED_Control', function(data, time) {
   if(Number(data) === 1){
     console.log('blink');
+    myLed.write(0);
   } else {
     console.log('off');
+    myLed.write(1);
   }
 });
 
