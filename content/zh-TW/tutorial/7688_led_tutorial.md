@@ -127,6 +127,8 @@ myApp.on('LED_Control', function(data, time) {
 
 ```
 var mcs = require('mcsjs');
+var m = require('mraa');
+var myLed = new m.Gpio(44);
 
 var myApp = mcs.register({
   deviceId: 'Input your deviceId',
