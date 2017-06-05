@@ -3,13 +3,13 @@
 
 MediaTek Cloud Sandbox provides your essential cloud services to help building your applications in the world of Internet of Things. Your registration and use of our service and website is subject to the agreement of terms of use.
 
-MediaTek Cloud Sandbox is provided with some limitations and terms of use that complies with legal notice (http://www.mediatek.com/en/legal-notice/) and privacy policy (http://www.mediatek.com/en/privacy-policy/) . MediaTek Cloud Sandbox reserves the right for change the terms of use over time.
+MediaTek Cloud Sandbox is provided with some limitations and terms of use that complies with legal notice (http://www.mediatek.com/legal-notice/) and privacy policy (http://www.mediatek.com/privacy-policy/) . MediaTek Cloud Sandbox reserves the right for change the terms of use over time.
 
 **Basic Terms**
 
 MediaTek Cloud Sandbox provides website, API services and other services made available by MediaTek Cloud Sandbox to enable user to build applications for the internet of Things. MediaTek Cloud Sandbox enables users to collect, store, share data from devices and its managements. By using the service, you are also accepting the terms of use and agree to be bound by the following terms and conditions of use:
 
-1. You agree to accept legal notice (http://www.mediatek.com/en/legal-notice/) and privacy policy (http://www.mediatek.com/en/privacy-policy/).
+1. You agree to accept legal notice (http://www.mediatek.com/legal-notice/) and privacy policy (http://www.mediatek.com/privacy-policy/).
 
 2. MediaTek reserves the right to update or change the Terms of Use at any time without notice by (i) revising Terms of Use document on or accessible through web site (ii) Sending information regarding the Terms of Use amendments as form of email.
 
