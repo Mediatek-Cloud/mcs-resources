@@ -1,6 +1,6 @@
 # API references
 
-MediaTek Cloud Sandbox (MCS) provides RESTful APIs for building applications and services that are able to make meaningful communications with MCS including data point uploads and retrievals as well as commands via TCP socket. MCS also provides eady-to-read visual charts based on the uploaded data, including time-series data for real time applications. 
+MediaTek Cloud Sandbox (MCS) provides RESTful APIs for building applications and services that are able to make meaningful communications with MCS including data point uploads and retrievals as well as commands via TCP socket. MCS also provides eady-to-read visual charts based on the uploaded data, including time-series data for real time applications.
 
 
 ## Request URL
@@ -14,7 +14,7 @@ https://api.mediatek.com/v2
 
 ## Parameters
 
-The parameters that are part of URL are used to identify a specific resource. 
+The parameters that are part of URL are used to identify a specific resource.
 
 ```
 https://api.mediatek.com/v2/devices/{deviceId}/retrieveDataPoints
@@ -23,7 +23,7 @@ https://api.mediatek.com/v2/devices/{deviceId}/retrieveDataPoints
 In the example above, the **device ID** is specified in the URL.
 
 
-Also, the perementers can be in the message body of a POST request. The request body must be formatted as either JSON or CSV. For each POST request, please specify the **content-type** in the header. 
+Also, the perementers can be in the message body of a POST request. The request body must be formatted as either JSON or CSV. For each POST request, please specify the **content-type** in the header.
 
 * `content-type: application/json` stands for JSON format.
 * `content-type: text/csv` stands for CSV format.
@@ -41,7 +41,7 @@ MediaTek Cloud Sandbox (MCS) uses the standard HTTP status code to indicate if a
 
 **204 No Content** - The server processed the request successfully, but isn’t returning any content. This is usually used as a response for a successful delete request.
 
-**400 Bad Request** - The server cannot process the request due to an unexpected parameter received from the client. 
+**400 Bad Request** - The server cannot process the request due to an unexpected parameter received from the client.
 
 **401 Unauthorized** -Authorization has failed or it hasn’t been provided. A header for Authorization is required.
 

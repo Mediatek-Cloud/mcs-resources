@@ -14,7 +14,7 @@ To beta-release the prototype, click **Beta-release** button on the upper right 
 
 YOu can only create devices after the prototype is beta-released and frozen. You can choose to create devices all at once or separately based on your needs.
 
-After devices are created, you can manage them in the **Management** page, where devices are categorized by prototype. Each device will have a unique activation code and a device needs to be activated to become available. 
+After devices are created, you can manage them in the **Management** page, where devices are categorized by prototype. Each device will have a unique activation code and a device needs to be activated to become available.
 
 ## How To Create Device
 
