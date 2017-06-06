@@ -4,16 +4,15 @@ This tutorial illustrates how to install the MCS mobile application to view and 
 
 Please use [Google Play](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud) or scan the QR code below to get our latest mobile application.
 
-<a href="https://play.google.com/store/apps/details?id=com.mediatek.iotcloud" target="_blank">
-  <img src="https://goo.gl/Rcus7Q" border="0">
-</a>
-
-**(Please note that due to enhanced security system upgrade, old version of the mobile app is not supported anymore. Please download the latest version from the Google play store. If you’re using a LinkIt Connect 7681 device, please also update the firmware using the latest version. Detailed update steps are described in **[7681 Firmware Update Instruction](../7681_firmware_update/)**)**
-
-
 ![](../images/Mobile_application/img_mobileapplication_00.png)
 
 Or, you can also [download the apk](https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/mcs-latest-production-release.apk) directly.
+
+*(Please note that due to enhanced security system upgrade, old version of the mobile app is not supported anymore. Please download the latest version from the Google play store. If you’re using a LinkIt Connect 7681 device, please also update the firmware using the latest version. 
+Detailed update steps are described in [7681 Firmware Update Instruction](../7681_firmware_update/))*
+
+
+
 
 The MCS mobile app supports Android only at the time of writing.
 
