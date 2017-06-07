@@ -26,8 +26,8 @@ However, only TCP and HTTP protocols are supported in this library. Please refer
 ## Build your own Applications
 Choose the application you would like to start with:
 
-|[Control LED](./7697_led_control.md)|
+|[Control LED](./7697_led_control)|
 |---|
-|[![](../images/Linkit_ONE/img_linkitone_26.png)](./7697_led_control.md)|
+|[![](../images/Linkit_ONE/img_linkitone_26.png)](./7697_led_control)|
 
 

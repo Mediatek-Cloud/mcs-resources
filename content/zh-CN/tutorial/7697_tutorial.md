@@ -27,8 +27,8 @@ LinkIt 7697 HDK 可支援 **Arduino IDE** 或是 **LinkIt SDK for RTOS** 两种�
 
 观看应用范例：
 
-|[控制 LED 灯号](./7697_led_control.md)|
+|[控制 LED 灯号](./7697_led_control)|
 |---|
-|[![](../images/Linkit_ONE/img_linkitone_26.png)](./7697_led_control.md)|
+|[![](../images/Linkit_ONE/img_linkitone_26.png)](./7697_led_control)|
 
 
