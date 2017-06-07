@@ -30,7 +30,7 @@ Heartbeat format:
 The timestamp is optional, if you do not want to send the timestamp, just put 0 in the timestamp field.
 
 
-After the TCP long connecion is built, the user can give command to the device via the MSC platform.
+After the TCP long connecion is built, the user can give command to the device via the MCS platform.
 
 The command Format:
 
