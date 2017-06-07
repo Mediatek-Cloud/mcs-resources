@@ -21,6 +21,8 @@
    * [7688 fota tutorial](tutorial/7688_fota_tutorial.md)
    * [communication channels](tutorial/communication_channels.md)
    * [IFTTT Trigger](tutorial/ifttt_trigger.md)
+   * [7697 Tutorial](tutorial/7697_tutorial.md)
+   * [7697 LED Control](tutorial/7697_led_control.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
