@@ -4,7 +4,7 @@ MediaTek Cloud Sandbox (MCS)提供一系列的 RESTful API 让您能够便利的
 
 ## Request URL
 
-您可以透过以下网址来叫用 MSC API：
+您可以透过以下网址来叫用 MCS API：
 
 ```
 https://api.mediatek.com/v2
