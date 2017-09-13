@@ -23,6 +23,8 @@
    * [IFTTT Triger](tutorial/ifttt_trigger.md)
    * [7697 Tutorial](tutorial/7697_tutorial.md)
    * [7697 LED Control](tutorial/7697_led_control.md)
+   * [7687 Tutorial](tutorial/7687_build_with_gcc.md)
+   * [Light Switch on LinkIt 7687](tutorial/7687_light_switch_gcc.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
