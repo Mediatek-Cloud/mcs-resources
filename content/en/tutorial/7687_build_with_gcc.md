@@ -10,7 +10,7 @@ Installing the LinkIt SDK build environment. Before we go further to build MCS r
 	
 > 1. Download [gcc for Mac](https://launchpad.net/gcc-arm-embedded/4.8/4.8-2014-q3-update/+download/gcc-arm-none-eabi-4_8-2014q3-20140805-mac.tar.bz2).
 > 2. Unzip the gcc file you've downloaded and rename the folder to gcc-arm-none-eabi.
-> 3. Replace &ltSDK_root&gt/tools/gcc/gcc\-arm\-none\-eabi with this downloaded folder.
+> 3. Replace \&ltSDK_root\&gt/tools/gcc/gcc\-arm\-none\-eabi with this downloaded folder.
 
 
 ## Starting your journey in MCS
