@@ -6,11 +6,11 @@
 
 在开发 MCS 相关的应用程序之前，您必须先安装并完成设定 LinkIt SDK 开发环境。请参考 MediaTek Labs > LinkIt 7687 HDK 入门指南 > [使用 GCC ARM Embedded](https://docs.labs.mediatek.com/resource/mt7687-mt7697/get-started-linkit-7687-hdk/gcc-arm-embedded-command-line-tools-free) 教学文件来建置您的开发环境。
 
-> 如果您是使用 **macOS on Apple Mac**，请先按照下列步骤将 LinkIt SDK 中的 GCC 编译器置换成 Mac 的版本。
+> 如果您是使用 macOS on Apple Mac，请先按照下列步骤将 LinkIt SDK 中的 GCC 编译器置换成 Mac 的版本。
 	
 > 1. 下载 [gcc for Mac](https://launchpad.net/gcc-arm-embedded/4.8/4.8-2014-q3-update/+download/gcc-arm-none-eabi-4_8-2014q3-20140805-mac.tar.bz2)。
-> 2. 将下载后的档案解压缩，并且更名为 **gcc-arm-none-eabi**。
-> 3. 将步骤 2 中的资料夹覆盖掉原本 LinkIt SDK 中的 **\<SDK\_root\>/tools/gcc/gcc\-arm\-none\-eabi**。
+> 2. 将下载后的档案解压缩，并且更名为 gcc-arm-none-eabi。
+> 3. 将步骤 2 中的资料夹覆盖掉原本 LinkIt SDK 中的 \<SDK_root>/tools/gcc/gcc\-arm\-none\-eabi。
 
 ## 开始 MCS 开发之旅
 
