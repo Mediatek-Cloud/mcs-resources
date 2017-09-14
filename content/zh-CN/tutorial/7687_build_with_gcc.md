@@ -10,7 +10,7 @@
 	
 > 1. 下载 [gcc for Mac](https://launchpad.net/gcc-arm-embedded/4.8/4.8-2014-q3-update/+download/gcc-arm-none-eabi-4_8-2014q3-20140805-mac.tar.bz2)。
 > 2. 将下载后的档案解压缩，并且更名为 gcc-arm-none-eabi。
-> 3. 将步骤 2 中的资料夹覆盖掉原本 LinkIt SDK 中的 &ltSDK_root&gt/tools/gcc/gcc\-arm\-none\-eabi。
+> 3. 将步骤 2 中的资料夹覆盖掉原本 LinkIt SDK 中的 \&ltSDK_root\&gt/tools/gcc/gcc\-arm\-none\-eabi。
 
 ## 开始 MCS 开发之旅
 
