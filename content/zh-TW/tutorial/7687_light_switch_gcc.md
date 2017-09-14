@@ -16,12 +16,11 @@
 	```
 	這個產品原型包含了兩個資料通道：
 	
-	| 類別 | 功能 | 資料通道 ID |
-	| :--- |:---| :---|
-	| 控制器 (Controller) | 開關 (Switch) | switch |
-	| 顯示器 (Display) | 字串 (String) | message |
+	* 開關控制器: 資料通道 ID 為 "switch"
+	* 字串顯示器: 資料通道 ID 為 "message"
 	
 	![](../images/7687/img_7687_create_prod.png)
+	
 	> **如果您需要更詳盡的步驟與說明，請參考[建立您的第一個產品原型](https://mcs.mediatek.com/resources/latest/tutorial/getting_started#create-your-first-prototype)。**
 	
 3. 在 MCS 網頁上建立您的測試裝置。

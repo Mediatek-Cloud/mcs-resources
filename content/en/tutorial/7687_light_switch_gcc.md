@@ -16,10 +16,8 @@ In this example, we will show you how to connect LinkIt 7687 HDK to MCS with GCC
 	```
 	There are 2 data channels in this prototype.
 
-	| Type | Function | Data Channel ID |
-	| :--- |:---| :---|
-	| Controller | Switch | switch |
-	| Display | String | message |
+	* Switch controller with data channel ID "switch".
+	* String display with data channel ID "message".
 	
 	![](../images/7687/img_7687_create_prod.png)
 	> **Please refer to [Create Your First Prototype](https://mcs.mediatek.com/resources/latest/tutorial/getting_started#create-your-first-prototype) if you need more detailed instruction on prototype creation.**
@@ -63,12 +61,12 @@ In this example, we will show you how to connect LinkIt 7687 HDK to MCS with GCC
 	* Change directory to the example project's GCC sub-folder.
 		
 		```
-		cd <sdk_root>/project/mt7687_hdk/app/mcs_gpio_interrupt_mqtt/GCC
+		$ cd <sdk_root>/project/mt7687_hdk/app/mcs_gpio_interrupt_mqtt/GCC
 		```
 	* Run the make command.
 		
 		```
-		make
+		$ make
 		```
 	* The output sub-folder is in the build folder:
 		
