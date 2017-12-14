@@ -79,4 +79,6 @@ MCS 提供有以下幾個與韌體相關的 APIs ，方便您開發和管理裝�
 1. [回報裝置韌體 API](https://mcs.mediatek.com/resources/zh-TW/latest/api_references/#回報裝置韌體)：將裝置目前使用之韌體版本回報至 MCS 平台。請注意，您回報的韌體版本必須是已上傳至 MCS 平台的韌體版本。
 2. [取得可用韌體 API](https://mcs.mediatek.com/resources/zh-TW/latest/api_references/#取得裝置所有韌體資訊)：若您已將裝置的韌體版本回報至 MCS 平台，您可以使用此 API 獲取相容的韌體資訊，包含韌體的下載網址。若您未曾回報裝置的韌體版本，其回傳的韌體資訊為無版本相容性限制的所有韌體資訊。
 
+3. [Retrieve the compatible firmwares by version](https://mcs.mediatek.com/resources/zh-TW/latest/api_references/#取得與特定版本相容的韌體列表)：此 API 提供了一個更為彈性的方法取得與特定版本相容的韌體列表。您只需在 API 請求中指定要比較的版本號碼即可。
 
+4. [Retrieve firmware URL](https://mcs.mediatek.com/resources/zh-TW/latest/api_references/#取得韌體下載網址)：此 API 會回傳指定韌體的下載網址。
