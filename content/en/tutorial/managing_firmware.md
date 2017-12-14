@@ -28,7 +28,7 @@ After selecting the devices you'd like to upgrade, click **Push**.
 You can also trigger this by clicking on the push icon in the firmware list.
 ![](../images/Firmware/img_firmware_04.png)
 
-## Upgrade a Firmware to Device
+## Upgrade the Firmware on Device
 
 After the firmware is uploaded to MCS platform, you could **push** it to the connected devices on MCS web console or use **MCS APIs** to fetch the information of compatible firmwares.
 
@@ -82,6 +82,10 @@ MCS provides the following APIs for firmware management and development.
 1. [Report firmware version of a device](http://mcs.mediatek.com/resources/latest/api_references/#report-device-firmware): This API allows device to report its current firmware version back to MCS platform. Only the version number which has been uploaded onto MCS platform can be reported.
 
 2. [Retrieve the compatible firmwares](http://mcs.mediatek.com/resources/latest/api_references/#report-device-firmware): After the device has reported its firmware version to MCS platform, this API provides a list of firmwares which are compatible with the current version. If the device hasn't reported its firmware yet, then, only the firmwares without any compatibility limitation are listed.
+
+3. [Retrieve the compatible firmwares by version](https://mcs.mediatek.com/resources/latest/api_references/#retrieve-compatible-firmware-by-version): This API provides a flexibility to query the firmware compatibility by simply specifying the version number in the request.
+
+4. [Retrieve firmware URL](https://mcs.mediatek.com/resources/latest/api_references/#retrieve-firmware-url): This API returns the download URL of specified firmware binary file.
 
 
 
