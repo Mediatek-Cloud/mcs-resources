@@ -1,8 +1,8 @@
-# Report Device Firmware
+# Report Device Firmware Version
 
 ## Description
 
-Use **HTTPs PUT** to report the firmware of the device to MCS.
+Use **HTTPs PUT** to report the current firmware version of the device to MCS.
 
 
 ## Request URL
@@ -11,7 +11,9 @@ Use **HTTPs PUT** to report the firmware of the device to MCS.
 https://api.mediatek.com/mcs/v2/devices/:deviceId/firmwares
 
 ```
-To report the current firmware the device is using to the MCS. Please note that for MCS to get the firmware, you have to implement this API in your device to report the device firmware.
+The device is able to report its current firmware version to MCS platform by using this API. Please note: The reported version must be one of the uploaded firmwares on MCS platform.
+
+This API could be used by device to report its initial firmware version when it boots up for the first time and then keep this firmware information updated when the firmware upgrade is done. This could be a useful information for device management.
 
 ## Action
 HTTPs PUT
@@ -57,7 +59,7 @@ The response body will construct in JSON format with the following fields:
 
 | Field Name | Type | Description|
 | --- | --- | --- | --- |
-| fwId | string | the firmware ID the device reported using |
+| fwId | string | the firmware ID of this reported version |
 |code| string|http status code|
 |message|string|system log message|
 

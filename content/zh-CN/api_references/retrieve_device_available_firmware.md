@@ -1,9 +1,9 @@
-# 取得装置所有韧体资讯
+# 取得与此装置相容的固件列表
 
 
 ## 描述
 
-使用 **HTTPs GET** 来从MCS平台取得该装置所有固件资讯清单。
+使用 **HTTPs GET** 從 MCS 平台取得该装置可使用的所有固件列表。
 
 
 ## 请求 URL
@@ -12,7 +12,16 @@
 https://api.mediatek.com/mcs/v2/devices/:deviceId/firmwares/available
 
 ```
-取得装置所有固件资讯清单。
+取得装置所有可使用的固件列表。
+
+若您已将装置的固件版本回报至 MCS 平台，您可以使用此 API 获取相容的固件资讯，包含固件的下载网址。若您未曾回报装置的固件版本，其回传的固件资讯为无版本相容性限制的所有固件资讯。
+
+### 查詢參數
+可將下列參數帶入請求 URL  
+
+| Field Name | Type | Required |Description|
+| --- | --- | --- | --- |
+| url | 字串 | 布林值 | 为非必要的参数。加上 **url=true** 後，伺服器將會回傳各固件的下載網址|
 
 ## 动作
 HTTPs GET
@@ -49,7 +58,7 @@ JSON 格式的回覆内容会包含以下几个栏位：
 
 |栏位名称|格式|描述|
 | --- | --- | --- | --- |
-| results | array | 所有该装置的固件清单资讯 |
+| results | array | 该装置所有可使用的固件列表，其中包含以下资讯 <br> 1. fwid: 固件 ID <br> 2. name <br> 3. description <br> 4. version <br> 5. URL: 固件的下载网址 (需在请求中加入 **url=true** 的查询参数) |
 |code| string|http 状态代码|
 |message|string|系统讯息|
 

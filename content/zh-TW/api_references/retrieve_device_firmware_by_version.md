@@ -1,8 +1,8 @@
-# 取得裝置可相容之韌體資訊
+# 取得與特定版本相容的韌體列表
 
 ## 描述
 
-使用 **HTTPs GET** 來從 MCS 取得裝置特定韌體可相容之韌體資訊。
+使用 **HTTPs GET** 來從 MCS 取得與特定版本相容的韌體列表。
 
 
 ## 請求 URL
@@ -11,7 +11,14 @@
 https://api.mediatek.com/mcs/v2/devices/:deviceId/firmwares/available/:versionId
 
 ```
-取得裝置特定韌體可相容之韌體資訊。
+此 API 在版本相容性的查詢上提供了更彈性的作法，可直接查詢與指定版本相容的韌體列表。
+
+### 查詢參數
+可將下列參數帶入請求 URL  
+
+| Field Name | Type | Required |Description|
+| --- | --- | --- | --- |
+| url | 字串 | 布林值 | 非必要的参数。加上 **url=true** 後，伺服器將會回傳各韌體的下載網址|
 
 ## 動作
 HTTPs GET
@@ -48,7 +55,7 @@ JSON 格式的回覆內容會包含以下幾個欄位：
 
 | 欄位名稱 | 格式 |描述|
 | --- | --- | --- | --- |
-| results | array | 所有該裝置可相容的韌體清單資訊 |
+| results | array | 所有與特定版本相容的韌體列表，可參考 **/firmware/available** API |
 |code| string|http 狀態代碼|
 |message|string|系統訊息|
 

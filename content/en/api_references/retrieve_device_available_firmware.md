@@ -3,7 +3,7 @@
 
 ## Description
 
-Use **HTTPs GET** to retrieve the available firmware for the device from MCS.
+Use **HTTPs GET** to retrieve the available firmwares for this device from MCS.
 
 
 ## Request URL
@@ -12,7 +12,19 @@ Use **HTTPs GET** to retrieve the available firmware for the device from MCS.
 https://api.mediatek.com/mcs/v2/devices/:deviceId/firmwares/available
 
 ```
-To retrieve the available firmware for this device.
+To retrieve the available firmwares for this device. 
+
+If this device has reported its firmware version to MCS platform, this API provides a list of firmwares which are compatible with the current version. If the device hasn't reported any firmware yet, then, only the firmwares without any compatibility limitation are listed.
+
+### Query string
+
+Following fields could be constructed and appended to the end of the URL:
+
+| Field Name | Type | Required |Description|
+| --- | --- | --- | --- |
+| url | string | boolean | An optional parameter. Append **url=true** to get the download URL in the response.|
+
+
 
 ## Action
 HTTPs GET
@@ -21,14 +33,13 @@ HTTPs GET
 ## Parameters
 ### Header
 
-
 deviceKey: `device_key_here`
 
 Content-Type:`application/json`
 
 
 ### Return format
-The return format is in json format
+The return format is in JSON format
 
 ## Response
 
@@ -49,7 +60,7 @@ The response body will construct in JSON format with the following fields:
 
 | Field Name | Type | Description|
 | --- | --- | --- | --- |
-| results | array | the available firmware list for the device |
+| results | array | the available firmware list for the device, and it includes <br> 1. fwid: The firmware ID <br> 2. name <br> 3. description <br> 4. version <br> 5. URL: The firmware download URL (If there is a query string, **url=true**, in the request) |
 |code| string|http status code|
 |message|string|system log message|
 
