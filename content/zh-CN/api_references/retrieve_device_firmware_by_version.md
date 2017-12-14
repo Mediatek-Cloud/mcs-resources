@@ -1,8 +1,8 @@
-# 取得装置可相容之固件资讯
+# 取得与特定版本相容的固件列表
 
 ## 描述
 
-使用 **HTTPs GET** 来从 MCS 取得装置特定固件可相容之韧体资讯。
+使用 **HTTPs GET** 来从 MCS 取得与特定版本相容的固件列表。
 
 
 ## 请求 URL
@@ -11,7 +11,15 @@
 https://api.mediatek.com/mcs/v2/devices/:deviceId/firmwares/available/:versionId
 
 ```
-取得装置特定固件可相容之韧体资讯。
+此 API 在版本相容性的查询上提供了更弹性的作法，可直接查询与指定版本相容的固件列表。
+
+
+### 查詢參數
+可將下列參數帶入請求 URL  
+
+| Field Name | Type | Required |Description|
+| --- | --- | --- | --- |
+| url | 字串 | 布林值 | 非必要的参数。加上 **url=true** 后，伺服器将会回传各固件的下载网址|
 
 ## 动作
 HTTPs GET
@@ -48,7 +56,7 @@ JSON 格式的回覆内容会包含以下几个栏位：
 
 |栏位名称|格式|描述|
 | --- | --- | --- | --- |
-| results | array | 所有该装置可相容的固件清单资讯 |
+| results | array | 所有与特定版本相容的固件列表，可参考 **/firmware/available** API |
 |code| string|http 状态代码|
 |message|string|系统讯息|
 

@@ -1,8 +1,8 @@
-# 取得固件 URL
+# 取得固件下载网址
 
 ## 描述
 
-使用 **HTTPs GET** 来取得您的装置欲更新之特定固件下载 url。
+使用 **HTTPs GET** 来取得指定固件的下载网址。
 
 
 ## 请求 URL
@@ -11,7 +11,8 @@
 https://api.mediatek.com/mcs/v2/devices/:deviceId/firmwares/:fwId/url
 
 ```
-来取得您的装置欲更新之特定固件下载 url。
+透过指定固件 ID 来取得此固件的下载网址。您可先呼叫 **/firmwares/available** API 获取与此装置相容的所有固件，再使用此 API 来取得单一固件的下载点。
+
 
 ## 动作
 HTTPs GET
@@ -48,7 +49,7 @@ JSON 格式的回覆内容会包含以下几个栏位：
 
 |栏位名称|格式|描述|
 | --- | --- | --- | --- |
-| url | array | 固件下载 url |
+| url | array | 固件下载网址 |
 |code| string|http 状态代码|
 |message|string|系统讯息|
 
@@ -59,8 +60,6 @@ JSON 格式的回覆内容会包含以下几个栏位：
 ```
 https://api.mediatek.com//mcs/v2/devices/DAWfOAsi/firmwares/FAdJBknrDsOm/url
 ```
-
-请注意，您可以呼叫**取得装置所有固件资讯** API 以取得 **firmware id**。
 
 请求 Header
 

@@ -1,8 +1,8 @@
-# Retrieve Device Firmware by version
+# Retrieve Compatible Firmware by Version
 
 ## Description
 
-Use **HTTPs GET** to retrieve the compatible firmware for specific firmware for the device from MCS.
+Use **HTTPs GET** to retrieve the compatible firmwares for a specified firmware version.
 
 
 ## Request URL
@@ -11,7 +11,15 @@ Use **HTTPs GET** to retrieve the compatible firmware for specific firmware for 
 https://api.mediatek.com/mcs/v2/devices/:deviceId/firmwares/available/:versionId
 
 ```
-To retrieve the compatible firmwares for specific firmware for this device.
+This API provides a flexibility to query the compatible firmwares for a specified firmware version.
+
+### Query string
+
+Following fields could be constructed and appended to the end of the URL:
+
+| Field Name | Type | Required |Description|
+| --- | --- | --- | --- |
+| url | string | boolean | append **url=true** to get the download URL in the response.|
 
 ## Action
 HTTPs GET
@@ -48,7 +56,7 @@ The response body will construct in JSON format with the following fields:
 
 | Field Name | Type | Description|
 | --- | --- | --- | --- |
-| results | array | the compatible firmwares for specific firmware for this device |
+| results | array | the compatible firmwares list for the specified firmware version, please refer to **/firmware/available** API |
 |code| string|http status code|
 |message|string|system log message|
 

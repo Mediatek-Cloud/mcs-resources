@@ -1,8 +1,8 @@
-# 取得韌體 URL
+# 取得韌體下載網址
 
 ## Description
 
-使用 **HTTPs GET** 來取得您的裝置欲更新之特定韌體下載 url。
+使用 **HTTPs GET** 來取得指定韌體的下載網址。
 
 
 ## 請求 URL
@@ -11,7 +11,7 @@
 https://api.mediatek.com/mcs/v2/devices/:deviceId/firmwares/:fwId/url
 
 ```
-來取得您的裝置欲更新之特定韌體下載 url。
+透過指定韌體 ID 來取得此韌體的下載網址。您可先呼叫 **/firmwares/available** API 獲取與此裝置相容的所有韌體，再使用此 API 來取得單一韌體的下載點。
 
 ## 動作
 HTTPs GET
@@ -48,7 +48,7 @@ JSON 格式的回覆內容會包含以下幾個欄位：
 
 | 欄位名稱 | 格式 |描述|
 | --- | --- | --- | --- |
-| url | array | 韌體下載 url |
+| url | array | 韌體下載網址 |
 |code| string|http 狀態代碼|
 |message|string|系統訊息|
 
@@ -59,8 +59,6 @@ JSON 格式的回覆內容會包含以下幾個欄位：
 ```
 https://api.mediatek.com//mcs/v2/devices/DAWfOAsi/firmwares/FAdJBknrDsOm/url
 ```
-
-請注意, 您可以呼叫**取得裝置所有韌體資訊** API 以取得 **firmware id**。
 
 請求 Header
 

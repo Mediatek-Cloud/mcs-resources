@@ -2,8 +2,7 @@
 
 ## Description
 
-Use **HTTPs GET** to retrieve the firmware download url that the device want to download.
-
+Use **HTTPs GET** to retrieve the download URL of specified firmware.
 
 ## Request URL
 
@@ -11,7 +10,8 @@ Use **HTTPs GET** to retrieve the firmware download url that the device want to 
 https://api.mediatek.com/mcs/v2/devices/:deviceId/firmwares/:fwId/url
 
 ```
-To retrieve the firmware url this device wants to download.
+To retrieve the download URL of specified firmware. 
+You can use **/firmwares/available** API to get a list of compatible firmwares for your device and then specify the firmware ID in this API to get the download URL.
 
 ## Action
 HTTPs GET
@@ -48,7 +48,7 @@ The response body will construct in JSON format with the following fields:
 
 | Field Name | Type | Description|
 | --- | --- | --- | --- |
-| url | array | the firmware download url |
+| url | array | the firmware download URL |
 |code| string|http status code|
 |message|string|system log message|
 
@@ -57,7 +57,7 @@ The response body will construct in JSON format with the following fields:
 
 Request URL
 ```
-https://api.mediatek.com//mcs/v2/devices/DAWfOAsi/firmwares/FAdJBknrDsOm/url
+https://api.mediatek.com/mcs/v2/devices/DAWfOAsi/firmwares/FAdJBknrDsOm/url
 ```
 
 Please be noted, you can get the **firmware id** by calling the **retrieve device available firmware** API.
