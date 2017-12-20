@@ -59,6 +59,8 @@ MCS 将不会处理装置端的固件更新，使用者需自行开发您的开�
 	```
 	1513133357160,FOTA,2.0,null,https://cdn.mediatek.com/firmwares/P9MxxxxxxbTK/6a94dxxxxxxxxxxxxxxxxxxxx61f5df/a.bin	```
 
+栏位介绍：
+
 * deviceId: 装置的 deviceId（由于 MQTT 连线时，必须先指定 device ID，因此回传內文不包含此资讯）
 * deviceKey: 装置的 deviceKey（由于 MQTT 连线时，必须先指定 device key，因此回传內文不包含此资讯）
 * timestamp: 按下推送按钮的时间
@@ -74,8 +76,8 @@ MCS 将不会处理装置端的固件更新，使用者需自行开发您的开�
 
 MCS 提供有以下几个与固件相关的 APIs ，方便您开发和管理装置与固件。
 
-1. [回报装置固件 API](https://mcs.mediatek.com/resources/zh-CN/latest/api_references/#回报装置固件)：将装置目前使用之固件版本回报至 MCS 平台。请注意，您回报的固件版本必须是已上传至 MCS 平台的固件版本。
-2. [取得可用固件 API](https://mcs.mediatek.com/resources/zh-CN/latest/api_references/#取得装置所有韧体资讯)：若您已将装置的固件版本回报至 MCS 平台，您可以使用此 API 获取相容的固件资讯，包含固件的下载网址。若您未曾回报装置的固件版本，其回传的固件资讯为无版本相容性限制的所有固件资讯。
+1. [回报装置固件 API](https://mcs.mediatek.com/resources/zh-CN/latest/api_references/#回报装置固件版本)：将装置目前使用之固件版本回报至 MCS 平台。请注意，您回报的固件版本必须是已上传至 MCS 平台的固件版本。
+2. [取得可用固件 API](https://mcs.mediatek.com/resources/zh-CN/latest/api_references/#取得与此装置相容的固件列表)：若您已将装置的固件版本回报至 MCS 平台，您可以使用此 API 获取相容的固件资讯，包含固件的下载网址。若您未曾回报装置的固件版本，其回传的固件资讯为无版本相容性限制的所有固件资讯。
 
 3. [Retrieve the compatible firmwares by version](https://mcs.mediatek.com/resources/zh-CN/latest/api_references/#取得与特定版本相容的固件列表)：此 API 提供了一个更为弹性的方法取得与特定版本相容的固件列表。您只需在 API 请求中指定要比较的版本号码即可。
 
