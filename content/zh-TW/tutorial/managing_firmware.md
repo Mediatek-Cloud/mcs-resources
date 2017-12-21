@@ -60,6 +60,7 @@ MCS 將不會處理裝置端的韌體更新，使用者需自行開發您的開�
 	```
 	1513133357160,FOTA,2.0,null,https://cdn.mediatek.com/firmwares/P9MxxxxxxbTK/6a94dxxxxxxxxxxxxxxxxxxxx61f5df/a.bin	
 	```
+
 欄位介紹：
 
 * deviceId: 裝置的 deviceId（由於 MQTT 連線時，必須先指定 device ID，因此回傳訊息不包含此資訊）
