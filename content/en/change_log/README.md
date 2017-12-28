@@ -1,5 +1,24 @@
 # MCS Change log Summary
 
+## 2017/12/28
+
+### v2.22
+
+[Users are allowed to change the display order of the data channels.](./2.22)
+
+## 2017/07/19
+
+### v2.21
+
+[MCS Lite is now publicly available. It is an open-source and on-premises version of MCS.](./2.21)
+
+
+## 2017/07/17
+
+### v2.20
+
+[LinkIt 7687, 7698 and 2523 are in the supported hardware platforms list now. Also, the related tutorials are available on MCS website.](./2.20)
+
 ## November 3, 2016
 
 ### v2.19
