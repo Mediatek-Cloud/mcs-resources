@@ -4,169 +4,201 @@
 
 使用 **HTTPs POST** 來上傳資料點
 
-## 請求 URL
-
-```
-https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints
-
-```
-
-API請求默認值為 JSON 格式，如欲使用 CSV 格式，請在 API 請求 URL 最後端加上`.csv`。
-
-請注意，MCS 限制單筆上傳資料量為一次不能上傳多於五筆資料點。
-
-## 動作
-HTTPs POST
-
-## 參數
-
-### Header
-
-**Token**
-
-若是裝置：
-
-```
-deviceKey: `device_key_here`
-```
-若是服務提供者：
-```
-appId: `appId_here`
-appSecret: `appSecret_here`
-```
-
-您可以在個人檔案頁面中的服務提供者分頁，申請取得 appId 以及 appSecrete。
+## HTTP 請求
+### URL
 
 
-**Content Type**
+* **使用 CSV 格式：**
 
-JSON 格式:
-```
-Content-Type:`application/json`
-```
+	```
+	https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints.csv
+	```
 
-Comma Separated Value (CSV) 格式:
-```
-Content-Type:`text/csv`
-```
+* **使用 JSON 格式：**
 
+	```
+	https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints
+	```
 
-### 內容
+MCS 單筆上傳一次最多五筆資料點。
 
-#### CSV 格式:
-
-語法:
-
-*:Data_Channel_Id_1, :Timestamp, :Value_1, :Value_2, :Value_3\n*
-
-*:Data_Channel_Id_2, :Timestamp, :Value_1\n*
-
-如欲參考更多詳細的資料通道類型之格式，請參考資料通道格式，您可點擊右方快速聯結前往.
-
-請注意：若您不需要上傳裝置的時間點,則您可保持 *Timestamp* 為空(但保留逗號)，此時時間點則會由MCS所收到資料點的時間。
+### 方法（Method）
+POST
 
 
-範例：
-```
-1,1432538716989,26
-2,,26.34,12,59
-```
-第一行：資料通道 ID 為 1，並且給予時間點，26 為上傳的值(此時的資料通道類型為整數)。
+### 表頭（Header）
 
-第二行：資料通道 ID 為 2，並且不給予時間點，26.34 為上傳的值(此時的資料通道類型為浮點數)。
+**1. 存取憑證（Access token）**
+
+* 透過裝置上傳
+	
+	```
+	deviceKey: `device_key_here`
+	```
+
+* 透過您自行開發的應用程式（服務提供者帳號）
+	
+	```
+	appId: `appId_here`
+	appSecret: `appSecret_here`
+	```
+
+	您可以在個人檔案頁面中的服務提供者分頁，申請取得 appId 以及 appSecrete。
 
 
-#### JSON 格式
+**2. Content Type**
 
-語法:
 
-每個 JSON 格式的資料點，都包含下列三種型態的資料：
+* **使用 CSV 格式：**
+	
+	```
+	Content-Type:`text/csv`
+	```
 
-*dataChnId, timestamp, values*
+* **使用 JSON 格式：**
+	
+	```
+	Content-Type:`application/json`
+	```
 
-Values 是資料點的值，大部分情況下代表一個值。但也有例外，例如 GPS 資料就會有三個值。
 
-```
-{
-   "datapoints":[
-      {
-         "dataChnId":"1",
-         "timestamp":1432538716989,
-         "values":{
-            "value":"26"
-         }
-      },
-      {
-         "dataChnId":"2",
-         "timestamp":1432538716989,
-         "values":{
-            "latitude":"26.34",
-            "longitude":"12",
-            "altitude":"59"
-         }
-      }
-   ]
-}
+### 內文（Body）
 
-```
+* **使用 CSV 格式：**
 
-資料點1： 資料通道 ID 為 1，並且給予時間點，26 為上傳的值(此時的資料通道類型為整數)。
+	語法:
+	
+	```
+	:Data_Channel_Id_1,:Timestamp,:Value_1,:Value_2,:Value_3\n
+	
+	:Data_Channel_Id_2,:Timestamp,:Value_1\n
+	```
 
-資料點2： 資料通道 ID 為 2，並且給予時間點，緯度 26.34，經度 12，高度 59，為上傳的值(此時的資料通道類型為 GPS )。
+	如欲參考更多詳細的資料通道類型之格式，請參考**資料通道格式**章節。
 
-請注意，我們在此使用的 unix timestamp miniseconds 時間值，若須轉換成可讀格式，您可以使用以下連結：
-http://www.epochconverter.com/
+	請注意：*Timestamp* 為非必填欄位。若此欄位為空(請保留逗號)，則 MCS 服務器會在收到此資料點時自動補上當前的時間戳。
 
-## 回覆
+	範例：
+	
+	```
+	1,1432538716989,26
+	2,,26.34,12,59
+	```
+	第一行：資料通道 ID 為 ”1“；”1432538716989“ 為上傳數據時，裝置或您的應用程式產生的時間戳（timestamp）；”26“ 為上傳的值。	
+	第二行：資料通道 ID 為 ”2“；時間戳（timestamp）的欄位為空，由 MCS 服務器自動補上；”26.34“、”12“ 與 ”59“為上傳的數據(此時的資料通道類型為 GPS)。
+
+
+* **使用 JSON 格式：**
+
+	語法:
+	
+	每個 JSON 格式的資料點，都包含下列三種的資料：
+	
+	1. dataChnId
+	2. timestamp
+	3. values: 表示資料點的值。某些資料通道的值，可能是有多個數據組成。例如 GPS 通道，就包含了經度、緯度與海拔高度。
+	
+	```
+	{
+	   "datapoints":[
+	      {
+	         "dataChnId":"1",
+	         "timestamp":1432538716989,
+	         "values":{
+	            "value":"26"
+	         }
+	      },
+	      {
+	         "dataChnId":"2",
+	         "timestamp":1432538716989,
+	         "values":{
+	            "latitude":"26.34",
+	            "longitude":"12",
+	            "altitude":"59"
+	         }
+	      }
+	   ]
+	}
+	
+	```
+	
+	資料點1： 資料通道 ID 為 ”1“；”1432538716989“ 為上傳數據時，裝置或您的應用程式產生的時間戳（timestamp）；”26“ 為上傳的值。
+	
+	資料點2： 資料通道 ID 為 ”2“；時間戳（timestamp）的欄位為空，由 MCS 服務器自動補上；”26.34“、”12“ 與 ”59“為上傳的數據(此時的資料通道類型為 GPS)。	
+
+## HTTP 回覆
 
 ### 回覆代碼
 200
 
-### 回覆 Header
+### 表頭（Header）
 
-Content-Type:`application/json`
+* **使用 CSV 格式：**
+	
+	```
+	content-type: text/html
+	```
 
-### 回覆內容
+* **使用 JSON 格式：**
+	
+	```
+	Content-Type: application/json
+	```
 
-**範例:**
+### 內文（Body）
 
-請求 URL：
-```
-https://api.mediatek.com/mcs/v2/devices/d1234567890/datapoints
-```
-
-請求內容：
-
-```
-1,1432538716989,26
-2,,26.34,12,59
-```
-
-回覆內容：
-
-```
-{
-    "results": "success"
-}
-```
+* **使用 CSV 格式：**
+	
+	```
+	Success.
+	```
+	
+* **使用 JSON 格式：**
+	
+	```
+	{
+	    "results": "success"
+	}
+	```
 
 ## 錯誤回覆
 
-當錯誤發生時，回覆代碼為非 200 之其他代碼。回覆內容為 JSON 格式並會包括以下資訊：
+當錯誤發生時，MCS 服務器會回應非 200 的錯誤代碼。回覆內容包括以下資訊：
 
 | 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
 | code | Integer | 錯誤代碼 |
-| url | String | API 錯誤頁面 url|
-| description | String | 錯誤描述 |
+| message | String | 錯誤原因|
+| description | String | 詳細的錯誤描述 |
 
 **範例:**
 
-```
-{
-    "results": "None of the data points is valid.",
-    "descriptions": [
-        "The type of uploaded data point for data channel test01 is not matched to Switch"
-    ]
-}
-```
+* **使用 CSV 格式：**
+	
+	```
+	400,None of data points uploaded success.
+	```
+	
+	
+* **使用 JSON 格式：**
+	
+	```
+	{
+	    "apiVersion": "2.18.3",
+	    "code": 400,
+	    "message": "None of data points uploaded success.",
+	    "errors": [
+	        {
+	            "code": 400,
+	            "message": "400 Bad Request"
+	        }
+	    ],
+	    "results": "",
+	    "descriptions": [
+	        "There is no such data channel displays_boolean for this device."
+	    ],
+	    "statusCode": 400,
+	    "options": {}
+	}
+	```
+

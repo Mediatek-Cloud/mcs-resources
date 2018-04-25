@@ -1,6 +1,6 @@
 # API references
 
-MediaTek Cloud Sandbox (MCS) provides RESTful APIs for building applications and services that are able to make meaningful communications with MCS including data point uploads and retrievals as well as commands via TCP socket. MCS also provides eady-to-read visual charts based on the uploaded data, including time-series data for real time applications.
+MediaTek Cloud Sandbox (MCS) provides RESTful APIs for building applications and services that are able to make meaningful communications with MCS including data point uploads and retrievals as well as commands via TCP socket. MCS also provides easy-to-read visual charts based on the uploaded data, including time-series data for real time applications.
 
 
 ## Request URL
@@ -14,19 +14,22 @@ https://api.mediatek.com/v2
 
 ## Parameters
 
-The parameters that are part of URL are used to identify a specific resource.
+The parameters in the request URL are used to identify a specific resource.
+
 
 ```
 https://api.mediatek.com/v2/devices/{deviceId}/retrieveDataPoints
 ```
 
-In the example above, the **device ID** is specified in the URL.
+In the example above, the **device ID** is used in the request to indicate which device we would like to retrieve data from.
 
 
-Also, the perementers can be in the message body of a POST request. The request body must be formatted as either JSON or CSV. For each POST request, please specify the **content-type** in the header.
+Also, the parameters can be in the message body of a POST request. The request body must be formatted as either JSON or CSV. Please add the **content-type** in the request header to indicate the format of your request body and how MCS server parses your request.
 
 * `content-type: application/json` stands for JSON format.
 * `content-type: text/csv` stands for CSV format.
+
+The **timestamp** used in the request or attached in the response is in Unix epoch format and counted in milliseconds, for human readable time conversion, please refer to http://www.epochconverter.com/
 
 
 ## Client Errors
