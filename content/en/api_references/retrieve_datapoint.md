@@ -99,7 +99,7 @@ GET
 	appId: your_appId
 	appSecret: your_appSecret
 	```
-	You can get the appId and appSecrete under the Service provider section in the Profile page.
+	You can get the appId and appSecret under the Service provider section in the Profile page.
 
 
 ## Response

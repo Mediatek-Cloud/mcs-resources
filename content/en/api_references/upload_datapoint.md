@@ -46,7 +46,7 @@ POST
 	appId: `appId_here`
 	appSecret: `appSecret_here`
 	```
-	You can get the appId and appSecrete under the Service provider section in the Profile page.
+	You can get the appId and appSecret under the Service provider section in the Profile page.
 
 
 **2. Content Type**

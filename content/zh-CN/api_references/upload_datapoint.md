@@ -43,7 +43,7 @@ POST
 	appSecret: `appSecret_here`
 	```
 
-	您可以在个人档案页面中的服务提供者分页，申请取得 appId 以及 appSecrete。
+	您可以在个人档案页面中的服务提供者分页，申请取得 appId 以及 appSecret。
 
 
 **2. Content Type**
