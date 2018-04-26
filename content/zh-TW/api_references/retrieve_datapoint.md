@@ -2,89 +2,101 @@
 
 ## 描述
 
-使用 **HTTPs GET** 來取得裝置回傳的資料點
+使用 **HTTPs GET** 來取得裝置上傳的資料點
+
+## HTTP 請求
+### URL
+
+您可以透過指定 URL 中資源路徑與查詢參數來讀取特定資料通道中的資料點。
+
+* **資源路徑**
+
+	| 資源名稱 | 型別 | 是否必填 | 描述 |
+	| --- | --- | --- | --- |
+	| 裝置 ID | 字串 | 必填 | 您需在 URL 中指定你所要獲取資料的裝置 ID |
+	| 資料通道 ID | 字串 | 必填 | 您需在 URL 中指定你所要獲取資料的資料通道 ID |
 
 
-## 請求 URL
+* **查詢參數**
 
-讀取特定資料通道中的資料點：
+	| 參數名稱 | 型別 | 是否必填 | 描述 |
+	| --- | --- | --- | --- |
+	| start | 數字 | 選填 | 查詢起始時間 |
+	| end | 數字 | 選填 | 查詢中止時間 |
+	| limit | 整數 | 選填 | 要回傳的資料點數目 ( 默認值 = 1 ) |
+	| offset | 整數 | 選填 | 第幾筆開始的資料點 |
+	| order | 字串 | 選填 | 資料預設是按照時間戳，由新到舊回傳，您也可透過指定 "asc" 或 "desc" 改變順序  |
+	
+	
+MCS 可將您請求的數據回傳成 JSON 或是 CSV 格式，您可藉由 HTTP 請求中的資源名稱來指定回傳的格式。
 
-```
-https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints?start=:startTime&end=:endTime&limit=:limit&offset=:offset
+每次請求最多只能讀取 1000 筆資料點。
 
-```
+* **獲取 JSON 格式的數據**
 
-API 請求默認值為 JSON 格式，如欲使用 CSV 格式，請在 API 請求 URL 最後端加上`.csv`。
-使用此 API，您可以選擇您要的資料範圍：
+	```
+	https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints?start=:startTime&end=:endTime&limit=:limit&offset=:offset
+	
+	```
 
-* 只讀取最後一個資料點：
-```
-https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints
-```
+* **獲取 CSV 格式的數據**
 
+	若您希望數據以 CSV 的格式回傳，請在資源名稱的最後加上 `.csv`，變成 `datapoints.csv`
+
+	```
+	https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints.csv?start=:startTime&end=:endTime&limit=:limit&offset=:offset
+	
+	```
+
+**範例**
+
+* 讀取最新一個資料點並以 JSON 格式回傳：
+
+	```
+	https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints
+	```
+
+* 讀取最新一個資料點並以 CSV 格式回傳：
+
+	```
+	https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints.csv
+	```
 
 * 讀取一段時間範圍內的資料點：
-```
-在請求url尾端加上`?start=:startTime&end=:endTime`
-```
 
-請注意，若您只使用開始時間和結束時間，系統只會回覆您此區間內的最後一筆資料。若您希望取得此區間內的更多資料點，您可以使用 **limit** 來定義您想取得此區間內的幾筆資料點。
+	```
+	https://api.mediatek.com/mcs/v2/devices/DL6sxxxx/datachannels/my_data_channel/datapoints?limit=1000&start=1524107855148&end=1524550447427
+	```
 
-
-* 限制您要讀取的資料點數目 (舉例來說, 如果您輸入 limit=5, 則您會讀取前五筆資料點):
-```
-在請求url尾端加上 `?limit=:limit`
-```
+請注意，若您只使用開始時間（start）和結束時間（end）參數，系統只會回覆您此區間內的最後一筆資料。若您希望取得此區間內的更多資料點，您可以使用 **limit** 來定義您想取得此區間內的幾筆資料點。
 
 
+* 限制您要讀取的資料點數目，MCS 只會回傳最新的 N 筆資料:
 
-您亦可以將以上四種方式混合使用。
-
-### 查詢字串
-下面幾種查詢方式亦可以使用
-
-| 欄位名稱 | 格式 | 是否必填 |描述|
-| --- | --- | --- | --- |
-| start_time | Number | Optional | 查詢起始時間 |
-| end_time | Number | Optional | 查詢中止時間 |
-| limit | Number | Optional | 要回傳的資料點數目 ( 默認值 = 1 ) |
-| offset | Number | Optional | 第幾筆開始的資料點 |
-
-**請注意：**
-
-1.
-使用 limit 查詢最後 *n (n=數目)* 的資料點時，將不能指定 *start_time* 與 *end_time*時。
-
-2.　當您指定 *start_time* 和 *end_time* 時，若還是有使用設定回傳資料點數目，此時，此回傳資料點數目的查詢將會被忽略。
+	```
+	https://api.mediatek.com/mcs/v2/devices/DL6sxxxx/datachannels/my_data_channel/datapoints?limit=10	
+	```
 
 
-**每次請求最多只能讀取 1000 筆資料點**
+### 方法（Method）
+GET
 
 
-## 動作
-HTTPs GET
+### 表頭（Header）
 
-## 參數
+**存取憑證**
 
-### Header
+* 透過裝置讀取數據
 
-Device Key
-```
-deviceKey: `device_key_here`
-```
+	```
+	deviceKey: your_device_key
+	```
+* 透過您自行開發的應用（服務提供者帳號）
 
-### 回覆格式
-您能選擇回覆 JSON 或是 CSV 格式
-
-JSON:
-
-請求 url 結尾為 *datapoints*
-
-
-CSV:
-
-請求 url 結尾為 *datapoints.csv*
-
+	```
+	appId: your_appId
+	appSecret: your_appSecret
+	```
 
 
 ## 回覆
@@ -92,82 +104,83 @@ CSV:
 ### 回覆代碼
 200
 
-### 回覆 Header
-JSON 格式:
-```
-Content-Type:`application/json`
-```
-CSV 格式:
-```
-Content-Type: `text/csv`
-```
+### 表頭（Header）
 
-### 回覆內容
+* **JSON 格式：**
 
-***資料格式: JSON***
+	```
+	content-type: text/html
+	```
 
-若使用 JSON 回覆格式，則會包含以下欄位：
+* **CSV 格式：**
+	
+	```
+	content-type: application/json	
+	```
+	
+### 內文（Body）
 
-| 欄位名稱 | 格式 | 描述|
-| --- | --- | --- | --- |
-| dataChannels | Object Array | 含有資料點的資料通道 |
+* **JSON 格式：**
 
-**資料詳情**
-
-**資料通道**
-
-| 欄位名稱 | 格式 | 描述|
-| --- | --- | --- | --- |
-| dataChnId | Number | 資料通道 ID |
-| isOverflow | Bool | 要求的資料點是否超過數目限制|
-| dataPoints | Object Array | 資料點 |
+	回應的內文為 JSON 的格式，請求的數據位於 **dataChannels** 物件下的 **dataPoints** 陣列中。
 
 
-**資料點**
+**dataChannels 物件**
 
 | 欄位名稱 | 格式 | 描述|
 | --- | --- | --- | --- |
-| createdAt | Number | 以 Unix timestamp 格式紀錄的資料點建立時間|
-| values | Object | 資料點的值 |
+| dataChnId | 字串 | 資料通道 ID |
+| isOverflow | 布林 | 要求的資料點是否超過數目限制|
+| dataPoints | JSON 物件陣列 | 資料點 |
 
-請注意，我們在此使用的 unix timestamp miniseconds 時間值，若須轉換成可讀格式，您可以使用以下連結：
-http://www.epochconverter.com/
 
-**範例：**
+**dataPoints 陣列**
 
-請求 URL：
-```
-https://api.mediatek.com/mcs/v2/devices/a1234567890/datachannels/10001/datapoints?start=946684800&end=946784800
+| 欄位名稱 | 格式 | 描述|
+| --- | --- | --- | --- |
+| createdAt | 數字 | 以 Unix timestamp 格式紀錄的資料點建立時間|
+| values | JSON 物件 | 資料點的值 |
 
-```
 
-JSON 格式的回覆內容：
+**範例:**
 
-```
-{
-    "deviceId": "DXLQwmnN",
-    "dataChannels": [
-        {
-            "dataChnId": "test01",
-            "isOverflow": false,
-            "dataPoints": [
-                {
-                    "recordedAt": 1432538716989,
-                    "values": {
-                        "value": "HI"
-                    }
-                }
-            ]
-        }
-    ]
-}
-```
+* **以 JSON 格式回傳**
 
-CSV 格式的回覆內容：
+	```
+	{
+	    "apiVersion": "2.18.3",
+	    "code": 200,
+	    "message": "Request has succeeded",
+	    "deviceId": "DL6sxxxx",
+	    "dataChannels": [
+	        {
+	            "dataChnId": "my_data_channel",
+	            "isOverflow": false,
+	            "dataPoints": [
+	                {
+	                    "recordedAt": 1524550447427,
+	                    "values": {
+	                        "value": 35
+	                    }
+	                },
+	                {
+	                    "recordedAt": 1524119075906,
+	                    "values": {
+	                        "value": 30
+	                    }
+	                }
+	            ]
+	        }
+	    ]
+	}
+	```
 
-```
-test_data_channel,1432538716989,100
-```
+* **以 CSV 格式回傳**
+
+	```
+	my_data_channel,1524119075906,35
+	my_data_channel,1524550447427,30
+	```
 
 
 
@@ -178,17 +191,34 @@ test_data_channel,1432538716989,100
 
 | 欄位名稱 | 格式 |描述|
 | --- | --- | --- |
-| code | Integer | 錯誤代碼 |
-| url | String | API 錯誤頁面 url|
-| description | String | 錯誤描述 |
+| code | 整數 | 錯誤代碼 |
+| message | 字串 | 錯誤描述 |
 
 
 
-**範例：**
+**範例:**
 
-```
-{
-    "results": "you dont have permission!"
-}
-```
+* **以 CSV 格式回傳**
+
+	```
+	404,channel not found
+	```
+	
+* **以 JSON 格式回傳**	
+	
+	```
+	{
+	    "apiVersion": "2.18.3",
+	    "code": 404,
+	    "message": "channel not found",
+	    "errors": [
+	        {
+	            "code": 404,
+	            "message": "404 Not Found"
+	        }
+	    ],
+	    "statusCode": 404,
+	    "options": {}
+	}
+	```
 
