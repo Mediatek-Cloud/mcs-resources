@@ -41,7 +41,7 @@ The MCS RESTful APIs can be accessed with the following HTTP methods:
 **DELETE** - To delete resources.
 
 ## Request Header
-###1. Access Token
+### 1. Access Token
 
 The request attempt is allowed only after it successfully pass the  authentication. Therefore, you have to add some special HTTP headers in the request for MCS services to deal with authentication.
 
@@ -69,7 +69,7 @@ There are 2 different types of authentication.
 	Since the device ID is already used in the request URL to specify the resource to be accessed, it is not necessary to add it into the header.
 
 
-###2. content-type
+### 2. content-type
 
 You must add **content-type** to the request header. This field allows the MCS service to know the format of request body and how to process the data subsequently. 
 
@@ -95,7 +95,6 @@ Here are some basic parameters using in MCS APIs.
 	> is converted to
 	> *Human time (GMT): Thursday, April 26, 2018 5:22:57 AM*
 	
-
 * **Resource ID**
 
 	Each time a prototype, test device, data channel, or firmware file is created, a unique ID is assigned to the resource. This ID is not editable and then you can access the resource by specifying the ID.
@@ -103,7 +102,6 @@ Here are some basic parameters using in MCS APIs.
 	For example, to retrieve data from a specific data channel, you will need to know the ID of this data channel and test device. And then specify these 2 IDs in the request URL. 
 	
 	Here are 3 major resource types in MCS:
-	
 		
 	1. **Data channel**：Data channel is a logical placeholder in the cloud for data generated from a specific component of a physical device, or a command from the cloud to be pushed into a specific component of the connected physical device. In other words, data channel is designed for one-way or two-way communications between the cloud and the connected physical device. 
 	
