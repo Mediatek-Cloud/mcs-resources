@@ -81,12 +81,10 @@ MCS 所支援的請求內文為 **JSON** 或 **CSV** 格式，不同的 APIs 服
 
 	时间戳是用来记录一个资源被创建或更新的时间点，像是上传资料点当时的时间、产品原型被建立的时间等。在 MCS 系统中，时间是用 **Unix Epoch** 格式来表示，时间单位为毫秒（millisecond）。若您需要将 Unix Epoch 时间转换成可读性较高的常规表示法，可参考 [http://www.epochconverter.com/](http://www.epochconverter.com/)，例如：
 	
-	
 	> *Timestamp in milliseconds: 1524720177000*
 	> 可转换成
 	> *Human time (GMT): Thursday, April 26, 2018 5:22:57 AM*
 	
-
 * **资源 ID**
 
 	每次当一个产品原型、测试装置、资料通道或是韧体档案被建立后，都会有一个不重复的 ID 被指派给该资源。这个不重复的 ID 是不可编辑的，您可透过它存取该资源。

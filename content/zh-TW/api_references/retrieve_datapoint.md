@@ -11,22 +11,21 @@
 
 * **資源路徑**
 
-	| 資源名稱 | 型別 | 是否必填 | 描述 |
-	| --- | --- | --- | --- |
-	| 裝置 ID | 字串 | 必填 | 您需在 URL 中指定你所要獲取資料的裝置 ID |
-	| 資料通道 ID | 字串 | 必填 | 您需在 URL 中指定你所要獲取資料的資料通道 ID |
+| 資源名稱 | 型別 | 是否必填 | 描述 |
+| --- | --- | --- | --- |
+| 裝置 ID | 字串 | 必填 | 您需在 URL 中指定你所要獲取資料的裝置 ID |
+| 資料通道 ID | 字串 | 必填 | 您需在 URL 中指定你所要獲取資料的資料通道 ID |
 
 
 * **查詢參數**
 
-	| 參數名稱 | 型別 | 是否必填 | 描述 |
-	| --- | --- | --- | --- |
-	| start | 數字 | 選填 | 查詢起始時間 |
-	| end | 數字 | 選填 | 查詢中止時間 |
-	| limit | 整數 | 選填 | 要回傳的資料點數目 ( 默認值 = 1 ) |
-	| offset | 整數 | 選填 | 第幾筆開始的資料點 |
-	| order | 字串 | 選填 | 資料預設是按照時間戳，由新到舊回傳，您也可透過指定 "asc" 或 "desc" 改變順序  |
-	
+| 參數名稱 | 型別 | 是否必填 | 描述 |
+| --- | --- | --- | --- |
+| start | 數字 | 選填 | 查詢起始時間 |
+| end | 數字 | 選填 | 查詢中止時間 |
+| limit | 整數 | 選填 | 要回傳的資料點數目 ( 默認值 = 1 ) |
+| offset | 整數 | 選填 | 第幾筆開始的資料點 |
+| order | 字串 | 選填 | 資料預設是按照時間戳，由新到舊回傳，您也可透過指定 "asc" 或 "desc" 改變順序  |
 	
 MCS 可將您請求的數據回傳成 JSON 或是 CSV 格式，您可藉由 HTTP 請求中的資源名稱來指定回傳的格式。
 
@@ -35,8 +34,7 @@ MCS 可將您請求的數據回傳成 JSON 或是 CSV 格式，您可藉由 HTTP
 * **獲取 JSON 格式的數據**
 
 	```
-	https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints?start=:startTime&end=:endTime&limit=:limit&offset=:offset
-	
+	https://api.mediatek.com/mcs/v2/devices/{deviceId}/datachannels/{datachannelId}/datapoints?start={startTime}&end={endTime}&limit={limit}&offset={offset}
 	```
 
 * **獲取 CSV 格式的數據**
@@ -44,8 +42,7 @@ MCS 可將您請求的數據回傳成 JSON 或是 CSV 格式，您可藉由 HTTP
 	若您希望數據以 CSV 的格式回傳，請在資源名稱的最後加上 `.csv`，變成 `datapoints.csv`
 
 	```
-	https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints.csv?start=:startTime&end=:endTime&limit=:limit&offset=:offset
-	
+	https://api.mediatek.com/mcs/v2/devices/{deviceId}/datachannels/{datachannelId}/datapoints.csv?start={startTime}&end={endTime}&limit={limit}&offset={offset}
 	```
 
 **範例**
@@ -53,19 +50,19 @@ MCS 可將您請求的數據回傳成 JSON 或是 CSV 格式，您可藉由 HTTP
 * 讀取最新一個資料點並以 JSON 格式回傳：
 
 	```
-	https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints
+	https://api.mediatek.com/mcs/v2/devices/DL6sA7iSx/datachannels/my_data_channel/datapoints
 	```
 
 * 讀取最新一個資料點並以 CSV 格式回傳：
 
 	```
-	https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints.csv
+	https://api.mediatek.com/mcs/v2/devices/DL6sA7iSx/datachannels/my_data_channel/datapoints.csv
 	```
 
 * 讀取一段時間範圍內的資料點：
 
 	```
-	https://api.mediatek.com/mcs/v2/devices/DL6sxxxx/datachannels/my_data_channel/datapoints?limit=1000&start=1524107855148&end=1524550447427
+	https://api.mediatek.com/mcs/v2/devices/DL6sA7iSx/datachannels/my_data_channel/datapoints?limit=1000&start=1524107855148&end=1524550447427
 	```
 
 請注意，若您只使用開始時間（start）和結束時間（end）參數，系統只會回覆您此區間內的最後一筆資料。若您希望取得此區間內的更多資料點，您可以使用 **limit** 來定義您想取得此區間內的幾筆資料點。
@@ -74,7 +71,7 @@ MCS 可將您請求的數據回傳成 JSON 或是 CSV 格式，您可藉由 HTTP
 * 限制您要讀取的資料點數目，MCS 只會回傳最新的 N 筆資料:
 
 	```
-	https://api.mediatek.com/mcs/v2/devices/DL6sxxxx/datachannels/my_data_channel/datapoints?limit=10	
+	https://api.mediatek.com/mcs/v2/devices/DL6sA7iSx/datachannels/my_data_channel/datapoints?limit=10	
 	```
 
 
@@ -89,13 +86,13 @@ GET
 * 透過裝置讀取數據
 
 	```
-	deviceKey: your_device_key
+	deviceKey: {your_device_key}
 	```
 * 透過您自行開發的應用（服務提供者帳號）
 
 	```
-	appId: your_appId
-	appSecret: your_appSecret
+	appId: {your_appId}
+	appSecret: {your_appSecret}
 	```
 
 
@@ -151,7 +148,7 @@ GET
 	    "apiVersion": "2.18.3",
 	    "code": 200,
 	    "message": "Request has succeeded",
-	    "deviceId": "DL6sxxxx",
+	    "deviceId": "DL6sA7iSx",
 	    "dataChannels": [
 	        {
 	            "dataChnId": "my_data_channel",

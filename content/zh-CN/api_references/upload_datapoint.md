@@ -11,13 +11,13 @@
 * **使用 CSV 格式：**
 
 	```
-	https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints.csv
+	https://api.mediatek.com/mcs/v2/devices/{deviceId}/datapoints.csv
 	```
 
 * **使用 JSON 格式：**
 
 	```
-	https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints
+	https://api.mediatek.com/mcs/v2/devices/{deviceId}/datapoints
 	```
 
 MCS 单笔上传一次最多五笔资料点。
@@ -33,14 +33,14 @@ POST
 * 透过装置上传
 	
 	```
-	deviceKey: `device_key_here`
+	deviceKey: {your_device_key}
 	```
 
 * 透过您自行开发的应用程式（服务提供者帐号）
 	
 	```
-	appId: `appId_here`
-	appSecret: `appSecret_here`
+	appId: {your_appId}
+	appSecret: {your_appSecret}
 	```
 
 	您可以在个人档案页面中的服务提供者分页，申请取得 appId 以及 appSecret。
@@ -52,13 +52,13 @@ POST
 * **使用 CSV 格式：**
 	
 	```
-	Content-Type:`text/csv`
+	Content-Type: text/csv
 	```
 
 * **使用 JSON 格式：**
 	
 	```
-	Content-Type:`application/json`
+	Content-Type: application/json 
 	```
 
 
@@ -69,9 +69,9 @@ POST
 	语法:
 	
 	```
-	:Data_Channel_Id_1,:Timestamp,:Value_1,:Value_2,:Value_3\n
+	{Data_Channel_Id_1},{Timestamp},{Value_1},{Value_2},{Value_3}\n
 	
-	:Data_Channel_Id_2,:Timestamp,:Value_1\n
+	{Data_Channel_Id_2},{Timestamp},{Value_1}\n
 	```
 
 	如欲参考更多详细的资料通道类型之格式，请参考**资料通道格式**章节。
@@ -118,8 +118,7 @@ POST
 	         }
 	      }
 	   ]
-	}
-	
+	}	
 	```
 	
 	资料点1： 资料通道 ID 为 ”1“；”1432538716989“ 为上传数据时，装置或您的应用程式产生的时间戳（timestamp）；”26“ 为上传的值。
