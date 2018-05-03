@@ -109,7 +109,6 @@ Here are some basic parameters using in MCS APIs.
 
 	2. **Device**：There are two types of devices which you can create in MCS: test device and Beta device. The test device enables you to test the functionality of the prototype before it is Beta-released. The Beta device can be created after a prototype is Beta-released and it’s used by the end user. 
 
-	
 	3. **Prototype**：A prototype is a service that’s delivered as a result. The MSC provides several APIs to make use of the prototype. The developer can add data channels in a prototype and test the prototype by creating a test device before releasing it.
 
 	
