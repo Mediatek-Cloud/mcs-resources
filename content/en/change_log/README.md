@@ -1,5 +1,11 @@
 # MCS Change log Summary
 
+## 2018/05/11
+
+### v2.23
+
+[Users are able to monitor the real-time data from multiple devices ion one single Scene page.](./2.23)
+
 ## 2017/12/28
 
 ### v2.22

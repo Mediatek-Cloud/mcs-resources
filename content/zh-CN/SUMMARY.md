@@ -25,6 +25,7 @@
    * [7697 LED Control](tutorial/7697_led_control.md)
    * [7687 Build with GCC](tutorial/7687_build_with_gcc.md)
    * [7687 Light Switch GCC](tutorial/7687_light_switch_gcc.md)
+   * [Create your own scene](tutorial/create_your_own_scene.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
