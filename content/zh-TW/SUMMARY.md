@@ -25,6 +25,7 @@
    * [7697 LED Control](tutorial/7697_led_control.md)
    * [7687 Build with GCC](tutorial/7687_build_with_gcc.md)
    * [7687 Light Switch GCC](tutorial/7687_light_switch_gcc.md)
+   * [Create your own scene](tutorial/create_your_own_scene.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
@@ -64,4 +65,5 @@
    * [2.20](change_log/2.20.md)
    * [2.21](change_log/2.21.md)
    * [2.22](change_log/2.22.md)
+   * [2.23](change_log/2.23.md)
 
