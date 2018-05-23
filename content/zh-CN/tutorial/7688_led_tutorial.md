@@ -237,13 +237,13 @@ The server sends commands in the following format:  deviceId, deviceKey, timesta
 while True:
     command = commandChannel.recv(1024)
     logging.info("recv:" + command)
-    # command can be a response of heart beat or an update of the LED_control,
+    # command can be a response of heart beat or an update of the LED_Control,
     # so we split by ',' and drop device id and device key and check length
     fields = command.split(',')[2:]
 
     if len(fields) > 1:
         timeStamp, dataChannelId, commandString = fields
-        if dataChannelId == 'LED_control':
+        if dataChannelId == 'LED_Control':
             # check the value - it's either 0 or 1
             commandValue = int(commandString)
             logging.info("led :%d" % commandValue)
@@ -312,13 +312,13 @@ def waitAndExecuteCommand(commandChannel):
     while True:
         command = commandChannel.recv(1024)
         logging.info("recv:" + command)
-        # command can be a response of heart beat or an update of the LED_control,
+        # command can be a response of heart beat or an update of the LED_Control,
         # so we split by ',' and drop device id and device key and check length
         fields = command.split(',')[2:]
 
         if len(fields) > 1:
             timeStamp, dataChannelId, commandString = fields
-            if dataChannelId == 'LED_control':
+            if dataChannelId == 'LED_Control':
                 # check the value - it's either 0 or 1
                 commandValue = int(commandString)
                 logging.info("led :%d" % commandValue)
