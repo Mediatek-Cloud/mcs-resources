@@ -34,14 +34,14 @@ When you upload, submit, store or receive data to or through the Service, you gi
 
 **Announcements**
 
-In connection with your use of the Service, we may send you service announcements or other information in the form of email or newsletter. You may opt out of some of those communications by contacting us at [mtkcloudsandbox@mediatek.com](mtkcloudsandbox@mediatek.com).
+In connection with your use of the Service, we may send you service announcements or other information in the form of email or newsletter. You may opt out of some of those communications by contacting us at [mtkcloudsandbox@mediatek.com](mailto:mtkcloudsandbox@mediatek.com).
 
 
 **3. Privacy Policy**
 
 Our Privacy Policy ([https://www.mediatek.com/privacy-policy](https://www.mediatek.com/privacy-policy)) explains how we treat your information and protect your privacy when you use the Service. By using the Service, you agree that MediaTek can use such information in accordance with our Privacy Policy.
 
-If you wish to access, modify your personal information, or if you wish to discontinue receiving materials from us or wish to remove your personal information from the Service, you may do so at the member profile page of the MediaTek Cloud Sandbox website or you can contact us at [mtkcloudsandbox@mediatek.com](mtkcloudsandbox@mediatek.com).
+If you wish to access, modify your personal information, or if you wish to discontinue receiving materials from us or wish to remove your personal information from the Service, you may do so at the member profile page of the MediaTek Cloud Sandbox website or you can contact us at [mtkcloudsandbox@mediatek.com](mailto:mtkcloudsandbox@mediatek.com).
 
 
 **4. Changes to the Service**
