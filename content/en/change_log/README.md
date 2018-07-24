@@ -1,5 +1,13 @@
 # MCS Change log Summary
 
+
+## 2018/07/25
+
+### v2.25
+
+[Users can be notified directly on MCS web console by adding **Console Alert** in Trigger & Action.](./2.25)
+
+
 ## 2018/05/11
 
 ### v2.23
