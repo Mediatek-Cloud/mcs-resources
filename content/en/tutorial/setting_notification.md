@@ -1,66 +1,133 @@
-# Using Trigger and Action
+# Trigger & Action
 
-## How to add trigger and action
+The Trigger & Action feature is used when you would like to get a notification while the value of a data channel meets certain criteria. 
 
-You can set the trigger and action value for a data channel. When the value passes the limit of the defined range, you will get an email or a Mobile Push notification based on the trigger and action settings. In addition, MCS supports webhook trigger, you can input the URL that you would like to recieve this trigger.
+You can set trigger rules on the following data channels
 
-Please note that MCS only supports trigger and action for integer and float data channel types at the time of writing. Also, only data points uploaded by the device (data points uploaded with deviceKey) will trigger the action. The data points uploaded by user (via web using authentication) will not be triggered.
+1. ON/OFF
+2. Category
+3. String
+4. Hex
+5. Integer
+6. Float
+
+and choose one of the following conditions to apply on that data channel
+
+1. Greater than
+2. Lower than
+3. Equal to
+4. Between
+5. OnChange
+
+The conditions which must be met before the trigger action executes and there are 4 trigger actions provided.
+
+1. Email
+
+	Users with access privilege to this device can receive the Email notification, including device owner, administrator and viewer.
+	
+2. Mobile Push
+
+	Users with MediaTek Cloud Sandbox App installed on his mobile can receive the push notification.
+	
+3. Webhook
+
+	MCS makes an HTTP request to the callback URL that user provided. 
+		
+4. Console Alert
+	
+	When that trigger occurs, there is an alert message on web console directly.
 
 
-In the **Prototype** detail page, click the **Trigger & action** tab.
+## Defining a trigger & action
 
-![](../images/Trigger/img_trigger_01.png)
+You can set **Trigger & Action rules** for a **prototype** and the rules will be applied to each device under this prototype. In addition, you can edit the **value in condition** at **device** level afterward.
 
-Click **Add trigger & action** to enter the trigger name and description.
+Here are the steps:
 
-![](../images/Trigger/img_trigger_02.png)
+1. In the **Prototype** detail page, click the **Trigger & Action** tab -> **Add trigger & action**.
 
-Then click **Next** to set the trigger criteria by selecting the data channel you would like to set alert for and enter the value. The rules include greater than, lower then, equal to, and between.
+	![](../images/Trigger/img_trigger_01.png)
 
-If there are more than one data channel rules in the trigger criteria, all data channel rules need to be satisfied in order to trigger the action('AND' logic). You can create separate trigger and action rules to use the 'OR' logic.
+2. Provide the necessary information in the **Add trigger & action** dialog.
 
-![](../images/Trigger/img_trigger_03.png)
+	Step 1: The **trigger name** will display in the **console alert** when it is triggered.
+	![](../images/Trigger/img_trigger_02.png)
+	
+	Step 2: The match condition is **AND** if there are multiple criteria set. That means you have to upload these data points **in one payload** and all of them match the conditions. 
+	![](../images/Trigger/img_trigger_03.png)
+	
+	Step 3: At least one action need to be selected. We will explain more about each action later.
+	![](../images/Trigger/img_trigger_04.png)
 
-Click **Next** to select the trigger action. You can select to get email or Mobile Push notification when the trigger criteria are met. The email and Mobile Push notification will be sent to anyone with the access to the test device.
 
-Furthermore, you are allowed to use MCS pre-defined variables in **Title** and **Content** fileds to capture the real value when the action was triggered. You can find more detail under this page.
-
-
-![](../images/Trigger/img_trigger_04.png)
-
-The test device will inherit all the trigger and action from its parent prototype. In a test device, you can only change the value of the trigger criteria or select to switch on or off a specific trigger and action.
+The device inherits all the trigger & action rules from its prototype. However, you can still change the value of the trigger criteria and enable or disable trigger & action rules for a device.
 
 ![](../images/Trigger/img_trigger_05.png)
 
-## Setting trigger and action for different mobile devices
 
-If you have multiple mobile devices, MCS allows you to set which mobile devices will receive the mobile push notification. You can find the setting in two places:
+Please note, only data points uploaded by the device (with **deviceKey in HTTP header** or via **MQTT**) can trigger the action. The action will NOT be triggered by the UI operation on the web console.
 
-1. In the **User Profile** page, you can switch on or off all the notification from MCS to a specific mobile device.
-2. In the **Test device** page, you can switch on or off all notification from a specific test device to a specific mobile device.
 
-In the **User Profile** page, you can see a mobile list that includes all user's mobile devices with MCS app installed. You can use the **Swith** to control which mobile device will receive notifications from MCS.
+## More about Trigger Actions
+### Configuring the Mobile Push
+
+If you have multiple mobile devices, you can choose which mobile devices can receive the mobile push notification. You can find the setting in two places:
+
+1. In the **User Profile** page, you can switch on or off **all the mobile push** to a mobile device.
+2. In the **Test Device** page, you can switch on or off all **mobile push for a test device** to a mobile device.
+
+In your **User Profile** page, there is a mobile list that includes all your mobile devices with MCS App installed. You can use the **Switch** to control which mobile device can receive mobile push from MCS.
 
 ![](../images/Trigger/img_trigger_06.png)
 
-In the **Trigger & action** tab in the test device page, expand the **Manage your action** section and you will see a list of all user's mobile devices with MCS app installed. You can use the **switch** here to control which specific mobile device will receive the notification from this test device.
+In the **Trigger & Action** tab in the test device page, expand the **Manage your action** section and there is a mobile list that includes all your mobile devices with MCS App installed. You can use the **Switch** here to control which mobile devices can receive the mobile push for this test device.
 
 ![](../images/Trigger/img_trigger_07.png)
 
 
+### Configuring the Webhook
 
-# Set up a webhook trigger
-
-To set up a webhook trigger, you have to select the **webhook** as the action in the Trigger & action tab in the prototype. And input the url that you would like to get the webhook trigger.
+There is no extra setting for webhook. To use webhook trigger, you only have to select the **webhook** as the action in the trigger & action setting and provide the callback URL that MCS makes an HTTP request to.
 
 ![](../images/Trigger/img_trigger_08.png)
 
-There is a Test button for you to test if the trigger has been sent to the url. The device name, deviceId and the triggered value will be sent to the triggered url.
+There is a Test button for you to test if the trigger has been sent to the URL. The device name, deviceId and the triggered value will be sent to the triggered URL.
 
 
-MCS supports customized webhook body message. You can also use the pre-defined variables. For the customized variables, please refer to the following paragraph.
+### Configuring the Console Alert
 
-# Use variables in notification message
+You have to specify the severity level while configuring console alert in Trigger & Action.
+
+![](../images/Trigger/img_trigger_13.png)
+
+When that trigger occurs, the console alert with severity information will show on the web console immediately. It is displayed on the following page.
+
+1. Data Channel Card 
+
+	You can expand the alert message bar to see more information, including **trigger name** and **alert time**. In this case, a data was uploaded on "2018-07-19 11:36" and triggered a rule named "Water is too hot". 
+	
+	After you click **Dismiss**, this alert will be cleared. You won't see this alert until the new data is uploaded and the trigger rule is matched.
+
+	![](../images/Trigger/img_trigger_10.png)
+
+2. Test Device List
+
+	It always displays the alert with **highest severity** right this moment. 
+	
+	Take the previous case for example. You will see "High" alert on the card, if "High" alert is dismissed, and then it shows "Medium" alert instead.
+	
+	![](../images/Trigger/img_trigger_11.png)
+	
+3. Scene
+	
+	The presentation logic is the same as Device List.
+
+	![](../images/Trigger/img_trigger_12.png)
+
+
+
+
+## Use variables in notification message
 
 MCS provides pre-defined variables which can be used in both Title and Content fileds. These variables will be replaced with real values when the action is triggered. The pre-defined variables include:
 
