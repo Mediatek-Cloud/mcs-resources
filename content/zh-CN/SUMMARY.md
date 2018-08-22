@@ -67,4 +67,5 @@
    * [2.22](change_log/2.22.md)
    * [2.23](change_log/2.23.md)
    * [2.25](change_log/2.25.md)
+   * [2.26](change_log/2.26.md)
 

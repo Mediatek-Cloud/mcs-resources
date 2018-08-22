@@ -1,5 +1,11 @@
 # MCS Change log Summary
 
+## 2018/08/23
+
+### v2.26
+
+[Users are allowed to compose a customized HTTP request in Trigger & Action.](./2.26)
+
 
 ## 2018/07/25
 
