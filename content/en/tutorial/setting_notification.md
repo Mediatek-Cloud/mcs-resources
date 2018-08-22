@@ -87,11 +87,13 @@ In the **Trigger & Action** tab in the test device page, expand the **Manage you
 
 ### Configuring the Webhook
 
-There is no extra setting for webhook. To use webhook trigger, you only have to select the **webhook** as the action in the trigger & action setting and provide the callback URL that MCS makes an HTTP request to.
+The webhook action allows you to compose a custom HTTP request to send to a server. 
+
+To use webhook trigger, you only need select the **webhook** as the action type in the trigger & action setting and then specify the server **URL**, **request method**, **HTTP headers** and **HTTP body**. You can use the pre-defined variables in URL, value of HTTP header and Body fields.
 
 ![](../images/Trigger/img_trigger_08.png)
 
-There is a Test button for you to test if the trigger has been sent to the URL. The device name, deviceId and the triggered value will be sent to the triggered URL.
+There is a Send webhook button for you to test if this HTTP request is able to sent to the destination along with the correct settings. 
 
 
 ### Configuring the Console Alert
