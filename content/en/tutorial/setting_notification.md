@@ -1,6 +1,6 @@
 # Trigger & Action
 
-The Trigger & Action feature is used when you would like to get a notification while the value of a data channel meets certain criteria. 
+The Trigger & Action feature is used when you would like to get a notification while the value of a data channel meets certain criteria.
 
 You can set trigger rules on the following data channels
 
@@ -24,17 +24,17 @@ The conditions which must be met before the trigger action executes and there ar
 1. Email
 
 	Users with access privilege to this device can receive the Email notification, including device owner, administrator and viewer.
-	
+
 2. Mobile Push
 
 	Users with MediaTek Cloud Sandbox App installed on his mobile can receive the push notification.
-	
+
 3. Webhook
 
-	MCS makes an HTTP request to the callback URL that user provided. 
-		
+	MCS makes an HTTP request to the callback URL that user provided.
+
 4. Console Alert
-	
+
 	When that trigger occurs, there is an alert message on web console directly.
 
 
@@ -52,10 +52,10 @@ Here are the steps:
 
 	Step 1: The **trigger name** will display in the **console alert** when it is triggered.
 	![](../images/Trigger/img_trigger_02.png)
-	
-	Step 2: The match condition is **AND** if there are multiple criteria set. That means you have to upload these data points **in one payload** and all of them match the conditions. 
+
+	Step 2: The match condition is **AND** if there are multiple criteria set. That means you have to upload these data points **in one payload** and all of them match the conditions.
 	![](../images/Trigger/img_trigger_03.png)
-	
+
 	Step 3: At least one action need to be selected. We will explain more about each action later.
 	![](../images/Trigger/img_trigger_04.png)
 
@@ -87,13 +87,13 @@ In the **Trigger & Action** tab in the test device page, expand the **Manage you
 
 ### Configuring the Webhook
 
-The webhook action allows you to compose a custom HTTP request to send to a server. 
+The webhook action allows you to compose a custom HTTP request to send to a server.
 
 To use webhook trigger, you only need select the **webhook** as the action type in the trigger & action setting and then specify the server **URL**, **request method**, **HTTP headers** and **HTTP body**. You can use the pre-defined variables in URL, value of HTTP header and Body fields.
 
 ![](../images/Trigger/img_trigger_08.png)
 
-There is a Send webhook button for you to test if this HTTP request is able to sent to the destination along with the correct settings. 
+There is a Send webhook button for you to test if this HTTP request is able to sent to the destination along with the correct settings.
 
 
 ### Configuring the Console Alert
@@ -104,24 +104,24 @@ You have to specify the severity level while configuring console alert in Trigge
 
 When that trigger occurs, the console alert with severity information will show on the web console immediately. It is displayed on the following page.
 
-1. Data Channel Card 
+1. Data Channel Card
 
-	You can expand the alert message bar to see more information, including **trigger name** and **alert time**. In this case, a data was uploaded on "2018-07-19 11:36" and triggered a rule named "Water is too hot". 
-	
+	You can expand the alert message bar to see more information, including **trigger name** and **alert time**. In this case, a data was uploaded on "2018-07-19 11:36" and triggered a rule named "Water is too hot".
+
 	After you click **Dismiss**, this alert will be cleared. You won't see this alert until the new data is uploaded and the trigger rule is matched.
 
 	![](../images/Trigger/img_trigger_10.png)
 
 2. Test Device List
 
-	It always displays the alert with **highest severity** right this moment. 
-	
+	It always displays the alert with **highest severity** right this moment.
+
 	Take the previous case for example. You will see "High" alert on the card, if "High" alert is dismissed, and then it shows "Medium" alert instead.
-	
+
 	![](../images/Trigger/img_trigger_11.png)
-	
+
 3. Scene
-	
+
 	The presentation logic is the same as Device List.
 
 	![](../images/Trigger/img_trigger_12.png)
