@@ -20,12 +20,13 @@
    * [7688 videostream tutorial](tutorial/7688_videostream_tutorial.md)
    * [7688 fota tutorial](tutorial/7688_fota_tutorial.md)
    * [TCP and MQTT connection](tutorial/communication_channels.md)
-   * [IFTTT Triger](tutorial/ifttt_trigger.md)
+   * [IFTTT Trigger](tutorial/ifttt_trigger.md)
    * [7697 Tutorial](tutorial/7697_tutorial.md)
    * [7697 LED Control](tutorial/7697_led_control.md)
    * [7687 Build with GCC](tutorial/7687_build_with_gcc.md)
    * [7687 Light Switch GCC](tutorial/7687_light_switch_gcc.md)
    * [Create your own scene](tutorial/create_your_own_scene.md)
+   * [Function Data Channel tutorial](tutorial/function_data_channel_tutorial.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
@@ -68,5 +69,4 @@
    * [2.23](change_log/2.23.md)
    * [2.25](change_log/2.25.md)
    * [2.26](change_log/2.26.md)
-
 
