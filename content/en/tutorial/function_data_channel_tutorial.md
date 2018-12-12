@@ -12,19 +12,19 @@ Here is a quick tutorial illustrates a data channel taking in temperature sensor
 
 After creating a prototype, by clicking “Add” button you can add a Function Data Channel by clicking the left lower corner icon:
 
- ![](http://../images/function_dc/img_function_dc_01.png)
+ ![](../images/Function_dc/img_function_dc_01.PNG)
 
 In the “Add data channel” form, you can then fill the Data channel name and Data channel Id as shown in the screenshot, the lower half is the code editing area where you can expand it to full screen by clicking the blue square icon on the right hand side.
 
- ![](http://../images/function_dc/img_function_dc_02.png)
+ ![](../images/Function_dc/img_function_dc_02.PNG)
 
 There is a description in the mid-section of the form describing how you can return the calculated value to other data channels within the same device. By clicking the question mark you will be shown the constrains of using this code block
 
- ![](http://../images/function_dc/img_function_dc_03.png)
+ ![](../images/Function_dc/img_function_dc_03.PNG)
 
 Append the JavaScript code into the code block then click "Save"
 
- ![](http://../images/function_dc/img_function_dc_04.png)
+ ![](../images/Function_dc/img_function_dc_04.PNG)
 
 Below is the code block for the tutorial:
 
@@ -50,11 +50,11 @@ Please note:
 
 Once saved you should also create a display data channel of floating type with data channel id as temp_dgc separately as shown below:
 
- ![](http://../images/function_dc/img_function_dc_05.png)
+ ![](../images/Function_dc/img_function_dc_05.PNG)
 
 Once completed, the prototype should have two data channels as shown below:
 
- ![](http://../images/function_dc/img_function_dc_06.png)
+ ![](../images/Function_dc/img_function_dc_06.PNG)
 
 You will then create a test device out of this prototype for testing.
 
@@ -62,19 +62,19 @@ You will then create a test device out of this prototype for testing.
 
 Now let’s try to upload a datapoint to the function data channel using POSTMAN as below:
 
- ![](http://../images/function_dc/img_function_dc_07.png)
+ ![](../images/Function_dc/img_function_dc_07.PNG)
 
 You will observe a value “42” arrived in the function data channel, beneath with a “Last data point status: OK” suggesting this data point has been processed by the code block successfully. The value in the Celsius data channel is displayed as “5.56” also assured that the code block was executed and the return value was successful.
 If somehow the code block wasn’t executed successfully, a “FAILED” message will be shown instead.
 
- ![](http://../images/function_dc/img_function_dc_08.png)
+ ![](../images/Function_dc/img_function_dc_08.PNG)
 
 You can click the hamburger on the upper right corner of the data channel and click “Show History” to see detail of this data point process:
 
- ![](http://../images/function_dc/img_function_dc_09.png)
+ ![](../images/Function_dc/img_function_dc_09.png)
 
 You will see an entry of value of “42” is displayed, by click the down arrow on the right hand side to expand for detail where you can see Console log tab displaying a message composed in line 6 of the code. System log will be shown in System log tab should system related error message was generated during the code execution.
 
- ![](http://../images/function_dc/img_function_dc_10.png)
+ ![](../images/Function_dc/img_function_dc_10.PNG)
 
 This concludes the simple tutorial for using function data channel. 
