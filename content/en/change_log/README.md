@@ -1,5 +1,11 @@
 # MCS Change log Summary
 
+## 2018/12/14
+
+### v2.27
+
+[Introduction of Function Data Channel.](./2.27)
+
 ## 2018/08/23
 
 ### v2.26
