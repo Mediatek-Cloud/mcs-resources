@@ -37,10 +37,49 @@ mcs/:deviceId/:deviceKey/+
 ```
 mcs/:deviceId/:deviceKey/:dataChnId
 ```
+或是要发布装置下一个或多个数据信道:
 
-## MQTT 订阅和发布资料格式
+```
+mcs/:deviceId/:deviceKey
+```
 
-**此处使用 UNIX timestamp 时间格式。
+
+## MQTT 订阅和发布数据格式
+
+一般发布数据的格式为:
+
+```
+timestamp,dataChnId,value
+```
+
+其中timestamp使用UNIX时间戳格式
+如果省略如下所示的时间戳值，则MCS将在收到时自动为该数据点建立时间戳。
+
+```
+,dataChnId,value
+```
+当针对特定的dataChnId发布资料
+```
+mcs/:deviceId/:deviceKey/:dataChnId
+```
+您也可以省略dataChnId
+
+```
+,,value
+```
+
+当使用发布装置下一个或多个数据信道的格式时，您不可以省略dataChnId，但同时您可以在一次的发布里发布多个数据点:
+
+```
+timestamp,dataChnId1,value1
+timestamp,dataChnId2,value2
+.
+.
+.
+```
+
+以下是针对不同数据信道型态的范例:
+
 
 ### 开关
 

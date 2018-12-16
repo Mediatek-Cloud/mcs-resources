@@ -38,9 +38,49 @@ mcs/:deviceId/:deviceKey/+
 mcs/:deviceId/:deviceKey/:dataChnId
 ```
 
+或是要發佈裝置下一個或多個資料通道:
+
+```
+mcs/:deviceId/:deviceKey
+```
+
+
 ## MQTT 訂閱和發佈資料格式
 
-**此處使用 UNIX timestamp 時間格式。
+一般發佈資料的格式為:
+
+```
+timestamp,dataChnId,value
+```
+
+其中timestamp使用UNIX時間戳格式
+如果省略如下所示的時間戳值，則MCS將在收到時自動為該數據點建立時間戳。
+
+```
+,dataChnId,value
+```
+當針對特定的dataChnId發佈資料
+```
+mcs/:deviceId/:deviceKey/:dataChnId
+```
+您也可以省略dataChnId
+
+```
+,,value
+```
+
+當使用發佈裝置下一個或多個資料通道的格式時，您不可以省略dataChnId，但同時您可以在一次的發佈裡發佈多個資料點:
+
+```
+timestamp,dataChnId1,value1
+timestamp,dataChnId2,value2
+.
+.
+.
+```
+
+以下是針對不同資料通道型態的範例:
+
 
 ### 開關
 
