@@ -26,6 +26,7 @@
    * [7687 Build with GCC](tutorial/7687_build_with_gcc.md)
    * [7687 Light Switch GCC](tutorial/7687_light_switch_gcc.md)
    * [Create your own scene](tutorial/create_your_own_scene.md)
+   * [ Function Data Channel tutorial](tutorial/function_data_channel_tutorial.md)
 * [Setting user privilege](tutorial/setting_user_privilege.md)
 * [API references](api_references/README.md)
    * [Upload datapoint](api_references/upload_datapoint.md)
@@ -68,4 +69,5 @@
    * [2.23](change_log/2.23.md)
    * [2.25](change_log/2.25.md)
    * [2.26](change_log/2.26.md)
+   * [2.27](change_log/227.md)
 

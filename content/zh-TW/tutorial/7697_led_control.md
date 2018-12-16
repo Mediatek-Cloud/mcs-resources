@@ -25,7 +25,7 @@
 	#define _SSID "your_ssid"
 	#define _KEY  "your_password"
 	```
-	
+
 3. 在 **MCSDevice** 建構子中帶入 MCS 測試裝置的 **device ID** 與 **device key**。
 
 	```arduino
@@ -33,18 +33,18 @@
 	MCSDevice mcs("your_device_id", "your_device_key");
 	```
 	![7697 LED](../images/7697/mcs_device_id_key.png)
-	
-4. 在初始化資料通道物件時，帶入 **data channel IDs**。 
+
+4. 在初始化資料通道物件時，帶入 **data channel IDs**。
 
 	```arduino
-	// Assign data channel ID 
+	// Assign data channel ID
 	MCSControllerOnOff led("your_channel1_id");
 	MCSDisplayOnOff    remote("your_channel2_id");
 	```
-	
+
 	![7697 LED](../images/7697/mcs_data_channel_id.png)
 
-	
+
 ## 執行應用程式
 
 1. 點擊 **Upload** 將修改後的程式上傳到 LinkIt 7697 開發板上並等待 **Done Uploading** 上傳完成的訊息。
@@ -59,7 +59,7 @@
 
 	![7697 LED](../images/7697/mcs_device_detailed.png)
 
-4. 觀察開發板上的 **LED PIN 7** 燈號. 這顆 LED 燈泡會隨著您在 MCS 網站上操作的產生明滅的效果。 
+4. 觀察開發板上的 **LED PIN 7** 燈號. 這顆 LED 燈泡會隨著您在 MCS 網站上操作的產生明滅的效果。
 
 	![7697 LED](../images/7697/7697_led.png)
 

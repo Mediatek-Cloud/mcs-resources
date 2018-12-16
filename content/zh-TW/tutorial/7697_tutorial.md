@@ -4,7 +4,7 @@ LinkIt 7697 HDK 可支援 **Arduino IDE** 或是 **LinkIt SDK for RTOS** 兩種�
 
 在本章節中，您將會學到如何使用 **Arduino IDE** 在 LinkIt 7697 開發板上編寫能與 MCS 雲端服務互動的應用程式。
 
-## MCS 函式庫簡介 
+## MCS 函式庫簡介
 
 在 LinkIt 7697 HDK 的 **[開發板支援套裝軟體](https://docs.labs.mediatek.com/resource/linkit7697-arduino/en/setup-arduino-ide-for-linkit-7697)** (Arduino board support package) 當中包含了 MCS 函式庫，方便您開發與 MCS 雲端服務相關的專案。 MCS 雲端服務所提供的功能與所需要的設定都已經被定義在這個函式庫當中，其中包含有：
 

@@ -77,4 +77,4 @@ You will see an entry of value of “42” is displayed, by click the down arrow
 
  ![](../images/Function_dc/img_function_dc_10.PNG)
 
-This concludes the simple tutorial for using function data channel. 
+This concludes the simple tutorial for using function data channel.
